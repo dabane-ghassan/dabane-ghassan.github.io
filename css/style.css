@@ -1,118 +1,65 @@
-html, body{ 
-	height: 100%; 
-} 
-	
-body{ 
-	margin: 0px; 
-	padding: 0px; 
-	background: #ebebeb; 
-	font-family: 'Roboto'; 
-	font-size: 12pt; 
-} 
-		
-h1, h2, h3{ 
-	margin: 0; 
-	padding: 0; 
-	color: #404040; 
-} 
-	
-p, ol, ul{ 
-	margin-top: 0; 
-} 
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 
-p { 
-	line-height: 180%; 
-} 
-
-ol, ul{ 
-	padding: 0; 
-	list-style: none; 
-} 
-	
-.container{	 
-	/* Set width of container to 
-		1200px and align center */
-	margin: 0px auto; 
-	width: 1200px; 
-} 
-
-header{
-    overflow: hidden;
+html, body{
+  height: 100%;
+  font-weight: 800;
 }
 
-#top-header{
-    text-align: center;
-    height: 820px;
+body{
+  background: #1a1a1a;
+  font-family: Arial;
 }
 
-#logo{ 
-    float: left; 
-    padding: none; 
-    margin: none; 
-    height: 60px; 
-    width: 30%; 
-} 
-  
-#logo img{ 
-	width: 150%;
-	position: relative; 
-    float: left; 
-	padding: 10px 0px; 
-	top : -210px
-}  	 
-
-
-#menu{ 
-	float: right; 
-	width: 70%; 
-	height: 100%; 
-	margin: none; 
-} 
-	
-#menu ul{ 
-	text-align: center; 
-	float: right; 
-	margin: none; 
-	background: rgb(0, 0, 0); 
-} 
-	
-#menu li{ 
-	display: inline-block; 
-	padding: none; 
-	margin: none; 
-} 
-	
-#menu li a, #menu li span{ 
-	display: inline-block; 
-	padding: 0em 1.5em; 
-	text-decoration: none; 
-	font-weight: 600; 
-	text-transform: uppercase; 
-	line-height: 60px; 
-} 
-	
-#menu li a{ 
-		
-	color: #ebebeb; 
-} 
-	
-#menu li:hover a, #menu li span{ 
-	background: #ebebeb; 
-	color: rgb(0, 0, 0); 
-	border-left: 1px solid rgb(0, 0, 0); 
-	text-decoration: none; 
-} 
-
-#header-image-menu{
-	top : 10px;
-	position: relative;
+svg {
+    display: block;
+    font: 10.5em 'Montserrat';
+    width: 50%;
+    height: 100%;
+	margin: auto;
 }
 
-#header-image-menu img{
+.svg-container {
+	display: inline-block;
+	position: fixed;
 	width: 100%;
-	height: 100%;
-	margin: none;
-	padding : none;
-	position: relative;
-	top : -750px;
+	vertical-align: middle;
+	overflow: hidden;
+	}
+
+.text-copy {
+    fill: none;
+    stroke: #ebebeb;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #ebebeb;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: green;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #ebebeb;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #ebebeb;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: red;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
 }

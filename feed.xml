@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Ghassan Dabane — Blog</title>
+    <link>https://dabane-ghassan.github.io/</link>
+    <description>Classic literature, tech, and a bit of math.</description>
+    <language>en</language>
+    <item>
+      <title>Bonjour, le monde</title>
+      <link>https://dabane-ghassan.github.io/post.html?p=bonjour</link>
+      <guid>https://dabane-ghassan.github.io/post.html?p=bonjour</guid>
+      <pubDate>Wed, 28 Oct 2026 12:00:00 GMT</pubDate>
+      <description>Un premier billet qui sert surtout à tester la mécanique — prose, citations, notes, code et LaTeX.</description>
+      <category>meta</category>
+      <category>math</category>
+    </item>
+    <item>
+      <title>Hello, world</title>
+      <link>https://dabane-ghassan.github.io/post.html?p=hello-world</link>
+      <guid>https://dabane-ghassan.github.io/post.html?p=hello-world</guid>
+      <pubDate>Wed, 28 Oct 2026 12:00:00 GMT</pubDate>
+      <description>A first post that is mostly a test of the machinery — prose, quotes, footnotes, code and LaTeX.</description>
+      <category>meta</category>
+      <category>math</category>
+    </item>
+  </channel>
+</rss>

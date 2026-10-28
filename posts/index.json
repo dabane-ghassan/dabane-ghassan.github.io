@@ -1,0 +1,31 @@
+{
+  "generated": "2026-10-28T11:16:24.945Z",
+  "posts": [
+    {
+      "slug": "bonjour",
+      "title": "Bonjour, le monde",
+      "date": "2026-10-28",
+      "lang": "fr",
+      "tags": [
+        "meta",
+        "math"
+      ],
+      "summary": "Un premier billet qui sert surtout à tester la mécanique — prose, citations, notes, code et LaTeX.",
+      "ref": "hello-world",
+      "minutes": 1
+    },
+    {
+      "slug": "hello-world",
+      "title": "Hello, world",
+      "date": "2026-10-28",
+      "lang": "en",
+      "tags": [
+        "meta",
+        "math"
+      ],
+      "summary": "A first post that is mostly a test of the machinery — prose, quotes, footnotes, code and LaTeX.",
+      "ref": "hello-world",
+      "minutes": 1
+    }
+  ]
+}

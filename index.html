@@ -198,9 +198,30 @@
         <div class="num mono"><span class="dot b"></span>06</div>
         <h2><span lang="en">Teaching</span><span lang="fr">Enseignement</span></h2>
       </div>
-      <div class="soon reveal">
-        <div class="loader" aria-hidden="true"><i></i><i></i><i></i></div>
-        <span class="mono muted"><span lang="en">Coming soon</span><span lang="fr">Bientôt</span></span>
+      <div class="reveal">
+        <!-- Courses live in teaching/<course>/ and render through course.html?c=<course> -->
+        <article class="feature course-card">
+          <div class="feature-body">
+            <div class="feature-label mono"><span class="dot b"></span><span lang="en">Course · 5 chapters · Python</span><span lang="fr">Cours · 5 chapitres · Python</span></div>
+            <div>
+              <h3><a href="course.html?c=modneuro">ModNeuro</a></h3>
+              <p class="pitch" lang="en">An introduction to modelling for neuroscience, from a first differential equation to the Hodgkin–Huxley model.</p>
+              <p class="pitch" lang="fr">Une introduction à la modélisation en neurosciences, d’une première équation différentielle au modèle de Hodgkin–Huxley.</p>
+              <div class="pub-actions">
+                <a class="chip chip-solid" href="course.html?c=modneuro/01-enzyme-kinetics"><span lang="en">Start the course</span><span lang="fr">Commencer le cours</span></a>
+                <a class="chip" href="course.html?c=modneuro"><span lang="en">Overview</span><span lang="fr">Présentation</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="feature-art spike-art" aria-hidden="true"><svg id="spike" viewBox="0 0 320 220"></svg></div>
+        </article>
+        <ul class="lines teach-list">
+          <li><a href="course.html?c=modneuro/01-enzyme-kinetics"><span class="date mono">01</span><span><span class="title"><span lang="en">Enzyme kinetics</span><span lang="fr">Cinétique enzymatique</span></span></span><span class="side"><span class="arrow" aria-hidden="true">→</span></span></a></li>
+          <li><a href="course.html?c=modneuro/02-passive-membrane"><span class="date mono">02</span><span><span class="title"><span lang="en">The passive membrane</span><span lang="fr">La membrane passive</span></span></span><span class="side"><span class="arrow" aria-hidden="true">→</span></span></a></li>
+          <li><a href="course.html?c=modneuro/03-active-membrane"><span class="date mono">03</span><span><span class="title"><span lang="en">The active membrane</span><span lang="fr">La membrane active</span></span></span><span class="side"><span class="arrow" aria-hidden="true">→</span></span></a></li>
+          <li><a href="course.html?c=modneuro/04-neuronal-models"><span class="date mono">04</span><span><span class="title"><span lang="en">Neuronal models</span><span lang="fr">Modèles neuronaux</span></span></span><span class="side"><span class="arrow" aria-hidden="true">→</span></span></a></li>
+          <li><a href="course.html?c=modneuro/05-neural-networks"><span class="date mono">05</span><span><span class="title"><span lang="en">Neural networks</span><span lang="fr">Réseaux de neurones</span></span></span><span class="side"><span class="arrow" aria-hidden="true">→</span></span></a></li>
+        </ul>
       </div>
     </div>
   </section>

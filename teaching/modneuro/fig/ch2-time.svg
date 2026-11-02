@@ -1,0 +1,890 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 523.8 214.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="ch2-time-figure_1">
+  <g id="ch2-time-patch_1">
+   <path d="M 0 214.2 
+L 523.8 214.2 
+L 523.8 0 
+L 0 0 
+L 0 214.2 
+z
+" style="fill: none"/>
+  </g>
+  <g id="ch2-time-axes_1">
+   <g id="ch2-time-patch_2">
+    <path d="M 38.608066 176.160703 
+L 257.85751 176.160703 
+L 257.85751 25.4475 
+L 38.608066 25.4475 
+L 38.608066 176.160703 
+z
+" style="fill: none"/>
+   </g>
+   <g id="ch2-time-matplotlib.axis_1">
+    <g id="ch2-time-xtick_1">
+     <g id="ch2-time-line2d_1">
+      <defs>
+       <path id="ch2-time-m19106b12c8" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#ch2-time-m19106b12c8" x="38.608066" y="176.160703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-time-text_1">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="38.608066" y="190.895078" transform="rotate(-0 38.608066 190.895078)">0</text>
+     </g>
+    </g>
+    <g id="ch2-time-xtick_2">
+     <g id="ch2-time-line2d_2">
+      <g>
+       <use xlink:href="#ch2-time-m19106b12c8" x="82.457955" y="176.160703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-time-text_2">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="82.457955" y="190.895078" transform="rotate(-0 82.457955 190.895078)">20</text>
+     </g>
+    </g>
+    <g id="ch2-time-xtick_3">
+     <g id="ch2-time-line2d_3">
+      <g>
+       <use xlink:href="#ch2-time-m19106b12c8" x="126.307844" y="176.160703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-time-text_3">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="126.307844" y="190.895078" transform="rotate(-0 126.307844 190.895078)">40</text>
+     </g>
+    </g>
+    <g id="ch2-time-xtick_4">
+     <g id="ch2-time-line2d_4">
+      <g>
+       <use xlink:href="#ch2-time-m19106b12c8" x="170.157732" y="176.160703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-time-text_4">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="170.157732" y="190.895078" transform="rotate(-0 170.157732 190.895078)">60</text>
+     </g>
+    </g>
+    <g id="ch2-time-xtick_5">
+     <g id="ch2-time-line2d_5">
+      <g>
+       <use xlink:href="#ch2-time-m19106b12c8" x="214.007621" y="176.160703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-time-text_5">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="214.007621" y="190.895078" transform="rotate(-0 214.007621 190.895078)">80</text>
+     </g>
+    </g>
+    <g id="ch2-time-xtick_6">
+     <g id="ch2-time-line2d_6">
+      <g>
+       <use xlink:href="#ch2-time-m19106b12c8" x="257.85751" y="176.160703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-time-text_6">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="257.85751" y="190.895078" transform="rotate(-0 257.85751 190.895078)">100</text>
+     </g>
+    </g>
+    <g id="ch2-time-text_7">
+     <!-- $t$ (ms) -->
+     <g style="fill: currentColor" transform="translate(135.407788 206.148496)">
+      <text>
+       <tspan x="0" y="-0.671875" style="font-style: italic; font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">t</tspan>
+       <tspan x="2.641006" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor"> </tspan>
+       <tspan x="5.312881" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">(</tspan>
+       <tspan x="8.777969" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">m</tspan>
+       <tspan x="17.099747" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">s</tspan>
+       <tspan x="22.114151" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">)</tspan>
+      </text>
+     </g>
+    </g>
+   </g>
+   <g id="ch2-time-matplotlib.axis_2">
+    <g id="ch2-time-ytick_1">
+     <g id="ch2-time-line2d_7">
+      <defs>
+       <path id="ch2-time-m00852537f5" d="M 0 0 
+L -3 0 
+" style="stroke: currentColor; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#ch2-time-m00852537f5" x="38.608066" y="169.310103" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-time-text_8">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="32.108066" y="173.42729" transform="rotate(-0 32.108066 173.42729)">0</text>
+     </g>
+    </g>
+    <g id="ch2-time-ytick_2">
+     <g id="ch2-time-line2d_8">
+      <g>
+       <use xlink:href="#ch2-time-m00852537f5" x="38.608066" y="134.824742" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-time-text_9">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="32.108066" y="138.941929" transform="rotate(-0 32.108066 138.941929)">10</text>
+     </g>
+    </g>
+    <g id="ch2-time-ytick_3">
+     <g id="ch2-time-line2d_9">
+      <g>
+       <use xlink:href="#ch2-time-m00852537f5" x="38.608066" y="100.33938" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-time-text_10">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="32.108066" y="104.456568" transform="rotate(-0 32.108066 104.456568)">20</text>
+     </g>
+    </g>
+    <g id="ch2-time-ytick_4">
+     <g id="ch2-time-line2d_10">
+      <g>
+       <use xlink:href="#ch2-time-m00852537f5" x="38.608066" y="65.854019" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-time-text_11">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="32.108066" y="69.971207" transform="rotate(-0 32.108066 69.971207)">30</text>
+     </g>
+    </g>
+    <g id="ch2-time-ytick_5">
+     <g id="ch2-time-line2d_11">
+      <g>
+       <use xlink:href="#ch2-time-m00852537f5" x="38.608066" y="31.368658" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-time-text_12">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="32.108066" y="35.485845" transform="rotate(-0 32.108066 35.485845)">40</text>
+     </g>
+    </g>
+    <g id="ch2-time-text_13">
+     <!-- $V_m(t) - V_{rest}$ -->
+     <g style="fill: currentColor" transform="translate(14.963125 124.079102) rotate(-90)">
+      <text>
+       <tspan x="0" y="-0.578125" style="font-style: italic; font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">V</tspan>
+       <tspan x="14.19685" y="-0.578125" style="font-style: italic; font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">t</tspan>
+       <tspan x="30.308892" y="-0.578125" style="font-style: italic; font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">V</tspan>
+       <tspan x="5.80452" y="0.846875" style="font-style: italic; font-size: 6.65px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">m</tspan>
+       <tspan x="36.113412" y="0.846875" style="font-style: italic; font-size: 6.65px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">r</tspan>
+       <tspan x="38.700269" y="0.846875" style="font-style: italic; font-size: 6.65px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">e</tspan>
+       <tspan x="41.652881" y="0.846875" style="font-style: italic; font-size: 6.65px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">s</tspan>
+       <tspan x="44.239739" y="0.846875" style="font-style: italic; font-size: 6.65px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">t</tspan>
+       <tspan x="11.033336" y="-0.578125" style="font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">(</tspan>
+       <tspan x="16.837856" y="-0.578125" style="font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">)</tspan>
+       <tspan x="21.901369" y="-0.578125" style="font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">−</tspan>
+      </text>
+     </g>
+    </g>
+   </g>
+   <g id="ch2-time-line2d_12">
+    <path d="M 38.608066 169.310103 
+L 40.806056 162.811432 
+L 43.004045 157.078171 
+L 45.202035 152.020171 
+L 47.400024 147.5579 
+L 49.598013 143.621193 
+L 51.796003 140.148149 
+L 53.993992 137.084159 
+L 56.191982 134.381044 
+L 58.389971 131.996301 
+L 60.58796 129.892432 
+L 63.335447 127.607555 
+L 66.082934 125.653961 
+L 68.830421 123.983618 
+L 71.577908 122.555457 
+L 74.874892 121.112272 
+L 78.171876 119.916391 
+L 82.018357 118.777642 
+L 85.864839 117.863132 
+L 90.260817 117.036327 
+L 95.206294 116.323131 
+L 101.250765 115.684851 
+L 108.39423 115.165879 
+L 117.186188 114.758895 
+L 128.725632 114.45743 
+L 145.76005 114.256167 
+L 176.531902 114.154744 
+L 257.85751 114.133731 
+L 257.85751 114.133731 
+" clip-path="url(#ch2-time-pa87bbb963e)" style="fill: none; stroke: #1f5fff; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="ch2-time-line2d_13">
+    <path d="M 56.148022 169.310103 
+L 56.148022 134.431854 
+" clip-path="url(#ch2-time-pa87bbb963e)" style="fill: none; stroke-dasharray: 1,1.65; stroke-dashoffset: 0; stroke: #1f5fff"/>
+   </g>
+   <g id="ch2-time-line2d_14">
+    <defs>
+     <path id="ch2-time-mc0dc7c80e5" d="M 0 2 
+C 0.530406 2 1.03916 1.789267 1.414214 1.414214 
+C 1.789267 1.03916 2 0.530406 2 0 
+C 2 -0.530406 1.789267 -1.03916 1.414214 -1.414214 
+C 1.03916 -1.789267 0.530406 -2 0 -2 
+C -0.530406 -2 -1.03916 -1.789267 -1.414214 -1.414214 
+C -1.789267 -1.03916 -2 -0.530406 -2 0 
+C -2 0.530406 -1.789267 1.03916 -1.414214 1.414214 
+C -1.03916 1.789267 -0.530406 2 0 2 
+z
+" style="stroke: #1f5fff"/>
+    </defs>
+    <g clip-path="url(#ch2-time-pa87bbb963e)">
+     <use xlink:href="#ch2-time-mc0dc7c80e5" x="56.148022" y="134.431854" style="fill: #1f5fff; stroke: #1f5fff"/>
+    </g>
+   </g>
+   <g id="ch2-time-line2d_15">
+    <path d="M 38.608066 169.310103 
+L 40.806056 166.060767 
+L 43.004045 163.194137 
+L 45.202035 160.665137 
+L 47.400024 158.434001 
+L 49.598013 156.465648 
+L 52.3455 154.327946 
+L 55.092987 152.500188 
+L 57.840474 150.937436 
+L 60.58796 149.601267 
+L 63.884945 148.251041 
+L 67.181929 147.132191 
+L 71.02841 146.066791 
+L 75.424389 145.103566 
+L 80.369865 144.272695 
+L 85.864839 143.586618 
+L 92.458807 143.00227 
+L 100.15177 142.547632 
+L 110.042722 142.191688 
+L 123.780156 141.936517 
+L 145.210553 141.785087 
+L 193.016822 141.725959 
+L 257.85751 141.721917 
+L 257.85751 141.721917 
+" clip-path="url(#ch2-time-pa87bbb963e)" style="fill: none; stroke: #12a150; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="ch2-time-line2d_16">
+    <path d="M 56.148022 169.310103 
+L 56.148022 151.870978 
+" clip-path="url(#ch2-time-pa87bbb963e)" style="fill: none; stroke-dasharray: 1,1.65; stroke-dashoffset: 0; stroke: #12a150"/>
+   </g>
+   <g id="ch2-time-line2d_17">
+    <defs>
+     <path id="ch2-time-m48aa850be6" d="M 0 2 
+C 0.530406 2 1.03916 1.789267 1.414214 1.414214 
+C 1.789267 1.03916 2 0.530406 2 0 
+C 2 -0.530406 1.789267 -1.03916 1.414214 -1.414214 
+C 1.03916 -1.789267 0.530406 -2 0 -2 
+C -0.530406 -2 -1.03916 -1.789267 -1.414214 -1.414214 
+C -1.789267 -1.03916 -2 -0.530406 -2 0 
+C -2 0.530406 -1.789267 1.03916 -1.414214 1.414214 
+C -1.03916 1.789267 -0.530406 2 0 2 
+z
+" style="stroke: #12a150"/>
+    </defs>
+    <g clip-path="url(#ch2-time-pa87bbb963e)">
+     <use xlink:href="#ch2-time-m48aa850be6" x="56.148022" y="151.870978" style="fill: #12a150; stroke: #12a150"/>
+    </g>
+   </g>
+   <g id="ch2-time-line2d_18">
+    <path d="M 38.608066 169.310103 
+L 40.806056 167.143879 
+L 43.553543 164.791283 
+L 46.301029 162.779789 
+L 49.048516 161.05994 
+L 51.796003 159.589452 
+L 55.092987 158.103493 
+L 58.389971 156.872169 
+L 62.236453 155.699669 
+L 66.082934 154.758056 
+L 70.478913 153.906745 
+L 75.424389 153.172412 
+L 81.46886 152.515214 
+L 88.612325 151.980861 
+L 97.404283 151.561815 
+L 108.943727 151.251415 
+L 125.428648 151.048206 
+L 155.101505 150.941911 
+L 255.110023 150.91799 
+L 257.85751 150.917979 
+L 257.85751 150.917979 
+" clip-path="url(#ch2-time-pa87bbb963e)" style="fill: none; stroke: #e5322d; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="ch2-time-line2d_19">
+    <path d="M 56.148022 169.310103 
+L 56.148022 157.68402 
+" clip-path="url(#ch2-time-pa87bbb963e)" style="fill: none; stroke-dasharray: 1,1.65; stroke-dashoffset: 0; stroke: #e5322d"/>
+   </g>
+   <g id="ch2-time-line2d_20">
+    <defs>
+     <path id="ch2-time-m733cc9dbfa" d="M 0 2 
+C 0.530406 2 1.03916 1.789267 1.414214 1.414214 
+C 1.789267 1.03916 2 0.530406 2 0 
+C 2 -0.530406 1.789267 -1.03916 1.414214 -1.414214 
+C 1.03916 -1.789267 0.530406 -2 0 -2 
+C -0.530406 -2 -1.03916 -1.789267 -1.414214 -1.414214 
+C -1.789267 -1.03916 -2 -0.530406 -2 0 
+C -2 0.530406 -1.789267 1.03916 -1.414214 1.414214 
+C -1.03916 1.789267 -0.530406 2 0 2 
+z
+" style="stroke: #e5322d"/>
+    </defs>
+    <g clip-path="url(#ch2-time-pa87bbb963e)">
+     <use xlink:href="#ch2-time-m733cc9dbfa" x="56.148022" y="157.68402" style="fill: #e5322d; stroke: #e5322d"/>
+    </g>
+   </g>
+   <g id="ch2-time-line2d_21">
+    <path d="M 38.608066 169.310103 
+L 41.355553 167.310096 
+L 44.10304 165.600069 
+L 46.850527 164.137978 
+L 50.147511 162.660506 
+L 53.444495 161.436214 
+L 57.290976 160.27041 
+L 61.137458 159.334173 
+L 65.533437 158.487725 
+L 70.478913 157.757585 
+L 76.523384 157.104141 
+L 83.666849 156.572839 
+L 92.458807 156.156186 
+L 103.998251 155.847558 
+L 121.032669 155.641514 
+L 151.255024 155.538373 
+L 257.308012 155.516012 
+L 257.85751 155.51601 
+L 257.85751 155.51601 
+" clip-path="url(#ch2-time-pa87bbb963e)" style="fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="ch2-time-line2d_22">
+    <path d="M 56.148022 169.310103 
+L 56.148022 160.590541 
+" clip-path="url(#ch2-time-pa87bbb963e)" style="fill: none; stroke-dasharray: 1,1.65; stroke-dashoffset: 0; stroke: currentColor"/>
+   </g>
+   <g id="ch2-time-line2d_23">
+    <defs>
+     <path id="ch2-time-me6f33ddb4b" d="M 0 2 
+C 0.530406 2 1.03916 1.789267 1.414214 1.414214 
+C 1.789267 1.03916 2 0.530406 2 0 
+C 2 -0.530406 1.789267 -1.03916 1.414214 -1.414214 
+C 1.03916 -1.789267 0.530406 -2 0 -2 
+C -0.530406 -2 -1.03916 -1.789267 -1.414214 -1.414214 
+C -1.789267 -1.03916 -2 -0.530406 -2 0 
+C -2 0.530406 -1.789267 1.03916 -1.414214 1.414214 
+C -1.03916 1.789267 -0.530406 2 0 2 
+z
+" style="stroke: currentColor"/>
+    </defs>
+    <g clip-path="url(#ch2-time-pa87bbb963e)">
+     <use xlink:href="#ch2-time-me6f33ddb4b" x="56.148022" y="160.590541" style="fill: currentColor; stroke: currentColor"/>
+    </g>
+   </g>
+   <g id="ch2-time-patch_3">
+    <path d="M 38.608066 176.160703 
+L 38.608066 25.4475 
+" style="fill: none; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="ch2-time-patch_4">
+    <path d="M 38.608066 176.160703 
+L 257.85751 176.160703 
+" style="fill: none; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="ch2-time-text_14">
+    <!-- dots: $t=\tau$, 63% of $\Delta V$ -->
+    <g style="fill: currentColor; opacity: 0.7" transform="translate(104.382899 122.754865)">
+     <text>
+      <tspan x="0" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor; opacity: 0.7">d</tspan>
+      <tspan x="5.20459" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor; opacity: 0.7">o</tspan>
+      <tspan x="10.30127" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor; opacity: 0.7">t</tspan>
+      <tspan x="13.082031" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor; opacity: 0.7">s</tspan>
+      <tspan x="17.568604" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor; opacity: 0.7">:</tspan>
+      <tspan x="20.017334" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor; opacity: 0.7"> </tspan>
+      <tspan x="37.478598" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor; opacity: 0.7">,</tspan>
+      <tspan x="39.927328" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor; opacity: 0.7"> </tspan>
+      <tspan x="42.317953" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor; opacity: 0.7">6</tspan>
+      <tspan x="47.58895" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor; opacity: 0.7">3</tspan>
+      <tspan x="52.839194" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor; opacity: 0.7">%</tspan>
+      <tspan x="61.185629" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor; opacity: 0.7"> </tspan>
+      <tspan x="63.576254" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor; opacity: 0.7">o</tspan>
+      <tspan x="68.672934" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor; opacity: 0.7">f</tspan>
+      <tspan x="71.81893" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor; opacity: 0.7"> </tspan>
+      <tspan x="22.407959" y="-0.53125" style="font-style: italic; font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor; opacity: 0.7">t</tspan>
+      <tspan x="33.993552" y="-0.53125" style="font-style: italic; font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor; opacity: 0.7">τ</tspan>
+      <tspan x="80.346625" y="-0.53125" style="font-style: italic; font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor; opacity: 0.7">V</tspan>
+      <tspan x="26.470981" y="-0.53125" style="font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor; opacity: 0.7">=</tspan>
+      <tspan x="74.209555" y="-0.53125" style="font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor; opacity: 0.7">Δ</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="ch2-time-text_15">
+    <!-- Changing the surface ($R_m = 8$) -->
+    <g style="fill: currentColor" transform="translate(38.608066 15.4475)">
+     <text>
+      <tspan x="0" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">C</tspan>
+      <tspan x="7.368164" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">h</tspan>
+      <tspan x="13.491211" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">a</tspan>
+      <tspan x="19.233398" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">n</tspan>
+      <tspan x="25.351562" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">g</tspan>
+      <tspan x="31.606445" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">i</tspan>
+      <tspan x="34.223633" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">n</tspan>
+      <tspan x="40.341797" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">g</tspan>
+      <tspan x="46.59668" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor"> </tspan>
+      <tspan x="49.116211" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">t</tspan>
+      <tspan x="52.646484" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">h</tspan>
+      <tspan x="58.769531" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">e</tspan>
+      <tspan x="64.682617" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor"> </tspan>
+      <tspan x="67.202148" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">s</tspan>
+      <tspan x="72.695312" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">u</tspan>
+      <tspan x="78.818359" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">r</tspan>
+      <tspan x="82.788086" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">f</tspan>
+      <tspan x="86.674805" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">a</tspan>
+      <tspan x="92.416992" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">c</tspan>
+      <tspan x="98.242188" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">e</tspan>
+      <tspan x="104.155273" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor"> </tspan>
+      <tspan x="106.674805" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">(</tspan>
+      <tspan x="137.869255" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">)</tspan>
+      <tspan x="110.405273" y="-0.28125" style="font-style: italic; font-size: 10px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">R</tspan>
+      <tspan x="116.515274" y="1.21875" style="font-style: italic; font-size: 7px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">m</tspan>
+      <tspan x="124.019264" y="-0.28125" style="font-size: 10px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">=</tspan>
+      <tspan x="132.869255" y="-0.28125" style="font-size: 10px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">8</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="ch2-time-legend_1">
+    <g id="ch2-time-line2d_24">
+     <path d="M 203.403057 119.881406 
+L 210.203057 119.881406 
+L 217.003057 119.881406 
+" style="fill: none; stroke: #1f5fff; stroke-width: 1.8; stroke-linecap: round"/>
+    </g>
+    <g id="ch2-time-text_16">
+     <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: start; fill: currentColor" x="223.803057" y="122.856406" transform="rotate(-0 223.803057 122.856406)">S = 5</text>
+    </g>
+    <g id="ch2-time-line2d_25">
+     <path d="M 203.403057 134.416074 
+L 210.203057 134.416074 
+L 217.003057 134.416074 
+" style="fill: none; stroke: #12a150; stroke-width: 1.8; stroke-linecap: round"/>
+    </g>
+    <g id="ch2-time-text_17">
+     <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: start; fill: currentColor" x="223.803057" y="137.391074" transform="rotate(-0 223.803057 137.391074)">S = 10</text>
+    </g>
+    <g id="ch2-time-line2d_26">
+     <path d="M 203.403057 148.950742 
+L 210.203057 148.950742 
+L 217.003057 148.950742 
+" style="fill: none; stroke: #e5322d; stroke-width: 1.8; stroke-linecap: round"/>
+    </g>
+    <g id="ch2-time-text_18">
+     <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: start; fill: currentColor" x="223.803057" y="151.925742" transform="rotate(-0 223.803057 151.925742)">S = 15</text>
+    </g>
+    <g id="ch2-time-line2d_27">
+     <path d="M 203.403057 163.48541 
+L 210.203057 163.48541 
+L 217.003057 163.48541 
+" style="fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round"/>
+    </g>
+    <g id="ch2-time-text_19">
+     <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: start; fill: currentColor" x="223.803057" y="166.46041" transform="rotate(-0 223.803057 166.46041)">S = 20</text>
+    </g>
+   </g>
+  </g>
+  <g id="ch2-time-axes_2">
+   <g id="ch2-time-patch_5">
+    <path d="M 291.699033 176.160703 
+L 510.948477 176.160703 
+L 510.948477 25.4475 
+L 291.699033 25.4475 
+L 291.699033 176.160703 
+z
+" style="fill: none"/>
+   </g>
+   <g id="ch2-time-matplotlib.axis_3">
+    <g id="ch2-time-xtick_7">
+     <g id="ch2-time-line2d_28">
+      <g>
+       <use xlink:href="#ch2-time-m19106b12c8" x="291.699033" y="176.160703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-time-text_20">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="291.699033" y="190.895078" transform="rotate(-0 291.699033 190.895078)">0</text>
+     </g>
+    </g>
+    <g id="ch2-time-xtick_8">
+     <g id="ch2-time-line2d_29">
+      <g>
+       <use xlink:href="#ch2-time-m19106b12c8" x="335.548922" y="176.160703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-time-text_21">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="335.548922" y="190.895078" transform="rotate(-0 335.548922 190.895078)">20</text>
+     </g>
+    </g>
+    <g id="ch2-time-xtick_9">
+     <g id="ch2-time-line2d_30">
+      <g>
+       <use xlink:href="#ch2-time-m19106b12c8" x="379.398811" y="176.160703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-time-text_22">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="379.398811" y="190.895078" transform="rotate(-0 379.398811 190.895078)">40</text>
+     </g>
+    </g>
+    <g id="ch2-time-xtick_10">
+     <g id="ch2-time-line2d_31">
+      <g>
+       <use xlink:href="#ch2-time-m19106b12c8" x="423.248699" y="176.160703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-time-text_23">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="423.248699" y="190.895078" transform="rotate(-0 423.248699 190.895078)">60</text>
+     </g>
+    </g>
+    <g id="ch2-time-xtick_11">
+     <g id="ch2-time-line2d_32">
+      <g>
+       <use xlink:href="#ch2-time-m19106b12c8" x="467.098588" y="176.160703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-time-text_24">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="467.098588" y="190.895078" transform="rotate(-0 467.098588 190.895078)">80</text>
+     </g>
+    </g>
+    <g id="ch2-time-xtick_12">
+     <g id="ch2-time-line2d_33">
+      <g>
+       <use xlink:href="#ch2-time-m19106b12c8" x="510.948477" y="176.160703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-time-text_25">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="510.948477" y="190.895078" transform="rotate(-0 510.948477 190.895078)">100</text>
+     </g>
+    </g>
+    <g id="ch2-time-text_26">
+     <!-- $t$ (ms) -->
+     <g style="fill: currentColor" transform="translate(388.498755 206.148496)">
+      <text>
+       <tspan x="0" y="-0.671875" style="font-style: italic; font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">t</tspan>
+       <tspan x="2.641006" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor"> </tspan>
+       <tspan x="5.312881" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">(</tspan>
+       <tspan x="8.777969" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">m</tspan>
+       <tspan x="17.099747" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">s</tspan>
+       <tspan x="22.114151" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">)</tspan>
+      </text>
+     </g>
+    </g>
+   </g>
+   <g id="ch2-time-matplotlib.axis_4">
+    <g id="ch2-time-ytick_6">
+     <g id="ch2-time-line2d_34">
+      <g>
+       <use xlink:href="#ch2-time-m00852537f5" x="291.699033" y="169.310103" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+    <g id="ch2-time-ytick_7">
+     <g id="ch2-time-line2d_35">
+      <g>
+       <use xlink:href="#ch2-time-m00852537f5" x="291.699033" y="134.824742" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+    <g id="ch2-time-ytick_8">
+     <g id="ch2-time-line2d_36">
+      <g>
+       <use xlink:href="#ch2-time-m00852537f5" x="291.699033" y="100.33938" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+    <g id="ch2-time-ytick_9">
+     <g id="ch2-time-line2d_37">
+      <g>
+       <use xlink:href="#ch2-time-m00852537f5" x="291.699033" y="65.854019" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+    <g id="ch2-time-ytick_10">
+     <g id="ch2-time-line2d_38">
+      <g>
+       <use xlink:href="#ch2-time-m00852537f5" x="291.699033" y="31.368658" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+   </g>
+   <g id="ch2-time-line2d_39">
+    <path d="M 291.699033 169.310103 
+L 293.347525 164.495411 
+L 294.996017 160.352924 
+L 296.644509 156.788793 
+L 298.293001 153.722271 
+L 299.941493 151.083882 
+L 301.589986 148.813853 
+L 303.238478 146.860756 
+L 304.88697 145.180341 
+L 307.084959 143.298941 
+L 309.282948 141.759352 
+L 311.480938 140.499475 
+L 313.678927 139.468492 
+L 316.426414 138.439033 
+L 319.173901 137.637792 
+L 322.470885 136.907134 
+L 326.317366 136.290892 
+L 330.713345 135.806547 
+L 336.208319 135.419491 
+L 343.901282 135.119568 
+L 355.440726 134.927641 
+L 376.871123 134.83931 
+L 473.582657 134.824744 
+L 510.948477 134.824742 
+L 510.948477 134.824742 
+" clip-path="url(#ch2-time-pc98cbcbbb4)" style="fill: none; stroke: #1f5fff; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="ch2-time-line2d_40">
+    <path d="M 302.661505 169.310103 
+L 302.661505 147.511197 
+" clip-path="url(#ch2-time-pc98cbcbbb4)" style="fill: none; stroke-dasharray: 1,1.65; stroke-dashoffset: 0; stroke: #1f5fff"/>
+   </g>
+   <g id="ch2-time-line2d_41">
+    <g clip-path="url(#ch2-time-pc98cbcbbb4)">
+     <use xlink:href="#ch2-time-mc0dc7c80e5" x="302.661505" y="147.511197" style="fill: #1f5fff; stroke: #1f5fff"/>
+    </g>
+   </g>
+   <g id="ch2-time-line2d_42">
+    <path d="M 291.699033 169.310103 
+L 293.897023 162.731032 
+L 296.095012 156.779534 
+L 298.293001 151.395746 
+L 300.490991 146.525513 
+L 302.68898 142.119849 
+L 304.88697 138.134438 
+L 307.084959 134.529193 
+L 309.282948 131.26785 
+L 312.030435 127.625109 
+L 314.777922 124.411409 
+L 317.525409 121.576217 
+L 320.272895 119.074952 
+L 323.020382 116.868286 
+L 325.767869 114.921519 
+L 329.064853 112.885626 
+L 332.361837 111.133975 
+L 335.658821 109.626882 
+L 339.505303 108.13242 
+L 343.351784 106.878434 
+L 347.747763 105.690422 
+L 352.693239 104.609865 
+L 358.188213 103.663154 
+L 364.232684 102.862287 
+L 371.376149 102.160765 
+L 379.618609 101.590023 
+L 389.509562 101.135926 
+L 402.148001 100.786955 
+L 419.731916 100.540086 
+L 447.756281 100.395285 
+L 510.948477 100.342512 
+L 510.948477 100.342512 
+" clip-path="url(#ch2-time-pc98cbcbbb4)" style="fill: none; stroke: #12a150; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="ch2-time-line2d_43">
+    <path d="M 313.623978 169.310103 
+L 313.623978 125.712291 
+" clip-path="url(#ch2-time-pc98cbcbbb4)" style="fill: none; stroke-dasharray: 1,1.65; stroke-dashoffset: 0; stroke: #12a150"/>
+   </g>
+   <g id="ch2-time-line2d_44">
+    <g clip-path="url(#ch2-time-pc98cbcbbb4)">
+     <use xlink:href="#ch2-time-m48aa850be6" x="313.623978" y="125.712291" style="fill: #12a150; stroke: #12a150"/>
+    </g>
+   </g>
+   <g id="ch2-time-line2d_45">
+    <path d="M 291.699033 169.310103 
+L 294.44652 161.018334 
+L 297.194007 153.391131 
+L 299.941493 146.375231 
+L 302.68898 139.921639 
+L 305.436467 133.985288 
+L 308.183954 128.524722 
+L 310.931441 123.501808 
+L 313.678927 118.881469 
+L 316.426414 114.63144 
+L 319.723398 109.978594 
+L 323.020382 105.769581 
+L 326.317366 101.962062 
+L 329.61435 98.51774 
+L 332.911335 95.40197 
+L 336.208319 92.58341 
+L 339.505303 90.033712 
+L 343.351784 87.364796 
+L 347.198266 84.990471 
+L 351.044747 82.87822 
+L 354.891229 80.999117 
+L 359.287207 79.104176 
+L 363.683186 77.446328 
+L 368.628662 75.827862 
+L 373.574139 74.435358 
+L 379.069112 73.114932 
+L 385.113583 71.895885 
+L 391.707551 70.798201 
+L 398.851017 69.832905 
+L 407.093477 68.950838 
+L 416.434932 68.1851 
+L 427.424879 67.522917 
+L 440.063318 66.990423 
+L 455.998741 66.554019 
+L 476.330143 66.231254 
+L 505.453503 66.009624 
+L 510.948477 65.985681 
+L 510.948477 65.985681 
+" clip-path="url(#ch2-time-pc98cbcbbb4)" style="fill: none; stroke: #e5322d; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="ch2-time-line2d_46">
+    <path d="M 324.58645 169.310103 
+L 324.58645 103.913386 
+" clip-path="url(#ch2-time-pc98cbcbbb4)" style="fill: none; stroke-dasharray: 1,1.65; stroke-dashoffset: 0; stroke: #e5322d"/>
+   </g>
+   <g id="ch2-time-line2d_47">
+    <g clip-path="url(#ch2-time-pc98cbcbbb4)">
+     <use xlink:href="#ch2-time-m733cc9dbfa" x="324.58645" y="103.913386" style="fill: #e5322d; stroke: #e5322d"/>
+    </g>
+   </g>
+   <g id="ch2-time-line2d_48">
+    <path d="M 291.699033 169.310103 
+L 294.996017 159.318882 
+L 298.293001 150.051334 
+L 301.589986 141.455043 
+L 304.88697 133.481388 
+L 308.183954 126.085273 
+L 311.480938 119.224865 
+L 314.777922 112.861362 
+L 318.074906 106.958773 
+L 321.37189 101.483714 
+L 324.668874 96.405219 
+L 327.965858 91.694563 
+L 331.262843 87.325104 
+L 335.109324 82.625768 
+L 338.955805 78.321092 
+L 342.802287 74.377931 
+L 346.648768 70.765925 
+L 350.49525 67.457263 
+L 354.341731 64.426468 
+L 358.188213 61.650206 
+L 362.584192 58.76167 
+L 366.98017 56.148669 
+L 371.376149 53.78492 
+L 376.321625 51.394123 
+L 381.267102 49.258316 
+L 386.212578 47.350302 
+L 391.707551 45.467992 
+L 397.752022 43.652478 
+L 403.796493 42.07074 
+L 410.390461 40.576563 
+L 417.533927 39.192339 
+L 425.22689 37.933422 
+L 433.46935 36.808481 
+L 442.810805 35.764741 
+L 453.251255 34.833333 
+L 464.790699 34.031678 
+L 477.978635 33.339989 
+L 493.364561 32.756613 
+L 510.948477 32.2981 
+L 510.948477 32.2981 
+" clip-path="url(#ch2-time-pc98cbcbbb4)" style="fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="ch2-time-line2d_49">
+    <path d="M 335.548922 169.310103 
+L 335.548922 82.11448 
+" clip-path="url(#ch2-time-pc98cbcbbb4)" style="fill: none; stroke-dasharray: 1,1.65; stroke-dashoffset: 0; stroke: currentColor"/>
+   </g>
+   <g id="ch2-time-line2d_50">
+    <g clip-path="url(#ch2-time-pc98cbcbbb4)">
+     <use xlink:href="#ch2-time-me6f33ddb4b" x="335.548922" y="82.11448" style="fill: currentColor; stroke: currentColor"/>
+    </g>
+   </g>
+   <g id="ch2-time-patch_6">
+    <path d="M 291.699033 176.160703 
+L 291.699033 25.4475 
+" style="fill: none; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="ch2-time-patch_7">
+    <path d="M 291.699033 176.160703 
+L 510.948477 176.160703 
+" style="fill: none; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="ch2-time-text_27">
+    <!-- Changing the resistance ($S = 5$) -->
+    <g style="fill: currentColor" transform="translate(291.699033 15.4475)">
+     <text>
+      <tspan x="0" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">C</tspan>
+      <tspan x="7.368164" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">h</tspan>
+      <tspan x="13.491211" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">a</tspan>
+      <tspan x="19.233398" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">n</tspan>
+      <tspan x="25.351562" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">g</tspan>
+      <tspan x="31.606445" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">i</tspan>
+      <tspan x="34.223633" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">n</tspan>
+      <tspan x="40.341797" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">g</tspan>
+      <tspan x="46.59668" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor"> </tspan>
+      <tspan x="49.116211" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">t</tspan>
+      <tspan x="52.646484" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">h</tspan>
+      <tspan x="58.769531" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">e</tspan>
+      <tspan x="64.682617" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor"> </tspan>
+      <tspan x="67.202148" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">r</tspan>
+      <tspan x="71.171875" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">e</tspan>
+      <tspan x="77.084961" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">s</tspan>
+      <tspan x="82.578125" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">i</tspan>
+      <tspan x="85.195312" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">s</tspan>
+      <tspan x="90.688477" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">t</tspan>
+      <tspan x="94.21875" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">a</tspan>
+      <tspan x="99.960938" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">n</tspan>
+      <tspan x="106.079102" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">c</tspan>
+      <tspan x="111.904297" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">e</tspan>
+      <tspan x="117.817383" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor"> </tspan>
+      <tspan x="120.336914" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">(</tspan>
+      <tspan x="144.917374" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">)</tspan>
+      <tspan x="124.067383" y="-0.28125" style="font-style: italic; font-size: 10px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">S</tspan>
+      <tspan x="131.067383" y="-0.28125" style="font-size: 10px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">=</tspan>
+      <tspan x="139.917374" y="-0.28125" style="font-size: 10px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">5</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="ch2-time-legend_2">
+    <g id="ch2-time-line2d_51">
+     <path d="M 456.476758 119.881406 
+L 463.276758 119.881406 
+L 470.076758 119.881406 
+" style="fill: none; stroke: #1f5fff; stroke-width: 1.8; stroke-linecap: round"/>
+    </g>
+    <g id="ch2-time-text_28">
+     <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: start; fill: currentColor" x="476.876758" y="122.856406" transform="rotate(-0 476.876758 122.856406)">R = 5</text>
+    </g>
+    <g id="ch2-time-line2d_52">
+     <path d="M 456.476758 134.416074 
+L 463.276758 134.416074 
+L 470.076758 134.416074 
+" style="fill: none; stroke: #12a150; stroke-width: 1.8; stroke-linecap: round"/>
+    </g>
+    <g id="ch2-time-text_29">
+     <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: start; fill: currentColor" x="476.876758" y="137.391074" transform="rotate(-0 476.876758 137.391074)">R = 10</text>
+    </g>
+    <g id="ch2-time-line2d_53">
+     <path d="M 456.476758 148.950742 
+L 463.276758 148.950742 
+L 470.076758 148.950742 
+" style="fill: none; stroke: #e5322d; stroke-width: 1.8; stroke-linecap: round"/>
+    </g>
+    <g id="ch2-time-text_30">
+     <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: start; fill: currentColor" x="476.876758" y="151.925742" transform="rotate(-0 476.876758 151.925742)">R = 15</text>
+    </g>
+    <g id="ch2-time-line2d_54">
+     <path d="M 456.476758 163.48541 
+L 463.276758 163.48541 
+L 470.076758 163.48541 
+" style="fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round"/>
+    </g>
+    <g id="ch2-time-text_31">
+     <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: start; fill: currentColor" x="476.876758" y="166.46041" transform="rotate(-0 476.876758 166.46041)">R = 20</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="ch2-time-pa87bbb963e">
+   <rect x="38.608066" y="25.4475" width="219.249443" height="150.713203"/>
+  </clipPath>
+  <clipPath id="ch2-time-pc98cbcbbb4">
+   <rect x="291.699033" y="25.4475" width="219.249443" height="150.713203"/>
+  </clipPath>
+ </defs>
+</svg>

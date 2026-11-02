@@ -21,6 +21,10 @@
  *   - optional <meta name="event" content="BraiNets Day">
  *   - language from <html lang="…">
  *   - files starting with "_" are ignored
+ *
+ * Teaching:
+ *   - teaching/<course>/course.json lists the chapters; each chapter is teaching/<course>/<slug>.md
+ *   - teaching/<course>/_src/ has the scripts that rebuild the figures and notebooks (see its README)
  */
 import { readFileSync, writeFileSync, readdirSync, existsSync, statSync, mkdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
@@ -153,14 +157,31 @@ for (const entry of readdirSync(TALKS).sort()) {
 talks.sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : a.title.localeCompare(b.title)));
 writeFileSync(join(TALKS, 'index.json'), JSON.stringify({ generated: new Date().toISOString(), talks }, null, 2) + '\n');
 
+// teaching: every teaching/<course>/course.json is a course, its chapters are <slug>.md next to it
+const TEACH = join(ROOT, 'teaching');
+const courseUrls = [];
+if (existsSync(TEACH)) {
+  for (const dir of readdirSync(TEACH).sort()) {
+    const cfg = join(TEACH, dir, 'course.json');
+    if (dir.startsWith('_') || !existsSync(cfg)) continue;
+    let course;
+    try { course = JSON.parse(readFileSync(cfg, 'utf8')); } catch (e) { warnings.push(`teaching/${dir}/course.json: ${e.message}`); continue; }
+    courseUrls.push(`course.html?c=${dir}`);
+    for (const ch of course.chapters || []) {
+      if (!existsSync(join(TEACH, dir, `${ch.slug}.md`))) warnings.push(`teaching/${dir}: chapter "${ch.slug}.md" is listed but missing`);
+      courseUrls.push(`course.html?c=${dir}/${ch.slug}`);
+    }
+  }
+}
+
 // sitemap
-const urls = ['', 'blog.html', ...posts.map((p) => `post.html?p=${encodeURIComponent(p.slug)}`), ...talks.map((t) => `presentations/${t.file}`)];
+const urls = ['', 'blog.html', ...posts.map((p) => `post.html?p=${encodeURIComponent(p.slug)}`), ...talks.map((t) => `presentations/${t.file}`), ...courseUrls];
 writeFileSync(join(ROOT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.map((u) => `  <url><loc>${xml(SITE + '/' + u)}</loc></url>`).join('\n')}
 </urlset>
 `);
 
-console.log(`✓ ${posts.length} post(s) → posts/index.json · ${talks.length} presentation(s) → presentations/index.json · feed.xml · sitemap.xml`);
+console.log(`✓ ${posts.length} post(s) → posts/index.json · ${talks.length} presentation(s) → presentations/index.json · ${courseUrls.length} course page(s) · feed.xml · sitemap.xml`);
 for (const w of warnings) console.warn('⚠ ' + w);
 if (!existsSync(join(ROOT, '.nojekyll'))) console.warn('⚠ .nojekyll is missing');

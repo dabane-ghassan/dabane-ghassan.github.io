@@ -1,0 +1,31 @@
+{
+  "slug": "modneuro",
+  "title": "ModNeuro",
+  "subtitle": {
+    "en": "An introduction to modelling for neuroscience",
+    "fr": "Une introduction à la modélisation en neurosciences"
+  },
+  "summary": {
+    "en": "Five chapters that take a biologist from a first differential equation to the Hodgkin–Huxley model, phase planes and network graphs, in Python.",
+    "fr": "Cinq chapitres pour passer d’une première équation différentielle au modèle de Hodgkin–Huxley, aux plans de phase et aux graphes de réseaux, en Python."
+  },
+  "about": {
+    "en": "I wrote these notebooks in 2020, at the end of my undergraduate degree in neuroscience at Aix-Marseille Université, building on the assignments of my final-year introduction to theoretical neuroscience. They are meant for biologists who want to turn the equations of a textbook into working code; some familiarity with basic Python helps. I am deeply grateful to Professor Laurent Pezard, who sparked my interest in the subject that year and wrote excellent material for it. This 2026 edition corrects several errors in the originals, replaces the animations with interactive figures, and comes with notebooks that run as-is.",
+    "fr": "J’ai écrit ces notebooks en 2020, à la fin de ma licence de neurosciences à Aix-Marseille Université, à partir des travaux de mon cours d’introduction aux neurosciences théoriques de dernière année. Ils s’adressent aux biologistes qui veulent transformer les équations d’un manuel en code qui tourne ; quelques bases de Python aident. Je remercie profondément le professeur Laurent Pezard, qui m’a donné le goût du sujet cette année-là et a rédigé d’excellents supports de cours. Cette édition 2026 corrige plusieurs erreurs des originaux, remplace les animations par des figures interactives et fournit des notebooks qui s’exécutent tels quels."
+  },
+  "year": "2020",
+  "revised": "2026",
+  "language": "en",
+  "license": { "name": "CC BY 4.0", "url": "https://creativecommons.org/licenses/by/4.0/" },
+  "source": "https://github.com/dabane-ghassan/ModNeuro",
+  "repo": "dabane-ghassan/dabane-ghassan.github.io",
+  "branch": "main",
+  "requirements": "numpy scipy sympy matplotlib pandas networkx",
+  "chapters": [
+    { "slug": "01-enzyme-kinetics", "title": "Enzyme kinetics", "topics": "ODEs, SymPy, Euler’s method, Michaelis–Menten" },
+    { "slug": "02-passive-membrane", "title": "The passive membrane", "topics": "Nernst, GHK, time and length constants" },
+    { "slug": "03-active-membrane", "title": "The active membrane", "topics": "Hodgkin–Huxley, gating, action potentials" },
+    { "slug": "04-neuronal-models", "title": "Neuronal models", "topics": "Bifurcations, FitzHugh–Nagumo, Hindmarsh–Rose" },
+    { "slug": "05-neural-networks", "title": "Neural networks", "topics": "Matrices, graphs, centrality" }
+  ]
+}

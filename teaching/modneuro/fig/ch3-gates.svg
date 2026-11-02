@@ -1,0 +1,759 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 523.8 207" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="ch3-gates-figure_1">
+  <g id="ch3-gates-patch_1">
+   <path d="M 0 207 
+L 523.8 207 
+L 523.8 0 
+L 0 0 
+L 0 207 
+z
+" style="fill: none"/>
+  </g>
+  <g id="ch3-gates-axes_1">
+   <g id="ch3-gates-patch_2">
+    <path d="M 36.574707 168.960703 
+L 253.263682 168.960703 
+L 253.263682 25.4475 
+L 36.574707 25.4475 
+L 36.574707 168.960703 
+z
+" style="fill: none"/>
+   </g>
+   <g id="ch3-gates-matplotlib.axis_1">
+    <g id="ch3-gates-xtick_1">
+     <g id="ch3-gates-line2d_1">
+      <defs>
+       <path id="ch3-gates-md7d459e3d2" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#ch3-gates-md7d459e3d2" x="36.574707" y="168.960703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch3-gates-text_1">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="36.574707" y="183.695078" transform="rotate(-0 36.574707 183.695078)">−100</text>
+     </g>
+    </g>
+    <g id="ch3-gates-xtick_2">
+     <g id="ch3-gates-line2d_2">
+      <g>
+       <use xlink:href="#ch3-gates-md7d459e3d2" x="85.822201" y="168.960703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch3-gates-text_2">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="85.822201" y="183.695078" transform="rotate(-0 85.822201 183.695078)">−50</text>
+     </g>
+    </g>
+    <g id="ch3-gates-xtick_3">
+     <g id="ch3-gates-line2d_3">
+      <g>
+       <use xlink:href="#ch3-gates-md7d459e3d2" x="135.069695" y="168.960703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch3-gates-text_3">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="135.069695" y="183.695078" transform="rotate(-0 135.069695 183.695078)">0</text>
+     </g>
+    </g>
+    <g id="ch3-gates-xtick_4">
+     <g id="ch3-gates-line2d_4">
+      <g>
+       <use xlink:href="#ch3-gates-md7d459e3d2" x="184.31719" y="168.960703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch3-gates-text_4">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="184.31719" y="183.695078" transform="rotate(-0 184.31719 183.695078)">50</text>
+     </g>
+    </g>
+    <g id="ch3-gates-xtick_5">
+     <g id="ch3-gates-line2d_5">
+      <g>
+       <use xlink:href="#ch3-gates-md7d459e3d2" x="233.564684" y="168.960703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch3-gates-text_5">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="233.564684" y="183.695078" transform="rotate(-0 233.564684 183.695078)">100</text>
+     </g>
+    </g>
+    <g id="ch3-gates-text_6">
+     <!-- $V$ (mV, from rest) -->
+     <g style="fill: currentColor" transform="translate(106.539194 198.948496)">
+      <text>
+       <tspan x="0" y="-0.671875" style="font-style: italic; font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">V</tspan>
+       <tspan x="5.80452" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor"> </tspan>
+       <tspan x="8.476395" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">(</tspan>
+       <tspan x="11.941483" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">m</tspan>
+       <tspan x="20.26326" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">V</tspan>
+       <tspan x="26.817703" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">,</tspan>
+       <tspan x="29.55452" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor"> </tspan>
+       <tspan x="32.226395" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">f</tspan>
+       <tspan x="35.742508" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">r</tspan>
+       <tspan x="39.318924" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">o</tspan>
+       <tspan x="45.015213" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">m</tspan>
+       <tspan x="53.33699" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor"> </tspan>
+       <tspan x="56.008865" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">r</tspan>
+       <tspan x="59.585281" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">e</tspan>
+       <tspan x="65.123856" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">s</tspan>
+       <tspan x="70.13826" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">t</tspan>
+       <tspan x="73.24617" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">)</tspan>
+      </text>
+     </g>
+    </g>
+   </g>
+   <g id="ch3-gates-matplotlib.axis_2">
+    <g id="ch3-gates-ytick_1">
+     <g id="ch3-gates-line2d_6">
+      <defs>
+       <path id="ch3-gates-me521bb43ab" d="M 0 0 
+L -3 0 
+" style="stroke: currentColor; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#ch3-gates-me521bb43ab" x="36.574707" y="168.960703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch3-gates-text_7">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="30.074707" y="173.077891" transform="rotate(-0 30.074707 173.077891)">0</text>
+     </g>
+    </g>
+    <g id="ch3-gates-ytick_2">
+     <g id="ch3-gates-line2d_7">
+      <g>
+       <use xlink:href="#ch3-gates-me521bb43ab" x="36.574707" y="140.258062" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch3-gates-text_8">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="30.074707" y="144.37525" transform="rotate(-0 30.074707 144.37525)">2</text>
+     </g>
+    </g>
+    <g id="ch3-gates-ytick_3">
+     <g id="ch3-gates-line2d_8">
+      <g>
+       <use xlink:href="#ch3-gates-me521bb43ab" x="36.574707" y="111.555422" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch3-gates-text_9">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="30.074707" y="115.672609" transform="rotate(-0 30.074707 115.672609)">4</text>
+     </g>
+    </g>
+    <g id="ch3-gates-ytick_4">
+     <g id="ch3-gates-line2d_9">
+      <g>
+       <use xlink:href="#ch3-gates-me521bb43ab" x="36.574707" y="82.852781" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch3-gates-text_10">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="30.074707" y="86.969969" transform="rotate(-0 30.074707 86.969969)">6</text>
+     </g>
+    </g>
+    <g id="ch3-gates-ytick_5">
+     <g id="ch3-gates-line2d_10">
+      <g>
+       <use xlink:href="#ch3-gates-me521bb43ab" x="36.574707" y="54.150141" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch3-gates-text_11">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="30.074707" y="58.267328" transform="rotate(-0 30.074707 58.267328)">8</text>
+     </g>
+    </g>
+    <g id="ch3-gates-ytick_6">
+     <g id="ch3-gates-line2d_11">
+      <g>
+       <use xlink:href="#ch3-gates-me521bb43ab" x="36.574707" y="25.4475" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch3-gates-text_12">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="30.074707" y="29.564687" transform="rotate(-0 30.074707 29.564687)">10</text>
+     </g>
+    </g>
+    <g id="ch3-gates-text_13">
+     <text style="font-size: 9.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="14.963125" y="97.204102" transform="rotate(-90 14.963125 97.204102)">ms</text>
+    </g>
+   </g>
+   <g id="ch3-gates-line2d_12">
+    <path d="M 36.574707 168.946833 
+L 79.623101 168.803452 
+L 96.987159 168.542085 
+L 108.563198 168.157513 
+L 117.245227 167.654907 
+L 124.480251 167.013915 
+L 130.630022 166.253463 
+L 136.779792 165.265668 
+L 144.738319 163.731556 
+L 151.249841 162.547386 
+L 155.229104 162.039236 
+L 158.846616 161.798771 
+L 162.464128 161.786266 
+L 166.443391 162.004452 
+L 171.507908 162.522531 
+L 194.298234 165.146803 
+L 203.342015 165.820337 
+L 214.194551 166.398634 
+L 227.941097 166.897865 
+L 246.390409 167.331906 
+L 253.263682 167.45096 
+L 253.263682 167.45096 
+" clip-path="url(#ch3-gates-pab75a7af7c)" style="fill: none; stroke: #e5322d; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="ch3-gates-line2d_13">
+    <path d="M 36.574707 167.579297 
+L 43.809731 166.96623 
+L 49.959502 166.235437 
+L 55.38577 165.371167 
+L 60.088536 164.403312 
+L 64.42955 163.2798 
+L 68.408813 162.008206 
+L 72.026326 160.606874 
+L 75.282086 159.105845 
+L 78.176096 157.546798 
+L 81.070106 155.74143 
+L 83.964116 153.651077 
+L 86.496374 151.553397 
+L 89.028632 149.169595 
+L 91.560891 146.461516 
+L 94.093149 143.386499 
+L 96.263657 140.42299 
+L 98.434164 137.122802 
+L 100.604671 133.451391 
+L 102.775178 129.372732 
+L 104.945686 124.850493 
+L 107.116193 119.850048 
+L 109.2867 114.341719 
+L 111.818959 107.248071 
+L 114.351217 99.437619 
+L 117.245227 89.712073 
+L 121.22449 75.420407 
+L 124.842002 62.629451 
+L 126.650758 56.898659 
+L 128.097763 52.913703 
+L 129.183017 50.391329 
+L 130.26827 48.35269 
+L 131.353524 46.869298 
+L 132.077026 46.220521 
+L 132.800529 45.862599 
+L 133.524031 45.808152 
+L 134.247534 46.066169 
+L 134.971036 46.641568 
+L 135.694538 47.534875 
+L 136.418041 48.742045 
+L 137.503295 51.121148 
+L 138.588548 54.138226 
+L 140.035553 59.034129 
+L 141.482558 64.740229 
+L 143.653065 74.312851 
+L 149.802836 102.191308 
+L 151.973343 110.759407 
+L 153.782099 117.110216 
+L 155.590855 122.720546 
+L 157.399611 127.613552 
+L 159.208367 131.838247 
+L 161.017123 135.457321 
+L 162.825879 138.538573 
+L 164.634635 141.14933 
+L 166.443391 143.353102 
+L 168.252147 145.207819 
+L 170.060903 146.765111 
+L 172.231411 148.304548 
+L 174.401918 149.547319 
+L 176.572425 150.548936 
+L 179.104684 151.473235 
+L 181.998693 152.27796 
+L 185.254454 152.942008 
+L 189.233718 153.505247 
+L 193.936483 153.933663 
+L 200.086254 154.256624 
+L 208.768283 154.47147 
+L 223.600082 154.584664 
+L 253.263682 154.610102 
+L 253.263682 154.610102 
+" clip-path="url(#ch3-gates-pab75a7af7c)" style="fill: none; stroke: #1f5fff; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="ch3-gates-line2d_14">
+    <path d="M 36.574707 136.068311 
+L 43.086229 133.236159 
+L 49.597751 130.161683 
+L 55.747521 127.018353 
+L 61.897292 123.626103 
+L 68.047062 119.970927 
+L 74.196833 116.043611 
+L 80.346603 111.845452 
+L 86.858125 107.130439 
+L 95.901905 100.276122 
+L 103.860432 94.330733 
+L 107.839695 91.608673 
+L 111.095456 89.627032 
+L 113.989466 88.12856 
+L 116.521724 87.077477 
+L 118.692232 86.408245 
+L 120.862739 85.98432 
+L 122.671495 85.838263 
+L 124.480251 85.895254 
+L 126.289007 86.166135 
+L 128.097763 86.658236 
+L 129.906519 87.374757 
+L 131.715275 88.314331 
+L 133.885782 89.727236 
+L 136.05629 91.432581 
+L 138.588548 93.753136 
+L 141.482558 96.769686 
+L 144.738319 100.507071 
+L 150.164587 107.151616 
+L 156.676109 115.070239 
+L 160.655372 119.582922 
+L 164.272884 123.373988 
+L 167.890396 126.839404 
+L 171.507908 129.976103 
+L 175.12542 132.797054 
+L 178.742932 135.324592 
+L 182.360445 137.585536 
+L 186.339708 139.798105 
+L 190.318971 141.758114 
+L 194.659986 143.64719 
+L 199.362751 145.443152 
+L 204.427268 147.131941 
+L 209.853536 148.706416 
+L 216.003307 150.249411 
+L 222.514829 151.655698 
+L 230.111604 153.05915 
+L 238.431882 154.363494 
+L 247.837413 155.608379 
+L 253.263682 156.236882 
+L 253.263682 156.236882 
+" clip-path="url(#ch3-gates-pab75a7af7c)" style="fill: none; stroke: #12a150; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="ch3-gates-patch_3">
+    <path d="M 36.574707 168.960703 
+L 36.574707 25.4475 
+" style="fill: none; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="ch3-gates-patch_4">
+    <path d="M 36.574707 168.960703 
+L 253.263682 168.960703 
+" style="fill: none; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="ch3-gates-text_14">
+    <text style="font-weight: 600; font-size: 10px; font-family: var(--sans); text-anchor: start; fill: currentColor" x="36.574707" y="15.4475" transform="rotate(-0 36.574707 15.4475)">Time constants</text>
+   </g>
+   <g id="ch3-gates-legend_1">
+    <g id="ch3-gates-line2d_15">
+     <path d="M 216.968682 38.356875 
+L 223.768682 38.356875 
+L 230.568682 38.356875 
+" style="fill: none; stroke: #e5322d; stroke-width: 1.8; stroke-linecap: round"/>
+    </g>
+    <g id="ch3-gates-text_15">
+     <!-- $\tau_m$ -->
+     <g style="fill: currentColor" transform="translate(237.368682 41.331875)">
+      <text>
+       <tspan x="0" y="-0.359375" style="font-style: italic; font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">τ</tspan>
+       <tspan x="3.485046" y="0.915625" style="font-style: italic; font-size: 5.95px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">m</tspan>
+      </text>
+     </g>
+    </g>
+    <g id="ch3-gates-line2d_16">
+     <path d="M 216.968682 52.891543 
+L 223.768682 52.891543 
+L 230.568682 52.891543 
+" style="fill: none; stroke: #1f5fff; stroke-width: 1.8; stroke-linecap: round"/>
+    </g>
+    <g id="ch3-gates-text_16">
+     <!-- $\tau_h$ -->
+     <g style="fill: currentColor" transform="translate(237.368682 55.866543)">
+      <text>
+       <tspan x="0" y="-0.359375" style="font-style: italic; font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">τ</tspan>
+       <tspan x="3.485046" y="0.915625" style="font-style: italic; font-size: 5.95px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">h</tspan>
+      </text>
+     </g>
+    </g>
+    <g id="ch3-gates-line2d_17">
+     <path d="M 216.968682 67.426211 
+L 223.768682 67.426211 
+L 230.568682 67.426211 
+" style="fill: none; stroke: #12a150; stroke-width: 1.8; stroke-linecap: round"/>
+    </g>
+    <g id="ch3-gates-text_17">
+     <!-- $\tau_n$ -->
+     <g style="fill: currentColor" transform="translate(237.368682 70.401211)">
+      <text>
+       <tspan x="0" y="-0.359375" style="font-style: italic; font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">τ</tspan>
+       <tspan x="3.485046" y="0.915625" style="font-style: italic; font-size: 5.95px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">n</tspan>
+      </text>
+     </g>
+    </g>
+   </g>
+  </g>
+  <g id="ch3-gates-axes_2">
+   <g id="ch3-gates-patch_5">
+    <path d="M 301.351025 168.960703 
+L 518.04 168.960703 
+L 518.04 25.4475 
+L 301.351025 25.4475 
+L 301.351025 168.960703 
+z
+" style="fill: none"/>
+   </g>
+   <g id="ch3-gates-matplotlib.axis_3">
+    <g id="ch3-gates-xtick_6">
+     <g id="ch3-gates-line2d_18">
+      <g>
+       <use xlink:href="#ch3-gates-md7d459e3d2" x="301.351025" y="168.960703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch3-gates-text_18">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="301.351025" y="183.695078" transform="rotate(-0 301.351025 183.695078)">−100</text>
+     </g>
+    </g>
+    <g id="ch3-gates-xtick_7">
+     <g id="ch3-gates-line2d_19">
+      <g>
+       <use xlink:href="#ch3-gates-md7d459e3d2" x="350.59852" y="168.960703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch3-gates-text_19">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="350.59852" y="183.695078" transform="rotate(-0 350.59852 183.695078)">−50</text>
+     </g>
+    </g>
+    <g id="ch3-gates-xtick_8">
+     <g id="ch3-gates-line2d_20">
+      <g>
+       <use xlink:href="#ch3-gates-md7d459e3d2" x="399.846014" y="168.960703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch3-gates-text_20">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="399.846014" y="183.695078" transform="rotate(-0 399.846014 183.695078)">0</text>
+     </g>
+    </g>
+    <g id="ch3-gates-xtick_9">
+     <g id="ch3-gates-line2d_21">
+      <g>
+       <use xlink:href="#ch3-gates-md7d459e3d2" x="449.093508" y="168.960703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch3-gates-text_21">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="449.093508" y="183.695078" transform="rotate(-0 449.093508 183.695078)">50</text>
+     </g>
+    </g>
+    <g id="ch3-gates-xtick_10">
+     <g id="ch3-gates-line2d_22">
+      <g>
+       <use xlink:href="#ch3-gates-md7d459e3d2" x="498.341002" y="168.960703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch3-gates-text_22">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="498.341002" y="183.695078" transform="rotate(-0 498.341002 183.695078)">100</text>
+     </g>
+    </g>
+    <g id="ch3-gates-text_23">
+     <!-- $V$ (mV, from rest) -->
+     <g style="fill: currentColor" transform="translate(371.315513 198.948496)">
+      <text>
+       <tspan x="0" y="-0.671875" style="font-style: italic; font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">V</tspan>
+       <tspan x="5.80452" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor"> </tspan>
+       <tspan x="8.476395" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">(</tspan>
+       <tspan x="11.941483" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">m</tspan>
+       <tspan x="20.26326" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">V</tspan>
+       <tspan x="26.817703" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">,</tspan>
+       <tspan x="29.55452" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor"> </tspan>
+       <tspan x="32.226395" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">f</tspan>
+       <tspan x="35.742508" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">r</tspan>
+       <tspan x="39.318924" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">o</tspan>
+       <tspan x="45.015213" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">m</tspan>
+       <tspan x="53.33699" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor"> </tspan>
+       <tspan x="56.008865" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">r</tspan>
+       <tspan x="59.585281" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">e</tspan>
+       <tspan x="65.123856" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">s</tspan>
+       <tspan x="70.13826" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">t</tspan>
+       <tspan x="73.24617" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">)</tspan>
+      </text>
+     </g>
+    </g>
+   </g>
+   <g id="ch3-gates-matplotlib.axis_4">
+    <g id="ch3-gates-ytick_7">
+     <g id="ch3-gates-line2d_23">
+      <g>
+       <use xlink:href="#ch3-gates-me521bb43ab" x="301.351025" y="166.200834" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch3-gates-text_24">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="294.851025" y="170.318021" transform="rotate(-0 294.851025 170.318021)">0.0</text>
+     </g>
+    </g>
+    <g id="ch3-gates-ytick_8">
+     <g id="ch3-gates-line2d_24">
+      <g>
+       <use xlink:href="#ch3-gates-me521bb43ab" x="301.351025" y="138.602141" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch3-gates-text_25">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="294.851025" y="142.719328" transform="rotate(-0 294.851025 142.719328)">0.2</text>
+     </g>
+    </g>
+    <g id="ch3-gates-ytick_9">
+     <g id="ch3-gates-line2d_25">
+      <g>
+       <use xlink:href="#ch3-gates-me521bb43ab" x="301.351025" y="111.003448" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch3-gates-text_26">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="294.851025" y="115.120636" transform="rotate(-0 294.851025 115.120636)">0.4</text>
+     </g>
+    </g>
+    <g id="ch3-gates-ytick_10">
+     <g id="ch3-gates-line2d_26">
+      <g>
+       <use xlink:href="#ch3-gates-me521bb43ab" x="301.351025" y="83.404755" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch3-gates-text_27">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="294.851025" y="87.521943" transform="rotate(-0 294.851025 87.521943)">0.6</text>
+     </g>
+    </g>
+    <g id="ch3-gates-ytick_11">
+     <g id="ch3-gates-line2d_27">
+      <g>
+       <use xlink:href="#ch3-gates-me521bb43ab" x="301.351025" y="55.806062" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch3-gates-text_28">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="294.851025" y="59.92325" transform="rotate(-0 294.851025 59.92325)">0.8</text>
+     </g>
+    </g>
+    <g id="ch3-gates-ytick_12">
+     <g id="ch3-gates-line2d_28">
+      <g>
+       <use xlink:href="#ch3-gates-me521bb43ab" x="301.351025" y="28.207369" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch3-gates-text_29">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="294.851025" y="32.324557" transform="rotate(-0 294.851025 32.324557)">1.0</text>
+     </g>
+    </g>
+   </g>
+   <g id="ch3-gates-line2d_29">
+    <path d="M 301.351025 166.200828 
+L 368.274999 166.090168 
+L 376.595277 165.849054 
+L 381.659794 165.498954 
+L 385.639057 165.003805 
+L 388.894818 164.361256 
+L 391.427077 163.644657 
+L 393.597584 162.826289 
+L 395.768091 161.765833 
+L 397.576847 160.653245 
+L 399.385603 159.289211 
+L 401.194359 157.628355 
+L 403.003115 155.621894 
+L 404.811871 153.219494 
+L 406.620627 150.372092 
+L 408.429383 147.035755 
+L 410.23814 143.176483 
+L 412.046896 138.775635 
+L 413.855652 133.835337 
+L 416.026159 127.235418 
+L 418.558417 118.742275 
+L 421.814178 106.971041 
+L 428.3257 83.272775 
+L 430.857958 74.925711 
+L 433.028466 68.41987 
+L 435.198973 62.580318 
+L 437.36948 57.423948 
+L 439.178236 53.63649 
+L 440.986992 50.287304 
+L 442.795748 47.344821 
+L 444.604504 44.773252 
+L 446.41326 42.535268 
+L 448.583768 40.238167 
+L 450.754275 38.308068 
+L 452.924782 36.690122 
+L 455.09529 35.335765 
+L 457.627548 34.032918 
+L 460.159806 32.975103 
+L 463.053816 32.006859 
+L 466.309577 31.158583 
+L 469.927089 30.444003 
+L 474.268104 29.818708 
+L 479.694372 29.284386 
+L 486.205894 28.877825 
+L 494.887923 28.568786 
+L 507.549215 28.357669 
+L 518.04 28.281267 
+L 518.04 28.281267 
+" clip-path="url(#ch3-gates-p15f623b43e)" style="fill: none; stroke: #e5322d; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="ch3-gates-line2d_30">
+    <path d="M 301.351025 28.207399 
+L 355.251956 28.317489 
+L 362.848731 28.55674 
+L 367.551497 28.920007 
+L 370.807258 29.372704 
+L 373.339516 29.912994 
+L 375.510023 30.567783 
+L 377.680531 31.467285 
+L 379.489287 32.464851 
+L 381.298043 33.75399 
+L 382.745048 35.045851 
+L 384.192052 36.618016 
+L 385.639057 38.521139 
+L 387.086062 40.810154 
+L 388.533067 43.542248 
+L 389.980072 46.773581 
+L 391.427077 50.554581 
+L 392.874081 54.923806 
+L 394.682837 61.239793 
+L 396.491594 68.481346 
+L 398.662101 78.239178 
+L 401.55611 92.456179 
+L 405.897125 113.867623 
+L 408.067632 123.500326 
+L 409.876388 130.632362 
+L 411.685144 136.85601 
+L 413.4939 142.163807 
+L 414.940905 145.78277 
+L 416.38791 148.889711 
+L 417.834915 151.535678 
+L 419.28192 153.774758 
+L 420.728925 155.660366 
+L 422.175929 157.242789 
+L 423.984685 158.863682 
+L 425.793442 160.159919 
+L 427.602198 161.196724 
+L 429.772705 162.172888 
+L 432.304963 163.032369 
+L 435.198973 163.749453 
+L 438.454734 164.323658 
+L 442.795748 164.842729 
+L 448.222017 165.25604 
+L 455.818792 165.601343 
+L 467.394831 165.881822 
+L 485.482391 166.075509 
+L 518.04 166.176891 
+L 518.04 166.176891 
+" clip-path="url(#ch3-gates-p15f623b43e)" style="fill: none; stroke: #1f5fff; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="ch3-gates-line2d_31">
+    <path d="M 301.351025 166.195023 
+L 331.738127 166.066445 
+L 342.228912 165.815801 
+L 349.102185 165.443879 
+L 354.166702 164.966317 
+L 358.507717 164.337297 
+L 362.125229 163.590846 
+L 365.38099 162.68675 
+L 368.274999 161.647397 
+L 370.807258 160.515114 
+L 373.339516 159.135788 
+L 375.871775 157.469528 
+L 378.042282 155.781995 
+L 380.212789 153.828716 
+L 382.383296 151.586906 
+L 384.553804 149.037604 
+L 386.724311 146.167505 
+L 389.256569 142.406346 
+L 391.788828 138.20771 
+L 394.321086 133.597747 
+L 397.215096 127.886005 
+L 400.832608 120.230752 
+L 407.34413 105.774682 
+L 412.408647 94.760611 
+L 416.026159 87.3903 
+L 419.28192 81.24929 
+L 422.175929 76.231181 
+L 425.069939 71.643812 
+L 427.963949 67.483604 
+L 430.857958 63.733647 
+L 433.751968 60.368287 
+L 436.645978 57.356926 
+L 439.539987 54.666928 
+L 442.433997 52.265682 
+L 445.689758 49.870629 
+L 448.945519 47.760443 
+L 452.20128 45.898171 
+L 455.818792 44.080202 
+L 459.798055 42.341476 
+L 464.13907 40.707344 
+L 468.841835 39.194162 
+L 473.906352 37.81052 
+L 479.332621 36.558766 
+L 485.482391 35.372717 
+L 492.355664 34.279825 
+L 499.95244 33.295867 
+L 508.634469 32.39353 
+L 518.04 31.619711 
+L 518.04 31.619711 
+" clip-path="url(#ch3-gates-p15f623b43e)" style="fill: none; stroke: #12a150; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="ch3-gates-patch_6">
+    <path d="M 301.351025 168.960703 
+L 301.351025 25.4475 
+" style="fill: none; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="ch3-gates-patch_7">
+    <path d="M 301.351025 168.960703 
+L 518.04 168.960703 
+" style="fill: none; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="ch3-gates-text_30">
+    <text style="font-weight: 600; font-size: 10px; font-family: var(--sans); text-anchor: start; fill: currentColor" x="301.351025" y="15.4475" transform="rotate(-0 301.351025 15.4475)">Steady-state activation</text>
+   </g>
+   <g id="ch3-gates-legend_2">
+    <g id="ch3-gates-line2d_32">
+     <path d="M 477.92 38.356875 
+L 484.72 38.356875 
+L 491.52 38.356875 
+" style="fill: none; stroke: #e5322d; stroke-width: 1.8; stroke-linecap: round"/>
+    </g>
+    <g id="ch3-gates-text_31">
+     <!-- $m_\infty$ -->
+     <g style="fill: currentColor" transform="translate(498.32 41.331875)">
+      <text>
+       <tspan x="0" y="-0.25" style="font-style: italic; font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">m</tspan>
+       <tspan x="6.13707" y="1.025" style="font-size: 5.95px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">∞</tspan>
+      </text>
+     </g>
+    </g>
+    <g id="ch3-gates-line2d_33">
+     <path d="M 477.92 52.891543 
+L 484.72 52.891543 
+L 491.52 52.891543 
+" style="fill: none; stroke: #1f5fff; stroke-width: 1.8; stroke-linecap: round"/>
+    </g>
+    <g id="ch3-gates-text_32">
+     <!-- $h_\infty$ -->
+     <g style="fill: currentColor" transform="translate(498.32 55.866543)">
+      <text>
+       <tspan x="0" y="-0.1875" style="font-style: italic; font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">h</tspan>
+       <tspan x="4.250046" y="1.0875" style="font-size: 5.95px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">∞</tspan>
+      </text>
+     </g>
+    </g>
+    <g id="ch3-gates-line2d_34">
+     <path d="M 477.92 67.426211 
+L 484.72 67.426211 
+L 491.52 67.426211 
+" style="fill: none; stroke: #12a150; stroke-width: 1.8; stroke-linecap: round"/>
+    </g>
+    <g id="ch3-gates-text_33">
+     <!-- $n_\infty$ -->
+     <g style="fill: currentColor" transform="translate(498.32 70.401211)">
+      <text>
+       <tspan x="0" y="-0.25" style="font-style: italic; font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">n</tspan>
+       <tspan x="4.250046" y="1.025" style="font-size: 5.95px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">∞</tspan>
+      </text>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="ch3-gates-pab75a7af7c">
+   <rect x="36.574707" y="25.4475" width="216.688975" height="143.513203"/>
+  </clipPath>
+  <clipPath id="ch3-gates-p15f623b43e">
+   <rect x="301.351025" y="25.4475" width="216.688975" height="143.513203"/>
+  </clipPath>
+ </defs>
+</svg>

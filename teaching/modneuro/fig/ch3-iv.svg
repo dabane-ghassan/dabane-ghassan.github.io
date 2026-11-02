@@ -1,0 +1,451 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 411.880645 240.894797" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="ch3-iv-figure_1">
+  <g id="ch3-iv-patch_1">
+   <path d="M 0 240.894797 
+L 411.880645 240.894797 
+L 411.880645 0 
+L 0 0 
+L 0 240.894797 
+z
+" style="fill: none"/>
+  </g>
+  <g id="ch3-iv-axes_1">
+   <g id="ch3-iv-patch_2">
+    <path d="M 49.000645 202.8555 
+L 406.120645 202.8555 
+L 406.120645 25.4475 
+L 49.000645 25.4475 
+L 49.000645 202.8555 
+z
+" style="fill: none"/>
+   </g>
+   <g id="ch3-iv-matplotlib.axis_1">
+    <g id="ch3-iv-xtick_1">
+     <g id="ch3-iv-line2d_1">
+      <defs>
+       <path id="ch3-iv-m48fdfd6927" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#ch3-iv-m48fdfd6927" x="49.000645" y="202.8555" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch3-iv-text_1">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="49.000645" y="217.589875" transform="rotate(-0 49.000645 217.589875)">−100</text>
+     </g>
+    </g>
+    <g id="ch3-iv-xtick_2">
+     <g id="ch3-iv-line2d_2">
+      <g>
+       <use xlink:href="#ch3-iv-m48fdfd6927" x="89.582463" y="202.8555" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch3-iv-text_2">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="89.582463" y="217.589875" transform="rotate(-0 89.582463 217.589875)">−75</text>
+     </g>
+    </g>
+    <g id="ch3-iv-xtick_3">
+     <g id="ch3-iv-line2d_3">
+      <g>
+       <use xlink:href="#ch3-iv-m48fdfd6927" x="130.164281" y="202.8555" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch3-iv-text_3">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="130.164281" y="217.589875" transform="rotate(-0 130.164281 217.589875)">−50</text>
+     </g>
+    </g>
+    <g id="ch3-iv-xtick_4">
+     <g id="ch3-iv-line2d_4">
+      <g>
+       <use xlink:href="#ch3-iv-m48fdfd6927" x="170.746099" y="202.8555" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch3-iv-text_4">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="170.746099" y="217.589875" transform="rotate(-0 170.746099 217.589875)">−25</text>
+     </g>
+    </g>
+    <g id="ch3-iv-xtick_5">
+     <g id="ch3-iv-line2d_5">
+      <g>
+       <use xlink:href="#ch3-iv-m48fdfd6927" x="211.327917" y="202.8555" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch3-iv-text_5">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="211.327917" y="217.589875" transform="rotate(-0 211.327917 217.589875)">0</text>
+     </g>
+    </g>
+    <g id="ch3-iv-xtick_6">
+     <g id="ch3-iv-line2d_6">
+      <g>
+       <use xlink:href="#ch3-iv-m48fdfd6927" x="251.909735" y="202.8555" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch3-iv-text_6">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="251.909735" y="217.589875" transform="rotate(-0 251.909735 217.589875)">25</text>
+     </g>
+    </g>
+    <g id="ch3-iv-xtick_7">
+     <g id="ch3-iv-line2d_7">
+      <g>
+       <use xlink:href="#ch3-iv-m48fdfd6927" x="292.491554" y="202.8555" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch3-iv-text_7">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="292.491554" y="217.589875" transform="rotate(-0 292.491554 217.589875)">50</text>
+     </g>
+    </g>
+    <g id="ch3-iv-xtick_8">
+     <g id="ch3-iv-line2d_8">
+      <g>
+       <use xlink:href="#ch3-iv-m48fdfd6927" x="333.073372" y="202.8555" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch3-iv-text_8">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="333.073372" y="217.589875" transform="rotate(-0 333.073372 217.589875)">75</text>
+     </g>
+    </g>
+    <g id="ch3-iv-xtick_9">
+     <g id="ch3-iv-line2d_9">
+      <g>
+       <use xlink:href="#ch3-iv-m48fdfd6927" x="373.65519" y="202.8555" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch3-iv-text_9">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="373.65519" y="217.589875" transform="rotate(-0 373.65519 217.589875)">100</text>
+     </g>
+    </g>
+    <g id="ch3-iv-text_10">
+     <!-- $V$ (mV, from rest) -->
+     <g style="fill: currentColor" transform="translate(189.180645 232.843293)">
+      <text>
+       <tspan x="0" y="-0.671875" style="font-style: italic; font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">V</tspan>
+       <tspan x="5.80452" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor"> </tspan>
+       <tspan x="8.476395" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">(</tspan>
+       <tspan x="11.941483" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">m</tspan>
+       <tspan x="20.26326" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">V</tspan>
+       <tspan x="26.817703" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">,</tspan>
+       <tspan x="29.55452" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor"> </tspan>
+       <tspan x="32.226395" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">f</tspan>
+       <tspan x="35.742508" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">r</tspan>
+       <tspan x="39.318924" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">o</tspan>
+       <tspan x="45.015213" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">m</tspan>
+       <tspan x="53.33699" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor"> </tspan>
+       <tspan x="56.008865" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">r</tspan>
+       <tspan x="59.585281" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">e</tspan>
+       <tspan x="65.123856" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">s</tspan>
+       <tspan x="70.13826" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">t</tspan>
+       <tspan x="73.24617" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">)</tspan>
+      </text>
+     </g>
+    </g>
+   </g>
+   <g id="ch3-iv-matplotlib.axis_2">
+    <g id="ch3-iv-ytick_1">
+     <g id="ch3-iv-line2d_10">
+      <defs>
+       <path id="ch3-iv-m144fc1f6e5" d="M 0 0 
+L -3 0 
+" style="stroke: currentColor; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#ch3-iv-m144fc1f6e5" x="49.000645" y="202.8555" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch3-iv-text_11">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="42.500645" y="206.972688" transform="rotate(-0 42.500645 206.972688)">−200</text>
+     </g>
+    </g>
+    <g id="ch3-iv-ytick_2">
+     <g id="ch3-iv-line2d_11">
+      <g>
+       <use xlink:href="#ch3-iv-m144fc1f6e5" x="49.000645" y="177.5115" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch3-iv-text_12">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="42.500645" y="181.628687" transform="rotate(-0 42.500645 181.628687)">−100</text>
+     </g>
+    </g>
+    <g id="ch3-iv-ytick_3">
+     <g id="ch3-iv-line2d_12">
+      <g>
+       <use xlink:href="#ch3-iv-m144fc1f6e5" x="49.000645" y="152.1675" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch3-iv-text_13">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="42.500645" y="156.284687" transform="rotate(-0 42.500645 156.284687)">0</text>
+     </g>
+    </g>
+    <g id="ch3-iv-ytick_4">
+     <g id="ch3-iv-line2d_13">
+      <g>
+       <use xlink:href="#ch3-iv-m144fc1f6e5" x="49.000645" y="126.8235" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch3-iv-text_14">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="42.500645" y="130.940687" transform="rotate(-0 42.500645 130.940687)">100</text>
+     </g>
+    </g>
+    <g id="ch3-iv-ytick_5">
+     <g id="ch3-iv-line2d_14">
+      <g>
+       <use xlink:href="#ch3-iv-m144fc1f6e5" x="49.000645" y="101.4795" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch3-iv-text_15">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="42.500645" y="105.596687" transform="rotate(-0 42.500645 105.596687)">200</text>
+     </g>
+    </g>
+    <g id="ch3-iv-ytick_6">
+     <g id="ch3-iv-line2d_15">
+      <g>
+       <use xlink:href="#ch3-iv-m144fc1f6e5" x="49.000645" y="76.1355" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch3-iv-text_16">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="42.500645" y="80.252687" transform="rotate(-0 42.500645 80.252687)">300</text>
+     </g>
+    </g>
+    <g id="ch3-iv-ytick_7">
+     <g id="ch3-iv-line2d_16">
+      <g>
+       <use xlink:href="#ch3-iv-m144fc1f6e5" x="49.000645" y="50.7915" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch3-iv-text_17">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="42.500645" y="54.908687" transform="rotate(-0 42.500645 54.908687)">400</text>
+     </g>
+    </g>
+    <g id="ch3-iv-ytick_8">
+     <g id="ch3-iv-line2d_17">
+      <g>
+       <use xlink:href="#ch3-iv-m144fc1f6e5" x="49.000645" y="25.4475" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch3-iv-text_18">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="42.500645" y="29.564687" transform="rotate(-0 42.500645 29.564687)">500</text>
+     </g>
+    </g>
+    <g id="ch3-iv-text_19">
+     <!-- $I$ (µA/cm$^2$) -->
+     <g style="fill: currentColor" transform="translate(14.963125 137.1415) rotate(-90)">
+      <text>
+       <tspan x="0" y="-0.581187" style="font-style: italic; font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">I</tspan>
+       <tspan x="3.163513" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor"> </tspan>
+       <tspan x="5.835388" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">(</tspan>
+       <tspan x="9.300476" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">µ</tspan>
+       <tspan x="14.866882" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">A</tspan>
+       <tspan x="21.421326" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">/</tspan>
+       <tspan x="24.844666" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">c</tspan>
+       <tspan x="30.271912" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">m</tspan>
+       <tspan x="42.495825" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">)</tspan>
+       <tspan x="38.743314" y="-4.504687" style="font-size: 6.65px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">2</tspan>
+      </text>
+     </g>
+    </g>
+   </g>
+   <g id="ch3-iv-line2d_18">
+    <path d="M 49.000645 152.1675 
+L 199.83764 152.06825 
+L 205.203382 151.815037 
+L 208.780544 151.457182 
+L 211.761513 150.967598 
+L 214.742481 150.228893 
+L 217.127256 149.40092 
+L 219.51203 148.30771 
+L 221.300611 147.280604 
+L 223.089192 146.048683 
+L 224.877773 144.586794 
+L 226.666354 142.869674 
+L 228.454935 140.872442 
+L 230.243516 138.571101 
+L 232.032097 135.943029 
+L 233.820678 132.967425 
+L 235.609259 129.625716 
+L 237.39784 125.901882 
+L 239.782614 120.319961 
+L 242.167389 114.012593 
+L 244.552164 106.966536 
+L 246.936938 99.178189 
+L 249.321713 90.653101 
+L 251.706488 81.405172 
+L 254.687456 68.861725 
+L 257.668424 55.277187 
+L 260.649392 40.717647 
+L 264.226554 22.063531 
+L 267.803716 2.247548 
+L 268.372188 -1 
+L 268.372188 -1 
+" clip-path="url(#ch3-iv-pa51c50ef64)" style="fill: none; stroke: #12a150; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="ch3-iv-line2d_19">
+    <path d="M 49.000645 152.1675 
+L 205.799576 152.278391 
+L 212.357706 152.537628 
+L 216.531062 152.905229 
+L 220.108224 153.432323 
+L 223.089192 154.075754 
+L 226.07016 154.947386 
+L 229.051129 156.077282 
+L 232.032097 157.477049 
+L 235.013065 159.131426 
+L 238.590227 161.382914 
+L 248.129326 167.582568 
+L 251.110294 169.13463 
+L 253.495069 170.12234 
+L 255.879843 170.85262 
+L 258.264618 171.31359 
+L 260.649392 171.508955 
+L 263.034167 171.455578 
+L 265.418942 171.180096 
+L 268.39991 170.57356 
+L 271.380878 169.740259 
+L 275.554234 168.319428 
+L 283.304751 165.362694 
+L 290.459075 162.7208 
+L 296.421012 160.766836 
+L 301.786755 159.241795 
+L 307.152498 157.937609 
+L 313.114434 156.72812 
+L 319.076371 155.741215 
+L 325.634501 154.873747 
+L 333.385018 154.088897 
+L 341.73173 153.471062 
+L 351.867022 152.954641 
+L 364.387089 152.559492 
+L 380.484317 152.292397 
+L 404.332064 152.145803 
+L 406.120645 152.141159 
+L 406.120645 152.141159 
+" clip-path="url(#ch3-iv-pa51c50ef64)" style="fill: none; stroke: #e5322d; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="ch3-iv-line2d_20">
+    <path d="M 49.000645 160.576639 
+L 406.120645 143.849599 
+L 406.120645 143.849599 
+" clip-path="url(#ch3-iv-pa51c50ef64)" style="fill: none; stroke: #1f5fff; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="ch3-iv-line2d_21">
+    <path d="M 49.000645 152.1675 
+L 406.120645 152.1675 
+" clip-path="url(#ch3-iv-pa51c50ef64)" style="fill: none; stroke: currentColor; stroke-opacity: 0.4; stroke-width: 0.6; stroke-linecap: round"/>
+   </g>
+   <g id="ch3-iv-patch_3">
+    <path d="M 49.000645 202.8555 
+L 49.000645 25.4475 
+" style="fill: none; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="ch3-iv-patch_4">
+    <path d="M 49.000645 202.8555 
+L 406.120645 202.8555 
+" style="fill: none; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="ch3-iv-text_20">
+    <!-- Steady-state I–V curves (gates at $m_\infty, h_\infty, n_\infty$) -->
+    <g style="fill: currentColor" transform="translate(49.000645 15.4475)">
+     <text>
+      <tspan x="0" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">S</tspan>
+      <tspan x="6.503906" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">t</tspan>
+      <tspan x="10.03418" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">e</tspan>
+      <tspan x="15.947266" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">a</tspan>
+      <tspan x="21.689453" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">d</tspan>
+      <tspan x="27.929688" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">y</tspan>
+      <tspan x="33.813477" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">-</tspan>
+      <tspan x="38.466797" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">s</tspan>
+      <tspan x="43.959961" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">t</tspan>
+      <tspan x="47.490234" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">a</tspan>
+      <tspan x="53.232422" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">t</tspan>
+      <tspan x="56.762695" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">e</tspan>
+      <tspan x="62.675781" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor"> </tspan>
+      <tspan x="65.195312" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">I</tspan>
+      <tspan x="67.963867" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">–</tspan>
+      <tspan x="72.963867" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">V</tspan>
+      <tspan x="80.239258" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor"> </tspan>
+      <tspan x="82.758789" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">c</tspan>
+      <tspan x="88.583984" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">u</tspan>
+      <tspan x="94.707031" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">r</tspan>
+      <tspan x="98.676758" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">v</tspan>
+      <tspan x="104.545898" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">e</tspan>
+      <tspan x="110.458984" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">s</tspan>
+      <tspan x="115.952148" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor"> </tspan>
+      <tspan x="118.47168" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">(</tspan>
+      <tspan x="122.202148" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">g</tspan>
+      <tspan x="128.457031" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">a</tspan>
+      <tspan x="134.199219" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">t</tspan>
+      <tspan x="137.729492" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">e</tspan>
+      <tspan x="143.642578" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">s</tspan>
+      <tspan x="149.135742" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor"> </tspan>
+      <tspan x="151.655273" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">a</tspan>
+      <tspan x="157.397461" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">t</tspan>
+      <tspan x="160.927734" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor"> </tspan>
+      <tspan x="210.46324" y="-0.28125" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">)</tspan>
+      <tspan x="163.447266" y="-0.28125" style="font-style: italic; font-size: 10px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">m</tspan>
+      <tspan x="182.099248" y="-0.28125" style="font-style: italic; font-size: 10px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">h</tspan>
+      <tspan x="198.531244" y="-0.28125" style="font-style: italic; font-size: 10px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">n</tspan>
+      <tspan x="170.667252" y="1.21875" style="font-size: 7px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">∞</tspan>
+      <tspan x="187.099248" y="1.21875" style="font-size: 7px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">∞</tspan>
+      <tspan x="203.531244" y="1.21875" style="font-size: 7px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">∞</tspan>
+      <tspan x="177.599248" y="-0.28125" style="font-size: 10px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">,</tspan>
+      <tspan x="194.031244" y="-0.28125" style="font-size: 10px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">,</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="ch3-iv-legend_1">
+    <g id="ch3-iv-line2d_22">
+     <path d="M 56.650645 38.356875 
+L 63.450645 38.356875 
+L 70.250645 38.356875 
+" style="fill: none; stroke: #12a150; stroke-width: 1.8; stroke-linecap: round"/>
+    </g>
+    <g id="ch3-iv-text_21">
+     <!-- $I_{K}$ -->
+     <g style="fill: currentColor" transform="translate(77.050645 41.331875)">
+      <text>
+       <tspan x="0" y="-0.453125" style="font-style: italic; font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">I</tspan>
+       <tspan x="2.830536" y="0.821875" style="font-style: italic; font-size: 5.95px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">K</tspan>
+      </text>
+     </g>
+    </g>
+    <g id="ch3-iv-line2d_23">
+     <path d="M 56.650645 52.891543 
+L 63.450645 52.891543 
+L 70.250645 52.891543 
+" style="fill: none; stroke: #e5322d; stroke-width: 1.8; stroke-linecap: round"/>
+    </g>
+    <g id="ch3-iv-text_22">
+     <!-- $I_{Na}$ -->
+     <g style="fill: currentColor" transform="translate(77.050645 55.866543)">
+      <text>
+       <tspan x="0" y="-0.453125" style="font-style: italic; font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">I</tspan>
+       <tspan x="2.830536" y="0.821875" style="font-style: italic; font-size: 5.95px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">N</tspan>
+       <tspan x="6.799236" y="0.821875" style="font-style: italic; font-size: 5.95px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">a</tspan>
+      </text>
+     </g>
+    </g>
+    <g id="ch3-iv-line2d_24">
+     <path d="M 56.650645 67.426211 
+L 63.450645 67.426211 
+L 70.250645 67.426211 
+" style="fill: none; stroke: #1f5fff; stroke-width: 1.8; stroke-linecap: round"/>
+    </g>
+    <g id="ch3-iv-text_23">
+     <!-- $I_{L}$ -->
+     <g style="fill: currentColor" transform="translate(77.050645 70.401211)">
+      <text>
+       <tspan x="0" y="-0.453125" style="font-style: italic; font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">I</tspan>
+       <tspan x="2.830536" y="0.821875" style="font-style: italic; font-size: 5.95px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">L</tspan>
+      </text>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="ch3-iv-pa51c50ef64">
+   <rect x="49.000645" y="25.4475" width="357.12" height="177.408"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,808 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 472.897335 178.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="ch5-tree-figure_1">
+  <g id="ch5-tree-patch_1">
+   <path d="M 0 178.2 
+L 472.897335 178.2 
+L 472.897335 0 
+L 0 0 
+L 0 178.2 
+z
+" style="fill: none"/>
+  </g>
+  <g id="ch5-tree-axes_1">
+   <g id="ch5-tree-line2d_1">
+    <path d="M 67.376988 65.647425 
+L 45.848521 59.36264 
+" clip-path="url(#ch5-tree-pe4df31fd51)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-tree-line2d_2">
+    <path d="M 67.327032 49.962058 
+L 45.848521 59.36264 
+" clip-path="url(#ch5-tree-pe4df31fd51)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-tree-line2d_3">
+    <path d="M 54.390231 38.436655 
+L 45.848521 59.36264 
+" clip-path="url(#ch5-tree-pe4df31fd51)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-tree-line2d_4">
+    <path d="M 36.878694 37.994257 
+L 45.848521 59.36264 
+" clip-path="url(#ch5-tree-pe4df31fd51)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-tree-line2d_5">
+    <path d="M 25.230989 48.780091 
+L 45.848521 59.36264 
+" clip-path="url(#ch5-tree-pe4df31fd51)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-tree-line2d_6">
+    <path d="M 45.848521 59.36264 
+L 35.581047 82.137133 
+" clip-path="url(#ch5-tree-pe4df31fd51)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-tree-line2d_7">
+    <path d="M 35.581047 82.137133 
+L 43.37828 105.61483 
+" clip-path="url(#ch5-tree-pe4df31fd51)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-tree-line2d_8">
+    <path d="M 35.581047 82.137133 
+L 13.326999 74.768885 
+" clip-path="url(#ch5-tree-pe4df31fd51)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-tree-line2d_9">
+    <path d="M 35.581047 82.137133 
+L 14.260683 89.689326 
+" clip-path="url(#ch5-tree-pe4df31fd51)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-tree-line2d_10">
+    <path d="M 43.37828 105.61483 
+L 23.249032 118.062773 
+" clip-path="url(#ch5-tree-pe4df31fd51)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-tree-line2d_11">
+    <path d="M 43.37828 105.61483 
+L 38.789563 127.613947 
+" clip-path="url(#ch5-tree-pe4df31fd51)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-tree-line2d_12">
+    <path d="M 43.37828 105.61483 
+L 57.996416 122.892012 
+" clip-path="url(#ch5-tree-pe4df31fd51)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-tree-line2d_13">
+    <path d="M 43.37828 105.61483 
+L 66.420072 107.334706 
+" clip-path="url(#ch5-tree-pe4df31fd51)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-tree-PathCollection_1">
+    <defs>
+     <path id="ch5-tree-m395ca4b05e" d="M 0 7.245688 
+C 1.921579 7.245688 3.764714 6.482237 5.123475 5.123475 
+C 6.482237 3.764714 7.245688 1.921579 7.245688 0 
+C 7.245688 -1.921579 6.482237 -3.764714 5.123475 -5.123475 
+C 3.764714 -6.482237 1.921579 -7.245688 0 -7.245688 
+C -1.921579 -7.245688 -3.764714 -6.482237 -5.123475 -5.123475 
+C -6.482237 -3.764714 -7.245688 -1.921579 -7.245688 0 
+C -7.245688 1.921579 -6.482237 3.764714 -5.123475 5.123475 
+C -3.764714 6.482237 -1.921579 7.245688 0 7.245688 
+z
+" style="stroke: #1f5fff"/>
+    </defs>
+    <g>
+     <use xlink:href="#ch5-tree-m395ca4b05e" x="67.376988" y="65.647425" style="fill: #1f5fff; stroke: #1f5fff"/>
+    </g>
+   </g>
+   <g id="ch5-tree-PathCollection_2">
+    <g>
+     <use xlink:href="#ch5-tree-m395ca4b05e" x="67.327032" y="49.962058" style="fill: #1f5fff; stroke: #1f5fff"/>
+    </g>
+   </g>
+   <g id="ch5-tree-PathCollection_3">
+    <g>
+     <use xlink:href="#ch5-tree-m395ca4b05e" x="54.390231" y="38.436655" style="fill: #1f5fff; stroke: #1f5fff"/>
+    </g>
+   </g>
+   <g id="ch5-tree-PathCollection_4">
+    <g>
+     <use xlink:href="#ch5-tree-m395ca4b05e" x="36.878694" y="37.994257" style="fill: #1f5fff; stroke: #1f5fff"/>
+    </g>
+   </g>
+   <g id="ch5-tree-PathCollection_5">
+    <g>
+     <use xlink:href="#ch5-tree-m395ca4b05e" x="25.230989" y="48.780091" style="fill: #1f5fff; stroke: #1f5fff"/>
+    </g>
+   </g>
+   <g id="ch5-tree-PathCollection_6">
+    <g>
+     <use xlink:href="#ch5-tree-m395ca4b05e" x="45.848521" y="59.36264" style="fill: #1f5fff; stroke: #1f5fff"/>
+    </g>
+   </g>
+   <g id="ch5-tree-PathCollection_7">
+    <g>
+     <use xlink:href="#ch5-tree-m395ca4b05e" x="35.581047" y="82.137133" style="fill: #1f5fff; stroke: #1f5fff"/>
+    </g>
+   </g>
+   <g id="ch5-tree-PathCollection_8">
+    <g>
+     <use xlink:href="#ch5-tree-m395ca4b05e" x="43.37828" y="105.61483" style="fill: #1f5fff; stroke: #1f5fff"/>
+    </g>
+   </g>
+   <g id="ch5-tree-PathCollection_9">
+    <g>
+     <use xlink:href="#ch5-tree-m395ca4b05e" x="13.326999" y="74.768885" style="fill: #1f5fff; stroke: #1f5fff"/>
+    </g>
+   </g>
+   <g id="ch5-tree-PathCollection_10">
+    <g>
+     <use xlink:href="#ch5-tree-m395ca4b05e" x="14.260683" y="89.689326" style="fill: #1f5fff; stroke: #1f5fff"/>
+    </g>
+   </g>
+   <g id="ch5-tree-PathCollection_11">
+    <g>
+     <use xlink:href="#ch5-tree-m395ca4b05e" x="23.249032" y="118.062773" style="fill: #1f5fff; stroke: #1f5fff"/>
+    </g>
+   </g>
+   <g id="ch5-tree-PathCollection_12">
+    <g>
+     <use xlink:href="#ch5-tree-m395ca4b05e" x="38.789563" y="127.613947" style="fill: #1f5fff; stroke: #1f5fff"/>
+    </g>
+   </g>
+   <g id="ch5-tree-PathCollection_13">
+    <g>
+     <use xlink:href="#ch5-tree-m395ca4b05e" x="57.996416" y="122.892012" style="fill: #1f5fff; stroke: #1f5fff"/>
+    </g>
+   </g>
+   <g id="ch5-tree-PathCollection_14">
+    <g>
+     <use xlink:href="#ch5-tree-m395ca4b05e" x="66.420072" y="107.334706" style="fill: #1f5fff; stroke: #1f5fff"/>
+    </g>
+   </g>
+   <g id="ch5-tree-text_1">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="67.376988" y="68.375697" transform="rotate(-0 67.376988 68.375697)">1</text>
+   </g>
+   <g id="ch5-tree-text_2">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="67.327032" y="52.69033" transform="rotate(-0 67.327032 52.69033)">2</text>
+   </g>
+   <g id="ch5-tree-text_3">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="54.390231" y="41.164926" transform="rotate(-0 54.390231 41.164926)">3</text>
+   </g>
+   <g id="ch5-tree-text_4">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="36.878694" y="40.722528" transform="rotate(-0 36.878694 40.722528)">4</text>
+   </g>
+   <g id="ch5-tree-text_5">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="25.230989" y="51.508362" transform="rotate(-0 25.230989 51.508362)">5</text>
+   </g>
+   <g id="ch5-tree-text_6">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="45.848521" y="62.090911" transform="rotate(-0 45.848521 62.090911)">6</text>
+   </g>
+   <g id="ch5-tree-text_7">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="35.581047" y="84.865405" transform="rotate(-0 35.581047 84.865405)">7</text>
+   </g>
+   <g id="ch5-tree-text_8">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="43.37828" y="108.343102" transform="rotate(-0 43.37828 108.343102)">8</text>
+   </g>
+   <g id="ch5-tree-text_9">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="13.326999" y="77.497157" transform="rotate(-0 13.326999 77.497157)">9</text>
+   </g>
+   <g id="ch5-tree-text_10">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="14.260683" y="92.417597" transform="rotate(-0 14.260683 92.417597)">10</text>
+   </g>
+   <g id="ch5-tree-text_11">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="23.249032" y="120.791044" transform="rotate(-0 23.249032 120.791044)">11</text>
+   </g>
+   <g id="ch5-tree-text_12">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="38.789563" y="130.342218" transform="rotate(-0 38.789563 130.342218)">12</text>
+   </g>
+   <g id="ch5-tree-text_13">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="57.996416" y="125.620283" transform="rotate(-0 57.996416 125.620283)">13</text>
+   </g>
+   <g id="ch5-tree-text_14">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="66.420072" y="110.062977" transform="rotate(-0 66.420072 110.062977)">14</text>
+   </g>
+   <g id="ch5-tree-text_15">
+    <text style="font-weight: 600; font-size: 10px; font-family: var(--sans); text-anchor: start; fill: currentColor" x="5.76" y="15.4475" transform="rotate(-0 5.76 15.4475)">Graph</text>
+   </g>
+  </g>
+  <g id="ch5-tree-axes_2">
+   <g id="ch5-tree-patch_2">
+    <path d="M 153.928889 140.160703 
+L 303.691993 140.160703 
+L 303.691993 25.4475 
+L 153.928889 25.4475 
+L 153.928889 140.160703 
+z
+" style="fill: none"/>
+   </g>
+   <g id="ch5-tree-patch_3">
+    <path d="M 171.143039 140.160703 
+L 182.619139 140.160703 
+L 182.619139 30.910033 
+L 171.143039 30.910033 
+z
+" clip-path="url(#ch5-tree-p6967e90312)" style="fill: #12a150"/>
+   </g>
+   <g id="ch5-tree-patch_4">
+    <path d="M 239.999638 140.160703 
+L 251.475738 140.160703 
+L 251.475738 130.228824 
+L 239.999638 130.228824 
+z
+" clip-path="url(#ch5-tree-p6967e90312)" style="fill: #12a150"/>
+   </g>
+   <g id="ch5-tree-patch_5">
+    <path d="M 262.951838 140.160703 
+L 274.427938 140.160703 
+L 274.427938 130.228824 
+L 262.951838 130.228824 
+z
+" clip-path="url(#ch5-tree-p6967e90312)" style="fill: #12a150"/>
+   </g>
+   <g id="ch5-tree-patch_6">
+    <path d="M 285.904038 140.160703 
+L 297.380138 140.160703 
+L 297.380138 130.228824 
+L 285.904038 130.228824 
+z
+" clip-path="url(#ch5-tree-p6967e90312)" style="fill: #12a150"/>
+   </g>
+   <g id="ch5-tree-matplotlib.axis_1">
+    <g id="ch5-tree-xtick_1">
+     <g id="ch5-tree-line2d_14">
+      <defs>
+       <path id="ch5-tree-mfcbf3be030" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#ch5-tree-mfcbf3be030" x="153.928889" y="140.160703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch5-tree-text_16">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="153.928889" y="154.895078" transform="rotate(-0 153.928889 154.895078)">0</text>
+     </g>
+    </g>
+    <g id="ch5-tree-xtick_2">
+     <g id="ch5-tree-line2d_15">
+      <g>
+       <use xlink:href="#ch5-tree-mfcbf3be030" x="176.881089" y="140.160703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch5-tree-text_17">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="176.881089" y="154.895078" transform="rotate(-0 176.881089 154.895078)">1</text>
+     </g>
+    </g>
+    <g id="ch5-tree-xtick_3">
+     <g id="ch5-tree-line2d_16">
+      <g>
+       <use xlink:href="#ch5-tree-mfcbf3be030" x="199.833288" y="140.160703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch5-tree-text_18">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="199.833288" y="154.895078" transform="rotate(-0 199.833288 154.895078)">2</text>
+     </g>
+    </g>
+    <g id="ch5-tree-xtick_4">
+     <g id="ch5-tree-line2d_17">
+      <g>
+       <use xlink:href="#ch5-tree-mfcbf3be030" x="222.785488" y="140.160703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch5-tree-text_19">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="222.785488" y="154.895078" transform="rotate(-0 222.785488 154.895078)">3</text>
+     </g>
+    </g>
+    <g id="ch5-tree-xtick_5">
+     <g id="ch5-tree-line2d_18">
+      <g>
+       <use xlink:href="#ch5-tree-mfcbf3be030" x="245.737688" y="140.160703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch5-tree-text_20">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="245.737688" y="154.895078" transform="rotate(-0 245.737688 154.895078)">4</text>
+     </g>
+    </g>
+    <g id="ch5-tree-xtick_6">
+     <g id="ch5-tree-line2d_19">
+      <g>
+       <use xlink:href="#ch5-tree-mfcbf3be030" x="268.689888" y="140.160703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch5-tree-text_21">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="268.689888" y="154.895078" transform="rotate(-0 268.689888 154.895078)">5</text>
+     </g>
+    </g>
+    <g id="ch5-tree-xtick_7">
+     <g id="ch5-tree-line2d_20">
+      <g>
+       <use xlink:href="#ch5-tree-mfcbf3be030" x="291.642088" y="140.160703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch5-tree-text_22">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="291.642088" y="154.895078" transform="rotate(-0 291.642088 154.895078)">6</text>
+     </g>
+    </g>
+    <g id="ch5-tree-text_23">
+     <text style="font-size: 9.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="228.810441" y="170.148496" transform="rotate(-0 228.810441 170.148496)">degree</text>
+    </g>
+   </g>
+   <g id="ch5-tree-matplotlib.axis_2">
+    <g id="ch5-tree-ytick_1">
+     <g id="ch5-tree-line2d_21">
+      <defs>
+       <path id="ch5-tree-m89829475b1" d="M 0 0 
+L -3 0 
+" style="stroke: currentColor; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#ch5-tree-m89829475b1" x="153.928889" y="140.160703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch5-tree-text_24">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="147.428889" y="144.277891" transform="rotate(-0 147.428889 144.277891)">0</text>
+     </g>
+    </g>
+    <g id="ch5-tree-ytick_2">
+     <g id="ch5-tree-line2d_22">
+      <g>
+       <use xlink:href="#ch5-tree-m89829475b1" x="153.928889" y="120.296945" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch5-tree-text_25">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="147.428889" y="124.414133" transform="rotate(-0 147.428889 124.414133)">2</text>
+     </g>
+    </g>
+    <g id="ch5-tree-ytick_3">
+     <g id="ch5-tree-line2d_23">
+      <g>
+       <use xlink:href="#ch5-tree-m89829475b1" x="153.928889" y="100.433187" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch5-tree-text_26">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="147.428889" y="104.550374" transform="rotate(-0 147.428889 104.550374)">4</text>
+     </g>
+    </g>
+    <g id="ch5-tree-ytick_4">
+     <g id="ch5-tree-line2d_24">
+      <g>
+       <use xlink:href="#ch5-tree-m89829475b1" x="153.928889" y="80.569429" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch5-tree-text_27">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="147.428889" y="84.686616" transform="rotate(-0 147.428889 84.686616)">6</text>
+     </g>
+    </g>
+    <g id="ch5-tree-ytick_5">
+     <g id="ch5-tree-line2d_25">
+      <g>
+       <use xlink:href="#ch5-tree-m89829475b1" x="153.928889" y="60.705671" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch5-tree-text_28">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="147.428889" y="64.822858" transform="rotate(-0 147.428889 64.822858)">8</text>
+     </g>
+    </g>
+    <g id="ch5-tree-ytick_6">
+     <g id="ch5-tree-line2d_26">
+      <g>
+       <use xlink:href="#ch5-tree-m89829475b1" x="153.928889" y="40.841913" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch5-tree-text_29">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="147.428889" y="44.9591" transform="rotate(-0 147.428889 44.9591)">10</text>
+     </g>
+    </g>
+    <g id="ch5-tree-text_30">
+     <text style="font-size: 9.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="132.317307" y="82.804102" transform="rotate(-90 132.317307 82.804102)">number of nodes</text>
+    </g>
+   </g>
+   <g id="ch5-tree-patch_7">
+    <path d="M 153.928889 140.160703 
+L 153.928889 25.4475 
+" style="fill: none; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="ch5-tree-patch_8">
+    <path d="M 153.928889 140.160703 
+L 303.691993 140.160703 
+" style="fill: none; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="ch5-tree-text_31">
+    <text style="font-weight: 600; font-size: 10px; font-family: var(--sans); text-anchor: start; fill: currentColor" x="153.928889" y="15.4475" transform="rotate(-0 153.928889 15.4475)">Degree distribution</text>
+   </g>
+  </g>
+  <g id="ch5-tree-axes_3">
+   <g id="ch5-tree-patch_9">
+    <path d="M 352.424132 140.160703 
+L 467.137335 140.160703 
+L 467.137335 25.4475 
+L 352.424132 25.4475 
+L 352.424132 140.160703 
+z
+" style="fill: none"/>
+   </g>
+   <g id="ch5-tree-PathCollection_15">
+    <defs>
+     <path id="ch5-tree-m1d592ced6c" d="M -3.216666 3.216666 
+L 3.216666 3.216666 
+L 3.216666 -3.216666 
+L -3.216666 -3.216666 
+z
+" style="stroke: #e5322d"/>
+    </defs>
+    <g clip-path="url(#ch5-tree-p4870906eab)">
+     <use xlink:href="#ch5-tree-m1d592ced6c" x="397.490033" y="29.5444" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch5-tree-m1d592ced6c" x="397.490033" y="37.7382" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch5-tree-m1d592ced6c" x="397.490033" y="45.932001" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch5-tree-m1d592ced6c" x="397.490033" y="54.125801" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch5-tree-m1d592ced6c" x="397.490033" y="62.319601" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch5-tree-m1d592ced6c" x="356.521032" y="70.513401" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch5-tree-m1d592ced6c" x="364.714832" y="70.513401" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch5-tree-m1d592ced6c" x="372.908632" y="70.513401" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch5-tree-m1d592ced6c" x="381.102433" y="70.513401" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch5-tree-m1d592ced6c" x="389.296233" y="70.513401" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch5-tree-m1d592ced6c" x="405.683833" y="70.513401" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch5-tree-m1d592ced6c" x="397.490033" y="78.707201" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch5-tree-m1d592ced6c" x="413.877633" y="78.707201" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch5-tree-m1d592ced6c" x="422.071434" y="78.707201" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch5-tree-m1d592ced6c" x="430.265234" y="78.707201" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch5-tree-m1d592ced6c" x="405.683833" y="86.901002" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch5-tree-m1d592ced6c" x="438.459034" y="86.901002" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch5-tree-m1d592ced6c" x="446.652834" y="86.901002" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch5-tree-m1d592ced6c" x="454.846635" y="86.901002" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch5-tree-m1d592ced6c" x="463.040435" y="86.901002" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch5-tree-m1d592ced6c" x="405.683833" y="95.094802" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch5-tree-m1d592ced6c" x="405.683833" y="103.288602" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch5-tree-m1d592ced6c" x="413.877633" y="111.482402" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch5-tree-m1d592ced6c" x="413.877633" y="119.676203" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch5-tree-m1d592ced6c" x="413.877633" y="127.870003" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch5-tree-m1d592ced6c" x="413.877633" y="136.063803" style="fill: #e5322d; stroke: #e5322d"/>
+    </g>
+   </g>
+   <g id="ch5-tree-matplotlib.axis_3">
+    <g id="ch5-tree-xtick_8">
+     <g id="ch5-tree-line2d_27"/>
+     <g id="ch5-tree-text_32">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="356.521032" y="151.895078" transform="rotate(-0 356.521032 151.895078)">1</text>
+     </g>
+    </g>
+    <g id="ch5-tree-xtick_9">
+     <g id="ch5-tree-line2d_28"/>
+     <g id="ch5-tree-text_33">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="372.908632" y="151.895078" transform="rotate(-0 372.908632 151.895078)">3</text>
+     </g>
+    </g>
+    <g id="ch5-tree-xtick_10">
+     <g id="ch5-tree-line2d_29"/>
+     <g id="ch5-tree-text_34">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="389.296233" y="151.895078" transform="rotate(-0 389.296233 151.895078)">5</text>
+     </g>
+    </g>
+    <g id="ch5-tree-xtick_11">
+     <g id="ch5-tree-line2d_30"/>
+     <g id="ch5-tree-text_35">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="405.683833" y="151.895078" transform="rotate(-0 405.683833 151.895078)">7</text>
+     </g>
+    </g>
+    <g id="ch5-tree-xtick_12">
+     <g id="ch5-tree-line2d_31"/>
+     <g id="ch5-tree-text_36">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="422.071434" y="151.895078" transform="rotate(-0 422.071434 151.895078)">9</text>
+     </g>
+    </g>
+    <g id="ch5-tree-xtick_13">
+     <g id="ch5-tree-line2d_32"/>
+     <g id="ch5-tree-text_37">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="438.459034" y="151.895078" transform="rotate(-0 438.459034 151.895078)">11</text>
+     </g>
+    </g>
+    <g id="ch5-tree-xtick_14">
+     <g id="ch5-tree-line2d_33"/>
+     <g id="ch5-tree-text_38">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="454.846635" y="151.895078" transform="rotate(-0 454.846635 151.895078)">13</text>
+     </g>
+    </g>
+    <g id="ch5-tree-xtick_15">
+     <g id="ch5-tree-line2d_34">
+      <path d="M 352.424132 140.160703 
+L 352.424132 25.4475 
+" clip-path="url(#ch5-tree-p4870906eab)" style="fill: none; stroke: currentColor; stroke-opacity: 0.08; stroke-width: 0.8; stroke-linecap: round"/>
+     </g>
+     <g id="ch5-tree-line2d_35"/>
+    </g>
+    <g id="ch5-tree-xtick_16">
+     <g id="ch5-tree-line2d_36">
+      <path d="M 360.617932 140.160703 
+L 360.617932 25.4475 
+" clip-path="url(#ch5-tree-p4870906eab)" style="fill: none; stroke: currentColor; stroke-opacity: 0.08; stroke-width: 0.8; stroke-linecap: round"/>
+     </g>
+     <g id="ch5-tree-line2d_37"/>
+    </g>
+    <g id="ch5-tree-xtick_17">
+     <g id="ch5-tree-line2d_38">
+      <path d="M 368.811732 140.160703 
+L 368.811732 25.4475 
+" clip-path="url(#ch5-tree-p4870906eab)" style="fill: none; stroke: currentColor; stroke-opacity: 0.08; stroke-width: 0.8; stroke-linecap: round"/>
+     </g>
+     <g id="ch5-tree-line2d_39"/>
+    </g>
+    <g id="ch5-tree-xtick_18">
+     <g id="ch5-tree-line2d_40">
+      <path d="M 377.005532 140.160703 
+L 377.005532 25.4475 
+" clip-path="url(#ch5-tree-p4870906eab)" style="fill: none; stroke: currentColor; stroke-opacity: 0.08; stroke-width: 0.8; stroke-linecap: round"/>
+     </g>
+     <g id="ch5-tree-line2d_41"/>
+    </g>
+    <g id="ch5-tree-xtick_19">
+     <g id="ch5-tree-line2d_42">
+      <path d="M 385.199333 140.160703 
+L 385.199333 25.4475 
+" clip-path="url(#ch5-tree-p4870906eab)" style="fill: none; stroke: currentColor; stroke-opacity: 0.08; stroke-width: 0.8; stroke-linecap: round"/>
+     </g>
+     <g id="ch5-tree-line2d_43"/>
+    </g>
+    <g id="ch5-tree-xtick_20">
+     <g id="ch5-tree-line2d_44">
+      <path d="M 393.393133 140.160703 
+L 393.393133 25.4475 
+" clip-path="url(#ch5-tree-p4870906eab)" style="fill: none; stroke: currentColor; stroke-opacity: 0.08; stroke-width: 0.8; stroke-linecap: round"/>
+     </g>
+     <g id="ch5-tree-line2d_45"/>
+    </g>
+    <g id="ch5-tree-xtick_21">
+     <g id="ch5-tree-line2d_46">
+      <path d="M 401.586933 140.160703 
+L 401.586933 25.4475 
+" clip-path="url(#ch5-tree-p4870906eab)" style="fill: none; stroke: currentColor; stroke-opacity: 0.08; stroke-width: 0.8; stroke-linecap: round"/>
+     </g>
+     <g id="ch5-tree-line2d_47"/>
+    </g>
+    <g id="ch5-tree-xtick_22">
+     <g id="ch5-tree-line2d_48">
+      <path d="M 409.780733 140.160703 
+L 409.780733 25.4475 
+" clip-path="url(#ch5-tree-p4870906eab)" style="fill: none; stroke: currentColor; stroke-opacity: 0.08; stroke-width: 0.8; stroke-linecap: round"/>
+     </g>
+     <g id="ch5-tree-line2d_49"/>
+    </g>
+    <g id="ch5-tree-xtick_23">
+     <g id="ch5-tree-line2d_50">
+      <path d="M 417.974534 140.160703 
+L 417.974534 25.4475 
+" clip-path="url(#ch5-tree-p4870906eab)" style="fill: none; stroke: currentColor; stroke-opacity: 0.08; stroke-width: 0.8; stroke-linecap: round"/>
+     </g>
+     <g id="ch5-tree-line2d_51"/>
+    </g>
+    <g id="ch5-tree-xtick_24">
+     <g id="ch5-tree-line2d_52">
+      <path d="M 426.168334 140.160703 
+L 426.168334 25.4475 
+" clip-path="url(#ch5-tree-p4870906eab)" style="fill: none; stroke: currentColor; stroke-opacity: 0.08; stroke-width: 0.8; stroke-linecap: round"/>
+     </g>
+     <g id="ch5-tree-line2d_53"/>
+    </g>
+    <g id="ch5-tree-xtick_25">
+     <g id="ch5-tree-line2d_54">
+      <path d="M 434.362134 140.160703 
+L 434.362134 25.4475 
+" clip-path="url(#ch5-tree-p4870906eab)" style="fill: none; stroke: currentColor; stroke-opacity: 0.08; stroke-width: 0.8; stroke-linecap: round"/>
+     </g>
+     <g id="ch5-tree-line2d_55"/>
+    </g>
+    <g id="ch5-tree-xtick_26">
+     <g id="ch5-tree-line2d_56">
+      <path d="M 442.555934 140.160703 
+L 442.555934 25.4475 
+" clip-path="url(#ch5-tree-p4870906eab)" style="fill: none; stroke: currentColor; stroke-opacity: 0.08; stroke-width: 0.8; stroke-linecap: round"/>
+     </g>
+     <g id="ch5-tree-line2d_57"/>
+    </g>
+    <g id="ch5-tree-xtick_27">
+     <g id="ch5-tree-line2d_58">
+      <path d="M 450.749734 140.160703 
+L 450.749734 25.4475 
+" clip-path="url(#ch5-tree-p4870906eab)" style="fill: none; stroke: currentColor; stroke-opacity: 0.08; stroke-width: 0.8; stroke-linecap: round"/>
+     </g>
+     <g id="ch5-tree-line2d_59"/>
+    </g>
+    <g id="ch5-tree-xtick_28">
+     <g id="ch5-tree-line2d_60">
+      <path d="M 458.943535 140.160703 
+L 458.943535 25.4475 
+" clip-path="url(#ch5-tree-p4870906eab)" style="fill: none; stroke: currentColor; stroke-opacity: 0.08; stroke-width: 0.8; stroke-linecap: round"/>
+     </g>
+     <g id="ch5-tree-line2d_61"/>
+    </g>
+    <g id="ch5-tree-xtick_29">
+     <g id="ch5-tree-line2d_62">
+      <path d="M 467.137335 140.160703 
+L 467.137335 25.4475 
+" clip-path="url(#ch5-tree-p4870906eab)" style="fill: none; stroke: currentColor; stroke-opacity: 0.08; stroke-width: 0.8; stroke-linecap: round"/>
+     </g>
+     <g id="ch5-tree-line2d_63"/>
+    </g>
+   </g>
+   <g id="ch5-tree-matplotlib.axis_4">
+    <g id="ch5-tree-ytick_7">
+     <g id="ch5-tree-line2d_64"/>
+     <g id="ch5-tree-text_39">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="348.924132" y="33.661588" transform="rotate(-0 348.924132 33.661588)">1</text>
+     </g>
+    </g>
+    <g id="ch5-tree-ytick_8">
+     <g id="ch5-tree-line2d_65"/>
+     <g id="ch5-tree-text_40">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="348.924132" y="50.049188" transform="rotate(-0 348.924132 50.049188)">3</text>
+     </g>
+    </g>
+    <g id="ch5-tree-ytick_9">
+     <g id="ch5-tree-line2d_66"/>
+     <g id="ch5-tree-text_41">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="348.924132" y="66.436789" transform="rotate(-0 348.924132 66.436789)">5</text>
+     </g>
+    </g>
+    <g id="ch5-tree-ytick_10">
+     <g id="ch5-tree-line2d_67"/>
+     <g id="ch5-tree-text_42">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="348.924132" y="82.824389" transform="rotate(-0 348.924132 82.824389)">7</text>
+     </g>
+    </g>
+    <g id="ch5-tree-ytick_11">
+     <g id="ch5-tree-line2d_68"/>
+     <g id="ch5-tree-text_43">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="348.924132" y="99.211989" transform="rotate(-0 348.924132 99.211989)">9</text>
+     </g>
+    </g>
+    <g id="ch5-tree-ytick_12">
+     <g id="ch5-tree-line2d_69"/>
+     <g id="ch5-tree-text_44">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="348.924132" y="115.59959" transform="rotate(-0 348.924132 115.59959)">11</text>
+     </g>
+    </g>
+    <g id="ch5-tree-ytick_13">
+     <g id="ch5-tree-line2d_70"/>
+     <g id="ch5-tree-text_45">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="348.924132" y="131.98719" transform="rotate(-0 348.924132 131.98719)">13</text>
+     </g>
+    </g>
+    <g id="ch5-tree-ytick_14">
+     <g id="ch5-tree-line2d_71">
+      <path d="M 352.424132 25.4475 
+L 467.137335 25.4475 
+" clip-path="url(#ch5-tree-p4870906eab)" style="fill: none; stroke: currentColor; stroke-opacity: 0.08; stroke-width: 0.8; stroke-linecap: round"/>
+     </g>
+     <g id="ch5-tree-line2d_72"/>
+    </g>
+    <g id="ch5-tree-ytick_15">
+     <g id="ch5-tree-line2d_73">
+      <path d="M 352.424132 33.6413 
+L 467.137335 33.6413 
+" clip-path="url(#ch5-tree-p4870906eab)" style="fill: none; stroke: currentColor; stroke-opacity: 0.08; stroke-width: 0.8; stroke-linecap: round"/>
+     </g>
+     <g id="ch5-tree-line2d_74"/>
+    </g>
+    <g id="ch5-tree-ytick_16">
+     <g id="ch5-tree-line2d_75">
+      <path d="M 352.424132 41.8351 
+L 467.137335 41.8351 
+" clip-path="url(#ch5-tree-p4870906eab)" style="fill: none; stroke: currentColor; stroke-opacity: 0.08; stroke-width: 0.8; stroke-linecap: round"/>
+     </g>
+     <g id="ch5-tree-line2d_76"/>
+    </g>
+    <g id="ch5-tree-ytick_17">
+     <g id="ch5-tree-line2d_77">
+      <path d="M 352.424132 50.028901 
+L 467.137335 50.028901 
+" clip-path="url(#ch5-tree-p4870906eab)" style="fill: none; stroke: currentColor; stroke-opacity: 0.08; stroke-width: 0.8; stroke-linecap: round"/>
+     </g>
+     <g id="ch5-tree-line2d_78"/>
+    </g>
+    <g id="ch5-tree-ytick_18">
+     <g id="ch5-tree-line2d_79">
+      <path d="M 352.424132 58.222701 
+L 467.137335 58.222701 
+" clip-path="url(#ch5-tree-p4870906eab)" style="fill: none; stroke: currentColor; stroke-opacity: 0.08; stroke-width: 0.8; stroke-linecap: round"/>
+     </g>
+     <g id="ch5-tree-line2d_80"/>
+    </g>
+    <g id="ch5-tree-ytick_19">
+     <g id="ch5-tree-line2d_81">
+      <path d="M 352.424132 66.416501 
+L 467.137335 66.416501 
+" clip-path="url(#ch5-tree-p4870906eab)" style="fill: none; stroke: currentColor; stroke-opacity: 0.08; stroke-width: 0.8; stroke-linecap: round"/>
+     </g>
+     <g id="ch5-tree-line2d_82"/>
+    </g>
+    <g id="ch5-tree-ytick_20">
+     <g id="ch5-tree-line2d_83">
+      <path d="M 352.424132 74.610301 
+L 467.137335 74.610301 
+" clip-path="url(#ch5-tree-p4870906eab)" style="fill: none; stroke: currentColor; stroke-opacity: 0.08; stroke-width: 0.8; stroke-linecap: round"/>
+     </g>
+     <g id="ch5-tree-line2d_84"/>
+    </g>
+    <g id="ch5-tree-ytick_21">
+     <g id="ch5-tree-line2d_85">
+      <path d="M 352.424132 82.804102 
+L 467.137335 82.804102 
+" clip-path="url(#ch5-tree-p4870906eab)" style="fill: none; stroke: currentColor; stroke-opacity: 0.08; stroke-width: 0.8; stroke-linecap: round"/>
+     </g>
+     <g id="ch5-tree-line2d_86"/>
+    </g>
+    <g id="ch5-tree-ytick_22">
+     <g id="ch5-tree-line2d_87">
+      <path d="M 352.424132 90.997902 
+L 467.137335 90.997902 
+" clip-path="url(#ch5-tree-p4870906eab)" style="fill: none; stroke: currentColor; stroke-opacity: 0.08; stroke-width: 0.8; stroke-linecap: round"/>
+     </g>
+     <g id="ch5-tree-line2d_88"/>
+    </g>
+    <g id="ch5-tree-ytick_23">
+     <g id="ch5-tree-line2d_89">
+      <path d="M 352.424132 99.191702 
+L 467.137335 99.191702 
+" clip-path="url(#ch5-tree-p4870906eab)" style="fill: none; stroke: currentColor; stroke-opacity: 0.08; stroke-width: 0.8; stroke-linecap: round"/>
+     </g>
+     <g id="ch5-tree-line2d_90"/>
+    </g>
+    <g id="ch5-tree-ytick_24">
+     <g id="ch5-tree-line2d_91">
+      <path d="M 352.424132 107.385502 
+L 467.137335 107.385502 
+" clip-path="url(#ch5-tree-p4870906eab)" style="fill: none; stroke: currentColor; stroke-opacity: 0.08; stroke-width: 0.8; stroke-linecap: round"/>
+     </g>
+     <g id="ch5-tree-line2d_92"/>
+    </g>
+    <g id="ch5-tree-ytick_25">
+     <g id="ch5-tree-line2d_93">
+      <path d="M 352.424132 115.579302 
+L 467.137335 115.579302 
+" clip-path="url(#ch5-tree-p4870906eab)" style="fill: none; stroke: currentColor; stroke-opacity: 0.08; stroke-width: 0.8; stroke-linecap: round"/>
+     </g>
+     <g id="ch5-tree-line2d_94"/>
+    </g>
+    <g id="ch5-tree-ytick_26">
+     <g id="ch5-tree-line2d_95">
+      <path d="M 352.424132 123.773103 
+L 467.137335 123.773103 
+" clip-path="url(#ch5-tree-p4870906eab)" style="fill: none; stroke: currentColor; stroke-opacity: 0.08; stroke-width: 0.8; stroke-linecap: round"/>
+     </g>
+     <g id="ch5-tree-line2d_96"/>
+    </g>
+    <g id="ch5-tree-ytick_27">
+     <g id="ch5-tree-line2d_97">
+      <path d="M 352.424132 131.966903 
+L 467.137335 131.966903 
+" clip-path="url(#ch5-tree-p4870906eab)" style="fill: none; stroke: currentColor; stroke-opacity: 0.08; stroke-width: 0.8; stroke-linecap: round"/>
+     </g>
+     <g id="ch5-tree-line2d_98"/>
+    </g>
+    <g id="ch5-tree-ytick_28">
+     <g id="ch5-tree-line2d_99">
+      <path d="M 352.424132 140.160703 
+L 467.137335 140.160703 
+" clip-path="url(#ch5-tree-p4870906eab)" style="fill: none; stroke: currentColor; stroke-opacity: 0.08; stroke-width: 0.8; stroke-linecap: round"/>
+     </g>
+     <g id="ch5-tree-line2d_100"/>
+    </g>
+   </g>
+   <g id="ch5-tree-text_46">
+    <text style="font-weight: 600; font-size: 10px; font-family: var(--sans); text-anchor: start; fill: currentColor" x="352.424132" y="15.4475" transform="rotate(-0 352.424132 15.4475)">Adjacency matrix</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="ch5-tree-pe4df31fd51">
+   <rect x="5.76" y="25.4475" width="69.183987" height="114.713203"/>
+  </clipPath>
+  <clipPath id="ch5-tree-p6967e90312">
+   <rect x="153.928889" y="25.4475" width="149.763105" height="114.713203"/>
+  </clipPath>
+  <clipPath id="ch5-tree-p4870906eab">
+   <rect x="352.424132" y="25.4475" width="114.713203" height="114.713203"/>
+  </clipPath>
+ </defs>
+</svg>

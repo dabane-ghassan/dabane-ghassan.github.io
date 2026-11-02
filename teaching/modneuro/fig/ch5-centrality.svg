@@ -1,0 +1,979 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 440.461952 466.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="ch5-centrality-figure_1">
+  <g id="ch5-centrality-patch_1">
+   <path d="M 0 466.2 
+L 440.461952 466.2 
+L 440.461952 0 
+L 0 0 
+L 0 466.2 
+z
+" style="fill: none"/>
+  </g>
+  <g id="ch5-centrality-axes_1">
+   <g id="ch5-centrality-line2d_1">
+    <path d="M 113.991587 95.090798 
+L 76.176364 84.051434 
+" clip-path="url(#ch5-centrality-pa2ec48cc27)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_2">
+    <path d="M 113.903837 67.539108 
+L 76.176364 84.051434 
+" clip-path="url(#ch5-centrality-pa2ec48cc27)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_3">
+    <path d="M 91.180064 47.294484 
+L 76.176364 84.051434 
+" clip-path="url(#ch5-centrality-pa2ec48cc27)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_4">
+    <path d="M 60.420666 46.517402 
+L 76.176364 84.051434 
+" clip-path="url(#ch5-centrality-pa2ec48cc27)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_5">
+    <path d="M 39.961218 65.462956 
+L 76.176364 84.051434 
+" clip-path="url(#ch5-centrality-pa2ec48cc27)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_6">
+    <path d="M 76.176364 84.051434 
+L 58.141321 124.05533 
+" clip-path="url(#ch5-centrality-pa2ec48cc27)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_7">
+    <path d="M 58.141321 124.05533 
+L 71.837331 165.294419 
+" clip-path="url(#ch5-centrality-pa2ec48cc27)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_8">
+    <path d="M 58.141321 124.05533 
+L 19.051598 111.112842 
+" clip-path="url(#ch5-centrality-pa2ec48cc27)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_9">
+    <path d="M 58.141321 124.05533 
+L 20.691636 137.320922 
+" clip-path="url(#ch5-centrality-pa2ec48cc27)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_10">
+    <path d="M 71.837331 165.294419 
+L 36.479867 187.159502 
+" clip-path="url(#ch5-centrality-pa2ec48cc27)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_11">
+    <path d="M 71.837331 165.294419 
+L 63.777149 203.936348 
+" clip-path="url(#ch5-centrality-pa2ec48cc27)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_12">
+    <path d="M 71.837331 165.294419 
+L 97.514406 195.642166 
+" clip-path="url(#ch5-centrality-pa2ec48cc27)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_13">
+    <path d="M 71.837331 165.294419 
+L 112.310743 168.315418 
+" clip-path="url(#ch5-centrality-pa2ec48cc27)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-PathCollection_1">
+    <defs>
+     <path id="ch5-centrality-m02540b0696" d="M 0 7.245688 
+C 1.921579 7.245688 3.764714 6.482237 5.123475 5.123475 
+C 6.482237 3.764714 7.245688 1.921579 7.245688 0 
+C 7.245688 -1.921579 6.482237 -3.764714 5.123475 -5.123475 
+C 3.764714 -6.482237 1.921579 -7.245688 0 -7.245688 
+C -1.921579 -7.245688 -3.764714 -6.482237 -5.123475 -5.123475 
+C -6.482237 -3.764714 -7.245688 -1.921579 -7.245688 0 
+C -7.245688 1.921579 -6.482237 3.764714 -5.123475 5.123475 
+C -3.764714 6.482237 -1.921579 7.245688 0 7.245688 
+z
+" style="stroke: #1f5fff; stroke-opacity: 0.266667"/>
+    </defs>
+    <g>
+     <use xlink:href="#ch5-centrality-m02540b0696" x="113.991587" y="95.090798" style="fill: #1f5fff; fill-opacity: 0.266667; stroke: #1f5fff; stroke-opacity: 0.266667"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_2">
+    <g>
+     <use xlink:href="#ch5-centrality-m02540b0696" x="113.903837" y="67.539108" style="fill: #1f5fff; fill-opacity: 0.266667; stroke: #1f5fff; stroke-opacity: 0.266667"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_3">
+    <g>
+     <use xlink:href="#ch5-centrality-m02540b0696" x="91.180064" y="47.294484" style="fill: #1f5fff; fill-opacity: 0.266667; stroke: #1f5fff; stroke-opacity: 0.266667"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_4">
+    <g>
+     <use xlink:href="#ch5-centrality-m02540b0696" x="60.420666" y="46.517402" style="fill: #1f5fff; fill-opacity: 0.266667; stroke: #1f5fff; stroke-opacity: 0.266667"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_5">
+    <g>
+     <use xlink:href="#ch5-centrality-m02540b0696" x="39.961218" y="65.462956" style="fill: #1f5fff; fill-opacity: 0.266667; stroke: #1f5fff; stroke-opacity: 0.266667"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_6">
+    <defs>
+     <path id="ch5-centrality-m3fe668d718" d="M 0 7.245688 
+C 1.921579 7.245688 3.764714 6.482237 5.123475 5.123475 
+C 6.482237 3.764714 7.245688 1.921579 7.245688 0 
+C 7.245688 -1.921579 6.482237 -3.764714 5.123475 -5.123475 
+C 3.764714 -6.482237 1.921579 -7.245688 0 -7.245688 
+C -1.921579 -7.245688 -3.764714 -6.482237 -5.123475 -5.123475 
+C -6.482237 -3.764714 -7.245688 -1.921579 -7.245688 0 
+C -7.245688 1.921579 -6.482237 3.764714 -5.123475 5.123475 
+C -3.764714 6.482237 -1.921579 7.245688 0 7.245688 
+z
+" style="stroke: #1f5fff"/>
+    </defs>
+    <g>
+     <use xlink:href="#ch5-centrality-m3fe668d718" x="76.176364" y="84.051434" style="fill: #1f5fff; stroke: #1f5fff"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_7">
+    <defs>
+     <path id="ch5-centrality-m98dec0e355" d="M 0 7.245688 
+C 1.921579 7.245688 3.764714 6.482237 5.123475 5.123475 
+C 6.482237 3.764714 7.245688 1.921579 7.245688 0 
+C 7.245688 -1.921579 6.482237 -3.764714 5.123475 -5.123475 
+C 3.764714 -6.482237 1.921579 -7.245688 0 -7.245688 
+C -1.921579 -7.245688 -3.764714 -6.482237 -5.123475 -5.123475 
+C -6.482237 -3.764714 -7.245688 -1.921579 -7.245688 0 
+C -7.245688 1.921579 -6.482237 3.764714 -5.123475 5.123475 
+C -3.764714 6.482237 -1.921579 7.245688 0 7.245688 
+z
+" style="stroke: #1f5fff; stroke-opacity: 0.706667"/>
+    </defs>
+    <g>
+     <use xlink:href="#ch5-centrality-m98dec0e355" x="58.141321" y="124.05533" style="fill: #1f5fff; fill-opacity: 0.706667; stroke: #1f5fff; stroke-opacity: 0.706667"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_8">
+    <defs>
+     <path id="ch5-centrality-mc37a381a96" d="M 0 7.245688 
+C 1.921579 7.245688 3.764714 6.482237 5.123475 5.123475 
+C 6.482237 3.764714 7.245688 1.921579 7.245688 0 
+C 7.245688 -1.921579 6.482237 -3.764714 5.123475 -5.123475 
+C 3.764714 -6.482237 1.921579 -7.245688 0 -7.245688 
+C -1.921579 -7.245688 -3.764714 -6.482237 -5.123475 -5.123475 
+C -6.482237 -3.764714 -7.245688 -1.921579 -7.245688 0 
+C -7.245688 1.921579 -6.482237 3.764714 -5.123475 5.123475 
+C -3.764714 6.482237 -1.921579 7.245688 0 7.245688 
+z
+" style="stroke: #1f5fff; stroke-opacity: 0.853333"/>
+    </defs>
+    <g>
+     <use xlink:href="#ch5-centrality-mc37a381a96" x="71.837331" y="165.294419" style="fill: #1f5fff; fill-opacity: 0.853333; stroke: #1f5fff; stroke-opacity: 0.853333"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_9">
+    <g>
+     <use xlink:href="#ch5-centrality-m02540b0696" x="19.051598" y="111.112842" style="fill: #1f5fff; fill-opacity: 0.266667; stroke: #1f5fff; stroke-opacity: 0.266667"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_10">
+    <g>
+     <use xlink:href="#ch5-centrality-m02540b0696" x="20.691636" y="137.320922" style="fill: #1f5fff; fill-opacity: 0.266667; stroke: #1f5fff; stroke-opacity: 0.266667"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_11">
+    <g>
+     <use xlink:href="#ch5-centrality-m02540b0696" x="36.479867" y="187.159502" style="fill: #1f5fff; fill-opacity: 0.266667; stroke: #1f5fff; stroke-opacity: 0.266667"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_12">
+    <g>
+     <use xlink:href="#ch5-centrality-m02540b0696" x="63.777149" y="203.936348" style="fill: #1f5fff; fill-opacity: 0.266667; stroke: #1f5fff; stroke-opacity: 0.266667"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_13">
+    <g>
+     <use xlink:href="#ch5-centrality-m02540b0696" x="97.514406" y="195.642166" style="fill: #1f5fff; fill-opacity: 0.266667; stroke: #1f5fff; stroke-opacity: 0.266667"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_14">
+    <g>
+     <use xlink:href="#ch5-centrality-m02540b0696" x="112.310743" y="168.315418" style="fill: #1f5fff; fill-opacity: 0.266667; stroke: #1f5fff; stroke-opacity: 0.266667"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-text_1">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="113.991587" y="97.81907" transform="rotate(-0 113.991587 97.81907)">1</text>
+   </g>
+   <g id="ch5-centrality-text_2">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="113.903837" y="70.267379" transform="rotate(-0 113.903837 70.267379)">2</text>
+   </g>
+   <g id="ch5-centrality-text_3">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="91.180064" y="50.022756" transform="rotate(-0 91.180064 50.022756)">3</text>
+   </g>
+   <g id="ch5-centrality-text_4">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="60.420666" y="49.245674" transform="rotate(-0 60.420666 49.245674)">4</text>
+   </g>
+   <g id="ch5-centrality-text_5">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="39.961218" y="68.191227" transform="rotate(-0 39.961218 68.191227)">5</text>
+   </g>
+   <g id="ch5-centrality-text_6">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="76.176364" y="86.779706" transform="rotate(-0 76.176364 86.779706)">6</text>
+   </g>
+   <g id="ch5-centrality-text_7">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="58.141321" y="126.783602" transform="rotate(-0 58.141321 126.783602)">7</text>
+   </g>
+   <g id="ch5-centrality-text_8">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="71.837331" y="168.022691" transform="rotate(-0 71.837331 168.022691)">8</text>
+   </g>
+   <g id="ch5-centrality-text_9">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="19.051598" y="113.841113" transform="rotate(-0 19.051598 113.841113)">9</text>
+   </g>
+   <g id="ch5-centrality-text_10">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="20.691636" y="140.049193" transform="rotate(-0 20.691636 140.049193)">10</text>
+   </g>
+   <g id="ch5-centrality-text_11">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="36.479867" y="189.887774" transform="rotate(-0 36.479867 189.887774)">11</text>
+   </g>
+   <g id="ch5-centrality-text_12">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="63.777149" y="206.664619" transform="rotate(-0 63.777149 206.664619)">12</text>
+   </g>
+   <g id="ch5-centrality-text_13">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="97.514406" y="198.370437" transform="rotate(-0 97.514406 198.370437)">13</text>
+   </g>
+   <g id="ch5-centrality-text_14">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="112.310743" y="171.043689" transform="rotate(-0 112.310743 171.043689)">14</text>
+   </g>
+   <g id="ch5-centrality-text_15">
+    <text style="font-weight: 600; font-size: 9px; font-family: var(--sans); text-anchor: start; fill: currentColor" x="5.76" y="14.47875" transform="rotate(-0 5.76 14.47875)">Degree centrality — highest: node 6 (0.46)</text>
+   </g>
+  </g>
+  <g id="ch5-centrality-axes_2">
+   <g id="ch5-centrality-line2d_14">
+    <path d="M 331.190258 95.090798 
+L 293.375035 84.051434 
+" clip-path="url(#ch5-centrality-p7aada6e10b)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_15">
+    <path d="M 331.102508 67.539108 
+L 293.375035 84.051434 
+" clip-path="url(#ch5-centrality-p7aada6e10b)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_16">
+    <path d="M 308.378734 47.294484 
+L 293.375035 84.051434 
+" clip-path="url(#ch5-centrality-p7aada6e10b)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_17">
+    <path d="M 277.619337 46.517402 
+L 293.375035 84.051434 
+" clip-path="url(#ch5-centrality-p7aada6e10b)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_18">
+    <path d="M 257.159888 65.462956 
+L 293.375035 84.051434 
+" clip-path="url(#ch5-centrality-p7aada6e10b)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_19">
+    <path d="M 293.375035 84.051434 
+L 275.339992 124.05533 
+" clip-path="url(#ch5-centrality-p7aada6e10b)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_20">
+    <path d="M 275.339992 124.05533 
+L 289.036002 165.294419 
+" clip-path="url(#ch5-centrality-p7aada6e10b)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_21">
+    <path d="M 275.339992 124.05533 
+L 236.250269 111.112842 
+" clip-path="url(#ch5-centrality-p7aada6e10b)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_22">
+    <path d="M 275.339992 124.05533 
+L 237.890306 137.320922 
+" clip-path="url(#ch5-centrality-p7aada6e10b)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_23">
+    <path d="M 289.036002 165.294419 
+L 253.678538 187.159502 
+" clip-path="url(#ch5-centrality-p7aada6e10b)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_24">
+    <path d="M 289.036002 165.294419 
+L 280.97582 203.936348 
+" clip-path="url(#ch5-centrality-p7aada6e10b)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_25">
+    <path d="M 289.036002 165.294419 
+L 314.713077 195.642166 
+" clip-path="url(#ch5-centrality-p7aada6e10b)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_26">
+    <path d="M 289.036002 165.294419 
+L 329.509414 168.315418 
+" clip-path="url(#ch5-centrality-p7aada6e10b)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-PathCollection_15">
+    <defs>
+     <path id="ch5-centrality-m73a104d1d7" d="M 0 7.245688 
+C 1.921579 7.245688 3.764714 6.482237 5.123475 5.123475 
+C 6.482237 3.764714 7.245688 1.921579 7.245688 0 
+C 7.245688 -1.921579 6.482237 -3.764714 5.123475 -5.123475 
+C 3.764714 -6.482237 1.921579 -7.245688 0 -7.245688 
+C -1.921579 -7.245688 -3.764714 -6.482237 -5.123475 -5.123475 
+C -6.482237 -3.764714 -7.245688 -1.921579 -7.245688 0 
+C -7.245688 1.921579 -6.482237 3.764714 -5.123475 5.123475 
+C -3.764714 6.482237 -1.921579 7.245688 0 7.245688 
+z
+" style="stroke: #1f5fff; stroke-opacity: 0.444867"/>
+    </defs>
+    <g>
+     <use xlink:href="#ch5-centrality-m73a104d1d7" x="331.190258" y="95.090798" style="fill: #1f5fff; fill-opacity: 0.444867; stroke: #1f5fff; stroke-opacity: 0.444867"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_16">
+    <g>
+     <use xlink:href="#ch5-centrality-m73a104d1d7" x="331.102508" y="67.539108" style="fill: #1f5fff; fill-opacity: 0.444867; stroke: #1f5fff; stroke-opacity: 0.444867"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_17">
+    <g>
+     <use xlink:href="#ch5-centrality-m73a104d1d7" x="308.378734" y="47.294484" style="fill: #1f5fff; fill-opacity: 0.444867; stroke: #1f5fff; stroke-opacity: 0.444867"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_18">
+    <g>
+     <use xlink:href="#ch5-centrality-m73a104d1d7" x="277.619337" y="46.517402" style="fill: #1f5fff; fill-opacity: 0.444867; stroke: #1f5fff; stroke-opacity: 0.444867"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_19">
+    <g>
+     <use xlink:href="#ch5-centrality-m73a104d1d7" x="257.159888" y="65.462956" style="fill: #1f5fff; fill-opacity: 0.444867; stroke: #1f5fff; stroke-opacity: 0.444867"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_20">
+    <g>
+     <use xlink:href="#ch5-centrality-m3fe668d718" x="293.375035" y="84.051434" style="fill: #1f5fff; stroke: #1f5fff"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_21">
+    <defs>
+     <path id="ch5-centrality-mc8aab8ceb0" d="M 0 7.245688 
+C 1.921579 7.245688 3.764714 6.482237 5.123475 5.123475 
+C 6.482237 3.764714 7.245688 1.921579 7.245688 0 
+C 7.245688 -1.921579 6.482237 -3.764714 5.123475 -5.123475 
+C 3.764714 -6.482237 1.921579 -7.245688 0 -7.245688 
+C -1.921579 -7.245688 -3.764714 -6.482237 -5.123475 -5.123475 
+C -6.482237 -3.764714 -7.245688 -1.921579 -7.245688 0 
+C -7.245688 1.921579 -6.482237 3.764714 -5.123475 5.123475 
+C -3.764714 6.482237 -1.921579 7.245688 0 7.245688 
+z
+" style="stroke: #1f5fff; stroke-opacity: 0.879403"/>
+    </defs>
+    <g>
+     <use xlink:href="#ch5-centrality-mc8aab8ceb0" x="275.339992" y="124.05533" style="fill: #1f5fff; fill-opacity: 0.879403; stroke: #1f5fff; stroke-opacity: 0.879403"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_22">
+    <defs>
+     <path id="ch5-centrality-m64a98483cc" d="M 0 7.245688 
+C 1.921579 7.245688 3.764714 6.482237 5.123475 5.123475 
+C 6.482237 3.764714 7.245688 1.921579 7.245688 0 
+C 7.245688 -1.921579 6.482237 -3.764714 5.123475 -5.123475 
+C 3.764714 -6.482237 1.921579 -7.245688 0 -7.245688 
+C -1.921579 -7.245688 -3.764714 -6.482237 -5.123475 -5.123475 
+C -6.482237 -3.764714 -7.245688 -1.921579 -7.245688 0 
+C -7.245688 1.921579 -6.482237 3.764714 -5.123475 5.123475 
+C -3.764714 6.482237 -1.921579 7.245688 0 7.245688 
+z
+" style="stroke: #1f5fff; stroke-opacity: 0.736359"/>
+    </defs>
+    <g>
+     <use xlink:href="#ch5-centrality-m64a98483cc" x="289.036002" y="165.294419" style="fill: #1f5fff; fill-opacity: 0.736359; stroke: #1f5fff; stroke-opacity: 0.736359"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_23">
+    <defs>
+     <path id="ch5-centrality-m061ae07a8b" d="M 0 7.245688 
+C 1.921579 7.245688 3.764714 6.482237 5.123475 5.123475 
+C 6.482237 3.764714 7.245688 1.921579 7.245688 0 
+C 7.245688 -1.921579 6.482237 -3.764714 5.123475 -5.123475 
+C 3.764714 -6.482237 1.921579 -7.245688 0 -7.245688 
+C -1.921579 -7.245688 -3.764714 -6.482237 -5.123475 -5.123475 
+C -6.482237 -3.764714 -7.245688 -1.921579 -7.245688 0 
+C -7.245688 1.921579 -6.482237 3.764714 -5.123475 5.123475 
+C -3.764714 6.482237 -1.921579 7.245688 0 7.245688 
+z
+" style="stroke: #1f5fff; stroke-opacity: 0.400348"/>
+    </defs>
+    <g>
+     <use xlink:href="#ch5-centrality-m061ae07a8b" x="236.250269" y="111.112842" style="fill: #1f5fff; fill-opacity: 0.400348; stroke: #1f5fff; stroke-opacity: 0.400348"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_24">
+    <g>
+     <use xlink:href="#ch5-centrality-m061ae07a8b" x="237.890306" y="137.320922" style="fill: #1f5fff; fill-opacity: 0.400348; stroke: #1f5fff; stroke-opacity: 0.400348"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_25">
+    <defs>
+     <path id="ch5-centrality-ma700917139" d="M 0 7.245688 
+C 1.921579 7.245688 3.764714 6.482237 5.123475 5.123475 
+C 6.482237 3.764714 7.245688 1.921579 7.245688 0 
+C 7.245688 -1.921579 6.482237 -3.764714 5.123475 -5.123475 
+C 3.764714 -6.482237 1.921579 -7.245688 0 -7.245688 
+C -1.921579 -7.245688 -3.764714 -6.482237 -5.123475 -5.123475 
+C -6.482237 -3.764714 -7.245688 -1.921579 -7.245688 0 
+C -7.245688 1.921579 -6.482237 3.764714 -5.123475 5.123475 
+C -3.764714 6.482237 -1.921579 7.245688 0 7.245688 
+z
+" style="stroke: #1f5fff; stroke-opacity: 0.347543"/>
+    </defs>
+    <g>
+     <use xlink:href="#ch5-centrality-ma700917139" x="253.678538" y="187.159502" style="fill: #1f5fff; fill-opacity: 0.347543; stroke: #1f5fff; stroke-opacity: 0.347543"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_26">
+    <g>
+     <use xlink:href="#ch5-centrality-ma700917139" x="280.97582" y="203.936348" style="fill: #1f5fff; fill-opacity: 0.347543; stroke: #1f5fff; stroke-opacity: 0.347543"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_27">
+    <g>
+     <use xlink:href="#ch5-centrality-ma700917139" x="314.713077" y="195.642166" style="fill: #1f5fff; fill-opacity: 0.347543; stroke: #1f5fff; stroke-opacity: 0.347543"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_28">
+    <g>
+     <use xlink:href="#ch5-centrality-ma700917139" x="329.509414" y="168.315418" style="fill: #1f5fff; fill-opacity: 0.347543; stroke: #1f5fff; stroke-opacity: 0.347543"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-text_16">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="331.190258" y="97.81907" transform="rotate(-0 331.190258 97.81907)">1</text>
+   </g>
+   <g id="ch5-centrality-text_17">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="331.102508" y="70.267379" transform="rotate(-0 331.102508 70.267379)">2</text>
+   </g>
+   <g id="ch5-centrality-text_18">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="308.378734" y="50.022756" transform="rotate(-0 308.378734 50.022756)">3</text>
+   </g>
+   <g id="ch5-centrality-text_19">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="277.619337" y="49.245674" transform="rotate(-0 277.619337 49.245674)">4</text>
+   </g>
+   <g id="ch5-centrality-text_20">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="257.159888" y="68.191227" transform="rotate(-0 257.159888 68.191227)">5</text>
+   </g>
+   <g id="ch5-centrality-text_21">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="293.375035" y="86.779706" transform="rotate(-0 293.375035 86.779706)">6</text>
+   </g>
+   <g id="ch5-centrality-text_22">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="275.339992" y="126.783602" transform="rotate(-0 275.339992 126.783602)">7</text>
+   </g>
+   <g id="ch5-centrality-text_23">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="289.036002" y="168.022691" transform="rotate(-0 289.036002 168.022691)">8</text>
+   </g>
+   <g id="ch5-centrality-text_24">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="236.250269" y="113.841113" transform="rotate(-0 236.250269 113.841113)">9</text>
+   </g>
+   <g id="ch5-centrality-text_25">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="237.890306" y="140.049193" transform="rotate(-0 237.890306 140.049193)">10</text>
+   </g>
+   <g id="ch5-centrality-text_26">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="253.678538" y="189.887774" transform="rotate(-0 253.678538 189.887774)">11</text>
+   </g>
+   <g id="ch5-centrality-text_27">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="280.97582" y="206.664619" transform="rotate(-0 280.97582 206.664619)">12</text>
+   </g>
+   <g id="ch5-centrality-text_28">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="314.713077" y="198.370437" transform="rotate(-0 314.713077 198.370437)">13</text>
+   </g>
+   <g id="ch5-centrality-text_29">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="329.509414" y="171.043689" transform="rotate(-0 329.509414 171.043689)">14</text>
+   </g>
+   <g id="ch5-centrality-text_30">
+    <text style="font-weight: 600; font-size: 9px; font-family: var(--sans); text-anchor: start; fill: currentColor" x="222.958671" y="14.47875" transform="rotate(-0 222.958671 14.47875)">Eigenvector centrality — highest: node 6 (0.54)</text>
+   </g>
+  </g>
+  <g id="ch5-centrality-axes_3">
+   <g id="ch5-centrality-line2d_27">
+    <path d="M 113.991587 329.555798 
+L 76.176364 318.516434 
+" clip-path="url(#ch5-centrality-p508c458844)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_28">
+    <path d="M 113.903837 302.004108 
+L 76.176364 318.516434 
+" clip-path="url(#ch5-centrality-p508c458844)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_29">
+    <path d="M 91.180064 281.759484 
+L 76.176364 318.516434 
+" clip-path="url(#ch5-centrality-p508c458844)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_30">
+    <path d="M 60.420666 280.982402 
+L 76.176364 318.516434 
+" clip-path="url(#ch5-centrality-p508c458844)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_31">
+    <path d="M 39.961218 299.927956 
+L 76.176364 318.516434 
+" clip-path="url(#ch5-centrality-p508c458844)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_32">
+    <path d="M 76.176364 318.516434 
+L 58.141321 358.52033 
+" clip-path="url(#ch5-centrality-p508c458844)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_33">
+    <path d="M 58.141321 358.52033 
+L 71.837331 399.759419 
+" clip-path="url(#ch5-centrality-p508c458844)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_34">
+    <path d="M 58.141321 358.52033 
+L 19.051598 345.577842 
+" clip-path="url(#ch5-centrality-p508c458844)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_35">
+    <path d="M 58.141321 358.52033 
+L 20.691636 371.785922 
+" clip-path="url(#ch5-centrality-p508c458844)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_36">
+    <path d="M 71.837331 399.759419 
+L 36.479867 421.624502 
+" clip-path="url(#ch5-centrality-p508c458844)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_37">
+    <path d="M 71.837331 399.759419 
+L 63.777149 438.401348 
+" clip-path="url(#ch5-centrality-p508c458844)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_38">
+    <path d="M 71.837331 399.759419 
+L 97.514406 430.107166 
+" clip-path="url(#ch5-centrality-p508c458844)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_39">
+    <path d="M 71.837331 399.759419 
+L 112.310743 402.780418 
+" clip-path="url(#ch5-centrality-p508c458844)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-PathCollection_29">
+    <defs>
+     <path id="ch5-centrality-m8fe45a67a3" d="M 0 7.245688 
+C 1.921579 7.245688 3.764714 6.482237 5.123475 5.123475 
+C 6.482237 3.764714 7.245688 1.921579 7.245688 0 
+C 7.245688 -1.921579 6.482237 -3.764714 5.123475 -5.123475 
+C 3.764714 -6.482237 1.921579 -7.245688 0 -7.245688 
+C -1.921579 -7.245688 -3.764714 -6.482237 -5.123475 -5.123475 
+C -6.482237 -3.764714 -7.245688 -1.921579 -7.245688 0 
+C -7.245688 1.921579 -6.482237 3.764714 -5.123475 5.123475 
+C -3.764714 6.482237 -1.921579 7.245688 0 7.245688 
+z
+" style="stroke: #1f5fff; stroke-opacity: 0.657778"/>
+    </defs>
+    <g>
+     <use xlink:href="#ch5-centrality-m8fe45a67a3" x="113.991587" y="329.555798" style="fill: #1f5fff; fill-opacity: 0.657778; stroke: #1f5fff; stroke-opacity: 0.657778"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_30">
+    <g>
+     <use xlink:href="#ch5-centrality-m8fe45a67a3" x="113.903837" y="302.004108" style="fill: #1f5fff; fill-opacity: 0.657778; stroke: #1f5fff; stroke-opacity: 0.657778"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_31">
+    <g>
+     <use xlink:href="#ch5-centrality-m8fe45a67a3" x="91.180064" y="281.759484" style="fill: #1f5fff; fill-opacity: 0.657778; stroke: #1f5fff; stroke-opacity: 0.657778"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_32">
+    <g>
+     <use xlink:href="#ch5-centrality-m8fe45a67a3" x="60.420666" y="280.982402" style="fill: #1f5fff; fill-opacity: 0.657778; stroke: #1f5fff; stroke-opacity: 0.657778"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_33">
+    <g>
+     <use xlink:href="#ch5-centrality-m8fe45a67a3" x="39.961218" y="299.927956" style="fill: #1f5fff; fill-opacity: 0.657778; stroke: #1f5fff; stroke-opacity: 0.657778"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_34">
+    <defs>
+     <path id="ch5-centrality-m36e8edeb4a" d="M 0 7.245688 
+C 1.921579 7.245688 3.764714 6.482237 5.123475 5.123475 
+C 6.482237 3.764714 7.245688 1.921579 7.245688 0 
+C 7.245688 -1.921579 6.482237 -3.764714 5.123475 -5.123475 
+C 3.764714 -6.482237 1.921579 -7.245688 0 -7.245688 
+C -1.921579 -7.245688 -3.764714 -6.482237 -5.123475 -5.123475 
+C -6.482237 -3.764714 -7.245688 -1.921579 -7.245688 0 
+C -7.245688 1.921579 -6.482237 3.764714 -5.123475 5.123475 
+C -3.764714 6.482237 -1.921579 7.245688 0 7.245688 
+z
+" style="stroke: #1f5fff; stroke-opacity: 0.926667"/>
+    </defs>
+    <g>
+     <use xlink:href="#ch5-centrality-m36e8edeb4a" x="76.176364" y="318.516434" style="fill: #1f5fff; fill-opacity: 0.926667; stroke: #1f5fff; stroke-opacity: 0.926667"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_35">
+    <g>
+     <use xlink:href="#ch5-centrality-m3fe668d718" x="58.141321" y="358.52033" style="fill: #1f5fff; stroke: #1f5fff"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_36">
+    <defs>
+     <path id="ch5-centrality-m7e8170d39e" d="M 0 7.245688 
+C 1.921579 7.245688 3.764714 6.482237 5.123475 5.123475 
+C 6.482237 3.764714 7.245688 1.921579 7.245688 0 
+C 7.245688 -1.921579 6.482237 -3.764714 5.123475 -5.123475 
+C 3.764714 -6.482237 1.921579 -7.245688 0 -7.245688 
+C -1.921579 -7.245688 -3.764714 -6.482237 -5.123475 -5.123475 
+C -6.482237 -3.764714 -7.245688 -1.921579 -7.245688 0 
+C -7.245688 1.921579 -6.482237 3.764714 -5.123475 5.123475 
+C -3.764714 6.482237 -1.921579 7.245688 0 7.245688 
+z
+" style="stroke: #1f5fff; stroke-opacity: 0.864615"/>
+    </defs>
+    <g>
+     <use xlink:href="#ch5-centrality-m7e8170d39e" x="71.837331" y="399.759419" style="fill: #1f5fff; fill-opacity: 0.864615; stroke: #1f5fff; stroke-opacity: 0.864615"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_37">
+    <defs>
+     <path id="ch5-centrality-m4591253041" d="M 0 7.245688 
+C 1.921579 7.245688 3.764714 6.482237 5.123475 5.123475 
+C 6.482237 3.764714 7.245688 1.921579 7.245688 0 
+C 7.245688 -1.921579 6.482237 -3.764714 5.123475 -5.123475 
+C 3.764714 -6.482237 1.921579 -7.245688 0 -7.245688 
+C -1.921579 -7.245688 -3.764714 -6.482237 -5.123475 -5.123475 
+C -6.482237 -3.764714 -7.245688 -1.921579 -7.245688 0 
+C -7.245688 1.921579 -6.482237 3.764714 -5.123475 5.123475 
+C -3.764714 6.482237 -1.921579 7.245688 0 7.245688 
+z
+" style="stroke: #1f5fff; stroke-opacity: 0.689412"/>
+    </defs>
+    <g>
+     <use xlink:href="#ch5-centrality-m4591253041" x="19.051598" y="345.577842" style="fill: #1f5fff; fill-opacity: 0.689412; stroke: #1f5fff; stroke-opacity: 0.689412"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_38">
+    <g>
+     <use xlink:href="#ch5-centrality-m4591253041" x="20.691636" y="371.785922" style="fill: #1f5fff; fill-opacity: 0.689412; stroke: #1f5fff; stroke-opacity: 0.689412"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_39">
+    <defs>
+     <path id="ch5-centrality-m2a1653ff2e" d="M 0 7.245688 
+C 1.921579 7.245688 3.764714 6.482237 5.123475 5.123475 
+C 6.482237 3.764714 7.245688 1.921579 7.245688 0 
+C 7.245688 -1.921579 6.482237 -3.764714 5.123475 -5.123475 
+C 3.764714 -6.482237 1.921579 -7.245688 0 -7.245688 
+C -1.921579 -7.245688 -3.764714 -6.482237 -5.123475 -5.123475 
+C -6.482237 -3.764714 -7.245688 -1.921579 -7.245688 0 
+C -7.245688 1.921579 -6.482237 3.764714 -5.123475 5.123475 
+C -3.764714 6.482237 -1.921579 7.245688 0 7.245688 
+z
+" style="stroke: #1f5fff; stroke-opacity: 0.629474"/>
+    </defs>
+    <g>
+     <use xlink:href="#ch5-centrality-m2a1653ff2e" x="36.479867" y="421.624502" style="fill: #1f5fff; fill-opacity: 0.629474; stroke: #1f5fff; stroke-opacity: 0.629474"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_40">
+    <g>
+     <use xlink:href="#ch5-centrality-m2a1653ff2e" x="63.777149" y="438.401348" style="fill: #1f5fff; fill-opacity: 0.629474; stroke: #1f5fff; stroke-opacity: 0.629474"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_41">
+    <g>
+     <use xlink:href="#ch5-centrality-m2a1653ff2e" x="97.514406" y="430.107166" style="fill: #1f5fff; fill-opacity: 0.629474; stroke: #1f5fff; stroke-opacity: 0.629474"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_42">
+    <g>
+     <use xlink:href="#ch5-centrality-m2a1653ff2e" x="112.310743" y="402.780418" style="fill: #1f5fff; fill-opacity: 0.629474; stroke: #1f5fff; stroke-opacity: 0.629474"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-text_31">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="113.991587" y="332.28407" transform="rotate(-0 113.991587 332.28407)">1</text>
+   </g>
+   <g id="ch5-centrality-text_32">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="113.903837" y="304.732379" transform="rotate(-0 113.903837 304.732379)">2</text>
+   </g>
+   <g id="ch5-centrality-text_33">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="91.180064" y="284.487756" transform="rotate(-0 91.180064 284.487756)">3</text>
+   </g>
+   <g id="ch5-centrality-text_34">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="60.420666" y="283.710674" transform="rotate(-0 60.420666 283.710674)">4</text>
+   </g>
+   <g id="ch5-centrality-text_35">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="39.961218" y="302.656227" transform="rotate(-0 39.961218 302.656227)">5</text>
+   </g>
+   <g id="ch5-centrality-text_36">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="76.176364" y="321.244706" transform="rotate(-0 76.176364 321.244706)">6</text>
+   </g>
+   <g id="ch5-centrality-text_37">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="58.141321" y="361.248602" transform="rotate(-0 58.141321 361.248602)">7</text>
+   </g>
+   <g id="ch5-centrality-text_38">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="71.837331" y="402.487691" transform="rotate(-0 71.837331 402.487691)">8</text>
+   </g>
+   <g id="ch5-centrality-text_39">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="19.051598" y="348.306113" transform="rotate(-0 19.051598 348.306113)">9</text>
+   </g>
+   <g id="ch5-centrality-text_40">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="20.691636" y="374.514193" transform="rotate(-0 20.691636 374.514193)">10</text>
+   </g>
+   <g id="ch5-centrality-text_41">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="36.479867" y="424.352774" transform="rotate(-0 36.479867 424.352774)">11</text>
+   </g>
+   <g id="ch5-centrality-text_42">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="63.777149" y="441.129619" transform="rotate(-0 63.777149 441.129619)">12</text>
+   </g>
+   <g id="ch5-centrality-text_43">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="97.514406" y="432.835437" transform="rotate(-0 97.514406 432.835437)">13</text>
+   </g>
+   <g id="ch5-centrality-text_44">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="112.310743" y="405.508689" transform="rotate(-0 112.310743 405.508689)">14</text>
+   </g>
+   <g id="ch5-centrality-text_45">
+    <text style="font-weight: 600; font-size: 9px; font-family: var(--sans); text-anchor: start; fill: currentColor" x="5.76" y="248.94375" transform="rotate(-0 5.76 248.94375)">Closeness centrality — highest: node 7 (0.59)</text>
+   </g>
+  </g>
+  <g id="ch5-centrality-axes_4">
+   <g id="ch5-centrality-line2d_40">
+    <path d="M 331.190258 329.555798 
+L 293.375035 318.516434 
+" clip-path="url(#ch5-centrality-pabcfed9383)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_41">
+    <path d="M 331.102508 302.004108 
+L 293.375035 318.516434 
+" clip-path="url(#ch5-centrality-pabcfed9383)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_42">
+    <path d="M 308.378734 281.759484 
+L 293.375035 318.516434 
+" clip-path="url(#ch5-centrality-pabcfed9383)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_43">
+    <path d="M 277.619337 280.982402 
+L 293.375035 318.516434 
+" clip-path="url(#ch5-centrality-pabcfed9383)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_44">
+    <path d="M 257.159888 299.927956 
+L 293.375035 318.516434 
+" clip-path="url(#ch5-centrality-pabcfed9383)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_45">
+    <path d="M 293.375035 318.516434 
+L 275.339992 358.52033 
+" clip-path="url(#ch5-centrality-pabcfed9383)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_46">
+    <path d="M 275.339992 358.52033 
+L 289.036002 399.759419 
+" clip-path="url(#ch5-centrality-pabcfed9383)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_47">
+    <path d="M 275.339992 358.52033 
+L 236.250269 345.577842 
+" clip-path="url(#ch5-centrality-pabcfed9383)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_48">
+    <path d="M 275.339992 358.52033 
+L 237.890306 371.785922 
+" clip-path="url(#ch5-centrality-pabcfed9383)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_49">
+    <path d="M 289.036002 399.759419 
+L 253.678538 421.624502 
+" clip-path="url(#ch5-centrality-pabcfed9383)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_50">
+    <path d="M 289.036002 399.759419 
+L 280.97582 438.401348 
+" clip-path="url(#ch5-centrality-pabcfed9383)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_51">
+    <path d="M 289.036002 399.759419 
+L 314.713077 430.107166 
+" clip-path="url(#ch5-centrality-pabcfed9383)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-line2d_52">
+    <path d="M 289.036002 399.759419 
+L 329.509414 402.780418 
+" clip-path="url(#ch5-centrality-pabcfed9383)" style="fill: none; stroke: currentColor; stroke-opacity: 0.35; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-centrality-PathCollection_43">
+    <defs>
+     <path id="ch5-centrality-mc3440a59e7" d="M 0 7.245688 
+C 1.921579 7.245688 3.764714 6.482237 5.123475 5.123475 
+C 6.482237 3.764714 7.245688 1.921579 7.245688 0 
+C 7.245688 -1.921579 6.482237 -3.764714 5.123475 -5.123475 
+C 3.764714 -6.482237 1.921579 -7.245688 0 -7.245688 
+C -1.921579 -7.245688 -3.764714 -6.482237 -5.123475 -5.123475 
+C -6.482237 -3.764714 -7.245688 -1.921579 -7.245688 0 
+C -7.245688 1.921579 -6.482237 3.764714 -5.123475 5.123475 
+C -3.764714 6.482237 -1.921579 7.245688 0 7.245688 
+z
+" style="stroke: #1f5fff; stroke-opacity: 0.12"/>
+    </defs>
+    <g>
+     <use xlink:href="#ch5-centrality-mc3440a59e7" x="331.190258" y="329.555798" style="fill: #1f5fff; fill-opacity: 0.12; stroke: #1f5fff; stroke-opacity: 0.12"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_44">
+    <g>
+     <use xlink:href="#ch5-centrality-mc3440a59e7" x="331.102508" y="302.004108" style="fill: #1f5fff; fill-opacity: 0.12; stroke: #1f5fff; stroke-opacity: 0.12"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_45">
+    <g>
+     <use xlink:href="#ch5-centrality-mc3440a59e7" x="308.378734" y="281.759484" style="fill: #1f5fff; fill-opacity: 0.12; stroke: #1f5fff; stroke-opacity: 0.12"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_46">
+    <g>
+     <use xlink:href="#ch5-centrality-mc3440a59e7" x="277.619337" y="280.982402" style="fill: #1f5fff; fill-opacity: 0.12; stroke: #1f5fff; stroke-opacity: 0.12"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_47">
+    <g>
+     <use xlink:href="#ch5-centrality-mc3440a59e7" x="257.159888" y="299.927956" style="fill: #1f5fff; fill-opacity: 0.12; stroke: #1f5fff; stroke-opacity: 0.12"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_48">
+    <defs>
+     <path id="ch5-centrality-m7ce59f8b62" d="M 0 7.245688 
+C 1.921579 7.245688 3.764714 6.482237 5.123475 5.123475 
+C 6.482237 3.764714 7.245688 1.921579 7.245688 0 
+C 7.245688 -1.921579 6.482237 -3.764714 5.123475 -5.123475 
+C 3.764714 -6.482237 1.921579 -7.245688 0 -7.245688 
+C -1.921579 -7.245688 -3.764714 -6.482237 -5.123475 -5.123475 
+C -6.482237 -3.764714 -7.245688 -1.921579 -7.245688 0 
+C -7.245688 1.921579 -6.482237 3.764714 -5.123475 5.123475 
+C -3.764714 6.482237 -1.921579 7.245688 0 7.245688 
+z
+" style="stroke: #1f5fff; stroke-opacity: 0.950189"/>
+    </defs>
+    <g>
+     <use xlink:href="#ch5-centrality-m7ce59f8b62" x="293.375035" y="318.516434" style="fill: #1f5fff; fill-opacity: 0.950189; stroke: #1f5fff; stroke-opacity: 0.950189"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_49">
+    <g>
+     <use xlink:href="#ch5-centrality-m3fe668d718" x="275.339992" y="358.52033" style="fill: #1f5fff; stroke: #1f5fff"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_50">
+    <defs>
+     <path id="ch5-centrality-m7f3429a982" d="M 0 7.245688 
+C 1.921579 7.245688 3.764714 6.482237 5.123475 5.123475 
+C 6.482237 3.764714 7.245688 1.921579 7.245688 0 
+C 7.245688 -1.921579 6.482237 -3.764714 5.123475 -5.123475 
+C 3.764714 -6.482237 1.921579 -7.245688 0 -7.245688 
+C -1.921579 -7.245688 -3.764714 -6.482237 -5.123475 -5.123475 
+C -6.482237 -3.764714 -7.245688 -1.921579 -7.245688 0 
+C -7.245688 1.921579 -6.482237 3.764714 -5.123475 5.123475 
+C -3.764714 6.482237 -1.921579 7.245688 0 7.245688 
+z
+" style="stroke: #1f5fff; stroke-opacity: 0.817358"/>
+    </defs>
+    <g>
+     <use xlink:href="#ch5-centrality-m7f3429a982" x="289.036002" y="399.759419" style="fill: #1f5fff; fill-opacity: 0.817358; stroke: #1f5fff; stroke-opacity: 0.817358"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_51">
+    <g>
+     <use xlink:href="#ch5-centrality-mc3440a59e7" x="236.250269" y="345.577842" style="fill: #1f5fff; fill-opacity: 0.12; stroke: #1f5fff; stroke-opacity: 0.12"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_52">
+    <g>
+     <use xlink:href="#ch5-centrality-mc3440a59e7" x="237.890306" y="371.785922" style="fill: #1f5fff; fill-opacity: 0.12; stroke: #1f5fff; stroke-opacity: 0.12"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_53">
+    <g>
+     <use xlink:href="#ch5-centrality-mc3440a59e7" x="253.678538" y="421.624502" style="fill: #1f5fff; fill-opacity: 0.12; stroke: #1f5fff; stroke-opacity: 0.12"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_54">
+    <g>
+     <use xlink:href="#ch5-centrality-mc3440a59e7" x="280.97582" y="438.401348" style="fill: #1f5fff; fill-opacity: 0.12; stroke: #1f5fff; stroke-opacity: 0.12"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_55">
+    <g>
+     <use xlink:href="#ch5-centrality-mc3440a59e7" x="314.713077" y="430.107166" style="fill: #1f5fff; fill-opacity: 0.12; stroke: #1f5fff; stroke-opacity: 0.12"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-PathCollection_56">
+    <g>
+     <use xlink:href="#ch5-centrality-mc3440a59e7" x="329.509414" y="402.780418" style="fill: #1f5fff; fill-opacity: 0.12; stroke: #1f5fff; stroke-opacity: 0.12"/>
+    </g>
+   </g>
+   <g id="ch5-centrality-text_46">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="331.190258" y="332.28407" transform="rotate(-0 331.190258 332.28407)">1</text>
+   </g>
+   <g id="ch5-centrality-text_47">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="331.102508" y="304.732379" transform="rotate(-0 331.102508 304.732379)">2</text>
+   </g>
+   <g id="ch5-centrality-text_48">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="308.378734" y="284.487756" transform="rotate(-0 308.378734 284.487756)">3</text>
+   </g>
+   <g id="ch5-centrality-text_49">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="277.619337" y="283.710674" transform="rotate(-0 277.619337 283.710674)">4</text>
+   </g>
+   <g id="ch5-centrality-text_50">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="257.159888" y="302.656227" transform="rotate(-0 257.159888 302.656227)">5</text>
+   </g>
+   <g id="ch5-centrality-text_51">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="293.375035" y="321.244706" transform="rotate(-0 293.375035 321.244706)">6</text>
+   </g>
+   <g id="ch5-centrality-text_52">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="275.339992" y="361.248602" transform="rotate(-0 275.339992 361.248602)">7</text>
+   </g>
+   <g id="ch5-centrality-text_53">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="289.036002" y="402.487691" transform="rotate(-0 289.036002 402.487691)">8</text>
+   </g>
+   <g id="ch5-centrality-text_54">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="236.250269" y="348.306113" transform="rotate(-0 236.250269 348.306113)">9</text>
+   </g>
+   <g id="ch5-centrality-text_55">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="237.890306" y="374.514193" transform="rotate(-0 237.890306 374.514193)">10</text>
+   </g>
+   <g id="ch5-centrality-text_56">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="253.678538" y="424.352774" transform="rotate(-0 253.678538 424.352774)">11</text>
+   </g>
+   <g id="ch5-centrality-text_57">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="280.97582" y="441.129619" transform="rotate(-0 280.97582 441.129619)">12</text>
+   </g>
+   <g id="ch5-centrality-text_58">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="314.713077" y="432.835437" transform="rotate(-0 314.713077 432.835437)">13</text>
+   </g>
+   <g id="ch5-centrality-text_59">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="329.509414" y="405.508689" transform="rotate(-0 329.509414 405.508689)">14</text>
+   </g>
+   <g id="ch5-centrality-text_60">
+    <text style="font-weight: 600; font-size: 9px; font-family: var(--sans); text-anchor: start; fill: currentColor" x="222.958671" y="248.94375" transform="rotate(-0 222.958671 248.94375)">Betweenness centrality — highest: node 7 (0.68)</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="ch5-centrality-pa2ec48cc27">
+   <rect x="5.76" y="24.47875" width="121.523186" height="201.49625"/>
+  </clipPath>
+  <clipPath id="ch5-centrality-p7aada6e10b">
+   <rect x="222.958671" y="24.47875" width="121.523186" height="201.49625"/>
+  </clipPath>
+  <clipPath id="ch5-centrality-p508c458844">
+   <rect x="5.76" y="258.94375" width="121.523186" height="201.49625"/>
+  </clipPath>
+  <clipPath id="ch5-centrality-pabcfed9383">
+   <rect x="222.958671" y="258.94375" width="121.523186" height="201.49625"/>
+  </clipPath>
+ </defs>
+</svg>

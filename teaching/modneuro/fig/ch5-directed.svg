@@ -1,0 +1,446 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 505.925124 178.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="ch5-directed-figure_1">
+  <g id="ch5-directed-patch_1">
+   <path d="M 0 178.2 
+L 505.925124 178.2 
+L 505.925124 0 
+L 0 0 
+L 0 178.2 
+z
+" style="fill: none"/>
+  </g>
+  <g id="ch5-directed-axes_1">
+   <g id="ch5-directed-PathCollection_1">
+    <defs>
+     <path id="ch5-directed-mf379d340b4" d="M 0 7.245688 
+C 1.921579 7.245688 3.764714 6.482237 5.123475 5.123475 
+C 6.482237 3.764714 7.245688 1.921579 7.245688 0 
+C 7.245688 -1.921579 6.482237 -3.764714 5.123475 -5.123475 
+C 3.764714 -6.482237 1.921579 -7.245688 0 -7.245688 
+C -1.921579 -7.245688 -3.764714 -6.482237 -5.123475 -5.123475 
+C -6.482237 -3.764714 -7.245688 -1.921579 -7.245688 0 
+C -7.245688 1.921579 -6.482237 3.764714 -5.123475 5.123475 
+C -3.764714 6.482237 -1.921579 7.245688 0 7.245688 
+z
+" style="stroke: #1f5fff"/>
+    </defs>
+    <g>
+     <use xlink:href="#ch5-directed-mf379d340b4" x="107.926447" y="82.804102" style="fill: #1f5fff; stroke: #1f5fff"/>
+    </g>
+   </g>
+   <g id="ch5-directed-PathCollection_2">
+    <g>
+     <use xlink:href="#ch5-directed-mf379d340b4" x="63.1166" y="37.994257" style="fill: #1f5fff; stroke: #1f5fff"/>
+    </g>
+   </g>
+   <g id="ch5-directed-PathCollection_3">
+    <g>
+     <use xlink:href="#ch5-directed-mf379d340b4" x="18.306757" y="82.804105" style="fill: #1f5fff; stroke: #1f5fff"/>
+    </g>
+   </g>
+   <g id="ch5-directed-PathCollection_4">
+    <g>
+     <use xlink:href="#ch5-directed-mf379d340b4" x="63.116602" y="127.613947" style="fill: #1f5fff; stroke: #1f5fff"/>
+    </g>
+   </g>
+   <g id="ch5-directed-patch_2">
+    <path d="M 102.981277 75.283251 
+Q 89.610643 56.309525 71.550738 43.583004 
+" style="fill: none; opacity: 0.55; stroke: currentColor; stroke-linecap: round"/>
+    <path d="M 73.668396 47.521979 
+L 71.550738 43.583004 
+L 75.972513 44.252262 
+z
+" style="fill: currentColor; opacity: 0.55; stroke: currentColor; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-directed-patch_3">
+    <path d="M 68.061769 45.515108 
+Q 81.432403 64.488833 99.492309 77.215354 
+" style="fill: none; opacity: 0.55; stroke: currentColor; stroke-linecap: round"/>
+    <path d="M 97.37465 73.27638 
+L 99.492309 77.215354 
+L 95.070534 76.546096 
+z
+" style="fill: currentColor; opacity: 0.55; stroke: currentColor; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-directed-patch_4">
+    <path d="M 55.595749 42.939426 
+Q 36.622024 56.310062 23.895504 74.369967 
+" style="fill: none; opacity: 0.55; stroke: currentColor; stroke-linecap: round"/>
+    <path d="M 27.834478 72.252308 
+L 23.895504 74.369967 
+L 24.564761 69.948192 
+z
+" style="fill: currentColor; opacity: 0.55; stroke: currentColor; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-directed-patch_5">
+    <path d="M 70.637453 122.668777 
+Q 89.611178 109.298144 102.337699 91.238239 
+" style="fill: none; opacity: 0.55; stroke: currentColor; stroke-linecap: round"/>
+    <path d="M 98.398724 93.355898 
+L 102.337699 91.238239 
+L 101.668441 95.660014 
+z
+" style="fill: currentColor; opacity: 0.55; stroke: currentColor; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-directed-patch_6">
+    <path d="M 65.020914 118.815529 
+Q 71.966702 82.803841 65.232554 47.889953 
+" style="fill: none; opacity: 0.55; stroke: currentColor; stroke-linecap: round"/>
+    <path d="M 64.026301 52.196339 
+L 65.232554 47.889953 
+L 67.953911 51.438786 
+z
+" style="fill: currentColor; opacity: 0.55; stroke: currentColor; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-directed-patch_7">
+    <path d="M 58.171433 120.093096 
+Q 44.800799 101.119372 26.740894 88.392852 
+" style="fill: none; opacity: 0.55; stroke: currentColor; stroke-linecap: round"/>
+    <path d="M 28.858553 92.331827 
+L 26.740894 88.392852 
+L 31.162669 89.06211 
+z
+" style="fill: currentColor; opacity: 0.55; stroke: currentColor; stroke-linecap: round"/>
+   </g>
+   <g id="ch5-directed-text_1">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="107.926447" y="85.532373" transform="rotate(-0 107.926447 85.532373)">1</text>
+   </g>
+   <g id="ch5-directed-text_2">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="63.1166" y="40.722528" transform="rotate(-0 63.1166 40.722528)">2</text>
+   </g>
+   <g id="ch5-directed-text_3">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="18.306757" y="85.532377" transform="rotate(-0 18.306757 85.532377)">3</text>
+   </g>
+   <g id="ch5-directed-text_4">
+    <text style="font-weight: 600; font-size: 7.5px; font-family: var(--sans); text-anchor: middle; fill: #ffffff" x="63.116602" y="130.342218" transform="rotate(-0 63.116602 130.342218)">4</text>
+   </g>
+   <g id="ch5-directed-text_5">
+    <text style="font-weight: 600; font-size: 10px; font-family: var(--sans); text-anchor: start; fill: currentColor" x="5.76" y="15.4475" transform="rotate(-0 5.76 15.4475)">Graph</text>
+   </g>
+  </g>
+  <g id="ch5-directed-axes_2">
+   <g id="ch5-directed-patch_8">
+    <path d="M 186.467955 140.160703 
+L 326.456602 140.160703 
+L 326.456602 25.4475 
+L 186.467955 25.4475 
+L 186.467955 140.160703 
+z
+" style="fill: none"/>
+   </g>
+   <g id="ch5-directed-patch_9">
+    <path d="M 242.463414 140.160703 
+L 258.462116 140.160703 
+L 258.462116 85.535368 
+L 242.463414 85.535368 
+z
+" clip-path="url(#ch5-directed-p223f2bf2f2)" style="fill: #12a150"/>
+   </g>
+   <g id="ch5-directed-patch_10">
+    <path d="M 274.460819 140.160703 
+L 290.459521 140.160703 
+L 290.459521 30.910033 
+L 274.460819 30.910033 
+z
+" clip-path="url(#ch5-directed-p223f2bf2f2)" style="fill: #12a150"/>
+   </g>
+   <g id="ch5-directed-patch_11">
+    <path d="M 306.458223 140.160703 
+L 322.456926 140.160703 
+L 322.456926 85.535368 
+L 306.458223 85.535368 
+z
+" clip-path="url(#ch5-directed-p223f2bf2f2)" style="fill: #12a150"/>
+   </g>
+   <g id="ch5-directed-matplotlib.axis_1">
+    <g id="ch5-directed-xtick_1">
+     <g id="ch5-directed-line2d_1">
+      <defs>
+       <path id="ch5-directed-mbdc773d73d" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#ch5-directed-mbdc773d73d" x="186.467955" y="140.160703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch5-directed-text_6">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="186.467955" y="154.895078" transform="rotate(-0 186.467955 154.895078)">0</text>
+     </g>
+    </g>
+    <g id="ch5-directed-xtick_2">
+     <g id="ch5-directed-line2d_2">
+      <g>
+       <use xlink:href="#ch5-directed-mbdc773d73d" x="218.46536" y="140.160703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch5-directed-text_7">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="218.46536" y="154.895078" transform="rotate(-0 218.46536 154.895078)">1</text>
+     </g>
+    </g>
+    <g id="ch5-directed-xtick_3">
+     <g id="ch5-directed-line2d_3">
+      <g>
+       <use xlink:href="#ch5-directed-mbdc773d73d" x="250.462765" y="140.160703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch5-directed-text_8">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="250.462765" y="154.895078" transform="rotate(-0 250.462765 154.895078)">2</text>
+     </g>
+    </g>
+    <g id="ch5-directed-xtick_4">
+     <g id="ch5-directed-line2d_4">
+      <g>
+       <use xlink:href="#ch5-directed-mbdc773d73d" x="282.46017" y="140.160703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch5-directed-text_9">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="282.46017" y="154.895078" transform="rotate(-0 282.46017 154.895078)">3</text>
+     </g>
+    </g>
+    <g id="ch5-directed-xtick_5">
+     <g id="ch5-directed-line2d_5">
+      <g>
+       <use xlink:href="#ch5-directed-mbdc773d73d" x="314.457575" y="140.160703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch5-directed-text_10">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="314.457575" y="154.895078" transform="rotate(-0 314.457575 154.895078)">4</text>
+     </g>
+    </g>
+    <g id="ch5-directed-text_11">
+     <text style="font-size: 9.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="256.462278" y="170.148496" transform="rotate(-0 256.462278 170.148496)">degree</text>
+    </g>
+   </g>
+   <g id="ch5-directed-matplotlib.axis_2">
+    <g id="ch5-directed-ytick_1">
+     <g id="ch5-directed-line2d_6">
+      <defs>
+       <path id="ch5-directed-m85317cdbd2" d="M 0 0 
+L -3 0 
+" style="stroke: currentColor; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#ch5-directed-m85317cdbd2" x="186.467955" y="140.160703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch5-directed-text_12">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="179.967955" y="144.277891" transform="rotate(-0 179.967955 144.277891)">0</text>
+     </g>
+    </g>
+    <g id="ch5-directed-ytick_2">
+     <g id="ch5-directed-line2d_7">
+      <g>
+       <use xlink:href="#ch5-directed-m85317cdbd2" x="186.467955" y="85.535368" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch5-directed-text_13">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="179.967955" y="89.652556" transform="rotate(-0 179.967955 89.652556)">1</text>
+     </g>
+    </g>
+    <g id="ch5-directed-ytick_3">
+     <g id="ch5-directed-line2d_8">
+      <g>
+       <use xlink:href="#ch5-directed-m85317cdbd2" x="186.467955" y="30.910033" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch5-directed-text_14">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="179.967955" y="35.027221" transform="rotate(-0 179.967955 35.027221)">2</text>
+     </g>
+    </g>
+    <g id="ch5-directed-text_15">
+     <text style="font-size: 9.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="168.313482" y="82.804102" transform="rotate(-90 168.313482 82.804102)">number of nodes</text>
+    </g>
+   </g>
+   <g id="ch5-directed-patch_12">
+    <path d="M 186.467955 140.160703 
+L 186.467955 25.4475 
+" style="fill: none; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="ch5-directed-patch_13">
+    <path d="M 186.467955 140.160703 
+L 326.456602 140.160703 
+" style="fill: none; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="ch5-directed-text_16">
+    <text style="font-weight: 600; font-size: 10px; font-family: var(--sans); text-anchor: start; fill: currentColor" x="186.467955" y="15.4475" transform="rotate(-0 186.467955 15.4475)">Degree distribution</text>
+   </g>
+  </g>
+  <g id="ch5-directed-axes_3">
+   <g id="ch5-directed-patch_14">
+    <path d="M 385.451921 140.160703 
+L 500.165124 140.160703 
+L 500.165124 25.4475 
+L 385.451921 25.4475 
+L 385.451921 140.160703 
+z
+" style="fill: none"/>
+   </g>
+   <g id="ch5-directed-PathCollection_5">
+    <defs>
+     <path id="ch5-directed-mb449fa8038" d="M -11.25833 11.25833 
+L 11.25833 11.25833 
+L 11.25833 -11.25833 
+L -11.25833 -11.25833 
+z
+" style="stroke: #e5322d"/>
+    </defs>
+    <g clip-path="url(#ch5-directed-pc4261ce68f)">
+     <use xlink:href="#ch5-directed-mb449fa8038" x="428.469372" y="39.78665" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch5-directed-mb449fa8038" x="399.791071" y="68.464951" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch5-directed-mb449fa8038" x="457.147673" y="68.464951" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch5-directed-mb449fa8038" x="399.791071" y="125.821553" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch5-directed-mb449fa8038" x="428.469372" y="125.821553" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch5-directed-mb449fa8038" x="457.147673" y="125.821553" style="fill: #e5322d; stroke: #e5322d"/>
+    </g>
+   </g>
+   <g id="ch5-directed-matplotlib.axis_3">
+    <g id="ch5-directed-xtick_6">
+     <g id="ch5-directed-line2d_9"/>
+     <g id="ch5-directed-text_17">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="399.791071" y="151.895078" transform="rotate(-0 399.791071 151.895078)">1</text>
+     </g>
+    </g>
+    <g id="ch5-directed-xtick_7">
+     <g id="ch5-directed-line2d_10"/>
+     <g id="ch5-directed-text_18">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="428.469372" y="151.895078" transform="rotate(-0 428.469372 151.895078)">2</text>
+     </g>
+    </g>
+    <g id="ch5-directed-xtick_8">
+     <g id="ch5-directed-line2d_11"/>
+     <g id="ch5-directed-text_19">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="457.147673" y="151.895078" transform="rotate(-0 457.147673 151.895078)">3</text>
+     </g>
+    </g>
+    <g id="ch5-directed-xtick_9">
+     <g id="ch5-directed-line2d_12"/>
+     <g id="ch5-directed-text_20">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="485.825974" y="151.895078" transform="rotate(-0 485.825974 151.895078)">4</text>
+     </g>
+    </g>
+    <g id="ch5-directed-xtick_10">
+     <g id="ch5-directed-line2d_13">
+      <path d="M 385.451921 140.160703 
+L 385.451921 25.4475 
+" clip-path="url(#ch5-directed-pc4261ce68f)" style="fill: none; stroke: currentColor; stroke-opacity: 0.08; stroke-width: 0.8; stroke-linecap: round"/>
+     </g>
+     <g id="ch5-directed-line2d_14"/>
+    </g>
+    <g id="ch5-directed-xtick_11">
+     <g id="ch5-directed-line2d_15">
+      <path d="M 414.130222 140.160703 
+L 414.130222 25.4475 
+" clip-path="url(#ch5-directed-pc4261ce68f)" style="fill: none; stroke: currentColor; stroke-opacity: 0.08; stroke-width: 0.8; stroke-linecap: round"/>
+     </g>
+     <g id="ch5-directed-line2d_16"/>
+    </g>
+    <g id="ch5-directed-xtick_12">
+     <g id="ch5-directed-line2d_17">
+      <path d="M 442.808523 140.160703 
+L 442.808523 25.4475 
+" clip-path="url(#ch5-directed-pc4261ce68f)" style="fill: none; stroke: currentColor; stroke-opacity: 0.08; stroke-width: 0.8; stroke-linecap: round"/>
+     </g>
+     <g id="ch5-directed-line2d_18"/>
+    </g>
+    <g id="ch5-directed-xtick_13">
+     <g id="ch5-directed-line2d_19">
+      <path d="M 471.486823 140.160703 
+L 471.486823 25.4475 
+" clip-path="url(#ch5-directed-pc4261ce68f)" style="fill: none; stroke: currentColor; stroke-opacity: 0.08; stroke-width: 0.8; stroke-linecap: round"/>
+     </g>
+     <g id="ch5-directed-line2d_20"/>
+    </g>
+    <g id="ch5-directed-xtick_14">
+     <g id="ch5-directed-line2d_21">
+      <path d="M 500.165124 140.160703 
+L 500.165124 25.4475 
+" clip-path="url(#ch5-directed-pc4261ce68f)" style="fill: none; stroke: currentColor; stroke-opacity: 0.08; stroke-width: 0.8; stroke-linecap: round"/>
+     </g>
+     <g id="ch5-directed-line2d_22"/>
+    </g>
+   </g>
+   <g id="ch5-directed-matplotlib.axis_4">
+    <g id="ch5-directed-ytick_4">
+     <g id="ch5-directed-line2d_23"/>
+     <g id="ch5-directed-text_21">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="381.951921" y="43.903838" transform="rotate(-0 381.951921 43.903838)">1</text>
+     </g>
+    </g>
+    <g id="ch5-directed-ytick_5">
+     <g id="ch5-directed-line2d_24"/>
+     <g id="ch5-directed-text_22">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="381.951921" y="72.582139" transform="rotate(-0 381.951921 72.582139)">2</text>
+     </g>
+    </g>
+    <g id="ch5-directed-ytick_6">
+     <g id="ch5-directed-line2d_25"/>
+     <g id="ch5-directed-text_23">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="381.951921" y="101.260439" transform="rotate(-0 381.951921 101.260439)">3</text>
+     </g>
+    </g>
+    <g id="ch5-directed-ytick_7">
+     <g id="ch5-directed-line2d_26"/>
+     <g id="ch5-directed-text_24">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="381.951921" y="129.93874" transform="rotate(-0 381.951921 129.93874)">4</text>
+     </g>
+    </g>
+    <g id="ch5-directed-ytick_8">
+     <g id="ch5-directed-line2d_27">
+      <path d="M 385.451921 25.4475 
+L 500.165124 25.4475 
+" clip-path="url(#ch5-directed-pc4261ce68f)" style="fill: none; stroke: currentColor; stroke-opacity: 0.08; stroke-width: 0.8; stroke-linecap: round"/>
+     </g>
+     <g id="ch5-directed-line2d_28"/>
+    </g>
+    <g id="ch5-directed-ytick_9">
+     <g id="ch5-directed-line2d_29">
+      <path d="M 385.451921 54.125801 
+L 500.165124 54.125801 
+" clip-path="url(#ch5-directed-pc4261ce68f)" style="fill: none; stroke: currentColor; stroke-opacity: 0.08; stroke-width: 0.8; stroke-linecap: round"/>
+     </g>
+     <g id="ch5-directed-line2d_30"/>
+    </g>
+    <g id="ch5-directed-ytick_10">
+     <g id="ch5-directed-line2d_31">
+      <path d="M 385.451921 82.804102 
+L 500.165124 82.804102 
+" clip-path="url(#ch5-directed-pc4261ce68f)" style="fill: none; stroke: currentColor; stroke-opacity: 0.08; stroke-width: 0.8; stroke-linecap: round"/>
+     </g>
+     <g id="ch5-directed-line2d_32"/>
+    </g>
+    <g id="ch5-directed-ytick_11">
+     <g id="ch5-directed-line2d_33">
+      <path d="M 385.451921 111.482402 
+L 500.165124 111.482402 
+" clip-path="url(#ch5-directed-pc4261ce68f)" style="fill: none; stroke: currentColor; stroke-opacity: 0.08; stroke-width: 0.8; stroke-linecap: round"/>
+     </g>
+     <g id="ch5-directed-line2d_34"/>
+    </g>
+    <g id="ch5-directed-ytick_12">
+     <g id="ch5-directed-line2d_35">
+      <path d="M 385.451921 140.160703 
+L 500.165124 140.160703 
+" clip-path="url(#ch5-directed-pc4261ce68f)" style="fill: none; stroke: currentColor; stroke-opacity: 0.08; stroke-width: 0.8; stroke-linecap: round"/>
+     </g>
+     <g id="ch5-directed-line2d_36"/>
+    </g>
+   </g>
+   <g id="ch5-directed-text_25">
+    <text style="font-weight: 600; font-size: 10px; font-family: var(--sans); text-anchor: start; fill: currentColor" x="385.451921" y="15.4475" transform="rotate(-0 385.451921 15.4475)">Adjacency matrix</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="ch5-directed-p223f2bf2f2">
+   <rect x="186.467955" y="25.4475" width="139.988647" height="114.713203"/>
+  </clipPath>
+  <clipPath id="ch5-directed-pc4261ce68f">
+   <rect x="385.451921" y="25.4475" width="114.713203" height="114.713203"/>
+  </clipPath>
+ </defs>
+</svg>

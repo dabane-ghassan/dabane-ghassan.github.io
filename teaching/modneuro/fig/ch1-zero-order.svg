@@ -1,0 +1,343 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 402.090371 213.174797" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="ch1-zero-order-figure_1">
+  <g id="ch1-zero-order-patch_1">
+   <path d="M 0 213.174797 
+L 402.090371 213.174797 
+L 402.090371 0 
+L 0 0 
+L 0 213.174797 
+z
+" style="fill: none"/>
+  </g>
+  <g id="ch1-zero-order-axes_1">
+   <g id="ch1-zero-order-patch_2">
+    <path d="M 36.574707 175.1355 
+L 393.694707 175.1355 
+L 393.694707 25.4475 
+L 36.574707 25.4475 
+L 36.574707 175.1355 
+z
+" style="fill: none"/>
+   </g>
+   <g id="ch1-zero-order-matplotlib.axis_1">
+    <g id="ch1-zero-order-xtick_1">
+     <g id="ch1-zero-order-line2d_1">
+      <defs>
+       <path id="ch1-zero-order-m3c6abaef6b" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#ch1-zero-order-m3c6abaef6b" x="36.574707" y="175.1355" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-zero-order-text_1">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="36.574707" y="189.869875" transform="rotate(-0 36.574707 189.869875)">0</text>
+     </g>
+    </g>
+    <g id="ch1-zero-order-xtick_2">
+     <g id="ch1-zero-order-line2d_2">
+      <g>
+       <use xlink:href="#ch1-zero-order-m3c6abaef6b" x="96.094707" y="175.1355" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-zero-order-text_2">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="96.094707" y="189.869875" transform="rotate(-0 96.094707 189.869875)">1</text>
+     </g>
+    </g>
+    <g id="ch1-zero-order-xtick_3">
+     <g id="ch1-zero-order-line2d_3">
+      <g>
+       <use xlink:href="#ch1-zero-order-m3c6abaef6b" x="155.614707" y="175.1355" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-zero-order-text_3">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="155.614707" y="189.869875" transform="rotate(-0 155.614707 189.869875)">2</text>
+     </g>
+    </g>
+    <g id="ch1-zero-order-xtick_4">
+     <g id="ch1-zero-order-line2d_4">
+      <g>
+       <use xlink:href="#ch1-zero-order-m3c6abaef6b" x="215.134707" y="175.1355" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-zero-order-text_4">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="215.134707" y="189.869875" transform="rotate(-0 215.134707 189.869875)">3</text>
+     </g>
+    </g>
+    <g id="ch1-zero-order-xtick_5">
+     <g id="ch1-zero-order-line2d_5">
+      <g>
+       <use xlink:href="#ch1-zero-order-m3c6abaef6b" x="274.654707" y="175.1355" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-zero-order-text_5">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="274.654707" y="189.869875" transform="rotate(-0 274.654707 189.869875)">4</text>
+     </g>
+    </g>
+    <g id="ch1-zero-order-xtick_6">
+     <g id="ch1-zero-order-line2d_6">
+      <g>
+       <use xlink:href="#ch1-zero-order-m3c6abaef6b" x="334.174707" y="175.1355" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-zero-order-text_6">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="334.174707" y="189.869875" transform="rotate(-0 334.174707 189.869875)">5</text>
+     </g>
+    </g>
+    <g id="ch1-zero-order-xtick_7">
+     <g id="ch1-zero-order-line2d_7">
+      <g>
+       <use xlink:href="#ch1-zero-order-m3c6abaef6b" x="393.694707" y="175.1355" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-zero-order-text_7">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="393.694707" y="189.869875" transform="rotate(-0 393.694707 189.869875)">6</text>
+     </g>
+    </g>
+    <g id="ch1-zero-order-text_8">
+     <text style="font-size: 9.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="215.134707" y="205.123293" transform="rotate(-0 215.134707 205.123293)">time</text>
+    </g>
+   </g>
+   <g id="ch1-zero-order-matplotlib.axis_2">
+    <g id="ch1-zero-order-ytick_1">
+     <g id="ch1-zero-order-line2d_8">
+      <defs>
+       <path id="ch1-zero-order-me6d45f1b0d" d="M 0 0 
+L -3 0 
+" style="stroke: currentColor; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#ch1-zero-order-me6d45f1b0d" x="36.574707" y="175.1355" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-zero-order-text_9">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="30.074707" y="179.252688" transform="rotate(-0 30.074707 179.252688)">0</text>
+     </g>
+    </g>
+    <g id="ch1-zero-order-ytick_2">
+     <g id="ch1-zero-order-line2d_9">
+      <g>
+       <use xlink:href="#ch1-zero-order-me6d45f1b0d" x="36.574707" y="146.6235" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-zero-order-text_10">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="30.074707" y="150.740688" transform="rotate(-0 30.074707 150.740688)">2</text>
+     </g>
+    </g>
+    <g id="ch1-zero-order-ytick_3">
+     <g id="ch1-zero-order-line2d_10">
+      <g>
+       <use xlink:href="#ch1-zero-order-me6d45f1b0d" x="36.574707" y="118.1115" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-zero-order-text_11">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="30.074707" y="122.228688" transform="rotate(-0 30.074707 122.228688)">4</text>
+     </g>
+    </g>
+    <g id="ch1-zero-order-ytick_4">
+     <g id="ch1-zero-order-line2d_11">
+      <g>
+       <use xlink:href="#ch1-zero-order-me6d45f1b0d" x="36.574707" y="89.5995" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-zero-order-text_12">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="30.074707" y="93.716688" transform="rotate(-0 30.074707 93.716688)">6</text>
+     </g>
+    </g>
+    <g id="ch1-zero-order-ytick_5">
+     <g id="ch1-zero-order-line2d_12">
+      <g>
+       <use xlink:href="#ch1-zero-order-me6d45f1b0d" x="36.574707" y="61.0875" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-zero-order-text_13">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="30.074707" y="65.204688" transform="rotate(-0 30.074707 65.204688)">8</text>
+     </g>
+    </g>
+    <g id="ch1-zero-order-ytick_6">
+     <g id="ch1-zero-order-line2d_13">
+      <g>
+       <use xlink:href="#ch1-zero-order-me6d45f1b0d" x="36.574707" y="32.5755" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-zero-order-text_14">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="30.074707" y="36.692688" transform="rotate(-0 30.074707 36.692688)">10</text>
+     </g>
+    </g>
+    <g id="ch1-zero-order-text_15">
+     <!-- $A(t)$ -->
+     <g style="fill: currentColor" transform="translate(14.963125 107.7015) rotate(-90)">
+      <text>
+       <tspan x="0" y="-0.578125" style="font-style: italic; font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">A</tspan>
+       <tspan x="8.968033" y="-0.578125" style="font-style: italic; font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">t</tspan>
+       <tspan x="5.80452" y="-0.578125" style="font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">(</tspan>
+       <tspan x="11.609039" y="-0.578125" style="font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">)</tspan>
+      </text>
+     </g>
+    </g>
+   </g>
+   <g id="ch1-zero-order-line2d_14">
+    <path d="M 36.574707 32.5755 
+L 403.090371 208.148326 
+L 403.090371 208.148326 
+" clip-path="url(#ch1-zero-order-p13c1e015ca)" style="fill: none; stroke: currentColor; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="ch1-zero-order-line2d_15">
+    <defs>
+     <path id="ch1-zero-order-m1f527338e6" d="M 0 1.6 
+C 0.424325 1.6 0.831328 1.431414 1.131371 1.131371 
+C 1.431414 0.831328 1.6 0.424325 1.6 0 
+C 1.6 -0.424325 1.431414 -0.831328 1.131371 -1.131371 
+C 0.831328 -1.431414 0.424325 -1.6 0 -1.6 
+C -0.424325 -1.6 -0.831328 -1.431414 -1.131371 -1.131371 
+C -1.431414 -0.831328 -1.6 -0.424325 -1.6 0 
+C -1.6 0.424325 -1.431414 0.831328 -1.131371 1.131371 
+C -0.831328 1.431414 -0.424325 1.6 0 1.6 
+z
+" style="stroke: #e5322d"/>
+    </defs>
+    <g clip-path="url(#ch1-zero-order-p13c1e015ca)">
+     <use xlink:href="#ch1-zero-order-m1f527338e6" x="36.574707" y="32.5755" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-zero-order-m1f527338e6" x="51.454707" y="39.7035" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-zero-order-m1f527338e6" x="66.334707" y="46.8315" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-zero-order-m1f527338e6" x="81.214707" y="53.9595" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-zero-order-m1f527338e6" x="96.094707" y="61.0875" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-zero-order-m1f527338e6" x="110.974707" y="68.2155" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-zero-order-m1f527338e6" x="125.854707" y="75.3435" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-zero-order-m1f527338e6" x="140.734707" y="82.4715" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-zero-order-m1f527338e6" x="155.614707" y="89.5995" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-zero-order-m1f527338e6" x="170.494707" y="96.7275" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-zero-order-m1f527338e6" x="185.374707" y="103.8555" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-zero-order-m1f527338e6" x="200.254707" y="110.9835" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-zero-order-m1f527338e6" x="215.134707" y="118.1115" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-zero-order-m1f527338e6" x="230.014707" y="125.2395" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-zero-order-m1f527338e6" x="244.894707" y="132.3675" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-zero-order-m1f527338e6" x="259.774707" y="139.4955" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-zero-order-m1f527338e6" x="274.654707" y="146.6235" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-zero-order-m1f527338e6" x="289.534707" y="153.7515" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-zero-order-m1f527338e6" x="304.414707" y="160.8795" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-zero-order-m1f527338e6" x="319.294707" y="168.0075" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-zero-order-m1f527338e6" x="334.174707" y="175.1355" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-zero-order-m1f527338e6" x="349.054707" y="182.2635" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-zero-order-m1f527338e6" x="363.934707" y="189.3915" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-zero-order-m1f527338e6" x="378.814707" y="196.5195" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-zero-order-m1f527338e6" x="393.694707" y="203.6475" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-zero-order-m1f527338e6" x="408.574707" y="210.7755" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-zero-order-m1f527338e6" x="423.454707" y="217.9035" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-zero-order-m1f527338e6" x="438.334707" y="225.0315" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-zero-order-m1f527338e6" x="453.214707" y="232.1595" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-zero-order-m1f527338e6" x="468.094707" y="239.2875" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-zero-order-m1f527338e6" x="482.974707" y="246.4155" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-zero-order-m1f527338e6" x="497.854707" y="253.5435" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-zero-order-m1f527338e6" x="512.734707" y="260.6715" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-zero-order-m1f527338e6" x="527.614707" y="267.7995" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-zero-order-m1f527338e6" x="542.494707" y="274.9275" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-zero-order-m1f527338e6" x="557.374707" y="282.0555" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-zero-order-m1f527338e6" x="572.254707" y="289.1835" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-zero-order-m1f527338e6" x="587.134707" y="296.3115" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-zero-order-m1f527338e6" x="602.014707" y="303.4395" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-zero-order-m1f527338e6" x="616.894707" y="310.5675" style="fill: #e5322d; stroke: #e5322d"/>
+    </g>
+   </g>
+   <g id="ch1-zero-order-patch_3">
+    <path d="M 36.574707 175.1355 
+L 36.574707 25.4475 
+" style="fill: none; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="ch1-zero-order-patch_4">
+    <path d="M 36.574707 175.1355 
+L 393.694707 175.1355 
+" style="fill: none; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="ch1-zero-order-text_16">
+    <!-- Zero order, $A(0)=10$, $k=2$ -->
+    <g style="fill: currentColor" transform="translate(36.574707 15.4475)">
+     <text>
+      <tspan x="0" y="-0.71875" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">Z</tspan>
+      <tspan x="6.523438" y="-0.71875" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">e</tspan>
+      <tspan x="12.436523" y="-0.71875" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">r</tspan>
+      <tspan x="16.40625" y="-0.71875" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">o</tspan>
+      <tspan x="22.495117" y="-0.71875" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor"> </tspan>
+      <tspan x="25.014648" y="-0.71875" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">o</tspan>
+      <tspan x="31.103516" y="-0.71875" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">r</tspan>
+      <tspan x="35.073242" y="-0.71875" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">d</tspan>
+      <tspan x="41.313477" y="-0.71875" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">e</tspan>
+      <tspan x="47.226562" y="-0.71875" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">r</tspan>
+      <tspan x="51.196289" y="-0.71875" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">,</tspan>
+      <tspan x="54.384766" y="-0.71875" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor"> </tspan>
+      <tspan x="95.524292" y="-0.71875" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">,</tspan>
+      <tspan x="98.712769" y="-0.71875" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor"> </tspan>
+      <tspan x="56.904297" y="-0.71875" style="font-style: italic; font-size: 10px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">A</tspan>
+      <tspan x="101.2323" y="-0.71875" style="font-style: italic; font-size: 10px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">k</tspan>
+      <tspan x="63.014297" y="-0.71875" style="font-size: 10px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">(</tspan>
+      <tspan x="66.344299" y="-0.71875" style="font-size: 10px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">0</tspan>
+      <tspan x="71.344299" y="-0.71875" style="font-size: 10px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">)</tspan>
+      <tspan x="76.674301" y="-0.71875" style="font-size: 10px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">=</tspan>
+      <tspan x="85.524292" y="-0.71875" style="font-size: 10px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">1</tspan>
+      <tspan x="90.524292" y="-0.71875" style="font-size: 10px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">0</tspan>
+      <tspan x="107.672302" y="-0.71875" style="font-size: 10px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">=</tspan>
+      <tspan x="116.522293" y="-0.71875" style="font-size: 10px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">2</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="ch1-zero-order-legend_1">
+    <g id="ch1-zero-order-line2d_16">
+     <path d="M 261.689707 38.356875 
+L 268.489707 38.356875 
+L 275.289707 38.356875 
+" style="fill: none; stroke: currentColor; stroke-width: 1.2; stroke-linecap: round"/>
+    </g>
+    <g id="ch1-zero-order-text_17">
+     <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: start; fill: currentColor" x="282.089707" y="41.331875" transform="rotate(-0 282.089707 41.331875)">analytical (SymPy)</text>
+    </g>
+    <g id="ch1-zero-order-line2d_17">
+     <g>
+      <use xlink:href="#ch1-zero-order-m1f527338e6" x="268.489707" y="52.891543" style="fill: #e5322d; stroke: #e5322d"/>
+     </g>
+    </g>
+    <g id="ch1-zero-order-text_18">
+     <!-- numerical (Euler, $dt=0.01$) -->
+     <g style="fill: currentColor" transform="translate(282.089707 55.866543)">
+      <text>
+       <tspan x="0" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">n</tspan>
+       <tspan x="5.021973" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">u</tspan>
+       <tspan x="10.048096" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">m</tspan>
+       <tspan x="17.493896" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">e</tspan>
+       <tspan x="22.449463" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">r</tspan>
+       <tspan x="25.649414" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">i</tspan>
+       <tspan x="27.708008" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">c</tspan>
+       <tspan x="32.563965" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">a</tspan>
+       <tspan x="37.336914" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">l</tspan>
+       <tspan x="39.395508" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor"> </tspan>
+       <tspan x="41.786133" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">(</tspan>
+       <tspan x="44.886475" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">E</tspan>
+       <tspan x="49.995605" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">u</tspan>
+       <tspan x="55.021729" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">l</tspan>
+       <tspan x="57.080322" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">e</tspan>
+       <tspan x="62.035889" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">r</tspan>
+       <tspan x="65.23584" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">,</tspan>
+       <tspan x="67.68457" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor"> </tspan>
+       <tspan x="100.786002" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">)</tspan>
+       <tspan x="70.075195" y="-0.4375" style="font-style: italic; font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">d</tspan>
+       <tspan x="74.325241" y="-0.4375" style="font-style: italic; font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">t</tspan>
+       <tspan x="78.388263" y="-0.4375" style="font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">=</tspan>
+       <tspan x="85.910834" y="-0.4375" style="font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">0</tspan>
+       <tspan x="90.16088" y="-0.4375" style="font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">.</tspan>
+       <tspan x="92.28591" y="-0.4375" style="font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">0</tspan>
+       <tspan x="96.535956" y="-0.4375" style="font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">1</tspan>
+      </text>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="ch1-zero-order-p13c1e015ca">
+   <rect x="36.574707" y="25.4475" width="357.12" height="149.688"/>
+  </clipPath>
+ </defs>
+</svg>

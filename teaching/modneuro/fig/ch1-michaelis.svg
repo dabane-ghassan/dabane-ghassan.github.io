@@ -1,0 +1,572 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 523.8 207" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="ch1-michaelis-figure_1">
+  <g id="ch1-michaelis-patch_1">
+   <path d="M 0 207 
+L 523.8 207 
+L 523.8 0 
+L 0 0 
+L 0 207 
+z
+" style="fill: none"/>
+  </g>
+  <g id="ch1-michaelis-axes_1">
+   <g id="ch1-michaelis-patch_2">
+    <path d="M 33.245098 168.960703 
+L 236.913438 168.960703 
+L 236.913438 25.4475 
+L 33.245098 25.4475 
+L 33.245098 168.960703 
+z
+" style="fill: none"/>
+   </g>
+   <g id="ch1-michaelis-matplotlib.axis_1">
+    <g id="ch1-michaelis-xtick_1">
+     <g id="ch1-michaelis-line2d_1">
+      <defs>
+       <path id="ch1-michaelis-me3a63b307b" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#ch1-michaelis-me3a63b307b" x="33.245098" y="168.960703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-michaelis-text_1">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="33.245098" y="183.695078" transform="rotate(-0 33.245098 183.695078)">0</text>
+     </g>
+    </g>
+    <g id="ch1-michaelis-xtick_2">
+     <g id="ch1-michaelis-line2d_2">
+      <g>
+       <use xlink:href="#ch1-michaelis-me3a63b307b" x="73.978766" y="168.960703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-michaelis-text_2">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="73.978766" y="183.695078" transform="rotate(-0 73.978766 183.695078)">2</text>
+     </g>
+    </g>
+    <g id="ch1-michaelis-xtick_3">
+     <g id="ch1-michaelis-line2d_3">
+      <g>
+       <use xlink:href="#ch1-michaelis-me3a63b307b" x="114.712434" y="168.960703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-michaelis-text_3">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="114.712434" y="183.695078" transform="rotate(-0 114.712434 183.695078)">4</text>
+     </g>
+    </g>
+    <g id="ch1-michaelis-xtick_4">
+     <g id="ch1-michaelis-line2d_4">
+      <g>
+       <use xlink:href="#ch1-michaelis-me3a63b307b" x="155.446102" y="168.960703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-michaelis-text_4">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="155.446102" y="183.695078" transform="rotate(-0 155.446102 183.695078)">6</text>
+     </g>
+    </g>
+    <g id="ch1-michaelis-xtick_5">
+     <g id="ch1-michaelis-line2d_5">
+      <g>
+       <use xlink:href="#ch1-michaelis-me3a63b307b" x="196.17977" y="168.960703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-michaelis-text_5">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="196.17977" y="183.695078" transform="rotate(-0 196.17977 183.695078)">8</text>
+     </g>
+    </g>
+    <g id="ch1-michaelis-xtick_6">
+     <g id="ch1-michaelis-line2d_6">
+      <g>
+       <use xlink:href="#ch1-michaelis-me3a63b307b" x="236.913438" y="168.960703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-michaelis-text_6">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="236.913438" y="183.695078" transform="rotate(-0 236.913438 183.695078)">10</text>
+     </g>
+    </g>
+    <g id="ch1-michaelis-text_7">
+     <!-- $[S]$ -->
+     <g style="fill: currentColor" transform="translate(129.521768 198.948496)">
+      <text>
+       <tspan x="0" y="-0.65625" style="font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">[</tspan>
+       <tspan x="7.913528" y="-0.65625" style="font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">]</tspan>
+       <tspan x="3.163513" y="-0.65625" style="font-style: italic; font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">S</tspan>
+      </text>
+     </g>
+    </g>
+   </g>
+   <g id="ch1-michaelis-matplotlib.axis_2">
+    <g id="ch1-michaelis-ytick_1">
+     <g id="ch1-michaelis-line2d_7">
+      <defs>
+       <path id="ch1-michaelis-m396ce0c5d1" d="M 0 0 
+L -3 0 
+" style="stroke: currentColor; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#ch1-michaelis-m396ce0c5d1" x="33.245098" y="168.960703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-michaelis-text_8">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="26.745098" y="173.077891" transform="rotate(-0 26.745098 173.077891)">0</text>
+     </g>
+    </g>
+    <g id="ch1-michaelis-ytick_2">
+     <g id="ch1-michaelis-line2d_8">
+      <g>
+       <use xlink:href="#ch1-michaelis-m396ce0c5d1" x="33.245098" y="147.216278" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-michaelis-text_9">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="26.745098" y="151.333466" transform="rotate(-0 26.745098 151.333466)">1</text>
+     </g>
+    </g>
+    <g id="ch1-michaelis-ytick_3">
+     <g id="ch1-michaelis-line2d_9">
+      <g>
+       <use xlink:href="#ch1-michaelis-m396ce0c5d1" x="33.245098" y="125.471854" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-michaelis-text_10">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="26.745098" y="129.589041" transform="rotate(-0 26.745098 129.589041)">2</text>
+     </g>
+    </g>
+    <g id="ch1-michaelis-ytick_4">
+     <g id="ch1-michaelis-line2d_10">
+      <g>
+       <use xlink:href="#ch1-michaelis-m396ce0c5d1" x="33.245098" y="103.727429" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-michaelis-text_11">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="26.745098" y="107.844616" transform="rotate(-0 26.745098 107.844616)">3</text>
+     </g>
+    </g>
+    <g id="ch1-michaelis-ytick_5">
+     <g id="ch1-michaelis-line2d_11">
+      <g>
+       <use xlink:href="#ch1-michaelis-m396ce0c5d1" x="33.245098" y="81.983004" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-michaelis-text_12">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="26.745098" y="86.100192" transform="rotate(-0 26.745098 86.100192)">4</text>
+     </g>
+    </g>
+    <g id="ch1-michaelis-ytick_6">
+     <g id="ch1-michaelis-line2d_12">
+      <g>
+       <use xlink:href="#ch1-michaelis-m396ce0c5d1" x="33.245098" y="60.23858" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-michaelis-text_13">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="26.745098" y="64.355767" transform="rotate(-0 26.745098 64.355767)">5</text>
+     </g>
+    </g>
+    <g id="ch1-michaelis-ytick_7">
+     <g id="ch1-michaelis-line2d_13">
+      <g>
+       <use xlink:href="#ch1-michaelis-m396ce0c5d1" x="33.245098" y="38.494155" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-michaelis-text_14">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="26.745098" y="42.611342" transform="rotate(-0 26.745098 42.611342)">6</text>
+     </g>
+    </g>
+    <g id="ch1-michaelis-text_15">
+     <!-- $v$ -->
+     <g style="fill: currentColor" transform="translate(14.963125 99.341602) rotate(-90)">
+      <text>
+       <tspan x="0" y="-0.8125" style="font-style: italic; font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">v</tspan>
+      </text>
+     </g>
+    </g>
+   </g>
+   <g id="ch1-michaelis-line2d_14">
+    <path d="M 34.263439 162.74801 
+L 35.787124 154.4838 
+L 37.310808 147.25035 
+L 38.834492 140.866137 
+L 40.866071 133.435159 
+L 42.89765 127.009973 
+L 44.929229 121.399319 
+L 46.960808 116.457541 
+L 48.992387 112.071756 
+L 51.023966 108.153131 
+L 53.563439 103.80518 
+L 56.102913 99.968119 
+L 58.642387 96.556898 
+L 61.18186 93.504355 
+L 63.721334 90.756745 
+L 66.768702 87.801427 
+L 69.816071 85.162453 
+L 72.863439 82.791609 
+L 76.418702 80.313044 
+L 79.973965 78.097147 
+L 84.037123 75.835823 
+L 88.100281 73.818793 
+L 92.671334 71.795174 
+L 97.750281 69.80236 
+L 103.337123 67.86873 
+L 109.43186 66.014523 
+L 116.034491 64.253051 
+L 123.145017 62.591994 
+L 130.763438 61.034653 
+L 139.397649 59.496395 
+L 149.047649 58.008016 
+L 159.713438 56.590572 
+L 171.902912 55.203455 
+L 185.61607 53.876951 
+L 200.852912 52.630053 
+L 218.121332 51.440709 
+L 236.913438 50.35475 
+L 236.913438 50.35475 
+" clip-path="url(#ch1-michaelis-p022a0abb16)" style="fill: none; stroke: #1f5fff; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="ch1-michaelis-line2d_15">
+    <path d="M 33.245098 38.494155 
+L 236.913438 38.494155 
+" clip-path="url(#ch1-michaelis-p022a0abb16)" style="fill: none; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: currentColor; stroke-opacity: 0.4"/>
+   </g>
+   <g id="ch1-michaelis-line2d_16">
+    <path d="M 53.611932 168.960703 
+L 53.611932 103.727429 
+" clip-path="url(#ch1-michaelis-p022a0abb16)" style="fill: none; stroke-dasharray: 1,1.65; stroke-dashoffset: 0; stroke: #e5322d"/>
+   </g>
+   <g id="ch1-michaelis-line2d_17">
+    <path d="M 33.245098 103.727429 
+L 53.611932 103.727429 
+" clip-path="url(#ch1-michaelis-p022a0abb16)" style="fill: none; stroke-dasharray: 1,1.65; stroke-dashoffset: 0; stroke: #e5322d"/>
+   </g>
+   <g id="ch1-michaelis-line2d_18">
+    <defs>
+     <path id="ch1-michaelis-mbac9ffa7d4" d="M 0 2.5 
+C 0.663008 2.5 1.29895 2.236584 1.767767 1.767767 
+C 2.236584 1.29895 2.5 0.663008 2.5 0 
+C 2.5 -0.663008 2.236584 -1.29895 1.767767 -1.767767 
+C 1.29895 -2.236584 0.663008 -2.5 0 -2.5 
+C -0.663008 -2.5 -1.29895 -2.236584 -1.767767 -1.767767 
+C -2.236584 -1.29895 -2.5 -0.663008 -2.5 0 
+C -2.5 0.663008 -2.236584 1.29895 -1.767767 1.767767 
+C -1.29895 2.236584 -0.663008 2.5 0 2.5 
+z
+" style="stroke: #e5322d"/>
+    </defs>
+    <g clip-path="url(#ch1-michaelis-p022a0abb16)">
+     <use xlink:href="#ch1-michaelis-mbac9ffa7d4" x="53.611932" y="103.727429" style="fill: #e5322d; stroke: #e5322d"/>
+    </g>
+   </g>
+   <g id="ch1-michaelis-patch_3">
+    <path d="M 33.245098 168.960703 
+L 33.245098 25.4475 
+" style="fill: none; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="ch1-michaelis-patch_4">
+    <path d="M 33.245098 168.960703 
+L 236.913438 168.960703 
+" style="fill: none; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="ch1-michaelis-text_16">
+    <!-- $V_{max}$ -->
+    <g style="fill: currentColor" transform="translate(215.455071 55.307828)">
+     <text>
+      <tspan x="0" y="-0.796875" style="font-style: italic; font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">V</tspan>
+      <tspan x="5.80452" y="0.628125" style="font-style: italic; font-size: 6.65px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">m</tspan>
+      <tspan x="10.605836" y="0.628125" style="font-style: italic; font-size: 6.65px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">a</tspan>
+      <tspan x="13.937491" y="0.628125" style="font-style: italic; font-size: 6.65px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">x</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="ch1-michaelis-patch_5">
+    <path d="M 95.633102 114.731757 
+Q 75.590717 109.483141 55.548332 104.234525 
+" style="fill: none; opacity: 0.4; stroke: currentColor; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="ch1-michaelis-text_17">
+    <!-- $K_m$: half-maximal rate -->
+    <g style="fill: currentColor" transform="translate(82.125499 125.471854)">
+     <text>
+      <tspan x="0" y="-0.53125" style="font-style: italic; font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">K</tspan>
+      <tspan x="5.669571" y="0.74375" style="font-style: italic; font-size: 5.95px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">m</tspan>
+      <tspan x="10.34802" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">:</tspan>
+      <tspan x="12.79675" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor"> </tspan>
+      <tspan x="15.187375" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">h</tspan>
+      <tspan x="20.213498" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">a</tspan>
+      <tspan x="24.986447" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">l</tspan>
+      <tspan x="27.045041" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">f</tspan>
+      <tspan x="30.191037" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">-</tspan>
+      <tspan x="34.100705" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">m</tspan>
+      <tspan x="41.546506" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">a</tspan>
+      <tspan x="46.319455" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">x</tspan>
+      <tspan x="50.959592" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">i</tspan>
+      <tspan x="53.018186" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">m</tspan>
+      <tspan x="60.463987" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">a</tspan>
+      <tspan x="65.236936" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">l</tspan>
+      <tspan x="67.295529" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor"> </tspan>
+      <tspan x="69.686154" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">r</tspan>
+      <tspan x="72.886106" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">a</tspan>
+      <tspan x="77.659055" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">t</tspan>
+      <tspan x="80.439817" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">e</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="ch1-michaelis-text_18">
+    <text style="font-weight: 600; font-size: 10px; font-family: var(--sans); text-anchor: start; fill: currentColor" x="33.245098" y="15.4475" transform="rotate(-0 33.245098 15.4475)">Michaelis–Menten</text>
+   </g>
+  </g>
+  <g id="ch1-michaelis-axes_2">
+   <g id="ch1-michaelis-patch_6">
+    <path d="M 309.961621 168.960703 
+L 513.629961 168.960703 
+L 513.629961 25.4475 
+L 309.961621 25.4475 
+L 309.961621 168.960703 
+z
+" style="fill: none"/>
+   </g>
+   <g id="ch1-michaelis-matplotlib.axis_3">
+    <g id="ch1-michaelis-xtick_7">
+     <g id="ch1-michaelis-line2d_19">
+      <g>
+       <use xlink:href="#ch1-michaelis-me3a63b307b" x="341.029673" y="168.960703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-michaelis-text_19">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="341.029673" y="183.695078" transform="rotate(-0 341.029673 183.695078)">0</text>
+     </g>
+    </g>
+    <g id="ch1-michaelis-xtick_8">
+     <g id="ch1-michaelis-line2d_20">
+      <g>
+       <use xlink:href="#ch1-michaelis-me3a63b307b" x="375.549731" y="168.960703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-michaelis-text_20">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="375.549731" y="183.695078" transform="rotate(-0 375.549731 183.695078)">2</text>
+     </g>
+    </g>
+    <g id="ch1-michaelis-xtick_9">
+     <g id="ch1-michaelis-line2d_21">
+      <g>
+       <use xlink:href="#ch1-michaelis-me3a63b307b" x="410.069788" y="168.960703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-michaelis-text_21">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="410.069788" y="183.695078" transform="rotate(-0 410.069788 183.695078)">4</text>
+     </g>
+    </g>
+    <g id="ch1-michaelis-xtick_10">
+     <g id="ch1-michaelis-line2d_22">
+      <g>
+       <use xlink:href="#ch1-michaelis-me3a63b307b" x="444.589846" y="168.960703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-michaelis-text_22">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="444.589846" y="183.695078" transform="rotate(-0 444.589846 183.695078)">6</text>
+     </g>
+    </g>
+    <g id="ch1-michaelis-xtick_11">
+     <g id="ch1-michaelis-line2d_23">
+      <g>
+       <use xlink:href="#ch1-michaelis-me3a63b307b" x="479.109903" y="168.960703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-michaelis-text_23">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="479.109903" y="183.695078" transform="rotate(-0 479.109903 183.695078)">8</text>
+     </g>
+    </g>
+    <g id="ch1-michaelis-xtick_12">
+     <g id="ch1-michaelis-line2d_24">
+      <g>
+       <use xlink:href="#ch1-michaelis-me3a63b307b" x="513.629961" y="168.960703" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-michaelis-text_24">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="513.629961" y="183.695078" transform="rotate(-0 513.629961 183.695078)">10</text>
+     </g>
+    </g>
+    <g id="ch1-michaelis-text_25">
+     <!-- $1/[S]$ -->
+     <g style="fill: currentColor" transform="translate(402.533291 198.948496)">
+      <text>
+       <tspan x="0" y="-0.578125" style="font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">1</tspan>
+       <tspan x="4.750015" y="-0.578125" style="font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">/</tspan>
+       <tspan x="7.391022" y="-0.578125" style="font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">[</tspan>
+       <tspan x="15.30455" y="-0.578125" style="font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">]</tspan>
+       <tspan x="10.554535" y="-0.578125" style="font-style: italic; font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">S</tspan>
+      </text>
+     </g>
+    </g>
+   </g>
+   <g id="ch1-michaelis-matplotlib.axis_4">
+    <g id="ch1-michaelis-ytick_8">
+     <g id="ch1-michaelis-line2d_25">
+      <g>
+       <use xlink:href="#ch1-michaelis-m396ce0c5d1" x="309.961621" y="158.948154" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-michaelis-text_26">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="303.461621" y="163.065342" transform="rotate(-0 303.461621 163.065342)">0.0</text>
+     </g>
+    </g>
+    <g id="ch1-michaelis-ytick_9">
+     <g id="ch1-michaelis-line2d_26">
+      <g>
+       <use xlink:href="#ch1-michaelis-m396ce0c5d1" x="309.961621" y="125.572991" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-michaelis-text_27">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="303.461621" y="129.690178" transform="rotate(-0 303.461621 129.690178)">0.5</text>
+     </g>
+    </g>
+    <g id="ch1-michaelis-ytick_10">
+     <g id="ch1-michaelis-line2d_27">
+      <g>
+       <use xlink:href="#ch1-michaelis-m396ce0c5d1" x="309.961621" y="92.197827" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-michaelis-text_28">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="303.461621" y="96.315015" transform="rotate(-0 303.461621 96.315015)">1.0</text>
+     </g>
+    </g>
+    <g id="ch1-michaelis-ytick_11">
+     <g id="ch1-michaelis-line2d_28">
+      <g>
+       <use xlink:href="#ch1-michaelis-m396ce0c5d1" x="309.961621" y="58.822664" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-michaelis-text_29">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="303.461621" y="62.939851" transform="rotate(-0 303.461621 62.939851)">1.5</text>
+     </g>
+    </g>
+    <g id="ch1-michaelis-ytick_12">
+     <g id="ch1-michaelis-line2d_29">
+      <g>
+       <use xlink:href="#ch1-michaelis-m396ce0c5d1" x="309.961621" y="25.4475" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-michaelis-text_30">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="303.461621" y="29.564687" transform="rotate(-0 303.461621 29.564687)">2.0</text>
+     </g>
+    </g>
+    <g id="ch1-michaelis-text_31">
+     <!-- $1/v$ -->
+     <g style="fill: currentColor" transform="translate(284.38957 103.046602) rotate(-90)">
+      <text>
+       <tspan x="0" y="-0.578125" style="font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">1</tspan>
+       <tspan x="4.750015" y="-0.578125" style="font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">/</tspan>
+       <tspan x="7.391022" y="-0.578125" style="font-style: italic; font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">v</tspan>
+      </text>
+     </g>
+    </g>
+   </g>
+   <g id="ch1-michaelis-line2d_30">
+    <path d="M 313.413627 165.623187 
+L 513.629961 36.572555 
+L 513.629961 36.572555 
+" clip-path="url(#ch1-michaelis-p7fc33fcdd5)" style="fill: none; stroke: #1f5fff; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="ch1-michaelis-line2d_31">
+    <path d="M 309.961621 158.948154 
+L 513.629961 158.948154 
+" clip-path="url(#ch1-michaelis-p7fc33fcdd5)" style="fill: none; stroke: currentColor; stroke-opacity: 0.4; stroke-width: 0.6; stroke-linecap: round"/>
+   </g>
+   <g id="ch1-michaelis-line2d_32">
+    <path d="M 341.029673 168.960703 
+L 341.029673 25.4475 
+" clip-path="url(#ch1-michaelis-p7fc33fcdd5)" style="fill: none; stroke: currentColor; stroke-opacity: 0.4; stroke-width: 0.6; stroke-linecap: round"/>
+   </g>
+   <g id="ch1-michaelis-line2d_33">
+    <g clip-path="url(#ch1-michaelis-p7fc33fcdd5)">
+     <use xlink:href="#ch1-michaelis-mbac9ffa7d4" x="323.769644" y="158.948154" style="fill: #e5322d; stroke: #e5322d"/>
+    </g>
+   </g>
+   <g id="ch1-michaelis-line2d_34">
+    <defs>
+     <path id="ch1-michaelis-m88756e1f7c" d="M 0 2.5 
+C 0.663008 2.5 1.29895 2.236584 1.767767 1.767767 
+C 2.236584 1.29895 2.5 0.663008 2.5 0 
+C 2.5 -0.663008 2.236584 -1.29895 1.767767 -1.767767 
+C 1.29895 -2.236584 0.663008 -2.5 0 -2.5 
+C -0.663008 -2.5 -1.29895 -2.236584 -1.767767 -1.767767 
+C -2.236584 -1.29895 -2.5 -0.663008 -2.5 0 
+C -2.5 0.663008 -2.236584 1.29895 -1.767767 1.767767 
+C -1.29895 2.236584 -0.663008 2.5 0 2.5 
+z
+" style="stroke: #12a150"/>
+    </defs>
+    <g clip-path="url(#ch1-michaelis-p7fc33fcdd5)">
+     <use xlink:href="#ch1-michaelis-m88756e1f7c" x="341.029673" y="147.8231" style="fill: #12a150; stroke: #12a150"/>
+    </g>
+   </g>
+   <g id="ch1-michaelis-patch_7">
+    <path d="M 309.961621 168.960703 
+L 309.961621 25.4475 
+" style="fill: none; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="ch1-michaelis-patch_8">
+    <path d="M 309.961621 168.960703 
+L 513.629961 168.960703 
+" style="fill: none; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="ch1-michaelis-text_32">
+    <!-- $-1/K_m$ -->
+    <g style="fill: #e5322d" transform="translate(315.13963 128.910507)">
+     <text>
+      <tspan x="0" y="-0.921875" style="font-size: 9px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: #e5322d">−</tspan>
+      <tspan x="6.165039" y="-0.921875" style="font-size: 9px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: #e5322d">1</tspan>
+      <tspan x="10.66507" y="-0.921875" style="font-size: 9px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: #e5322d">/</tspan>
+      <tspan x="13.167084" y="-0.921875" style="font-style: italic; font-size: 9px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: #e5322d">K</tspan>
+      <tspan x="19.17012" y="0.428125" style="font-style: italic; font-size: 6.3px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: #e5322d">m</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="ch1-michaelis-text_33">
+    <!-- $1/V_{max}$ -->
+    <g style="fill: #12a150" transform="translate(351.38569 155.610638)">
+     <text>
+      <tspan x="0" y="-0.921875" style="font-size: 9px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: #12a150">1</tspan>
+      <tspan x="4.500031" y="-0.921875" style="font-size: 9px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: #12a150">/</tspan>
+      <tspan x="7.002045" y="-0.921875" style="font-style: italic; font-size: 9px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: #12a150">V</tspan>
+      <tspan x="12.501083" y="0.428125" style="font-style: italic; font-size: 6.3px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: #12a150">m</tspan>
+      <tspan x="17.049716" y="0.428125" style="font-style: italic; font-size: 6.3px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: #12a150">a</tspan>
+      <tspan x="20.206039" y="0.428125" style="font-style: italic; font-size: 6.3px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: #12a150">x</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="ch1-michaelis-text_34">
+    <!-- slope $K_m/V_{max}$ -->
+    <g style="fill: currentColor; opacity: 0.7" transform="translate(430.781823 75.510245)">
+     <text>
+      <tspan x="0" y="-0.8125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor; opacity: 0.7">s</tspan>
+      <tspan x="4.486572" y="-0.8125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor; opacity: 0.7">l</tspan>
+      <tspan x="6.545166" y="-0.8125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor; opacity: 0.7">o</tspan>
+      <tspan x="11.641846" y="-0.8125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor; opacity: 0.7">p</tspan>
+      <tspan x="16.846436" y="-0.8125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor; opacity: 0.7">e</tspan>
+      <tspan x="21.802002" y="-0.8125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor; opacity: 0.7"> </tspan>
+      <tspan x="24.192627" y="-0.8125" style="font-style: italic; font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor; opacity: 0.7">K</tspan>
+      <tspan x="36.903669" y="-0.8125" style="font-style: italic; font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor; opacity: 0.7">V</tspan>
+      <tspan x="29.862198" y="0.4625" style="font-style: italic; font-size: 5.95px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor; opacity: 0.7">m</tspan>
+      <tspan x="42.097226" y="0.4625" style="font-style: italic; font-size: 5.95px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor; opacity: 0.7">m</tspan>
+      <tspan x="46.393175" y="0.4625" style="font-style: italic; font-size: 5.95px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor; opacity: 0.7">a</tspan>
+      <tspan x="49.374156" y="0.4625" style="font-style: italic; font-size: 5.95px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor; opacity: 0.7">x</tspan>
+      <tspan x="34.540647" y="-0.8125" style="font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor; opacity: 0.7">/</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="ch1-michaelis-text_35">
+    <text style="font-weight: 600; font-size: 10px; font-family: var(--sans); text-anchor: start; fill: currentColor" x="309.961621" y="15.4475" transform="rotate(-0 309.961621 15.4475)">Lineweaver–Burk</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="ch1-michaelis-p022a0abb16">
+   <rect x="33.245098" y="25.4475" width="203.66834" height="143.513203"/>
+  </clipPath>
+  <clipPath id="ch1-michaelis-p7fc33fcdd5">
+   <rect x="309.961621" y="25.4475" width="203.66834" height="143.513203"/>
+  </clipPath>
+ </defs>
+</svg>

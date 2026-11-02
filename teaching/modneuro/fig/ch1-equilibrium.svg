@@ -1,0 +1,390 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400.535137 213.174797" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="ch1-equilibrium-figure_1">
+  <g id="ch1-equilibrium-patch_1">
+   <path d="M 0 213.174797 
+L 400.535137 213.174797 
+L 400.535137 0 
+L 0 0 
+L 0 213.174797 
+z
+" style="fill: none"/>
+  </g>
+  <g id="ch1-equilibrium-axes_1">
+   <g id="ch1-equilibrium-patch_2">
+    <path d="M 33.245098 175.1355 
+L 390.365098 175.1355 
+L 390.365098 25.4475 
+L 33.245098 25.4475 
+L 33.245098 175.1355 
+z
+" style="fill: none"/>
+   </g>
+   <g id="ch1-equilibrium-matplotlib.axis_1">
+    <g id="ch1-equilibrium-xtick_1">
+     <g id="ch1-equilibrium-line2d_1">
+      <defs>
+       <path id="ch1-equilibrium-m0bd044f146" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#ch1-equilibrium-m0bd044f146" x="33.245098" y="175.1355" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-equilibrium-text_1">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="33.245098" y="189.869875" transform="rotate(-0 33.245098 189.869875)">0</text>
+     </g>
+    </g>
+    <g id="ch1-equilibrium-xtick_2">
+     <g id="ch1-equilibrium-line2d_2">
+      <g>
+       <use xlink:href="#ch1-equilibrium-m0bd044f146" x="104.669098" y="175.1355" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-equilibrium-text_2">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="104.669098" y="189.869875" transform="rotate(-0 104.669098 189.869875)">2</text>
+     </g>
+    </g>
+    <g id="ch1-equilibrium-xtick_3">
+     <g id="ch1-equilibrium-line2d_3">
+      <g>
+       <use xlink:href="#ch1-equilibrium-m0bd044f146" x="176.093098" y="175.1355" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-equilibrium-text_3">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="176.093098" y="189.869875" transform="rotate(-0 176.093098 189.869875)">4</text>
+     </g>
+    </g>
+    <g id="ch1-equilibrium-xtick_4">
+     <g id="ch1-equilibrium-line2d_4">
+      <g>
+       <use xlink:href="#ch1-equilibrium-m0bd044f146" x="247.517098" y="175.1355" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-equilibrium-text_4">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="247.517098" y="189.869875" transform="rotate(-0 247.517098 189.869875)">6</text>
+     </g>
+    </g>
+    <g id="ch1-equilibrium-xtick_5">
+     <g id="ch1-equilibrium-line2d_5">
+      <g>
+       <use xlink:href="#ch1-equilibrium-m0bd044f146" x="318.941098" y="175.1355" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-equilibrium-text_5">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="318.941098" y="189.869875" transform="rotate(-0 318.941098 189.869875)">8</text>
+     </g>
+    </g>
+    <g id="ch1-equilibrium-xtick_6">
+     <g id="ch1-equilibrium-line2d_6">
+      <g>
+       <use xlink:href="#ch1-equilibrium-m0bd044f146" x="390.365098" y="175.1355" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-equilibrium-text_6">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="390.365098" y="189.869875" transform="rotate(-0 390.365098 189.869875)">10</text>
+     </g>
+    </g>
+    <g id="ch1-equilibrium-text_7">
+     <text style="font-size: 9.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="211.805098" y="205.123293" transform="rotate(-0 211.805098 205.123293)">time</text>
+    </g>
+   </g>
+   <g id="ch1-equilibrium-matplotlib.axis_2">
+    <g id="ch1-equilibrium-ytick_1">
+     <g id="ch1-equilibrium-line2d_7">
+      <defs>
+       <path id="ch1-equilibrium-m4cc944ce64" d="M 0 0 
+L -3 0 
+" style="stroke: currentColor; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#ch1-equilibrium-m4cc944ce64" x="33.245098" y="168.3315" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-equilibrium-text_8">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="26.745098" y="172.448688" transform="rotate(-0 26.745098 172.448688)">0</text>
+     </g>
+    </g>
+    <g id="ch1-equilibrium-ytick_2">
+     <g id="ch1-equilibrium-line2d_8">
+      <g>
+       <use xlink:href="#ch1-equilibrium-m4cc944ce64" x="33.245098" y="145.49687" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-equilibrium-text_9">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="26.745098" y="149.614058" transform="rotate(-0 26.745098 149.614058)">1</text>
+     </g>
+    </g>
+    <g id="ch1-equilibrium-ytick_3">
+     <g id="ch1-equilibrium-line2d_9">
+      <g>
+       <use xlink:href="#ch1-equilibrium-m4cc944ce64" x="33.245098" y="122.662241" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-equilibrium-text_10">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="26.745098" y="126.779428" transform="rotate(-0 26.745098 126.779428)">2</text>
+     </g>
+    </g>
+    <g id="ch1-equilibrium-ytick_4">
+     <g id="ch1-equilibrium-line2d_10">
+      <g>
+       <use xlink:href="#ch1-equilibrium-m4cc944ce64" x="33.245098" y="99.827611" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-equilibrium-text_11">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="26.745098" y="103.944798" transform="rotate(-0 26.745098 103.944798)">3</text>
+     </g>
+    </g>
+    <g id="ch1-equilibrium-ytick_5">
+     <g id="ch1-equilibrium-line2d_11">
+      <g>
+       <use xlink:href="#ch1-equilibrium-m4cc944ce64" x="33.245098" y="76.992981" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-equilibrium-text_12">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="26.745098" y="81.110169" transform="rotate(-0 26.745098 81.110169)">4</text>
+     </g>
+    </g>
+    <g id="ch1-equilibrium-ytick_6">
+     <g id="ch1-equilibrium-line2d_12">
+      <g>
+       <use xlink:href="#ch1-equilibrium-m4cc944ce64" x="33.245098" y="54.158351" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-equilibrium-text_13">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="26.745098" y="58.275539" transform="rotate(-0 26.745098 58.275539)">5</text>
+     </g>
+    </g>
+    <g id="ch1-equilibrium-ytick_7">
+     <g id="ch1-equilibrium-line2d_13">
+      <g>
+       <use xlink:href="#ch1-equilibrium-m4cc944ce64" x="33.245098" y="31.323722" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch1-equilibrium-text_14">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="26.745098" y="35.440909" transform="rotate(-0 26.745098 35.440909)">6</text>
+     </g>
+    </g>
+    <g id="ch1-equilibrium-text_15">
+     <!-- $f(t)$ -->
+     <g style="fill: currentColor" transform="translate(14.963125 106.134) rotate(-90)">
+      <text>
+       <tspan x="0" y="-0.5625" style="font-style: italic; font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">f</tspan>
+       <tspan x="5.80452" y="-0.5625" style="font-style: italic; font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">t</tspan>
+       <tspan x="2.641006" y="-0.5625" style="font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">(</tspan>
+       <tspan x="8.445526" y="-0.5625" style="font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">)</tspan>
+      </text>
+     </g>
+    </g>
+   </g>
+   <g id="ch1-equilibrium-line2d_14">
+    <path d="M 33.245098 168.3315 
+L 37.530538 160.352788 
+L 41.815978 152.83872 
+L 46.101418 145.762238 
+L 50.386858 139.097857 
+L 54.672298 132.82158 
+L 58.957738 126.910805 
+L 63.600298 120.895267 
+L 68.242858 115.258303 
+L 72.885418 109.976087 
+L 77.527978 105.026294 
+L 82.170538 100.388004 
+L 87.170218 95.718832 
+L 92.169898 91.365324 
+L 97.169578 87.306141 
+L 102.169258 83.521383 
+L 107.526058 79.749762 
+L 112.882858 76.250665 
+L 118.596778 72.796518 
+L 124.310698 69.607938 
+L 130.024618 66.664507 
+L 136.095658 63.784667 
+L 142.523818 60.990792 
+L 148.951978 58.437383 
+L 155.737258 55.980151 
+L 162.879658 53.633782 
+L 170.379178 51.410016 
+L 178.235818 49.31771 
+L 186.449578 47.362953 
+L 195.020458 45.549244 
+L 204.305578 43.815088 
+L 214.304938 42.183194 
+L 225.018538 40.670556 
+L 236.446378 39.288568 
+L 248.945578 38.009868 
+L 262.516138 36.852891 
+L 277.515178 35.80558 
+L 293.942698 34.884708 
+L 312.512938 34.069426 
+L 333.940138 33.357789 
+L 358.938538 32.757105 
+L 388.936618 32.265522 
+L 390.007978 32.2515 
+L 390.007978 32.2515 
+" clip-path="url(#ch1-equilibrium-p0f9ded1e4c)" style="fill: none; stroke: currentColor; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="ch1-equilibrium-line2d_15">
+    <defs>
+     <path id="ch1-equilibrium-m47fe29ee9c" d="M 0 1.6 
+C 0.424325 1.6 0.831328 1.431414 1.131371 1.131371 
+C 1.431414 0.831328 1.6 0.424325 1.6 0 
+C 1.6 -0.424325 1.431414 -0.831328 1.131371 -1.131371 
+C 0.831328 -1.431414 0.424325 -1.6 0 -1.6 
+C -0.424325 -1.6 -0.831328 -1.431414 -1.131371 -1.131371 
+C -1.431414 -0.831328 -1.6 -0.424325 -1.6 0 
+C -1.6 0.424325 -1.431414 0.831328 -1.131371 1.131371 
+C -0.831328 1.431414 -0.424325 1.6 0 1.6 
+z
+" style="stroke: #e5322d"/>
+    </defs>
+    <g clip-path="url(#ch1-equilibrium-p0f9ded1e4c)">
+     <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="33.245098" y="168.3315" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="42.173098" y="152.194757" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="51.101098" y="137.958596" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="60.029098" y="125.399166" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="68.957098" y="114.318983" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="77.885098" y="104.543822" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="86.813098" y="95.919976" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="95.741098" y="88.311845" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="104.669098" y="81.599797" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="113.597098" y="75.678293" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="122.525098" y="70.454223" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="131.453098" y="65.845442" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="140.381098" y="61.779482" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="149.309098" y="58.19241" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="158.237098" y="55.027822" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="167.165098" y="52.235959" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="176.093098" y="49.772921" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="185.021098" y="47.599979" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="193.949098" y="45.682965" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="202.877098" y="43.991737" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="211.805098" y="42.499701" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="220.733098" y="41.183397" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="229.661098" y="40.022127" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="238.589098" y="38.997631" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="247.517098" y="38.0938" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="256.445098" y="37.296421" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="265.373098" y="36.592958" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="274.301098" y="35.972349" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="283.229098" y="35.424835" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="292.157098" y="34.941807" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="301.085098" y="34.515669" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="310.013098" y="34.139723" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="318.941098" y="33.808055" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="327.869098" y="33.51545" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="336.797098" y="33.257309" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="345.725098" y="33.029572" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="354.653098" y="32.828657" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="363.581098" y="32.651406" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="372.509098" y="32.495032" style="fill: #e5322d; stroke: #e5322d"/>
+     <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="381.437098" y="32.357075" style="fill: #e5322d; stroke: #e5322d"/>
+    </g>
+   </g>
+   <g id="ch1-equilibrium-patch_3">
+    <path d="M 33.245098 175.1355 
+L 33.245098 25.4475 
+" style="fill: none; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="ch1-equilibrium-patch_4">
+    <path d="M 33.245098 175.1355 
+L 390.365098 175.1355 
+" style="fill: none; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="ch1-equilibrium-text_16">
+    <!-- Equilibrium, $f(0)=0$, $f_\infty=6$, $\tau=2$ -->
+    <g style="fill: currentColor" transform="translate(33.245098 15.4475)">
+     <text>
+      <tspan x="0" y="-0.375" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">E</tspan>
+      <tspan x="6.054688" y="-0.375" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">q</tspan>
+      <tspan x="12.294922" y="-0.375" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">u</tspan>
+      <tspan x="18.417969" y="-0.375" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">i</tspan>
+      <tspan x="21.035156" y="-0.375" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">l</tspan>
+      <tspan x="23.652344" y="-0.375" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">i</tspan>
+      <tspan x="26.269531" y="-0.375" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">b</tspan>
+      <tspan x="32.509766" y="-0.375" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">r</tspan>
+      <tspan x="36.479492" y="-0.375" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">i</tspan>
+      <tspan x="39.09668" y="-0.375" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">u</tspan>
+      <tspan x="45.219727" y="-0.375" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">m</tspan>
+      <tspan x="54.223633" y="-0.375" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">,</tspan>
+      <tspan x="57.412109" y="-0.375" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor"> </tspan>
+      <tspan x="90.221634" y="-0.375" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">,</tspan>
+      <tspan x="93.41011" y="-0.375" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor"> </tspan>
+      <tspan x="121.491628" y="-0.375" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor">,</tspan>
+      <tspan x="124.680104" y="-0.375" style="font-weight: 600; font-size: 10px; font-family: var(--sans); fill: currentColor"> </tspan>
+      <tspan x="59.931641" y="-0.375" style="font-style: italic; font-size: 10px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">f</tspan>
+      <tspan x="95.929642" y="-0.375" style="font-style: italic; font-size: 10px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">f</tspan>
+      <tspan x="127.199635" y="-0.375" style="font-style: italic; font-size: 10px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">τ</tspan>
+      <tspan x="62.711639" y="-0.375" style="font-size: 10px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">(</tspan>
+      <tspan x="66.041641" y="-0.375" style="font-size: 10px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">0</tspan>
+      <tspan x="71.041641" y="-0.375" style="font-size: 10px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">)</tspan>
+      <tspan x="76.371643" y="-0.375" style="font-size: 10px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">=</tspan>
+      <tspan x="85.221634" y="-0.375" style="font-size: 10px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">0</tspan>
+      <tspan x="107.641637" y="-0.375" style="font-size: 10px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">=</tspan>
+      <tspan x="116.491628" y="-0.375" style="font-size: 10px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">6</tspan>
+      <tspan x="133.299626" y="-0.375" style="font-size: 10px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">=</tspan>
+      <tspan x="142.149617" y="-0.375" style="font-size: 10px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">2</tspan>
+      <tspan x="98.709641" y="1.125" style="font-size: 7px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">∞</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="ch1-equilibrium-legend_1">
+    <g id="ch1-equilibrium-line2d_16">
+     <path d="M 258.360098 147.925539 
+L 265.160098 147.925539 
+L 271.960098 147.925539 
+" style="fill: none; stroke: currentColor; stroke-width: 1.2; stroke-linecap: round"/>
+    </g>
+    <g id="ch1-equilibrium-text_17">
+     <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: start; fill: currentColor" x="278.760098" y="150.900539" transform="rotate(-0 278.760098 150.900539)">analytical (SymPy)</text>
+    </g>
+    <g id="ch1-equilibrium-line2d_17">
+     <g>
+      <use xlink:href="#ch1-equilibrium-m47fe29ee9c" x="265.160098" y="162.460207" style="fill: #e5322d; stroke: #e5322d"/>
+     </g>
+    </g>
+    <g id="ch1-equilibrium-text_18">
+     <!-- numerical (Euler, $dt=0.01$) -->
+     <g style="fill: currentColor" transform="translate(278.760098 165.435207)">
+      <text>
+       <tspan x="0" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">n</tspan>
+       <tspan x="5.021973" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">u</tspan>
+       <tspan x="10.048096" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">m</tspan>
+       <tspan x="17.493896" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">e</tspan>
+       <tspan x="22.449463" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">r</tspan>
+       <tspan x="25.649414" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">i</tspan>
+       <tspan x="27.708008" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">c</tspan>
+       <tspan x="32.563965" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">a</tspan>
+       <tspan x="37.336914" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">l</tspan>
+       <tspan x="39.395508" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor"> </tspan>
+       <tspan x="41.786133" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">(</tspan>
+       <tspan x="44.886475" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">E</tspan>
+       <tspan x="49.995605" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">u</tspan>
+       <tspan x="55.021729" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">l</tspan>
+       <tspan x="57.080322" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">e</tspan>
+       <tspan x="62.035889" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">r</tspan>
+       <tspan x="65.23584" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">,</tspan>
+       <tspan x="67.68457" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor"> </tspan>
+       <tspan x="100.786002" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">)</tspan>
+       <tspan x="70.075195" y="-0.4375" style="font-style: italic; font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">d</tspan>
+       <tspan x="74.325241" y="-0.4375" style="font-style: italic; font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">t</tspan>
+       <tspan x="78.388263" y="-0.4375" style="font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">=</tspan>
+       <tspan x="85.910834" y="-0.4375" style="font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">0</tspan>
+       <tspan x="90.16088" y="-0.4375" style="font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">.</tspan>
+       <tspan x="92.28591" y="-0.4375" style="font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">0</tspan>
+       <tspan x="96.535956" y="-0.4375" style="font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">1</tspan>
+      </text>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="ch1-equilibrium-p0f9ded1e4c">
+   <rect x="33.245098" y="25.4475" width="357.12" height="149.688"/>
+  </clipPath>
+ </defs>
+</svg>

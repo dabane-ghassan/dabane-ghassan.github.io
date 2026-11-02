@@ -30,6 +30,36 @@
     document.dispatchEvent(new CustomEvent('langchange', { detail: l }));
   }
 
+
+  /* An action potential drawn in dots, like the Fyndee temple: rising phase in red (Na⁺ in),
+     falling phase and undershoot in green (K⁺ out), a blue cursor sweeping over it.
+     Used by the Teaching card on the home page and by the course overview. */
+  function spikeArt(svg) {
+    if (!svg) return;
+    function V(x) { // two stylised spikes over x in [0, 1]
+      var p = (x * 2) % 1;
+      return Math.exp(-Math.pow((p - .3) / .05, 2)) - .26 * Math.exp(-Math.pow((p - .47) / .09, 2));
+    }
+    // sample densely, then keep one dot every ~6.5px of arc length so steep edges stay continuous
+    var pts = [], out = [], N = 4000, last = null, gap = 6.5;
+    for (var i = 0; i <= N; i++) {
+      var x = i / N, X = 20 + x * 280, Y = 140 - V(x) * 104;
+      if (!last || Math.hypot(X - last[0], Y - last[1]) >= gap) { last = [X, Y, x]; pts.push(last); }
+    }
+    pts.forEach(function (q) {
+      var v = V(q[2]), dv = V(q[2] + 1e-4) - V(q[2] - 1e-4);
+      var active = Math.abs(v) > .03;
+      var c = !active ? 'currentColor' : dv > 0 && v > 0 ? 'var(--red)' : 'var(--green)';
+      out.push('<circle cx="' + q[0].toFixed(1) + '" cy="' + q[1].toFixed(1) + '" r="2.3" fill="' + c + '" opacity="' + (active ? 1 : .45) + '"/>');
+    });
+    out.push('<line x1="20" x2="300" y1="140" y2="140" stroke="currentColor" stroke-opacity=".14" stroke-dasharray="2 4"/>');
+    out.push('<g class="sweep"><line x1="0" x2="0" y1="18" y2="176" stroke="var(--blue)" stroke-width="1.4"/><rect x="-14" y="18" width="14" height="158" fill="var(--blue)" opacity=".08"/></g>');
+    out.push('<g font-family="var(--mono)" font-size="11" fill="currentColor"><text x="20" y="206" opacity=".45">V(t)</text>' +
+      '<circle cx="214" cy="202" r="3.5" fill="var(--red)"/><text x="222" y="206" opacity=".6">Na⁺</text>' +
+      '<circle cx="262" cy="202" r="3.5" fill="var(--green)"/><text x="270" y="206" opacity=".6">K⁺</text></g>');
+    svg.innerHTML = out.join('');
+  }
+
   /* ---------------- theme ---------------- */
   var mq = window.matchMedia('(prefers-color-scheme: dark)');
   function theme() { return root.dataset.theme || (mq.matches ? 'dark' : 'light'); }
@@ -82,8 +112,10 @@
       els.forEach(function (el) { io.observe(el); });
     } else { els.forEach(function (el) { el.classList.add('in'); }); }
 
+    spikeArt(document.getElementById('spike'));
+
     document.querySelectorAll('[data-year]').forEach(function (el) { el.textContent = new Date().getFullYear(); });
   });
 
-  window.Site = { lang: lang, t: t, setLang: setLang };
+  window.Site = { lang: lang, t: t, setLang: setLang, spikeArt: spikeArt };
 })();

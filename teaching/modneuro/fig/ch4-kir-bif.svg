@@ -1,0 +1,395 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 416.06291 229.806797" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="ch4-kir-bif-figure_1">
+  <g id="ch4-kir-bif-patch_1">
+   <path d="M 0 229.806797 
+L 416.06291 229.806797 
+L 416.06291 0 
+L 0 0 
+L 0 229.806797 
+z
+" style="fill: none"/>
+  </g>
+  <g id="ch4-kir-bif-axes_1">
+   <g id="ch4-kir-bif-patch_2">
+    <path d="M 47.560957 191.7675 
+L 404.680957 191.7675 
+L 404.680957 25.4475 
+L 47.560957 25.4475 
+L 47.560957 191.7675 
+z
+" style="fill: none"/>
+   </g>
+   <g id="ch4-kir-bif-matplotlib.axis_1">
+    <g id="ch4-kir-bif-xtick_1">
+     <g id="ch4-kir-bif-line2d_1">
+      <defs>
+       <path id="ch4-kir-bif-m64b81a0b63" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#ch4-kir-bif-m64b81a0b63" x="47.560957" y="191.7675" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch4-kir-bif-text_1">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="47.560957" y="206.501875" transform="rotate(-0 47.560957 206.501875)">5.0</text>
+     </g>
+    </g>
+    <g id="ch4-kir-bif-xtick_2">
+     <g id="ch4-kir-bif-line2d_2">
+      <g>
+       <use xlink:href="#ch4-kir-bif-m64b81a0b63" x="118.984957" y="191.7675" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch4-kir-bif-text_2">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="118.984957" y="206.501875" transform="rotate(-0 118.984957 206.501875)">5.5</text>
+     </g>
+    </g>
+    <g id="ch4-kir-bif-xtick_3">
+     <g id="ch4-kir-bif-line2d_3">
+      <g>
+       <use xlink:href="#ch4-kir-bif-m64b81a0b63" x="190.408957" y="191.7675" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch4-kir-bif-text_3">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="190.408957" y="206.501875" transform="rotate(-0 190.408957 206.501875)">6.0</text>
+     </g>
+    </g>
+    <g id="ch4-kir-bif-xtick_4">
+     <g id="ch4-kir-bif-line2d_4">
+      <g>
+       <use xlink:href="#ch4-kir-bif-m64b81a0b63" x="261.832957" y="191.7675" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch4-kir-bif-text_4">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="261.832957" y="206.501875" transform="rotate(-0 261.832957 206.501875)">6.5</text>
+     </g>
+    </g>
+    <g id="ch4-kir-bif-xtick_5">
+     <g id="ch4-kir-bif-line2d_5">
+      <g>
+       <use xlink:href="#ch4-kir-bif-m64b81a0b63" x="333.256957" y="191.7675" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch4-kir-bif-text_5">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="333.256957" y="206.501875" transform="rotate(-0 333.256957 206.501875)">7.0</text>
+     </g>
+    </g>
+    <g id="ch4-kir-bif-xtick_6">
+     <g id="ch4-kir-bif-line2d_6">
+      <g>
+       <use xlink:href="#ch4-kir-bif-m64b81a0b63" x="404.680957" y="191.7675" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch4-kir-bif-text_6">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="404.680957" y="206.501875" transform="rotate(-0 404.680957 206.501875)">7.5</text>
+     </g>
+    </g>
+    <g id="ch4-kir-bif-text_7">
+     <!-- injected current $I$ -->
+     <g style="fill: currentColor" transform="translate(187.788457 221.755293)">
+      <text>
+       <tspan x="0" y="-0.859375" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">i</tspan>
+       <tspan x="2.300781" y="-0.859375" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">n</tspan>
+       <tspan x="7.913574" y="-0.859375" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">j</tspan>
+       <tspan x="10.214355" y="-0.859375" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">e</tspan>
+       <tspan x="15.75293" y="-0.859375" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">c</tspan>
+       <tspan x="21.180176" y="-0.859375" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">t</tspan>
+       <tspan x="24.288086" y="-0.859375" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">e</tspan>
+       <tspan x="29.82666" y="-0.859375" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">d</tspan>
+       <tspan x="35.643555" y="-0.859375" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor"> </tspan>
+       <tspan x="38.31543" y="-0.859375" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">c</tspan>
+       <tspan x="43.742676" y="-0.859375" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">u</tspan>
+       <tspan x="49.360107" y="-0.859375" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">r</tspan>
+       <tspan x="52.936523" y="-0.859375" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">r</tspan>
+       <tspan x="56.512939" y="-0.859375" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">e</tspan>
+       <tspan x="62.051514" y="-0.859375" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">n</tspan>
+       <tspan x="67.664307" y="-0.859375" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">t</tspan>
+       <tspan x="70.772217" y="-0.859375" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor"> </tspan>
+       <tspan x="73.444092" y="-0.859375" style="font-style: italic; font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">I</tspan>
+      </text>
+     </g>
+    </g>
+   </g>
+   <g id="ch4-kir-bif-matplotlib.axis_2">
+    <g id="ch4-kir-bif-ytick_1">
+     <g id="ch4-kir-bif-line2d_7">
+      <defs>
+       <path id="ch4-kir-bif-m90a670c41c" d="M 0 0 
+L -3 0 
+" style="stroke: currentColor; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#ch4-kir-bif-m90a670c41c" x="47.560957" y="191.7675" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch4-kir-bif-text_8">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="41.060957" y="195.884688" transform="rotate(-0 41.060957 195.884688)">−100</text>
+     </g>
+    </g>
+    <g id="ch4-kir-bif-ytick_2">
+     <g id="ch4-kir-bif-line2d_8">
+      <g>
+       <use xlink:href="#ch4-kir-bif-m90a670c41c" x="47.560957" y="158.5035" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch4-kir-bif-text_9">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="41.060957" y="162.620688" transform="rotate(-0 41.060957 162.620688)">−80</text>
+     </g>
+    </g>
+    <g id="ch4-kir-bif-ytick_3">
+     <g id="ch4-kir-bif-line2d_9">
+      <g>
+       <use xlink:href="#ch4-kir-bif-m90a670c41c" x="47.560957" y="125.2395" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch4-kir-bif-text_10">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="41.060957" y="129.356688" transform="rotate(-0 41.060957 129.356688)">−60</text>
+     </g>
+    </g>
+    <g id="ch4-kir-bif-ytick_4">
+     <g id="ch4-kir-bif-line2d_10">
+      <g>
+       <use xlink:href="#ch4-kir-bif-m90a670c41c" x="47.560957" y="91.9755" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch4-kir-bif-text_11">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="41.060957" y="96.092688" transform="rotate(-0 41.060957 96.092688)">−40</text>
+     </g>
+    </g>
+    <g id="ch4-kir-bif-ytick_5">
+     <g id="ch4-kir-bif-line2d_11">
+      <g>
+       <use xlink:href="#ch4-kir-bif-m90a670c41c" x="47.560957" y="58.7115" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch4-kir-bif-text_12">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="41.060957" y="62.828688" transform="rotate(-0 41.060957 62.828688)">−20</text>
+     </g>
+    </g>
+    <g id="ch4-kir-bif-ytick_6">
+     <g id="ch4-kir-bif-line2d_12">
+      <g>
+       <use xlink:href="#ch4-kir-bif-m90a670c41c" x="47.560957" y="25.4475" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch4-kir-bif-text_13">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="41.060957" y="29.564688" transform="rotate(-0 41.060957 29.564688)">0</text>
+     </g>
+    </g>
+    <g id="ch4-kir-bif-text_14">
+     <!-- equilibrium $V^*$ (mV) -->
+     <g style="fill: currentColor" transform="translate(14.963125 153.59) rotate(-90)">
+      <text>
+       <tspan x="0" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">e</tspan>
+       <tspan x="5.538574" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">q</tspan>
+       <tspan x="11.355469" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">u</tspan>
+       <tspan x="16.9729" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">i</tspan>
+       <tspan x="19.273682" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">l</tspan>
+       <tspan x="21.574463" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">i</tspan>
+       <tspan x="23.875244" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">b</tspan>
+       <tspan x="29.692139" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">r</tspan>
+       <tspan x="33.268555" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">i</tspan>
+       <tspan x="35.569336" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">u</tspan>
+       <tspan x="41.186768" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">m</tspan>
+       <tspan x="49.508545" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor"> </tspan>
+       <tspan x="65.400857" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor"> </tspan>
+       <tspan x="68.072732" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">(</tspan>
+       <tspan x="71.537819" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">m</tspan>
+       <tspan x="79.859597" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">V</tspan>
+       <tspan x="86.41404" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">)</tspan>
+       <tspan x="52.18042" y="-0.581187" style="font-style: italic; font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">V</tspan>
+       <tspan x="60.318346" y="-4.504687" style="font-size: 6.65px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">*</tspan>
+      </text>
+     </g>
+    </g>
+   </g>
+   <g id="ch4-kir-bif-line2d_13">
+    <path d="M -1 138.078461 
+L 47.855018 136.605047 
+L 89.789233 135.147926 
+L 125.801192 133.690804 
+L 156.314604 132.233683 
+L 178.415916 130.984722 
+L 197.05892 129.73576 
+L 212.509163 128.486799 
+L 225.028091 127.237838 
+L 233.406137 126.197037 
+L 240.070861 125.156236 
+L 245.16299 124.115435 
+L 248.196342 123.282794 
+L 250.378572 122.450153 
+L 251.49642 121.825673 
+L 252.199686 121.201192 
+L 252.514771 120.576712 
+L 252.538004 120.368551 
+M 160.62123 90.601643 
+L 160.764695 89.769002 
+L 161.188432 88.936361 
+L 161.893616 88.10372 
+L 162.880866 87.271079 
+L 164.511694 86.230278 
+L 166.582526 85.189477 
+L 169.645573 83.940516 
+L 173.334323 82.691555 
+L 178.419459 81.234434 
+L 184.333389 79.777312 
+L 192.086571 78.112031 
+L 200.874645 76.446749 
+L 211.961371 74.573307 
+L 225.717114 72.491705 
+L 242.519912 70.201943 
+L 260.986095 67.912181 
+L 282.920003 65.414258 
+L 308.653435 62.708176 
+L 338.492145 59.793933 
+L 372.70719 56.67153 
+L 414.028568 53.132807 
+L 417.06291 52.881194 
+L 417.06291 52.881194 
+" clip-path="url(#ch4-kir-bif-p274fcdf0ce)" style="fill: none; stroke: #12a150; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="ch4-kir-bif-line2d_14">
+    <path d="M 252.521907 120.160391 
+L 252.246863 119.535911 
+L 251.65072 118.91143 
+L 250.75736 118.286949 
+L 249.143827 117.454309 
+L 246.522155 116.413508 
+L 242.61844 115.164546 
+L 237.22004 113.707425 
+L 229.300602 111.833983 
+L 216.749739 109.127901 
+L 193.503445 104.132056 
+L 184.022136 101.842293 
+L 177.207079 99.968852 
+L 172.003397 98.30357 
+L 168.185352 96.846449 
+L 165.498899 95.597487 
+L 163.693316 94.556686 
+L 162.294633 93.515885 
+L 161.475488 92.683245 
+L 160.927475 91.850604 
+L 160.654067 91.017963 
+L 160.628961 90.809803 
+L 160.628961 90.809803 
+" clip-path="url(#ch4-kir-bif-p274fcdf0ce)" style="fill: none; stroke-dasharray: 6.66,2.88; stroke-dashoffset: 0; stroke: currentColor; stroke-width: 1.8"/>
+   </g>
+   <g id="ch4-kir-bif-line2d_15">
+    <path d="M 190.408957 191.7675 
+L 190.408957 25.4475 
+" clip-path="url(#ch4-kir-bif-p274fcdf0ce)" style="fill: none; stroke: #1f5fff; stroke-opacity: 0.7; stroke-linecap: round"/>
+   </g>
+   <g id="ch4-kir-bif-line2d_16">
+    <defs>
+     <path id="ch4-kir-bif-m95eb841131" d="M -2.5 2.5 
+L 2.5 2.5 
+L 2.5 -2.5 
+L -2.5 -2.5 
+z
+" style="stroke: currentColor; stroke-linejoin: miter"/>
+    </defs>
+    <g clip-path="url(#ch4-kir-bif-p274fcdf0ce)">
+     <use xlink:href="#ch4-kir-bif-m95eb841131" x="252.538004" y="120.368551" style="fill: currentColor; stroke: currentColor; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="ch4-kir-bif-line2d_17">
+    <g clip-path="url(#ch4-kir-bif-p274fcdf0ce)">
+     <use xlink:href="#ch4-kir-bif-m95eb841131" x="160.628961" y="90.809803" style="fill: currentColor; stroke: currentColor; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="ch4-kir-bif-patch_3">
+    <path d="M 47.560957 191.7675 
+L 47.560957 25.4475 
+" style="fill: none; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="ch4-kir-bif-patch_4">
+    <path d="M 47.560957 191.7675 
+L 404.680957 191.7675 
+" style="fill: none; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="ch4-kir-bif-text_15">
+    <!-- $I = 6$ -->
+    <g style="fill: #1f5fff" transform="translate(196.122877 183.4515)">
+     <text>
+      <tspan x="0" y="-0.1875" style="font-style: italic; font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: #1f5fff">I</tspan>
+      <tspan x="4.530536" y="-0.1875" style="font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: #1f5fff">=</tspan>
+      <tspan x="12.053107" y="-0.1875" style="font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: #1f5fff">6</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="ch4-kir-bif-text_16">
+    <text style="font-weight: 600; font-size: 10px; font-family: var(--sans); text-anchor: start; fill: currentColor" x="47.560957" y="15.4475" transform="rotate(-0 47.560957 15.4475)">Bifurcation diagram: two saddle-node bifurcations (squares)</text>
+   </g>
+   <g id="ch4-kir-bif-line2d_18">
+    <defs>
+     <path id="ch4-kir-bif-m2d7c351d01" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: #e5322d; stroke-width: 1.4"/>
+    </defs>
+    <g clip-path="url(#ch4-kir-bif-p274fcdf0ce)">
+     <use xlink:href="#ch4-kir-bif-m2d7c351d01" x="190.408957" y="130.207354" style="fill: #e5322d; stroke: #e5322d; stroke-width: 1.4"/>
+    </g>
+   </g>
+   <g id="ch4-kir-bif-line2d_19">
+    <defs>
+     <path id="ch4-kir-bif-m990528ae39" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: #e5322d; stroke-width: 1.4"/>
+    </defs>
+    <g clip-path="url(#ch4-kir-bif-p274fcdf0ce)">
+     <use xlink:href="#ch4-kir-bif-m990528ae39" x="190.408957" y="103.413219" style="fill-opacity: 0; stroke: #e5322d; stroke-width: 1.4"/>
+    </g>
+   </g>
+   <g id="ch4-kir-bif-line2d_20">
+    <g clip-path="url(#ch4-kir-bif-p274fcdf0ce)">
+     <use xlink:href="#ch4-kir-bif-m2d7c351d01" x="190.408957" y="78.454025" style="fill: #e5322d; stroke: #e5322d; stroke-width: 1.4"/>
+    </g>
+   </g>
+   <g id="ch4-kir-bif-legend_1">
+    <g id="ch4-kir-bif-line2d_21">
+     <path d="M 55.210957 38.356875 
+L 62.010957 38.356875 
+L 68.810957 38.356875 
+" style="fill: none; stroke: #12a150; stroke-width: 1.8; stroke-linecap: round"/>
+    </g>
+    <g id="ch4-kir-bif-text_17">
+     <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: start; fill: currentColor" x="75.610957" y="41.331875" transform="rotate(-0 75.610957 41.331875)">stable</text>
+    </g>
+    <g id="ch4-kir-bif-line2d_22">
+     <path d="M 55.210957 52.891543 
+L 62.010957 52.891543 
+L 68.810957 52.891543 
+" style="fill: none; stroke-dasharray: 6.66,2.88; stroke-dashoffset: 0; stroke: currentColor; stroke-width: 1.8"/>
+    </g>
+    <g id="ch4-kir-bif-text_18">
+     <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: start; fill: currentColor" x="75.610957" y="55.866543" transform="rotate(-0 75.610957 55.866543)">unstable</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="ch4-kir-bif-p274fcdf0ce">
+   <rect x="47.560957" y="25.4475" width="357.12" height="166.32"/>
+  </clipPath>
+ </defs>
+</svg>

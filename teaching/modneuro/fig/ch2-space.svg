@@ -1,0 +1,593 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 412.686152 235.350797" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="ch2-space-figure_1">
+  <g id="ch2-space-patch_1">
+   <path d="M 0 235.350797 
+L 412.686152 235.350797 
+L 412.686152 0 
+L 0 0 
+L 0 235.350797 
+z
+" style="fill: none"/>
+  </g>
+  <g id="ch2-space-axes_1">
+   <g id="ch2-space-patch_2">
+    <path d="M 40.841973 197.3115 
+L 397.961973 197.3115 
+L 397.961973 25.4475 
+L 40.841973 25.4475 
+L 40.841973 197.3115 
+z
+" style="fill: none"/>
+   </g>
+   <g id="ch2-space-matplotlib.axis_1">
+    <g id="ch2-space-xtick_1">
+     <g id="ch2-space-line2d_1">
+      <defs>
+       <path id="ch2-space-m1cd71c9947" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#ch2-space-m1cd71c9947" x="40.841973" y="197.3115" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-space-text_1">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="40.841973" y="212.045875" transform="rotate(-0 40.841973 212.045875)">0.0</text>
+     </g>
+    </g>
+    <g id="ch2-space-xtick_2">
+     <g id="ch2-space-line2d_2">
+      <g>
+       <use xlink:href="#ch2-space-m1cd71c9947" x="85.481973" y="197.3115" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-space-text_2">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="85.481973" y="212.045875" transform="rotate(-0 85.481973 212.045875)">2.5</text>
+     </g>
+    </g>
+    <g id="ch2-space-xtick_3">
+     <g id="ch2-space-line2d_3">
+      <g>
+       <use xlink:href="#ch2-space-m1cd71c9947" x="130.121973" y="197.3115" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-space-text_3">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="130.121973" y="212.045875" transform="rotate(-0 130.121973 212.045875)">5.0</text>
+     </g>
+    </g>
+    <g id="ch2-space-xtick_4">
+     <g id="ch2-space-line2d_4">
+      <g>
+       <use xlink:href="#ch2-space-m1cd71c9947" x="174.761973" y="197.3115" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-space-text_4">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="174.761973" y="212.045875" transform="rotate(-0 174.761973 212.045875)">7.5</text>
+     </g>
+    </g>
+    <g id="ch2-space-xtick_5">
+     <g id="ch2-space-line2d_5">
+      <g>
+       <use xlink:href="#ch2-space-m1cd71c9947" x="219.401973" y="197.3115" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-space-text_5">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="219.401973" y="212.045875" transform="rotate(-0 219.401973 212.045875)">10.0</text>
+     </g>
+    </g>
+    <g id="ch2-space-xtick_6">
+     <g id="ch2-space-line2d_6">
+      <g>
+       <use xlink:href="#ch2-space-m1cd71c9947" x="264.041973" y="197.3115" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-space-text_6">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="264.041973" y="212.045875" transform="rotate(-0 264.041973 212.045875)">12.5</text>
+     </g>
+    </g>
+    <g id="ch2-space-xtick_7">
+     <g id="ch2-space-line2d_7">
+      <g>
+       <use xlink:href="#ch2-space-m1cd71c9947" x="308.681973" y="197.3115" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-space-text_7">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="308.681973" y="212.045875" transform="rotate(-0 308.681973 212.045875)">15.0</text>
+     </g>
+    </g>
+    <g id="ch2-space-xtick_8">
+     <g id="ch2-space-line2d_8">
+      <g>
+       <use xlink:href="#ch2-space-m1cd71c9947" x="353.321973" y="197.3115" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-space-text_8">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="353.321973" y="212.045875" transform="rotate(-0 353.321973 212.045875)">17.5</text>
+     </g>
+    </g>
+    <g id="ch2-space-xtick_9">
+     <g id="ch2-space-line2d_9">
+      <g>
+       <use xlink:href="#ch2-space-m1cd71c9947" x="397.961973" y="197.3115" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-space-text_9">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="397.961973" y="212.045875" transform="rotate(-0 397.961973 212.045875)">20.0</text>
+     </g>
+    </g>
+    <g id="ch2-space-text_10">
+     <!-- distance $x$ -->
+     <g style="fill: currentColor" transform="translate(196.839473 227.299293)">
+      <text>
+       <tspan x="0" y="-0.859375" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">d</tspan>
+       <tspan x="5.816895" y="-0.859375" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">i</tspan>
+       <tspan x="8.117676" y="-0.859375" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">s</tspan>
+       <tspan x="13.13208" y="-0.859375" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">t</tspan>
+       <tspan x="16.23999" y="-0.859375" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">a</tspan>
+       <tspan x="21.574463" y="-0.859375" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">n</tspan>
+       <tspan x="27.187256" y="-0.859375" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">c</tspan>
+       <tspan x="32.614502" y="-0.859375" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">e</tspan>
+       <tspan x="38.153076" y="-0.859375" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor"> </tspan>
+       <tspan x="40.824951" y="-0.859375" style="font-style: italic; font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">x</tspan>
+      </text>
+     </g>
+    </g>
+   </g>
+   <g id="ch2-space-matplotlib.axis_2">
+    <g id="ch2-space-ytick_1">
+     <g id="ch2-space-line2d_10">
+      <defs>
+       <path id="ch2-space-m281dc3c201" d="M 0 0 
+L -3 0 
+" style="stroke: currentColor; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#ch2-space-m281dc3c201" x="40.841973" y="197.3115" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-space-text_11">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="34.341973" y="201.428688" transform="rotate(-0 34.341973 201.428688)">0.0</text>
+     </g>
+    </g>
+    <g id="ch2-space-ytick_2">
+     <g id="ch2-space-line2d_11">
+      <g>
+       <use xlink:href="#ch2-space-m281dc3c201" x="40.841973" y="163.93985" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-space-text_12">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="34.341973" y="168.057037" transform="rotate(-0 34.341973 168.057037)">0.2</text>
+     </g>
+    </g>
+    <g id="ch2-space-ytick_3">
+     <g id="ch2-space-line2d_12">
+      <g>
+       <use xlink:href="#ch2-space-m281dc3c201" x="40.841973" y="130.568199" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-space-text_13">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="34.341973" y="134.685387" transform="rotate(-0 34.341973 134.685387)">0.4</text>
+     </g>
+    </g>
+    <g id="ch2-space-ytick_4">
+     <g id="ch2-space-line2d_13">
+      <g>
+       <use xlink:href="#ch2-space-m281dc3c201" x="40.841973" y="97.196549" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-space-text_14">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="34.341973" y="101.313736" transform="rotate(-0 34.341973 101.313736)">0.6</text>
+     </g>
+    </g>
+    <g id="ch2-space-ytick_5">
+     <g id="ch2-space-line2d_14">
+      <g>
+       <use xlink:href="#ch2-space-m281dc3c201" x="40.841973" y="63.824898" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-space-text_15">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="34.341973" y="67.942086" transform="rotate(-0 34.341973 67.942086)">0.8</text>
+     </g>
+    </g>
+    <g id="ch2-space-ytick_6">
+     <g id="ch2-space-line2d_15">
+      <g>
+       <use xlink:href="#ch2-space-m281dc3c201" x="40.841973" y="30.453248" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-space-text_16">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="34.341973" y="34.570435" transform="rotate(-0 34.341973 34.570435)">1.0</text>
+     </g>
+    </g>
+    <g id="ch2-space-text_17">
+     <!-- $\Delta V(x)\, /\, \Delta V_{max}$ -->
+     <g style="fill: currentColor" transform="translate(14.963125 137.9795) rotate(-90)">
+      <text>
+       <tspan x="0" y="-0.578125" style="font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">Δ</tspan>
+       <tspan x="12.663544" y="-0.578125" style="font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">(</tspan>
+       <tspan x="20.045074" y="-0.578125" style="font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">)</tspan>
+       <tspan x="24.791953" y="-0.578125" style="font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">/</tspan>
+       <tspan x="29.016324" y="-0.578125" style="font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">Δ</tspan>
+       <tspan x="6.859024" y="-0.578125" style="font-style: italic; font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">V</tspan>
+       <tspan x="15.827057" y="-0.578125" style="font-style: italic; font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">x</tspan>
+       <tspan x="35.875348" y="-0.578125" style="font-style: italic; font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">V</tspan>
+       <tspan x="41.679868" y="0.846875" style="font-style: italic; font-size: 6.65px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">m</tspan>
+       <tspan x="46.481185" y="0.846875" style="font-style: italic; font-size: 6.65px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">a</tspan>
+       <tspan x="49.812839" y="0.846875" style="font-style: italic; font-size: 6.65px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">x</tspan>
+      </text>
+     </g>
+    </g>
+   </g>
+   <g id="ch2-space-line2d_16">
+    <path d="M 40.841973 30.453248 
+L 43.230735 51.346714 
+L 45.619498 69.623966 
+L 48.00826 85.612599 
+L 50.397023 99.599184 
+L 52.785785 111.834414 
+L 55.174548 122.537586 
+L 57.56331 131.900541 
+L 59.952073 140.091096 
+L 62.340836 147.256055 
+L 64.729598 153.523841 
+L 67.118361 159.006794 
+L 69.507123 163.803189 
+L 71.895886 167.998995 
+L 74.284648 171.669415 
+L 76.673411 174.880236 
+L 79.062173 177.689008 
+L 81.450936 180.146075 
+L 83.839698 182.295476 
+L 86.228461 184.175735 
+L 88.617223 185.820554 
+L 91.005986 187.259415 
+L 94.58913 189.087052 
+L 98.172274 190.582394 
+L 101.755417 191.805858 
+L 105.338561 192.806876 
+L 110.116086 193.864356 
+L 114.893611 194.673589 
+L 120.865518 195.42346 
+L 128.031805 196.047601 
+L 136.392474 196.520159 
+L 147.141906 196.878073 
+L 161.474481 197.117269 
+L 185.362106 197.260529 
+L 242.692407 197.309444 
+L 397.961973 197.3115 
+L 397.961973 197.3115 
+" clip-path="url(#ch2-space-p38353f0202)" style="fill: none; stroke: #1f5fff; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="ch2-space-line2d_17">
+    <path d="M 58.697973 197.3115 
+L 58.697973 135.927779 
+" clip-path="url(#ch2-space-p38353f0202)" style="fill: none; stroke-dasharray: 1,1.65; stroke-dashoffset: 0; stroke: #1f5fff"/>
+   </g>
+   <g id="ch2-space-line2d_18">
+    <defs>
+     <path id="ch2-space-mcfe0626234" d="M 0 2 
+C 0.530406 2 1.03916 1.789267 1.414214 1.414214 
+C 1.789267 1.03916 2 0.530406 2 0 
+C 2 -0.530406 1.789267 -1.03916 1.414214 -1.414214 
+C 1.03916 -1.789267 0.530406 -2 0 -2 
+C -0.530406 -2 -1.03916 -1.789267 -1.414214 -1.414214 
+C -1.789267 -1.03916 -2 -0.530406 -2 0 
+C -2 0.530406 -1.789267 1.03916 -1.414214 1.414214 
+C -1.03916 1.789267 -0.530406 2 0 2 
+z
+" style="stroke: #1f5fff"/>
+    </defs>
+    <g clip-path="url(#ch2-space-p38353f0202)">
+     <use xlink:href="#ch2-space-mcfe0626234" x="58.697973" y="135.927779" style="fill: #1f5fff; stroke: #1f5fff"/>
+    </g>
+   </g>
+   <g id="ch2-space-line2d_19">
+    <path d="M 40.841973 30.453248 
+L 43.230735 41.24924 
+L 45.619498 51.346714 
+L 48.00826 60.790866 
+L 50.397023 69.623966 
+L 52.785785 77.885551 
+L 55.174548 85.612599 
+L 58.757692 96.275951 
+L 62.340836 105.921325 
+L 65.923979 114.645902 
+L 69.507123 122.537586 
+L 73.090267 129.675889 
+L 76.673411 136.132733 
+L 80.256555 141.973173 
+L 83.839698 147.256055 
+L 87.422842 152.034606 
+L 91.005986 156.356972 
+L 94.58913 160.266702 
+L 98.172274 163.803189 
+L 101.755417 167.002065 
+L 105.338561 169.89556 
+L 108.921705 172.512827 
+L 112.504849 174.880236 
+L 116.087993 177.02164 
+L 119.671137 178.958615 
+L 124.448662 181.256705 
+L 129.226187 183.267036 
+L 134.003712 185.02564 
+L 138.781237 186.564037 
+L 144.753143 188.219038 
+L 150.72505 189.619186 
+L 156.696956 190.803726 
+L 163.863244 191.986948 
+L 171.029531 192.95504 
+L 179.3902 193.864356 
+L 188.94525 194.673589 
+L 199.694682 195.359247 
+L 212.832876 195.960167 
+L 228.359832 196.43664 
+L 248.664314 196.816032 
+L 276.135083 197.081915 
+L 317.938428 197.240285 
+L 397.961973 197.303925 
+L 397.961973 197.303925 
+" clip-path="url(#ch2-space-p38353f0202)" style="fill: none; stroke: #12a150; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="ch2-space-line2d_20">
+    <path d="M 76.553973 197.3115 
+L 76.553973 135.927779 
+" clip-path="url(#ch2-space-p38353f0202)" style="fill: none; stroke-dasharray: 1,1.65; stroke-dashoffset: 0; stroke: #12a150"/>
+   </g>
+   <g id="ch2-space-line2d_21">
+    <defs>
+     <path id="ch2-space-me937258d18" d="M 0 2 
+C 0.530406 2 1.03916 1.789267 1.414214 1.414214 
+C 1.789267 1.03916 2 0.530406 2 0 
+C 2 -0.530406 1.789267 -1.03916 1.414214 -1.414214 
+C 1.03916 -1.789267 0.530406 -2 0 -2 
+C -0.530406 -2 -1.03916 -1.789267 -1.414214 -1.414214 
+C -1.789267 -1.03916 -2 -0.530406 -2 0 
+C -2 0.530406 -1.789267 1.03916 -1.414214 1.414214 
+C -1.03916 1.789267 -0.530406 2 0 2 
+z
+" style="stroke: #12a150"/>
+    </defs>
+    <g clip-path="url(#ch2-space-p38353f0202)">
+     <use xlink:href="#ch2-space-me937258d18" x="76.553973" y="135.927779" style="fill: #12a150; stroke: #12a150"/>
+    </g>
+   </g>
+   <g id="ch2-space-line2d_22">
+    <path d="M 40.841973 30.453248 
+L 44.425116 41.881185 
+L 48.00826 52.526436 
+L 51.591404 62.442605 
+L 55.174548 71.679627 
+L 58.757692 80.284015 
+L 62.340836 88.299098 
+L 65.923979 95.765237 
+L 69.507123 102.720029 
+L 73.090267 109.198494 
+L 76.673411 115.233257 
+L 80.256555 120.854705 
+L 83.839698 126.091147 
+L 87.422842 130.96895 
+L 91.005986 135.512678 
+L 94.58913 139.745211 
+L 98.172274 143.687863 
+L 101.755417 147.360486 
+L 105.338561 150.781576 
+L 110.116086 154.981358 
+L 114.893611 158.802069 
+L 119.671137 162.277923 
+L 124.448662 165.440047 
+L 129.226187 168.316758 
+L 134.003712 170.933818 
+L 138.781237 173.314662 
+L 143.558762 175.480612 
+L 149.530668 177.915235 
+L 155.502575 180.078343 
+L 161.474481 182.000217 
+L 167.446387 183.707761 
+L 174.612675 185.507359 
+L 181.778963 187.068895 
+L 190.139632 188.631577 
+L 198.5003 189.955846 
+L 208.055351 191.223761 
+L 217.610401 192.273121 
+L 228.359832 193.239058 
+L 240.303645 194.096741 
+L 254.63622 194.891025 
+L 271.357558 195.573254 
+L 290.467658 196.120859 
+L 314.355284 196.569562 
+L 345.409197 196.910328 
+L 388.406922 197.140267 
+L 397.961973 197.169783 
+L 397.961973 197.169783 
+" clip-path="url(#ch2-space-p38353f0202)" style="fill: none; stroke: #e5322d; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="ch2-space-line2d_23">
+    <path d="M 91.346367 197.3115 
+L 91.346367 135.927779 
+" clip-path="url(#ch2-space-p38353f0202)" style="fill: none; stroke-dasharray: 1,1.65; stroke-dashoffset: 0; stroke: #e5322d"/>
+   </g>
+   <g id="ch2-space-line2d_24">
+    <defs>
+     <path id="ch2-space-m700e0748b0" d="M 0 2 
+C 0.530406 2 1.03916 1.789267 1.414214 1.414214 
+C 1.789267 1.03916 2 0.530406 2 0 
+C 2 -0.530406 1.789267 -1.03916 1.414214 -1.414214 
+C 1.03916 -1.789267 0.530406 -2 0 -2 
+C -0.530406 -2 -1.03916 -1.789267 -1.414214 -1.414214 
+C -1.789267 -1.03916 -2 -0.530406 -2 0 
+C -2 0.530406 -1.789267 1.03916 -1.414214 1.414214 
+C -1.03916 1.789267 -0.530406 2 0 2 
+z
+" style="stroke: #e5322d"/>
+    </defs>
+    <g clip-path="url(#ch2-space-p38353f0202)">
+     <use xlink:href="#ch2-space-m700e0748b0" x="91.346367" y="135.927779" style="fill: #e5322d; stroke: #e5322d"/>
+    </g>
+   </g>
+   <g id="ch2-space-line2d_25">
+    <path d="M 40.841973 30.453248 
+L 45.619498 41.24924 
+L 50.397023 51.346714 
+L 55.174548 60.790866 
+L 59.952073 69.623966 
+L 64.729598 77.885551 
+L 69.507123 85.612599 
+L 74.284648 92.839694 
+L 79.062173 99.599184 
+L 83.839698 105.921325 
+L 88.617223 111.834414 
+L 93.394749 117.364916 
+L 98.172274 122.537586 
+L 102.949799 127.375576 
+L 107.727324 131.900541 
+L 112.504849 136.132733 
+L 117.282374 140.091096 
+L 122.059899 143.793346 
+L 126.837424 147.256055 
+L 131.614949 150.494721 
+L 137.586856 154.249988 
+L 143.558762 157.704036 
+L 149.530668 160.881029 
+L 155.502575 163.803189 
+L 161.474481 166.490957 
+L 167.446387 168.963133 
+L 174.612675 171.669415 
+L 181.778963 174.11734 
+L 188.94525 176.331574 
+L 196.111538 178.334426 
+L 204.472207 180.430736 
+L 212.832876 182.295476 
+L 222.387926 184.175735 
+L 231.942976 185.820554 
+L 242.692407 187.426112 
+L 253.441839 188.807335 
+L 265.385652 190.116891 
+L 278.523846 191.325727 
+L 292.856421 192.414041 
+L 308.383377 193.37093 
+L 326.299096 194.245146 
+L 346.603578 195.0039 
+L 370.491203 195.659874 
+L 397.961973 196.187218 
+L 397.961973 196.187218 
+" clip-path="url(#ch2-space-p38353f0202)" style="fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="ch2-space-line2d_26">
+    <path d="M 112.265973 197.3115 
+L 112.265973 135.927779 
+" clip-path="url(#ch2-space-p38353f0202)" style="fill: none; stroke-dasharray: 1,1.65; stroke-dashoffset: 0; stroke: currentColor"/>
+   </g>
+   <g id="ch2-space-line2d_27">
+    <defs>
+     <path id="ch2-space-m430a0f0c97" d="M 0 2 
+C 0.530406 2 1.03916 1.789267 1.414214 1.414214 
+C 1.789267 1.03916 2 0.530406 2 0 
+C 2 -0.530406 1.789267 -1.03916 1.414214 -1.414214 
+C 1.03916 -1.789267 0.530406 -2 0 -2 
+C -0.530406 -2 -1.03916 -1.789267 -1.414214 -1.414214 
+C -1.789267 -1.03916 -2 -0.530406 -2 0 
+C -2 0.530406 -1.789267 1.03916 -1.414214 1.414214 
+C -1.03916 1.789267 -0.530406 2 0 2 
+z
+" style="stroke: currentColor"/>
+    </defs>
+    <g clip-path="url(#ch2-space-p38353f0202)">
+     <use xlink:href="#ch2-space-m430a0f0c97" x="112.265973" y="135.927779" style="fill: currentColor; stroke: currentColor"/>
+    </g>
+   </g>
+   <g id="ch2-space-line2d_28">
+    <path d="M 40.841973 135.927779 
+L 397.961973 135.927779 
+" clip-path="url(#ch2-space-p38353f0202)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: currentColor; stroke-opacity: 0.4; stroke-width: 0.8"/>
+   </g>
+   <g id="ch2-space-patch_3">
+    <path d="M 40.841973 197.3115 
+L 40.841973 25.4475 
+" style="fill: none; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="ch2-space-patch_4">
+    <path d="M 40.841973 197.3115 
+L 397.961973 197.3115 
+" style="fill: none; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="ch2-space-text_18">
+    <!-- $\Delta V = 37\%$ of $\Delta V_{max}$ at $x = \lambda$ -->
+    <g style="fill: currentColor; opacity: 0.7" transform="translate(295.025773 130.922032)">
+     <text>
+      <tspan x="0" y="-0.53125" style="font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor; opacity: 0.7">Δ</tspan>
+      <tspan x="13.030627" y="-0.53125" style="font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor; opacity: 0.7">=</tspan>
+      <tspan x="20.553198" y="-0.53125" style="font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor; opacity: 0.7">3</tspan>
+      <tspan x="24.803244" y="-0.53125" style="font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor; opacity: 0.7">7</tspan>
+      <tspan x="29.05329" y="-0.53125" style="font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor; opacity: 0.7">%</tspan>
+      <tspan x="48.426794" y="-0.53125" style="font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor; opacity: 0.7">Δ</tspan>
+      <tspan x="87.867694" y="-0.53125" style="font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor; opacity: 0.7">=</tspan>
+      <tspan x="6.13707" y="-0.53125" style="font-style: italic; font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor; opacity: 0.7">V</tspan>
+      <tspan x="54.563864" y="-0.53125" style="font-style: italic; font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor; opacity: 0.7">V</tspan>
+      <tspan x="82.393647" y="-0.53125" style="font-style: italic; font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor; opacity: 0.7">x</tspan>
+      <tspan x="95.390265" y="-0.53125" style="font-style: italic; font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor; opacity: 0.7">λ</tspan>
+      <tspan x="35.402869" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor; opacity: 0.7"> </tspan>
+      <tspan x="37.793494" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor; opacity: 0.7">o</tspan>
+      <tspan x="42.890173" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor; opacity: 0.7">f</tspan>
+      <tspan x="46.036169" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor; opacity: 0.7"> </tspan>
+      <tspan x="70.058686" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor; opacity: 0.7"> </tspan>
+      <tspan x="72.449311" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor; opacity: 0.7">a</tspan>
+      <tspan x="77.22226" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor; opacity: 0.7">t</tspan>
+      <tspan x="80.003022" y="-0.53125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor; opacity: 0.7"> </tspan>
+      <tspan x="59.757422" y="0.74375" style="font-style: italic; font-size: 5.95px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor; opacity: 0.7">m</tspan>
+      <tspan x="64.053371" y="0.74375" style="font-style: italic; font-size: 5.95px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor; opacity: 0.7">a</tspan>
+      <tspan x="67.034352" y="0.74375" style="font-style: italic; font-size: 5.95px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor; opacity: 0.7">x</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="ch2-space-text_19">
+    <text style="font-weight: 600; font-size: 10px; font-family: var(--sans); text-anchor: start; fill: currentColor" x="40.841973" y="15.4475" transform="rotate(-0 40.841973 15.4475)">Larger radius, longer length constant</text>
+   </g>
+   <g id="ch2-space-legend_1">
+    <g id="ch2-space-line2d_29">
+     <path d="M 344.30041 38.356875 
+L 351.10041 38.356875 
+L 357.90041 38.356875 
+" style="fill: none; stroke: #1f5fff; stroke-width: 1.8; stroke-linecap: round"/>
+    </g>
+    <g id="ch2-space-text_20">
+     <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: start; fill: currentColor" x="364.70041" y="41.331875" transform="rotate(-0 364.70041 41.331875)">a = 2</text>
+    </g>
+    <g id="ch2-space-line2d_30">
+     <path d="M 344.30041 52.891543 
+L 351.10041 52.891543 
+L 357.90041 52.891543 
+" style="fill: none; stroke: #12a150; stroke-width: 1.8; stroke-linecap: round"/>
+    </g>
+    <g id="ch2-space-text_21">
+     <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: start; fill: currentColor" x="364.70041" y="55.866543" transform="rotate(-0 364.70041 55.866543)">a = 8</text>
+    </g>
+    <g id="ch2-space-line2d_31">
+     <path d="M 344.30041 67.426211 
+L 351.10041 67.426211 
+L 357.90041 67.426211 
+" style="fill: none; stroke: #e5322d; stroke-width: 1.8; stroke-linecap: round"/>
+    </g>
+    <g id="ch2-space-text_22">
+     <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: start; fill: currentColor" x="364.70041" y="70.401211" transform="rotate(-0 364.70041 70.401211)">a = 16</text>
+    </g>
+    <g id="ch2-space-line2d_32">
+     <path d="M 344.30041 81.960879 
+L 351.10041 81.960879 
+L 357.90041 81.960879 
+" style="fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round"/>
+    </g>
+    <g id="ch2-space-text_23">
+     <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: start; fill: currentColor" x="364.70041" y="84.935879" transform="rotate(-0 364.70041 84.935879)">a = 32</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="ch2-space-p38353f0202">
+   <rect x="40.841973" y="25.4475" width="357.12" height="171.864"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,513 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 416.12998 251.982797" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="ch2-ghk-figure_1">
+  <g id="ch2-ghk-patch_1">
+   <path d="M 0 251.982797 
+L 416.12998 251.982797 
+L 416.12998 0 
+L 0 0 
+L 0 251.982797 
+z
+" style="fill: none"/>
+  </g>
+  <g id="ch2-ghk-axes_1">
+   <g id="ch2-ghk-patch_2">
+    <path d="M 46.158457 213.9435 
+L 403.278457 213.9435 
+L 403.278457 25.4475 
+L 46.158457 25.4475 
+L 46.158457 213.9435 
+z
+" style="fill: none"/>
+   </g>
+   <g id="ch2-ghk-matplotlib.axis_1">
+    <g id="ch2-ghk-xtick_1">
+     <g id="ch2-ghk-line2d_1">
+      <defs>
+       <path id="ch2-ghk-mea343adf5a" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#ch2-ghk-mea343adf5a" x="46.158457" y="213.9435" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-ghk-text_1">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="46.158457" y="228.677875" transform="rotate(-0 46.158457 228.677875)">−100</text>
+     </g>
+    </g>
+    <g id="ch2-ghk-xtick_2">
+     <g id="ch2-ghk-line2d_2">
+      <g>
+       <use xlink:href="#ch2-ghk-mea343adf5a" x="90.798457" y="213.9435" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-ghk-text_2">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="90.798457" y="228.677875" transform="rotate(-0 90.798457 228.677875)">−75</text>
+     </g>
+    </g>
+    <g id="ch2-ghk-xtick_3">
+     <g id="ch2-ghk-line2d_3">
+      <g>
+       <use xlink:href="#ch2-ghk-mea343adf5a" x="135.438457" y="213.9435" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-ghk-text_3">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="135.438457" y="228.677875" transform="rotate(-0 135.438457 228.677875)">−50</text>
+     </g>
+    </g>
+    <g id="ch2-ghk-xtick_4">
+     <g id="ch2-ghk-line2d_4">
+      <g>
+       <use xlink:href="#ch2-ghk-mea343adf5a" x="180.078457" y="213.9435" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-ghk-text_4">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="180.078457" y="228.677875" transform="rotate(-0 180.078457 228.677875)">−25</text>
+     </g>
+    </g>
+    <g id="ch2-ghk-xtick_5">
+     <g id="ch2-ghk-line2d_5">
+      <g>
+       <use xlink:href="#ch2-ghk-mea343adf5a" x="224.718457" y="213.9435" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-ghk-text_5">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="224.718457" y="228.677875" transform="rotate(-0 224.718457 228.677875)">0</text>
+     </g>
+    </g>
+    <g id="ch2-ghk-xtick_6">
+     <g id="ch2-ghk-line2d_6">
+      <g>
+       <use xlink:href="#ch2-ghk-mea343adf5a" x="269.358457" y="213.9435" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-ghk-text_6">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="269.358457" y="228.677875" transform="rotate(-0 269.358457 228.677875)">25</text>
+     </g>
+    </g>
+    <g id="ch2-ghk-xtick_7">
+     <g id="ch2-ghk-line2d_7">
+      <g>
+       <use xlink:href="#ch2-ghk-mea343adf5a" x="313.998457" y="213.9435" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-ghk-text_7">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="313.998457" y="228.677875" transform="rotate(-0 313.998457 228.677875)">50</text>
+     </g>
+    </g>
+    <g id="ch2-ghk-xtick_8">
+     <g id="ch2-ghk-line2d_8">
+      <g>
+       <use xlink:href="#ch2-ghk-mea343adf5a" x="358.638457" y="213.9435" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-ghk-text_8">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="358.638457" y="228.677875" transform="rotate(-0 358.638457 228.677875)">75</text>
+     </g>
+    </g>
+    <g id="ch2-ghk-xtick_9">
+     <g id="ch2-ghk-line2d_9">
+      <g>
+       <use xlink:href="#ch2-ghk-mea343adf5a" x="403.278457" y="213.9435" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-ghk-text_9">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: middle; fill: currentColor" x="403.278457" y="228.677875" transform="rotate(-0 403.278457 228.677875)">100</text>
+     </g>
+    </g>
+    <g id="ch2-ghk-text_10">
+     <!-- $V$ (mV) -->
+     <g style="fill: currentColor" transform="translate(209.565957 243.931293)">
+      <text>
+       <tspan x="0" y="-0.671875" style="font-style: italic; font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">V</tspan>
+       <tspan x="5.80452" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor"> </tspan>
+       <tspan x="8.476395" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">(</tspan>
+       <tspan x="11.941483" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">m</tspan>
+       <tspan x="20.26326" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">V</tspan>
+       <tspan x="26.817703" y="-0.671875" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">)</tspan>
+      </text>
+     </g>
+    </g>
+   </g>
+   <g id="ch2-ghk-matplotlib.axis_2">
+    <g id="ch2-ghk-ytick_1">
+     <g id="ch2-ghk-line2d_10">
+      <defs>
+       <path id="ch2-ghk-mdf381fc01d" d="M 0 0 
+L -3 0 
+" style="stroke: currentColor; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#ch2-ghk-mdf381fc01d" x="46.158457" y="213.9435" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-ghk-text_11">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="39.658457" y="218.060688" transform="rotate(-0 39.658457 218.060688)">−0.2</text>
+     </g>
+    </g>
+    <g id="ch2-ghk-ytick_2">
+     <g id="ch2-ghk-line2d_11">
+      <g>
+       <use xlink:href="#ch2-ghk-mdf381fc01d" x="46.158457" y="191.7675" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-ghk-text_12">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="39.658457" y="195.884687" transform="rotate(-0 39.658457 195.884687)">0.0</text>
+     </g>
+    </g>
+    <g id="ch2-ghk-ytick_3">
+     <g id="ch2-ghk-line2d_12">
+      <g>
+       <use xlink:href="#ch2-ghk-mdf381fc01d" x="46.158457" y="169.5915" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-ghk-text_13">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="39.658457" y="173.708687" transform="rotate(-0 39.658457 173.708687)">0.2</text>
+     </g>
+    </g>
+    <g id="ch2-ghk-ytick_4">
+     <g id="ch2-ghk-line2d_13">
+      <g>
+       <use xlink:href="#ch2-ghk-mdf381fc01d" x="46.158457" y="147.4155" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-ghk-text_14">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="39.658457" y="151.532688" transform="rotate(-0 39.658457 151.532688)">0.4</text>
+     </g>
+    </g>
+    <g id="ch2-ghk-ytick_5">
+     <g id="ch2-ghk-line2d_14">
+      <g>
+       <use xlink:href="#ch2-ghk-mdf381fc01d" x="46.158457" y="125.2395" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-ghk-text_15">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="39.658457" y="129.356687" transform="rotate(-0 39.658457 129.356687)">0.6</text>
+     </g>
+    </g>
+    <g id="ch2-ghk-ytick_6">
+     <g id="ch2-ghk-line2d_15">
+      <g>
+       <use xlink:href="#ch2-ghk-mdf381fc01d" x="46.158457" y="103.0635" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-ghk-text_16">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="39.658457" y="107.180688" transform="rotate(-0 39.658457 107.180688)">0.8</text>
+     </g>
+    </g>
+    <g id="ch2-ghk-ytick_7">
+     <g id="ch2-ghk-line2d_16">
+      <g>
+       <use xlink:href="#ch2-ghk-mdf381fc01d" x="46.158457" y="80.8875" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-ghk-text_17">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="39.658457" y="85.004687" transform="rotate(-0 39.658457 85.004687)">1.0</text>
+     </g>
+    </g>
+    <g id="ch2-ghk-ytick_8">
+     <g id="ch2-ghk-line2d_17">
+      <g>
+       <use xlink:href="#ch2-ghk-mdf381fc01d" x="46.158457" y="58.7115" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-ghk-text_18">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="39.658457" y="62.828687" transform="rotate(-0 39.658457 62.828687)">1.2</text>
+     </g>
+    </g>
+    <g id="ch2-ghk-ytick_9">
+     <g id="ch2-ghk-line2d_18">
+      <g>
+       <use xlink:href="#ch2-ghk-mdf381fc01d" x="46.158457" y="36.5355" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ch2-ghk-text_19">
+      <text style="font-size: 8.5px; font-family: var(--sans); text-anchor: end; fill: currentColor" x="39.658457" y="40.652687" transform="rotate(-0 39.658457 40.652687)">1.4</text>
+     </g>
+    </g>
+    <g id="ch2-ghk-text_20">
+     <!-- $I$ (A·m$^{-2}$, arbitrary scale) -->
+     <g style="fill: currentColor" transform="translate(14.963125 173.988) rotate(-90)">
+      <text>
+       <tspan x="0" y="-0.581187" style="font-style: italic; font-size: 9.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">I</tspan>
+       <tspan x="3.163513" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor"> </tspan>
+       <tspan x="5.835388" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">(</tspan>
+       <tspan x="9.300476" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">A</tspan>
+       <tspan x="15.854919" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">·</tspan>
+       <tspan x="18.591736" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">m</tspan>
+       <tspan x="35.370915" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">,</tspan>
+       <tspan x="38.107731" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor"> </tspan>
+       <tspan x="40.779606" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">a</tspan>
+       <tspan x="46.114079" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">r</tspan>
+       <tspan x="49.690495" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">b</tspan>
+       <tspan x="55.507389" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">i</tspan>
+       <tspan x="57.808171" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">t</tspan>
+       <tspan x="60.916081" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">r</tspan>
+       <tspan x="64.492497" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">a</tspan>
+       <tspan x="69.826969" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">r</tspan>
+       <tspan x="73.403385" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">y</tspan>
+       <tspan x="78.742497" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor"> </tspan>
+       <tspan x="81.414372" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">s</tspan>
+       <tspan x="86.428776" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">c</tspan>
+       <tspan x="91.856022" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">a</tspan>
+       <tspan x="97.190495" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">l</tspan>
+       <tspan x="99.491276" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">e</tspan>
+       <tspan x="105.02985" y="-0.581187" style="font-size: 9.5px; font-family: var(--sans); fill: currentColor">)</tspan>
+       <tspan x="27.063138" y="-4.504687" style="font-size: 6.65px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">−</tspan>
+       <tspan x="31.618404" y="-4.504687" style="font-size: 6.65px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">2</tspan>
+      </text>
+     </g>
+    </g>
+   </g>
+   <g id="ch2-ghk-line2d_19">
+    <path d="M 46.158457 203.896838 
+L 57.764857 201.544875 
+L 68.478457 199.148091 
+L 78.299257 196.729921 
+L 87.227257 194.322239 
+L 96.155257 191.690122 
+L 104.190457 189.107906 
+L 112.225657 186.302944 
+L 120.260857 183.254456 
+L 127.403257 180.322937 
+L 134.545657 177.166746 
+L 141.688057 173.770435 
+L 148.830457 170.118607 
+L 155.972857 166.1961 
+L 163.115257 161.988181 
+L 169.364857 158.061022 
+L 175.614457 153.895616 
+L 181.864057 149.483644 
+L 188.113657 144.817497 
+L 194.363257 139.890374 
+L 200.612857 134.696376 
+L 206.862457 129.230586 
+L 213.112057 123.489145 
+L 219.361657 117.469302 
+L 225.611257 111.169459 
+L 231.860857 104.589193 
+L 239.003257 96.726544 
+L 246.145657 88.501664 
+L 253.288057 79.919492 
+L 260.430457 70.986812 
+L 267.572857 61.712121 
+L 275.608057 50.881856 
+L 283.643257 39.647882 
+L 291.678457 28.028436 
+L 299.713657 16.043238 
+L 308.641657 2.322733 
+L 310.764801 -1 
+L 310.764801 -1 
+" clip-path="url(#ch2-ghk-p5fe1f9a990)" style="fill: none; stroke: #e5322d; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="ch2-ghk-line2d_20">
+    <defs>
+     <path id="ch2-ghk-m9cb7c70979" d="M 0 2.5 
+C 0.663008 2.5 1.29895 2.236584 1.767767 1.767767 
+C 2.236584 1.29895 2.5 0.663008 2.5 0 
+C 2.5 -0.663008 2.236584 -1.29895 1.767767 -1.767767 
+C 1.29895 -2.236584 0.663008 -2.5 0 -2.5 
+C -0.663008 -2.5 -1.29895 -2.236584 -1.767767 -1.767767 
+C -2.236584 -1.29895 -2.5 -0.663008 -2.5 0 
+C -2.5 0.663008 -2.236584 1.29895 -1.767767 1.767767 
+C -1.29895 2.236584 -0.663008 2.5 0 2.5 
+z
+" style="stroke: #e5322d"/>
+    </defs>
+    <g clip-path="url(#ch2-ghk-p5fe1f9a990)">
+     <use xlink:href="#ch2-ghk-m9cb7c70979" x="95.903984" y="191.7675" style="fill: #e5322d; stroke: #e5322d"/>
+    </g>
+   </g>
+   <g id="ch2-ghk-line2d_21">
+    <path d="M 46.158457 203.424132 
+L 104.190457 199.969697 
+L 146.152057 197.684181 
+L 181.864057 195.956619 
+L 214.897657 194.583488 
+L 247.038457 193.475672 
+L 280.072057 192.566628 
+L 315.784057 191.811846 
+L 357.745657 191.154854 
+L 403.278457 190.624118 
+L 403.278457 190.624118 
+" clip-path="url(#ch2-ghk-p5fe1f9a990)" style="fill: none; stroke: #12a150; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="ch2-ghk-line2d_22">
+    <defs>
+     <path id="ch2-ghk-m0e10aab75b" d="M 0 2.5 
+C 0.663008 2.5 1.29895 2.236584 1.767767 1.767767 
+C 2.236584 1.29895 2.5 0.663008 2.5 0 
+C 2.5 -0.663008 2.236584 -1.29895 1.767767 -1.767767 
+C 1.29895 -2.236584 0.663008 -2.5 0 -2.5 
+C -0.663008 -2.5 -1.29895 -2.236584 -1.767767 -1.767767 
+C -2.236584 -1.29895 -2.5 -0.663008 -2.5 0 
+C -2.5 0.663008 -2.236584 1.29895 -1.767767 1.767767 
+C -1.29895 2.236584 -0.663008 2.5 0 2.5 
+z
+" style="stroke: #12a150"/>
+    </defs>
+    <g clip-path="url(#ch2-ghk-p5fe1f9a990)">
+     <use xlink:href="#ch2-ghk-m0e10aab75b" x="318.231319" y="191.7675" style="fill: #12a150; stroke: #12a150"/>
+    </g>
+   </g>
+   <g id="ch2-ghk-line2d_23">
+    <path d="M 46.158457 194.527198 
+L 75.620857 193.458336 
+L 99.726457 192.373375 
+L 121.153657 191.19196 
+L 139.902457 189.946579 
+L 157.758457 188.540499 
+L 174.721657 186.976471 
+L 190.792057 185.267206 
+L 205.969657 183.434455 
+L 221.147257 181.379982 
+L 236.324857 179.099717 
+L 251.502457 176.595137 
+L 266.680057 173.873133 
+L 282.750457 170.767127 
+L 299.713657 167.259067 
+L 317.569657 163.33977 
+L 337.211257 158.79833 
+L 359.531257 153.397902 
+L 384.529657 147.115568 
+L 403.278457 142.282244 
+L 403.278457 142.282244 
+" clip-path="url(#ch2-ghk-p5fe1f9a990)" style="fill: none; stroke: #1f5fff; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="ch2-ghk-line2d_24">
+    <defs>
+     <path id="ch2-ghk-m3c50a036aa" d="M 0 2.5 
+C 0.663008 2.5 1.29895 2.236584 1.767767 1.767767 
+C 2.236584 1.29895 2.5 0.663008 2.5 0 
+C 2.5 -0.663008 2.236584 -1.29895 1.767767 -1.767767 
+C 1.29895 -2.236584 0.663008 -2.5 0 -2.5 
+C -0.663008 -2.5 -1.29895 -2.236584 -1.767767 -1.767767 
+C -2.236584 -1.29895 -2.5 -0.663008 -2.5 0 
+C -2.5 0.663008 -2.236584 1.29895 -1.767767 1.767767 
+C -1.29895 2.236584 -0.663008 2.5 0 2.5 
+z
+" style="stroke: #1f5fff"/>
+    </defs>
+    <g clip-path="url(#ch2-ghk-p5fe1f9a990)">
+     <use xlink:href="#ch2-ghk-m3c50a036aa" x="111.240766" y="191.7675" style="fill: #1f5fff; stroke: #1f5fff"/>
+    </g>
+   </g>
+   <g id="ch2-ghk-line2d_25">
+    <path d="M 46.158457 191.7675 
+L 403.278457 191.7675 
+" clip-path="url(#ch2-ghk-p5fe1f9a990)" style="fill: none; stroke: currentColor; stroke-opacity: 0.4; stroke-width: 0.6; stroke-linecap: round"/>
+   </g>
+   <g id="ch2-ghk-line2d_26">
+    <defs>
+     <path id="ch2-ghk-m23a13436a8" d="M 0 3.5 
+C 0.928211 3.5 1.81853 3.131218 2.474874 2.474874 
+C 3.131218 1.81853 3.5 0.928211 3.5 0 
+C 3.5 -0.928211 3.131218 -1.81853 2.474874 -2.474874 
+C 1.81853 -3.131218 0.928211 -3.5 0 -3.5 
+C -0.928211 -3.5 -1.81853 -3.131218 -2.474874 -2.474874 
+C -3.131218 -1.81853 -3.5 -0.928211 -3.5 0 
+C -3.5 0.928211 -3.131218 1.81853 -2.474874 2.474874 
+C -1.81853 3.131218 -0.928211 3.5 0 3.5 
+z
+" style="stroke: currentColor; stroke-width: 1.4"/>
+    </defs>
+    <g clip-path="url(#ch2-ghk-p5fe1f9a990)">
+     <use xlink:href="#ch2-ghk-m23a13436a8" x="116.813015" y="191.7675" style="fill-opacity: 0; stroke: currentColor; stroke-width: 1.4"/>
+    </g>
+   </g>
+   <g id="ch2-ghk-patch_3">
+    <path d="M 46.158457 213.9435 
+L 46.158457 25.4475 
+" style="fill: none; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="ch2-ghk-patch_4">
+    <path d="M 46.158457 213.9435 
+L 403.278457 213.9435 
+" style="fill: none; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="ch2-ghk-text_21">
+    <text style="font-weight: 600; font-size: 10px; font-family: var(--sans); text-anchor: start; fill: currentColor" x="46.158457" y="15.4475" transform="rotate(-0 46.158457 15.4475)">Goldman–Hodgkin–Katz currents, squid giant axon</text>
+   </g>
+   <g id="ch2-ghk-legend_1">
+    <g id="ch2-ghk-line2d_27">
+     <path d="M 53.808457 38.356875 
+L 60.608457 38.356875 
+L 67.408457 38.356875 
+" style="fill: none; stroke: #e5322d; stroke-width: 1.8; stroke-linecap: round"/>
+    </g>
+    <g id="ch2-ghk-text_22">
+     <!-- K$^+$ -->
+     <g style="fill: currentColor" transform="translate(74.208457 41.331875)">
+      <text>
+       <tspan x="0" y="-0.230125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">K</tspan>
+       <tspan x="7.034812" y="-3.740625" style="font-size: 5.95px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">+</tspan>
+      </text>
+     </g>
+    </g>
+    <g id="ch2-ghk-line2d_28">
+     <path d="M 53.808457 52.891543 
+L 60.608457 52.891543 
+L 67.408457 52.891543 
+" style="fill: none; stroke: #12a150; stroke-width: 1.8; stroke-linecap: round"/>
+    </g>
+    <g id="ch2-ghk-text_23">
+     <!-- Na$^+$ -->
+     <g style="fill: currentColor" transform="translate(74.208457 55.866543)">
+      <text>
+       <tspan x="0" y="-0.230125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">N</tspan>
+       <tspan x="6.404053" y="-0.230125" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">a</tspan>
+       <tspan x="12.500877" y="-3.740625" style="font-size: 5.95px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">+</tspan>
+      </text>
+     </g>
+    </g>
+    <g id="ch2-ghk-line2d_29">
+     <path d="M 53.808457 67.426211 
+L 60.608457 67.426211 
+L 67.408457 67.426211 
+" style="fill: none; stroke: #1f5fff; stroke-width: 1.8; stroke-linecap: round"/>
+    </g>
+    <g id="ch2-ghk-text_24">
+     <!-- Cl$^-$ -->
+     <g style="fill: currentColor" transform="translate(74.208457 70.401211)">
+      <text>
+       <tspan x="0" y="-0.734375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">C</tspan>
+       <tspan x="6.208984" y="-0.734375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">l</tspan>
+       <tspan x="9.591453" y="-4.244875" style="font-size: 5.95px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">−</tspan>
+      </text>
+     </g>
+    </g>
+    <g id="ch2-ghk-line2d_30">
+     <g>
+      <use xlink:href="#ch2-ghk-m23a13436a8" x="60.608457" y="81.960879" style="fill-opacity: 0; stroke: currentColor; stroke-width: 1.4"/>
+     </g>
+    </g>
+    <g id="ch2-ghk-text_25">
+     <!-- $V_{rest}$ (GHK) -->
+     <g style="fill: currentColor" transform="translate(74.208457 84.935879)">
+      <text>
+       <tspan x="0" y="-0.4375" style="font-style: italic; font-size: 8.5px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">V</tspan>
+       <tspan x="5.193558" y="0.8375" style="font-style: italic; font-size: 5.95px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">r</tspan>
+       <tspan x="7.508131" y="0.8375" style="font-style: italic; font-size: 5.95px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">e</tspan>
+       <tspan x="10.149965" y="0.8375" style="font-style: italic; font-size: 5.95px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">s</tspan>
+       <tspan x="12.464539" y="0.8375" style="font-style: italic; font-size: 5.95px; font-family: 'STIX Two Math', 'Newsreader', serif; fill: currentColor">t</tspan>
+       <tspan x="14.501154" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor"> </tspan>
+       <tspan x="16.891779" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">(</tspan>
+       <tspan x="19.992121" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">G</tspan>
+       <tspan x="26.333918" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">H</tspan>
+       <tspan x="32.650812" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">K</tspan>
+       <tspan x="38.36175" y="-0.4375" style="font-size: 8.5px; font-family: var(--sans); fill: currentColor">)</tspan>
+      </text>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="ch2-ghk-p5fe1f9a990">
+   <rect x="46.158457" y="25.4475" width="357.12" height="188.496"/>
+  </clipPath>
+ </defs>
+</svg>

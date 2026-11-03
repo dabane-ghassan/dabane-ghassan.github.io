@@ -21,12 +21,12 @@
 
   var T = {
     en: { chapters: 'Chapters', chapter: 'Chapter', start: 'Start with chapter 1', notebook: 'Notebook', colab: 'Open in Colab', all: 'All chapters',
-          onPage: 'On this page', inEnglish: '', about: 'About this course', run: 'Run it yourself', source: 'Original 2020 notebooks',
+          onPage: 'On this page', inEnglish: '', about: 'About this course', run: 'Run it yourself',
           runText: 'Every chapter is also a Jupyter notebook. Download it, or open it in Google Colab and run it in your browser. Locally you need Python 3 and:',
           revised: 'revised', license: 'License', notFound: 'This page could not be found.', prev: 'Previous', next: 'Next', back: 'Course overview',
           code: 'Show code', hide: 'Hide code', loading: 'Loading figure…' },
     fr: { chapters: 'Chapitres', chapter: 'Chapitre', start: 'Commencer par le chapitre 1', notebook: 'Notebook', colab: 'Ouvrir dans Colab', all: 'Tous les chapitres',
-          onPage: 'Sur cette page', inEnglish: 'Ce cours est rédigé en anglais.', about: 'À propos du cours', run: 'L’exécuter soi-même', source: 'Notebooks originaux de 2020',
+          onPage: 'Sur cette page', inEnglish: 'Ce cours est rédigé en anglais.', about: 'À propos du cours', run: 'L’exécuter soi-même',
           runText: 'Chaque chapitre existe aussi en notebook Jupyter. Téléchargez-le, ou ouvrez-le dans Google Colab pour l’exécuter dans le navigateur. En local, il faut Python 3 et :',
           revised: 'révisé en', license: 'Licence', notFound: 'Cette page est introuvable.', prev: 'Précédent', next: 'Suivant', back: 'Présentation du cours',
           code: 'Voir le code', hide: 'Masquer le code', loading: 'Chargement de la figure…' }
@@ -74,7 +74,7 @@
           '<div class="pub-actions">' +
             course.chapters.map(function (c, i) { return '<a class="chip" href="' + base + 'notebooks/' + c.slug + '.ipynb" download>' + num(i) + ' .ipynb</a>'; }).join('') +
           '</div>' +
-          '<p class="course-fine mono"><a href="' + course.source + '" target="_blank" rel="noopener">' + t('source') + ' ↗</a> · ' + t('license') +
+          '<p class="course-fine mono">' + t('license') +
           ' <a href="' + course.license.url + '" target="_blank" rel="noopener">' + course.license.name + '</a></p>' +
         '</div>' +
       '</div></section>';

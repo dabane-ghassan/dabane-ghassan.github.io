@@ -1,0 +1,853 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Active Life</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Conway's Game of Life rebuilt as a population of active-inference agents.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&display=swap" rel="stylesheet">
+<style>
+/* Layout: a dot-matrix board beside a quiet instrument panel; the model is written out below.
+   Palette follows dabane-ghassan.github.io: five colours only, every grey is fg or bg at reduced opacity. */
+:root {
+  --black: #0b0b0c; --white: #ffffff;
+  --red: #e5322d; --green: #12a150; --blue: #1f5fff;
+  --bg: var(--white); --fg: var(--black);
+  --sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --serif: "Newsreader", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --wrap: 1180px; --gutter: clamp(16px, 4vw, 40px);
+  --ease: cubic-bezier(.22, .8, .2, 1);
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: var(--black); --fg: var(--white); color-scheme: dark; } }
+:root[data-theme="dark"] { --bg: var(--black); --fg: var(--white); color-scheme: dark; }
+:root {
+  --fg-72: color-mix(in srgb, var(--fg) 72%, transparent);
+  --fg-56: color-mix(in srgb, var(--fg) 56%, transparent);
+  --fg-36: color-mix(in srgb, var(--fg) 36%, transparent);
+  --fg-16: color-mix(in srgb, var(--fg) 16%, transparent);
+  --fg-08: color-mix(in srgb, var(--fg) 8%, transparent);
+  --fg-04: color-mix(in srgb, var(--fg) 4%, transparent);
+  --bg-80: color-mix(in srgb, var(--bg) 82%, transparent);
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: 80px; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 400 16px/1.6 var(--sans); -webkit-font-smoothing: antialiased; transition: background-color .35s var(--ease), color .35s var(--ease); overflow-x: hidden; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 60; background: var(--bg); }
+a { color: inherit; text-decoration: none; }
+p { margin: 0; }
+h1, h2, h3 { margin: 0; font-weight: 700; letter-spacing: -.02em; line-height: 1.15; text-wrap: balance; }
+ul, ol { margin: 0; padding: 0; }
+button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+::selection { background: var(--blue); color: var(--white); }
+:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; border-radius: 4px; }
+.wrap { width: 100%; max-width: var(--wrap); margin: 0 auto; padding-left: max(var(--gutter), env(safe-area-inset-left, 0px)); padding-right: max(var(--gutter), env(safe-area-inset-right, 0px)); }
+.mono { font-family: var(--mono); font-size: .8rem; }
+.num-t { font-variant-numeric: tabular-nums; }
+.rgb { display: inline-flex; gap: 5px; align-items: center; }
+.rgb i { width: 8px; height: 8px; border-radius: 50%; display: block; }
+.rgb i:nth-child(1) { background: var(--red); } .rgb i:nth-child(2) { background: var(--green); } .rgb i:nth-child(3) { background: var(--blue); }
+.dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; flex: none; }
+.dot.r { background: var(--red); } .dot.g { background: var(--green); } .dot.b { background: var(--blue); } .dot.k { background: var(--fg); }
+
+/* header */
+.site-header { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50; background: var(--bg-80); backdrop-filter: saturate(1.4) blur(14px); -webkit-backdrop-filter: saturate(1.4) blur(14px); border-bottom: 1px solid var(--fg-08); }
+.bar { display: flex; align-items: center; gap: 24px; height: 60px; }
+.brand { display: inline-flex; align-items: center; gap: 12px; font-weight: 600; font-size: .95rem; white-space: nowrap; }
+.brand .rgb { transition: gap .3s var(--ease); } .brand:hover .rgb { gap: 8px; }
+.nav { display: flex; gap: 2px; margin-left: auto; }
+.nav a { padding: 6px 9px; border-radius: 8px; font-size: .86rem; color: var(--fg-56); transition: color .2s; }
+.nav a:hover { color: var(--fg); }
+.toggle { height: 32px; min-width: 32px; padding: 0 10px; border-radius: 999px; border: 1px solid var(--fg-16); display: inline-flex; align-items: center; justify-content: center; transition: border-color .2s; }
+.toggle:hover { border-color: var(--fg-36); }
+.theme-icon { width: 15px; height: 15px; }
+.theme-icon .half { transform-origin: center; transition: transform .5s var(--ease); }
+.is-dark .theme-icon .half { transform: rotate(180deg); }
+
+/* intro */
+.intro { padding-top: clamp(28px, 4.5vw, 52px); padding-bottom: clamp(18px, 2.4vw, 28px); display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px 48px; align-items: end; }
+.intro h1 { font-size: clamp(2.4rem, 5.2vw, 3.6rem); font-weight: 760; letter-spacing: -.045em; line-height: .96; }
+.lead { font-size: clamp(1.02rem, 1.6vw, 1.2rem); line-height: 1.45; color: var(--fg-72); max-width: 40ch; letter-spacing: -.01em; margin-top: 14px; }
+.affil { color: var(--fg-36); }
+
+/* simulator */
+.sim { display: grid; grid-template-columns: minmax(0, 1fr) 356px; gap: 40px; align-items: start; padding-bottom: clamp(48px, 7vw, 80px); }
+.stage { min-width: 0; position: sticky; top: 76px; }
+.stage-top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; margin-bottom: 12px; }
+.gen { color: var(--fg-56); display: inline-flex; gap: 14px; align-items: center; }
+.gen b { color: var(--fg); font-weight: 500; }
+.board-wrap { position: relative; border: 1px solid var(--fg-08); border-radius: 20px; padding: 14px; transition: border-color .3s var(--ease); }
+.board-wrap:hover { border-color: var(--fg-16); }
+#board { display: block; width: 100%; aspect-ratio: 1; max-width: 100%; touch-action: none; cursor: crosshair; border-radius: 8px; }
+.caption { margin-top: 12px; color: var(--fg-56); line-height: 1.5; min-height: 2.6em; display: flex; gap: 8px; align-items: baseline; }
+.caption .dot { transform: translateY(-1px); }
+.transport { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 14px; }
+.transport .speed { display: flex; align-items: center; gap: 10px; margin-left: auto; color: var(--fg-56); }
+.transport .speed input { width: 110px; }
+
+.chip { display: inline-flex; align-items: center; gap: 6px; height: 28px; padding: 0 11px; border-radius: 999px; font-family: var(--mono); font-size: .7rem; border: 1px solid var(--fg-16); color: var(--fg-56); transition: border-color .2s, color .2s, background-color .2s; white-space: nowrap; }
+.chip:hover { border-color: var(--fg); color: var(--fg); }
+.chip.on { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+.chip-solid { background: var(--fg); color: var(--bg); border-color: var(--fg); min-width: 74px; justify-content: center; }
+.chip-solid:hover { background: var(--blue); border-color: var(--blue); color: var(--white); }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+
+.panel { min-width: 0; display: grid; gap: 0; border-top: 1px solid var(--fg-08); }
+.group { padding: 18px 0 20px; border-bottom: 1px solid var(--fg-08); display: grid; gap: 12px; }
+.label { color: var(--fg-36); display: flex; align-items: center; gap: 8px; justify-content: space-between; }
+.label span:first-child { display: inline-flex; align-items: center; gap: 8px; }
+.ctl { display: grid; grid-template-columns: 7.2em minmax(0, 1fr) 3.4em; align-items: center; gap: 12px; }
+.ctl label { font-family: var(--mono); font-size: .76rem; color: var(--fg-72); white-space: nowrap; }
+.ctl label i { font-family: var(--serif); font-size: 1.05rem; color: var(--fg); }
+.ctl output { text-align: right; font-family: var(--mono); font-size: .76rem; font-variant-numeric: tabular-nums; }
+input[type=range] { width: 100%; accent-color: var(--blue); height: 26px; cursor: pointer; margin: 0; }
+.sub { color: var(--fg-36); font-size: .72rem; margin-top: -6px; }
+
+/* preference editor */
+#pref { width: 100%; height: auto; display: block; touch-action: none; cursor: ns-resize; overflow: visible; }
+#pref text { font-family: var(--mono); font-size: 9.5px; }
+.rule-row { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.rule { font-family: var(--mono); font-size: 1.15rem; font-weight: 500; letter-spacing: -.01em; }
+.rule-name { color: var(--fg-56); font-size: .82rem; text-align: right; }
+
+/* readouts */
+.stats { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 20px; }
+.stat { display: grid; gap: 2px; min-width: 0; }
+.stat .k { color: var(--fg-36); font-family: var(--mono); font-size: .7rem; display: flex; align-items: center; gap: 6px; }
+.stat .v { font-family: var(--mono); font-size: 1rem; font-variant-numeric: tabular-nums; }
+.stat canvas { width: 100%; height: 26px; display: block; }
+#phase { width: 100%; height: auto; display: block; overflow: visible; }
+#phase text { font-family: var(--mono); font-size: 8.5px; fill: var(--fg); fill-opacity: .5; }
+#phase .cell { cursor: pointer; }
+.fine { color: var(--fg-36); font-size: .72rem; line-height: 1.5; }
+
+/* model write-up */
+.section { padding: clamp(48px, 7vw, 80px) 0; border-top: 1px solid var(--fg-08); }
+.section-grid { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 40px; }
+.section-head { position: sticky; top: 92px; align-self: start; display: flex; align-items: baseline; gap: 14px; }
+.section-head .num { display: inline-flex; align-items: center; gap: 8px; color: var(--fg-36); }
+.section-head h2 { font-size: 1.05rem; font-weight: 600; letter-spacing: -.01em; }
+.prose { font-family: var(--serif); font-size: 1.15rem; line-height: 1.7; max-width: 680px; min-width: 0; font-optical-sizing: auto; }
+.prose > * + * { margin-top: 1em; }
+.prose em { font-style: italic; }
+.prose strong { font-weight: 600; }
+.prose ul { padding-left: 1.2em; list-style: disc; }
+.prose li + li { margin-top: .5em; }
+.prose li::marker { color: var(--fg-36); }
+.prose .d { overflow-x: auto; overflow-y: hidden; padding: .35em 0; text-align: center; font-size: 1.05em; }
+.prose math { font-size: 1.04em; }
+.prose .tex:not(.d) { overflow-wrap: anywhere; }
+.prop { font-family: var(--sans); font-size: .95rem; line-height: 1.6; color: var(--fg-72); padding: 14px 18px; border-left: 3px solid var(--blue); background: var(--fg-04); border-radius: 0 10px 10px 0; }
+.prop b { color: var(--fg); font-weight: 600; }
+.prop .d { color: var(--fg); }
+.neg { border-left-color: var(--red); }
+.refs { font-family: var(--sans); font-size: .9rem; line-height: 1.55; color: var(--fg-72); list-style: none !important; padding: 0 !important; }
+.refs li { padding: 8px 0; border-bottom: 1px solid var(--fg-08); }
+.refs li + li { margin-top: 0 !important; }
+.refs i { color: var(--fg); }
+.site-footer { border-top: 1px solid var(--fg-08); padding: 36px 0 44px; color: var(--fg-36); }
+.foot-row { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 24px; align-items: center; }
+.foot-row a:hover { color: var(--fg); }
+
+@media (max-width: 980px) {
+  .sim { grid-template-columns: 1fr; }
+  .stage { position: static; }
+  .panel { display: grid; grid-template-columns: 1fr 1fr; column-gap: 32px; }
+}
+@media (max-width: 860px) {
+  .section-grid { grid-template-columns: 1fr; gap: 24px; }
+  .section-head { position: static; }
+}
+@media (max-width: 640px) {
+  .bar { height: 54px; gap: 12px; }
+  .nav a { font-size: .82rem; padding: 6px 6px; }
+  .intro { grid-template-columns: 1fr; }
+  .panel { grid-template-columns: 1fr; }
+  .board-wrap { padding: 8px; border-radius: 14px; }
+  .transport .speed { margin-left: 0; width: 100%; }
+  .transport .speed input { flex: 1; width: auto; }
+  .prose { font-size: 1.06rem; }
+  .ctl { grid-template-columns: 6.6em minmax(0, 1fr) 3.2em; gap: 10px; }
+}
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; scroll-behavior: auto !important; } }
+</style>
+
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Active Life, top"><span class="rgb" aria-hidden="true"><i></i><i></i><i></i></span>Active Life</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#sim">Simulator</a>
+      <a href="#model">Model</a>
+      <a href="#phases">Phases</a>
+    </nav>
+    <button class="toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode">
+      <svg class="theme-icon" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.3"/><path class="half" d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="wrap intro">
+    <div>
+      <h1>Active Life</h1>
+      <p class="lead">Conway’s Game of Life, rebuilt as a population of agents that perceive their neighbourhood, hold beliefs about it, and choose whether to live by minimising expected free energy.</p>
+    </div>
+    <p class="affil mono">Each dot is an agent · its neighbours are its senses</p>
+  </section>
+
+  <section class="wrap sim" id="sim">
+    <div class="stage">
+      <div class="stage-top">
+        <div class="gen mono num-t"><span>t <b id="gen">0</b></span><span>rule <b id="rule-top">B3/S23</b></span></div>
+        <div class="chips" role="group" aria-label="View">
+          <button class="chip on" data-view="cells" type="button">cells</button>
+          <button class="chip" data-view="surprise" type="button">surprise</button>
+          <button class="chip" data-view="uncertainty" type="button">uncertainty</button>
+          <button class="chip" data-view="change" type="button">births · deaths</button>
+        </div>
+      </div>
+      <div class="board-wrap"><canvas id="board" aria-label="Simulation grid. Drag to draw or erase cells."></canvas></div>
+      <p class="caption mono" id="caption"></p>
+      <div class="transport">
+        <button class="chip chip-solid" id="play" type="button">pause</button>
+        <button class="chip" id="step" type="button">step</button>
+        <button class="chip" id="soup" type="button">new soup</button>
+        <button class="chip" id="glider" type="button">gliders</button>
+        <button class="chip" id="clear" type="button">clear</button>
+        <label class="speed mono" for="speed">speed <input type="range" id="speed" min="1" max="60" value="20"></label>
+      </div>
+    </div>
+
+    <aside class="panel" aria-label="Parameters">
+      <div class="group">
+        <div class="label mono"><span><span class="dot k"></span>Regimes</span></div>
+        <div class="chips" id="regimes">
+          <button class="chip on" data-regime="conway" type="button">Conway</button>
+          <button class="chip" data-regime="hot" type="button">hot gas</button>
+          <button class="chip" data-regime="edge" type="button">edge γ≈9</button>
+          <button class="chip" data-regime="boil" type="button">boiling</button>
+          <button class="chip" data-regime="dead" type="button">extinction</button>
+          <button class="chip" data-regime="sticky" type="button">sticky beliefs</button>
+        </div>
+      </div>
+
+      <div class="group">
+        <div class="label mono"><span><span class="dot b"></span>Precision</span></div>
+        <div class="ctl"><label for="gamma">policy <i>γ</i></label><input type="range" id="gamma" min="0" max="100" value="100"><output id="gamma-o">∞</output></div>
+        <div class="ctl"><label for="eps">noise <i>ε</i></label><input type="range" id="eps" min="0" max="120" value="0"><output id="eps-o">0</output></div>
+        <p class="sub mono">γ: confidence in action · ε: chance each neighbour is misread</p>
+      </div>
+
+      <div class="group">
+        <div class="label mono"><span><span class="dot g"></span>World model <i style="font-family:var(--serif);font-size:1rem;color:var(--fg)">B</i></span>
+          <span class="chips"><button class="chip on" data-model="learned" type="button">learned</button><button class="chip" data-model="sticky" type="button">sticky</button></span></div>
+        <div class="ctl"><label for="rho">trust <i>ρ</i></label><input type="range" id="rho" min="0" max="100" value="50"><output id="rho-o">0.50</output></div>
+        <p class="sub mono">learned: Life’s own statistics · sticky: the niche persists</p>
+      </div>
+
+      <div class="group">
+        <div class="label mono"><span><span class="dot r"></span>Preferences <i style="font-family:var(--serif);font-size:1rem;color:var(--fg)">C(k)</i></span><span>drag the dots</span></div>
+        <svg id="pref" viewBox="0 0 300 172" role="img" aria-label="Preference over number of live neighbours"></svg>
+        <div class="ctl"><label for="hh">switch cost <i>h</i></label><input type="range" id="hh" min="0" max="150" value="50"><output id="h-o">0.50</output></div>
+        <div class="rule-row"><span class="rule" id="rule">B3/S23</span><span class="rule-name" id="rule-name">Conway’s Life</span></div>
+        <div class="chips" id="presets">
+          <button class="chip" data-rule="B3/S23" type="button">Conway</button>
+          <button class="chip" data-rule="B3678/S34678" type="button">Day &amp; Night</button>
+          <button class="chip" data-rule="B34/S34" type="button">34 Life</button>
+          <button class="chip" data-rule="B3/S12345" type="button">Maze</button>
+          <button class="chip" data-rule="B3/S45678" type="button">Coral</button>
+        </div>
+      </div>
+
+      <div class="group">
+        <div class="label mono"><span><span class="dot k"></span>Population</span></div>
+        <div class="stats">
+          <div class="stat"><span class="k">density</span><span class="v" id="s-d">0</span><canvas id="sp-d"></canvas></div>
+          <div class="stat"><span class="k">activity</span><span class="v" id="s-a">0</span><canvas id="sp-a"></canvas></div>
+          <div class="stat"><span class="k"><span class="dot r"></span>surprise ⟨F⟩</span><span class="v" id="s-f">0</span><canvas id="sp-f"></canvas></div>
+          <div class="stat"><span class="k"><span class="dot b"></span>uncertainty ⟨H⟩</span><span class="v" id="s-h">0</span><canvas id="sp-h"></canvas></div>
+        </div>
+      </div>
+
+      <div class="group">
+        <div class="label mono"><span><span class="dot b"></span>Phase map</span><span>click to move</span></div>
+        <svg id="phase" viewBox="0 0 300 236" role="img" aria-label="Steady-state density over policy precision and sensory noise"></svg>
+        <p class="fine mono" id="phase-note">Dot size: steady-state density, measured offline for Conway preferences, learned model, ρ = 0.5. The ring is where you are.</p>
+      </div>
+    </aside>
+  </section>
+
+  <section class="section" id="model">
+    <div class="wrap section-grid">
+      <div class="section-head"><div class="num mono"><span class="dot r"></span>01</div><h2>The cell as an agent</h2></div>
+      <div class="prose">
+        <p>Each cell is an agent with a Markov blanket. Its internal state is a belief <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">q(k)</annotation></semantics></math></span></span> about how many of its eight neighbours are alive. Its sensory states are those eight neighbours. Its active state is its own state <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span></span>, which is in turn a sensory state for eight other cells. The plane is tiled by interlocking blankets: every agent is part of its neighbours’ world.</p>
+        <p>The cell’s generative model is a hidden Markov model over its niche <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>∈</mo><mo stretchy="false">{</mo><mn>0</mn><mo separator="true">,</mo><mo>…</mo><mo separator="true">,</mo><mn>8</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">k \in \{0,\dots,8\}</annotation></semantics></math></span></span>:</p>
+        <div class="tex d"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>p</mi><mo stretchy="false">(</mo><msub><mi>m</mi><mrow><mn>1</mn><mo>:</mo><mi>T</mi></mrow></msub><mo separator="true">,</mo><msub><mi>k</mi><mrow><mn>1</mn><mo>:</mo><mi>T</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><munder><mo>∏</mo><mi>t</mi></munder><mi>A</mi><mo stretchy="false">(</mo><msub><mi>m</mi><mi>t</mi></msub><mo>∣</mo><msub><mi>k</mi><mi>t</mi></msub><mo stretchy="false">)</mo><mtext> </mtext><mi>B</mi><mo stretchy="false">(</mo><msub><mi>k</mi><mi>t</mi></msub><mo>∣</mo><msub><mi>k</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">p(m_{1:T},k_{1:T}) = \prod_t A(m_t \mid k_t)\, B(k_t \mid k_{t-1})</annotation></semantics></math></span></div>
+        <div class="tex d"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>A</mi><mo stretchy="false">(</mo><mi>m</mi><mo>∣</mo><mi>k</mi><mo stretchy="false">)</mo><mo>=</mo><munder><mo>∑</mo><mi>j</mi></munder><mrow><mi mathvariant="normal">B</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">n</mi></mrow><mo stretchy="false">(</mo><mi>j</mi><mo separator="true">;</mo><mtext> </mtext><mi>k</mi><mo separator="true">,</mo><mtext> </mtext><mn>1</mn><mo>−</mo><mi>ε</mi><mo stretchy="false">)</mo><mtext> </mtext><mrow><mi mathvariant="normal">B</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">n</mi></mrow><mo stretchy="false">(</mo><mi>m</mi><mo>−</mo><mi>j</mi><mo separator="true">;</mo><mtext> </mtext><mn>8</mn><mo>−</mo><mi>k</mi><mo separator="true">,</mo><mtext> </mtext><mi>ε</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">A(m\mid k)=\sum_j \mathrm{Bin}(j;\,k,\,1-\varepsilon)\,\mathrm{Bin}(m-j;\,8-k,\,\varepsilon)</annotation></semantics></math></span></div>
+        <div class="tex d"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>B</mi><mo stretchy="false">(</mo><mi>k</mi><mo>∣</mo><msup><mi>k</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mn>1</mn><mo>−</mo><mi>ρ</mi></mrow><mn>9</mn></mfrac><mo>+</mo><mi>ρ</mi><mtext> </mtext><mover accent="true"><mi>B</mi><mo>^</mo></mover><mo stretchy="false">(</mo><mi>k</mi><mo>∣</mo><msup><mi>k</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">B(k\mid k&#x27;) = \frac{1-\rho}{9} + \rho\,\hat B(k\mid k&#x27;)</annotation></semantics></math></span></div>
+        <p>Here <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span></span> is the count the cell perceives through eight channels that each flip with probability <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi></mrow><annotation encoding="application/x-tex">\varepsilon</annotation></semantics></math></span></span>. The matrix <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>B</mi><mo>^</mo></mover></mrow><annotation encoding="application/x-tex">\hat B</annotation></semantics></math></span></span> is its world model: either learned from the statistics of noiseless Life, or the belief that the niche does not change. <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi></mrow><annotation encoding="application/x-tex">\rho</annotation></semantics></math></span></span> is how much the cell trusts that model.</p>
+        <p>Perception is Bayesian filtering. The state space is small, so the posterior is exact and variational free energy equals surprise:</p>
+        <div class="tex d"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>q</mi><mi>t</mi></msub><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo><mo>∝</mo><mi>A</mi><mo stretchy="false">(</mo><msub><mi>m</mi><mi>t</mi></msub><mo>∣</mo><mi>k</mi><mo stretchy="false">)</mo><munder><mo>∑</mo><msup><mi>k</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup></munder><mi>B</mi><mo stretchy="false">(</mo><mi>k</mi><mo>∣</mo><msup><mi>k</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mo stretchy="false">)</mo><mtext> </mtext><msub><mi>q</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy="false">(</mo><msup><mi>k</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">q_t(k) \propto A(m_t\mid k)\sum_{k&#x27;}B(k\mid k&#x27;)\,q_{t-1}(k&#x27;)</annotation></semantics></math></span></div>
+        <div class="tex d"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>F</mi><mi>t</mi></msub><mo>=</mo><mo>−</mo><mi>ln</mi><mo>⁡</mo><munder><mo>∑</mo><mi>k</mi></munder><mi>A</mi><mo stretchy="false">(</mo><msub><mi>m</mi><mi>t</mi></msub><mo>∣</mo><mi>k</mi><mo stretchy="false">)</mo><mtext> </mtext><mo stretchy="false">[</mo><mi>B</mi><mtext> </mtext><msub><mi>q</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy="false">]</mo><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">F_t = -\ln \sum_k A(m_t\mid k)\,[B\,q_{t-1}](k)</annotation></semantics></math></span></div>
+        <p>The <em>surprise</em> view paints <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">F_t</annotation></semantics></math></span></span>; the <em>uncertainty</em> view paints the entropy of <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>q</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">q_t</annotation></semantics></math></span></span>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap section-grid">
+      <div class="section-head"><div class="num mono"><span class="dot g"></span>02</div><h2>Choosing to live</h2></div>
+      <div class="prose">
+        <p>The cell picks its next state <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span></span> by minimising expected free energy. Its preferences are over outcomes: the niche it will live in, and whether it stays what it is.</p>
+        <div class="tex d"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>ln</mi><mo>⁡</mo><mover accent="true"><mi>p</mi><mo>~</mo></mover><mo stretchy="false">(</mo><mi>a</mi><mo separator="true">,</mo><mi>k</mi><mo>∣</mo><mi>s</mi><mo stretchy="false">)</mo><mo>=</mo><mi>a</mi><mtext> </mtext><mi>C</mi><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo><mo>+</mo><mi>h</mi><mtext> </mtext><mo stretchy="false">[</mo><mi>a</mi><mo>=</mo><mi>s</mi><mo stretchy="false">]</mo><mo>−</mo><mi>ln</mi><mo>⁡</mo><mi>Z</mi></mrow><annotation encoding="application/x-tex">\ln \tilde p(a,k\mid s) = a\,C(k) + h\,[a=s] - \ln Z</annotation></semantics></math></span></div>
+        <div class="tex d"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>G</mi><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo><mo>=</mo><munder><munder><mrow><msub><mi>D</mi><mrow><mi mathvariant="normal">K</mi><mi mathvariant="normal">L</mi></mrow></msub><mtext> ⁣</mtext><mrow><mo fence="true">[</mo><mi>q</mi><mo stretchy="false">(</mo><mi>o</mi><mo>∣</mo><mi>a</mi><mo stretchy="false">)</mo><mtext> </mtext><mi mathvariant="normal">∥</mi><mtext> </mtext><mover accent="true"><mi>p</mi><mo>~</mo></mover><mo stretchy="false">(</mo><mi>o</mi><mo stretchy="false">)</mo><mo fence="true">]</mo></mrow></mrow><mo stretchy="true">⏟</mo></munder><mtext>risk</mtext></munder><mo>+</mo><munder><munder><mrow><msub><mi mathvariant="double-struck">E</mi><mi>q</mi></msub><mtext> </mtext><mi mathvariant="normal">H</mi><mtext> ⁣</mtext><mrow><mo fence="true">[</mo><mi>A</mi><mo stretchy="false">(</mo><mo>⋅</mo><mo>∣</mo><mi>k</mi><mo stretchy="false">)</mo><mo fence="true">]</mo></mrow></mrow><mo stretchy="true">⏟</mo></munder><mtext>ambiguity</mtext></munder></mrow><annotation encoding="application/x-tex">G(a) = \underbrace{D_{\mathrm{KL}}\!\left[q(o\mid a)\,\|\,\tilde p(o)\right]}_{\text{risk}} + \underbrace{\mathbb{E}_{q}\,\mathrm{H}\!\left[A(\cdot\mid k)\right]}_{\text{ambiguity}}</annotation></semantics></math></span></div>
+        <p>Sensing is symmetric: each channel carries entropy <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">H</mi><mi>b</mi></msub><mo stretchy="false">(</mo><mi>ε</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{H}_b(\varepsilon)</annotation></semantics></math></span></span> whatever its bit, so ambiguity is the same for both actions and risk alone decides. The policy is a softmax over <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><mi>γ</mi><mi>G</mi></mrow><annotation encoding="application/x-tex">-\gamma G</annotation></semantics></math></span></span>, which for two actions is a logistic:</p>
+        <div class="tex d"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>ln</mi><mo>⁡</mo><mfrac><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>a</mi><mo>=</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>a</mi><mo>=</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mfrac><mo>=</mo><mi>γ</mi><mtext> </mtext><mo fence="false" stretchy="true" minsize="1.2em" maxsize="1.2em">[</mo><mi>G</mi><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo><mo>−</mo><mi>G</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo fence="false" stretchy="true" minsize="1.2em" maxsize="1.2em">]</mo><mo>=</mo><mi>γ</mi><mo fence="false" stretchy="true" minsize="1.8em" maxsize="1.8em">(</mo><msub><mi mathvariant="double-struck">E</mi><msub><mi>q</mi><mi>t</mi></msub></msub><mo fence="false" stretchy="true" minsize="1.2em" maxsize="1.2em">[</mo><mi>C</mi><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo><mo fence="false" stretchy="true" minsize="1.2em" maxsize="1.2em">]</mo><mo>+</mo><mi>h</mi><mtext> </mtext><mo stretchy="false">(</mo><mn>2</mn><mi>s</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo fence="false" stretchy="true" minsize="1.8em" maxsize="1.8em">)</mo></mrow><annotation encoding="application/x-tex">\ln\frac{P(a=1)}{P(a=0)} = \gamma\,\big[G(0)-G(1)\big] = \gamma\Big(\mathbb{E}_{q_t}\big[C(k)\big] + h\,(2s-1)\Big)</annotation></semantics></math></span></div>
+        <p><span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>γ</mi></mrow><annotation encoding="application/x-tex">\gamma</annotation></semantics></math></span></span> is policy precision. <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">C(k)</annotation></semantics></math></span></span> is a homeostatic preference over crowding. <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi></mrow><annotation encoding="application/x-tex">h</annotation></semantics></math></span></span> is a self-evidencing preference to remain what one is, which acts as a cost of switching state.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap section-grid">
+      <div class="section-head"><div class="num mono"><span class="dot b"></span>03</div><h2>Conway as a limit</h2></div>
+      <div class="prose">
+        <div class="prop"><b>Proposition.</b> As <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>→</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\varepsilon\to 0</annotation></semantics></math></span></span> and <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>γ</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\gamma\to\infty</annotation></semantics></math></span></span>, beliefs collapse onto the true count and the policy becomes deterministic:
+          <div class="tex d"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>s</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mn mathvariant="double-struck">1</mn><mo fence="false" stretchy="true" minsize="1.2em" maxsize="1.2em">[</mo><mi>C</mi><mo stretchy="false">(</mo><msub><mi>k</mi><mi>t</mi></msub><mo stretchy="false">)</mo><mo>+</mo><mi>h</mi><mtext> </mtext><mo stretchy="false">(</mo><mn>2</mn><msub><mi>s</mi><mi>t</mi></msub><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>&gt;</mo><mn>0</mn><mo fence="false" stretchy="true" minsize="1.2em" maxsize="1.2em">]</mo><mtext>  </mtext><mo>⟺</mo><mtext>  </mtext><mi mathvariant="script">B</mi><mo>=</mo><mo stretchy="false">{</mo><mi>k</mi><mo>:</mo><mi>C</mi><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo><mo>&gt;</mo><mi>h</mi><mo stretchy="false">}</mo><mo separator="true">,</mo><mtext>  </mtext><mtext>  </mtext><mi mathvariant="script">S</mi><mo>=</mo><mo stretchy="false">{</mo><mi>k</mi><mo>:</mo><mi>C</mi><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo><mo>&gt;</mo><mo>−</mo><mi>h</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">s_{t+1} = \mathbb{1}\big[C(k_t) + h\,(2s_t-1) &gt; 0\big] \;\Longleftrightarrow\; \mathcal{B} = \{k : C(k) &gt; h\},\;\; \mathcal{S} = \{k : C(k) &gt; -h\}</annotation></semantics></math></span></div>
+        </div>
+        <p>With <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn>1</mn><mo separator="true">,</mo><mo>−</mo><mn>1</mn><mo separator="true">,</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo separator="true">,</mo><mo>−</mo><mn>1</mn><mo separator="true">,</mo><mo>−</mo><mn>1</mn><mo separator="true">,</mo><mo>−</mo><mn>1</mn><mo separator="true">,</mo><mo>−</mo><mn>1</mn><mo separator="true">,</mo><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">C = (-1,-1,0,1,-1,-1,-1,-1,-1)</annotation></semantics></math></span></span> and <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">h = \tfrac12</annotation></semantics></math></span></span> this is B3/S23. The cell prefers exactly three neighbours, tolerates two and dislikes the rest. The switching cost turns “tolerates two” into survival without birth. Conway’s three rules become one homeostatic preference plus hysteresis.</p>
+        <p>In simulation the agents reproduce Conway bit for bit: 2,000 steps from random soups on a 96 × 96 torus, for every <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi></mrow><annotation encoding="application/x-tex">\rho</annotation></semantics></math></span></span> and both world models.</p>
+        <p>This decomposition generates exactly the outer-totalistic rules with <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">B</mi><mo>⊆</mo><mi mathvariant="script">S</mi></mrow><annotation encoding="application/x-tex">\mathcal{B}\subseteq\mathcal{S}</annotation></semantics></math></span></span>, which includes Day &amp; Night, 34 Life, Maze, Coral and Life without Death. Rules such as HighLife (B36/S23) need preferences that depend on the current state, <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo stretchy="false">(</mo><mi>s</mi><mo separator="true">,</mo><mi>k</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">C(s,k)</annotation></semantics></math></span></span>.</p>
+        <p>A Gaussian preference <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo><mo>=</mo><mi>θ</mi><mo>−</mo><mo stretchy="false">(</mo><mi>k</mi><mo>−</mo><mi>μ</mi><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mi mathvariant="normal">/</mi><mn>2</mn><msup><mi>σ</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">C(k) = \theta - (k-\mu)^2/2\sigma^2</annotation></semantics></math></span></span> also yields B3/S23 (<span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi><mo>=</mo><mn>2.75</mn><mo separator="true">,</mo><mtext> </mtext><mi>σ</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo separator="true">,</mo><mtext> </mtext><mi>θ</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\mu = 2.75,\ \sigma = \tfrac12,\ \theta = 1</annotation></semantics></math></span></span>), but then</p>
+        <div class="tex d"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi mathvariant="double-struck">E</mi><mi>q</mi></msub><mo stretchy="false">[</mo><mi>C</mi><mo stretchy="false">]</mo><mo>=</mo><mi>C</mi><mo stretchy="false">(</mo><msub><mi mathvariant="double-struck">E</mi><mi>q</mi></msub><mi>k</mi><mo stretchy="false">)</mo><mo>−</mo><msub><mrow><mi mathvariant="normal">V</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">r</mi></mrow><mi>q</mi></msub><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo><mi mathvariant="normal">/</mi><mn>2</mn><msup><mi>σ</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\mathbb{E}_q[C] = C(\mathbb{E}_q k) - \mathrm{Var}_q(k)/2\sigma^2</annotation></semantics></math></span></div>
+        <p>Any uncertainty about the niche is punished quadratically, and noisy populations go extinct almost at once. The bounded preference vector is the better model.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="phases">
+    <div class="wrap section-grid">
+      <div class="section-head"><div class="num mono"><span class="dot r"></span>04</div><h2>What precision does</h2></div>
+      <div class="prose">
+        <p>Away from the limit, the two precisions organise the population into distinct phases.</p>
+        <ul>
+          <li><strong>Policy precision.</strong> At <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>γ</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\gamma = 2</annotation></semantics></math></span></span> the population is a hot gas with density 0.39. Density falls as <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>γ</mi></mrow><annotation encoding="application/x-tex">\gamma</annotation></semantics></math></span></span> rises, reaches a minimum near <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>γ</mi><mo>≈</mo><mn>9</mn></mrow><annotation encoding="application/x-tex">\gamma \approx 9</annotation></semantics></math></span></span> (about 0.03), then recovers to Conway’s ash (about 0.05). Mean surprise follows the same curve.</li>
+          <li><strong>Sensory precision.</strong> With exact policies, mild noise keeps Life from settling. At <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>=</mo><mn>0.03</mn></mrow><annotation encoding="application/x-tex">\varepsilon = 0.03</annotation></semantics></math></span></span> the population boils at density 0.27 instead of freezing into ash. At <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>=</mo><mn>0.04</mn></mrow><annotation encoding="application/x-tex">\varepsilon = 0.04</annotation></semantics></math></span></span> it collapses. Under uncertainty <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="double-struck">E</mi><mi>q</mi></msub><mo stretchy="false">[</mo><mi>C</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{E}_q[C]</annotation></semantics></math></span></span> is pulled toward the average of <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span></span>, which is negative, so doubt about the niche reads as a bad niche.</li>
+          <li><strong>World model.</strong> A sticky model sustains a dense, slow phase at <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>γ</mi><mo>≤</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">\gamma \le 4</annotation></semantics></math></span></span> even at <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>=</mo><mn>0.1</mn></mrow><annotation encoding="application/x-tex">\varepsilon = 0.1</annotation></semantics></math></span></span>. The learned model does not; it sustains the boiling ridge instead.</li>
+        </ul>
+        <p>The phase map in the panel shows density over <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>γ</mi><mo separator="true">,</mo><mi>ε</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\gamma, \varepsilon)</annotation></semantics></math></span></span> for Conway’s preferences. Numbers come from a 96 × 96 torus started at density 0.35, averaged over steps 350 to 500 and two seeds.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap section-grid">
+      <div class="section-head"><div class="num mono"><span class="dot g"></span>05</div><h2>What a 3 × 3 blanket cannot do</h2></div>
+      <div class="prose">
+        <div class="prop neg"><b>Negative result.</b> Inference does not rescue Life from sensory noise. With the world following Conway and cells sensing it at <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>=</mo><mn>0.01</mn></mrow><annotation encoding="application/x-tex">\varepsilon = 0.01</annotation></semantics></math></span></span>, decisions disagree with Conway’s rule 77 times per 10,000 updates using the raw count, 77 with a flat or learned prior, and 170 with a sticky prior (<span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>0.9</mn></mrow><annotation encoding="application/x-tex">\rho = 0.9</annotation></semantics></math></span></span>). A glider breaks after about 14 steps at <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>=</mo><mn>0.001</mn></mrow><annotation encoding="application/x-tex">\varepsilon = 0.001</annotation></semantics></math></span></span>, whatever the prior.</div>
+        <p>The reason is structural. Information in Life travels one cell per tick, which is exactly the radius of the blanket. A cell’s niche can change completely between two observations, so nothing inside its blanket can tell a real change from a misread neighbour.</p>
+        <p>Denoising needs a model with a wider reach: cells that infer their neighbours’ niches from a 5 × 5 view, preferences learned from experience, or a hierarchical agent such as a glider treated as a blanket of its own.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap section-grid">
+      <div class="section-head"><div class="num mono"><span class="dot b"></span>06</div><h2>References</h2></div>
+      <div class="prose">
+        <ol class="refs">
+          <li>Friston, K. (2013). Life as we know it. <i>Journal of the Royal Society Interface</i>, 10, 20130475.</li>
+          <li>Da Costa, L., Parr, T., Sajid, N., Veselic, S., Neacsu, V., &amp; Friston, K. (2020). Active inference on discrete state-spaces: a synthesis. <i>Journal of Mathematical Psychology</i>, 99, 102447.</li>
+          <li>Parr, T., Pezzulo, G., &amp; Friston, K. (2022). <i>Active Inference: The Free Energy Principle in Mind, Brain, and Behavior</i>. MIT Press.</li>
+          <li>Beer, R. D. (2004). Autopoiesis and cognition in the game of life. <i>Artificial Life</i>, 10(3), 309–326.</li>
+          <li>Beer, R. D. (2014). The cognitive domain of a glider in the game of life. <i>Artificial Life</i>, 20(2), 183–206.</li>
+          <li>Schulman, L. S., &amp; Seiden, P. E. (1978). Statistical mechanics of a dynamical system based on Conway’s Game of Life. <i>Journal of Statistical Physics</i>, 19(3), 293–314.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap foot-row mono">
+    <span style="display:inline-flex;gap:12px;align-items:center"><span class="rgb" aria-hidden="true"><i></i><i></i><i></i></span>Active Life</span>
+    <a href="https://dabane-ghassan.github.io" target="_blank" rel="noopener">dabane-ghassan.github.io ↗</a>
+  </div>
+</footer>
+
+<script>
+/* Active Life engine: every cell is a discrete active-inference agent.
+   hidden k (live neighbours) · observation m (noisy count) · belief q(k) · action a = next own state */
+var AIF = (function () {
+  'use strict';
+  var LEARNED_B = [[0.962, 0.2379, 0.0419, 0.0171, 0.0268, 0.048, 0.132, 0.2458, 0.4662], [0.0328, 0.4777, 0.0977, 0.1679, 0.1048, 0.1036, 0.1796, 0.2226, 0.159], [0.004, 0.1752, 0.6224, 0.2343, 0.205, 0.1608, 0.1941, 0.2108, 0.171], [0.0011, 0.0891, 0.1528, 0.3453, 0.2543, 0.1973, 0.1903, 0.146, 0.0633], [0.0002, 0.0149, 0.0584, 0.1397, 0.2346, 0.1582, 0.1456, 0.1115, 0.14], [0.0, 0.0043, 0.0194, 0.0719, 0.1187, 0.2868, 0.1019, 0.0499, 0.0001], [0.0, 0.0008, 0.0059, 0.0197, 0.0458, 0.0379, 0.0533, 0.0135, 0.0001], [0.0, 0.0001, 0.0013, 0.0038, 0.0088, 0.0073, 0.0032, 0.0, 0.0001], [0.0, 0.0, 0.0002, 0.0004, 0.0012, 0.0002, 0.0, 0.0, 0.0001]]; // LEARNED_B[kNew][kOld], learned from noiseless Life soups
+
+  function choose(n, k) { var r = 1; for (var i = 1; i <= k; i++) r = r * (n - k + i) / i; return r; }
+
+  /* A[m*9+k] = p(observed count m | true count k) through 8 binary symmetric channels */
+  function likelihood(eps) {
+    var L = new Float64Array(81);
+    for (var k = 0; k <= 8; k++)
+      for (var j = 0; j <= k; j++) {
+        var pj = choose(k, j) * Math.pow(1 - eps, j) * Math.pow(eps, k - j);
+        for (var f = 0; f <= 8 - k; f++) {
+          var pf = choose(8 - k, f) * Math.pow(eps, f) * Math.pow(1 - eps, 8 - k - f);
+          L[(j + f) * 9 + k] += pj * pf;
+        }
+      }
+    return L;
+  }
+
+  function mulberry32(a) {
+    return function () {
+      a |= 0; a = a + 0x6D2B79F5 | 0;
+      var t = Math.imul(a ^ a >>> 15, 1 | a);
+      t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+      return ((t ^ t >>> 14) >>> 0) / 4294967296;
+    };
+  }
+
+  function World(W, H, seed) {
+    this.W = W; this.H = H; this.N = W * H;
+    this.g = new Uint8Array(this.N); this.prev = new Uint8Array(this.N); this.next = new Uint8Array(this.N);
+    this.q = new Float64Array(this.N * 9);
+    this.F = new Float32Array(this.N); this.Hq = new Float32Array(this.N);
+    this.rand = mulberry32(seed || 1);
+    this.gamma = Infinity; this.eps = 0; this.rho = 0.5; this.model = 'learned'; this.h = 0.5;
+    this.C = new Float64Array([-1, -1, 0, 1, -1, -1, -1, -1, -1]);
+    this.L = likelihood(0); this.t = 0;
+    this.stats = { density: 0, activity: 0, F: 0, H: 0 };
+    this.buildB(); this.resetBeliefs();
+  }
+  World.prototype.setEps = function (e) { this.eps = e; this.L = likelihood(e); };
+  World.prototype.buildB = function () {
+    var B = new Float64Array(81), r = this.rho;
+    for (var kn = 0; kn < 9; kn++) for (var ko = 0; ko < 9; ko++) {
+      var base = this.model === 'sticky' ? (kn === ko ? 1 : 0) : LEARNED_B[kn][ko];
+      B[kn * 9 + ko] = (1 - r) / 9 + r * base + 1e-9;
+    }
+    this.B = B;
+  };
+  World.prototype.resetBeliefs = function () { this.q.fill(1 / 9); this.F.fill(0); this.Hq.fill(0); };
+  World.prototype.seed = function (p) {
+    for (var i = 0; i < this.N; i++) this.g[i] = this.rand() < p ? 1 : 0;
+    this.prev.set(this.g); this.t = 0; this.resetBeliefs(); this.measure(0, 0, 0);
+  };
+  World.prototype.clear = function () { this.g.fill(0); this.prev.fill(0); this.t = 0; this.resetBeliefs(); this.measure(0, 0, 0); };
+  World.prototype.measure = function (changed, sF, sH) {
+    var live = 0; for (var i = 0; i < this.N; i++) live += this.g[i];
+    this.stats.density = live / this.N; this.stats.activity = changed / this.N;
+    this.stats.F = sF / this.N; this.stats.H = sH / this.N;
+  };
+
+  World.prototype.step = function () {
+    var W = this.W, H = this.H, g = this.g, nx = this.next, q = this.q, B = this.B, L = this.L, C = this.C;
+    var eps = this.eps, gamma = this.gamma, h = this.h, rand = this.rand;
+    var prior = new Float64Array(9), sF = 0, sH = 0, changed = 0;
+    for (var y = 0; y < H; y++) {
+      var ym = (y + H - 1) % H * W, y0 = y * W, yp = (y + 1) % H * W;
+      for (var x = 0; x < W; x++) {
+        var xm = (x + W - 1) % W, xp = (x + 1) % W, i = y0 + x, o = i * 9, k, ko;
+        /* sense: 8 neighbours through noisy channels */
+        var nb = [g[ym + xm], g[ym + x], g[ym + xp], g[y0 + xm], g[y0 + xp], g[yp + xm], g[yp + x], g[yp + xp]];
+        var m = 0;
+        for (var n = 0; n < 8; n++) m += (eps > 0 && rand() < eps) ? 1 - nb[n] : nb[n];
+        /* perceive: Bayesian filtering = exact variational inference; F = surprise */
+        var Ec = 0, Hs = 0, Z;
+        if (eps === 0) {
+          var pm = 0; for (ko = 0; ko < 9; ko++) pm += B[m * 9 + ko] * q[o + ko];
+          Z = pm;
+          for (k = 0; k < 9; k++) q[o + k] = 0;
+          q[o + m] = 1; Ec = C[m];
+        } else {
+          Z = 0;
+          for (k = 0; k < 9; k++) {
+            var pk = 0; for (ko = 0; ko < 9; ko++) pk += B[k * 9 + ko] * q[o + ko];
+            prior[k] = pk * L[m * 9 + k]; Z += prior[k];
+          }
+          for (k = 0; k < 9; k++) {
+            var p = prior[k] / Z; q[o + k] = p; Ec += p * C[k];
+            if (p > 1e-12) Hs -= p * Math.log(p);
+          }
+        }
+        var Fi = -Math.log(Z + 1e-300);
+        this.F[i] = Fi; this.Hq[i] = Hs; sF += Fi; sH += Hs;
+        /* act: minimise expected free energy; log-odds of living = gamma * (E_q[C] + h(2s-1)) */
+        var s = g[i], drive = Ec + h * (2 * s - 1), a;
+        if (gamma === Infinity) a = drive > 0 ? 1 : 0;
+        else a = rand() < 1 / (1 + Math.exp(-gamma * drive)) ? 1 : 0;
+        nx[i] = a; if (a !== s) changed++;
+      }
+    }
+    this.prev.set(g); g.set(nx); this.t++;
+    this.measure(changed, sF, sH);
+  };
+
+  /* induced deterministic rule in the limit eps -> 0, gamma -> inf */
+  function rule(C, h) {
+    var b = '', s = '';
+    for (var k = 0; k < 9; k++) { if (C[k] > h) b += k; if (C[k] > -h) s += k; }
+    return 'B' + b + '/S' + s;
+  }
+  function prefsFor(ruleStr) {
+    var m = /^B(\d*)\/S(\d*)$/.exec(ruleStr), C = [];
+    for (var k = 0; k < 9; k++) C.push(m[1].indexOf(k) >= 0 ? 1 : m[2].indexOf(k) >= 0 ? 0 : -1);
+    return C;
+  }
+  return { World: World, rule: rule, prefsFor: prefsFor, likelihood: likelihood, LEARNED_B: LEARNED_B };
+})();
+if (typeof module !== 'undefined') module.exports = AIF;
+
+</script>
+<script>
+(function () {
+  'use strict';
+  var PHASE = {"gammas":[2,3,4,5,6,8,10,14,20,40,null],"eps":[0,0.005,0.01,0.02,0.03,0.04,0.06,0.08,0.1],"density":[[0.386,0.385,0.384,0.379,0.374,0.367,0.346,0.32,0.291],[0.355,0.353,0.352,0.344,0.33,0.299,0.185,0.093,0.069],[0.316,0.313,0.308,0.292,0.218,0.023,0.014,0.013,0.013],[0.265,0.257,0.254,0.208,0.015,0.004,0.005,0.005,0.005],[0.184,0.183,0.195,0.126,0.004,0.003,0.003,0.003,0.002],[0.073,0.069,0.097,0.106,0.002,0.002,0.002,0.001,0.001],[0.043,0.053,0.074,0.1,0.014,0.002,0.001,0,0],[0.063,0.031,0.094,0.174,0.053,0.002,0,0,0],[0.065,0.027,0.092,0.209,0.178,0.001,0,0,0],[0.058,0.032,0.088,0.219,0.26,0.001,0,0,0],[0.058,0.04,0.097,0.216,0.271,0,0,0,0]]};
+  var $ = function (s) { return document.querySelector(s); };
+  var $$ = function (s) { return Array.prototype.slice.call(document.querySelectorAll(s)); };
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var root = document.documentElement;
+
+  /* ---------- theme ---------- */
+  try { var saved = localStorage.getItem('theme'); if (saved) root.dataset.theme = saved; } catch (e) {}
+  var darkMQ = window.matchMedia('(prefers-color-scheme: dark)');
+  function isDark() { return root.dataset.theme ? root.dataset.theme === 'dark' : darkMQ.matches; }
+  function syncThemeClass() { document.body.classList.toggle('is-dark', isDark()); }
+  $('#theme-toggle').addEventListener('click', function () {
+    root.dataset.theme = isDark() ? 'light' : 'dark';
+    try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
+    onTheme();
+  });
+  if (darkMQ.addEventListener) darkMQ.addEventListener('change', onTheme);
+
+
+  /* ---------- world ---------- */
+  var SIZE = window.innerWidth < 600 ? 84 : 128;
+  var world = new AIF.World(SIZE, SIZE, 20261103);
+  world.seed(0.35);
+  var view = 'cells', running = !reduce, sps = 20;
+  var hist = { d: [], a: [], f: [], h: [] }, HLEN = 160;
+
+  /* ---------- board rendering ---------- */
+  var cv = $('#board'), ctx = cv.getContext('2d');
+  var col = {}, pitch = 1, bgLayer = null, sprites = {};
+  function readColors() {
+    var cs = getComputedStyle(root);
+    ['red', 'green', 'blue'].forEach(function (k) { col[k] = cs.getPropertyValue('--' + k).trim(); });
+    col.fg = isDark() ? '#ffffff' : '#0b0b0c'; col.bg = isDark() ? '#0b0b0c' : '#ffffff';
+  }
+  function sprite(color, r, alpha) {
+    var key = color + r.toFixed(2) + (alpha || 1);
+    if (sprites[key]) return sprites[key];
+    var s = Math.ceil(r * 2 + 2), c = document.createElement('canvas');
+    c.width = c.height = s;
+    var x = c.getContext('2d'); x.globalAlpha = alpha || 1; x.fillStyle = color;
+    x.beginPath(); x.arc(s / 2, s / 2, r, 0, Math.PI * 2); x.fill();
+    sprites[key] = c; return c;
+  }
+  function layout() {
+    var css = cv.clientWidth || 600, dpr = Math.min(window.devicePixelRatio || 1, 2);
+    cv.width = cv.height = Math.round(css * dpr);
+    pitch = cv.width / SIZE; sprites = {};
+    bgLayer = document.createElement('canvas'); bgLayer.width = bgLayer.height = cv.width;
+    var b = bgLayer.getContext('2d'), spr = sprite(col.fg, Math.max(.55, pitch * .14), isDark() ? .16 : .11);
+    var off = spr.width / 2;
+    for (var y = 0; y < SIZE; y++) for (var x = 0; x < SIZE; x++) b.drawImage(spr, (x + .5) * pitch - off, (y + .5) * pitch - off);
+    draw();
+  }
+  function put(spr, i) {
+    var x = i % SIZE, y = (i / SIZE) | 0, off = spr.width / 2;
+    ctx.drawImage(spr, (x + .5) * pitch - off, (y + .5) * pitch - off);
+  }
+  function lvl(v) { return Math.max(1, Math.min(8, Math.ceil(v * 8))) / 8; }
+  function draw() {
+    var N = world.N, g = world.g, R = pitch * .4, i;
+    ctx.fillStyle = col.bg; ctx.fillRect(0, 0, cv.width, cv.height);
+    if (bgLayer) ctx.drawImage(bgLayer, 0, 0);
+    if (view === 'cells') {
+      var s = sprite(col.fg, R);
+      for (i = 0; i < N; i++) if (g[i]) put(s, i);
+    } else if (view === 'surprise' || view === 'uncertainty') {
+      var faint = sprite(col.fg, R, .22), arr = view === 'surprise' ? world.F : world.Hq;
+      var c = view === 'surprise' ? col.red : col.blue, lo = Infinity, hi = -Infinity;
+      if (view === 'surprise') {
+        var smp = []; for (i = 0; i < N; i += 7) smp.push(arr[i]);
+        smp.sort(function (a, b) { return a - b; });
+        lo = smp[Math.floor(smp.length * .6)]; hi = Math.max(lo + .5, smp[Math.floor(smp.length * .995)]);
+      } else { lo = 0; hi = Math.log(9) * .75; }
+      var span = hi - lo;
+      for (i = 0; i < N; i++) if (g[i]) put(faint, i);
+      if (span > 1e-6) for (i = 0; i < N; i++) {
+        var v = (arr[i] - lo) / span;
+        if (v > .08) put(sprite(c, R * Math.sqrt(lvl(Math.min(1, v))) * 1.05, .9), i);
+      }
+    } else {
+      var p = world.prev, born = sprite(col.green, R), kept = sprite(col.fg, R, .8), died = sprite(col.red, R * .55, .9);
+      for (i = 0; i < N; i++) {
+        if (g[i] && !p[i]) put(born, i); else if (g[i]) put(kept, i); else if (p[i]) put(died, i);
+      }
+    }
+  }
+
+  /* ---------- drawing on the board ---------- */
+  var painting = false, paintVal = 1, lastCell = null;
+  function cellAt(e) {
+    var r = cv.getBoundingClientRect();
+    var x = Math.floor((e.clientX - r.left) / r.width * SIZE), y = Math.floor((e.clientY - r.top) / r.height * SIZE);
+    return [Math.max(0, Math.min(SIZE - 1, x)), Math.max(0, Math.min(SIZE - 1, y))];
+  }
+  function paint(c) {
+    if (lastCell) {
+      var dx = c[0] - lastCell[0], dy = c[1] - lastCell[1], n = Math.max(Math.abs(dx), Math.abs(dy));
+      for (var s = 1; s <= n; s++) world.g[Math.round(lastCell[1] + dy * s / n) * SIZE + Math.round(lastCell[0] + dx * s / n)] = paintVal;
+    }
+    world.g[c[1] * SIZE + c[0]] = paintVal; lastCell = c; draw();
+  }
+  cv.addEventListener('pointerdown', function (e) {
+    var c = cellAt(e); painting = true; lastCell = null;
+    paintVal = world.g[c[1] * SIZE + c[0]] ? 0 : 1;
+    cv.setPointerCapture(e.pointerId); paint(c);
+  });
+  cv.addEventListener('pointermove', function (e) { if (painting) paint(cellAt(e)); });
+  ['pointerup', 'pointercancel'].forEach(function (t) { cv.addEventListener(t, function () { painting = false; lastCell = null; }); });
+
+  /* ---------- sparklines ---------- */
+  function spark(id, data, color) {
+    var c = document.getElementById(id), dpr = Math.min(window.devicePixelRatio || 1, 2);
+    var w = c.clientWidth, h = c.clientHeight;
+    if (!w) return;
+    if (c.width !== Math.round(w * dpr)) { c.width = Math.round(w * dpr); c.height = Math.round(h * dpr); }
+    var x = c.getContext('2d'); x.setTransform(dpr, 0, 0, dpr, 0, 0); x.clearRect(0, 0, w, h);
+    x.globalAlpha = .12; x.fillStyle = col.fg; x.fillRect(0, h - 1, w, 1); x.globalAlpha = 1;
+    if (data.length < 2) return;
+    var mx = 1e-6; for (var i = 0; i < data.length; i++) if (data[i] > mx) mx = data[i];
+    mx *= 1.15;
+    var px = function (i) { return i / (HLEN - 1) * (w - 4) + 1; }, py = function (v) { return h - 2 - v / mx * (h - 5); };
+    x.beginPath();
+    for (i = 0; i < data.length; i++) x[i ? 'lineTo' : 'moveTo'](px(i), py(data[i]));
+    x.strokeStyle = color; x.lineWidth = 1.4; x.lineJoin = 'round'; x.stroke();
+    x.lineTo(px(data.length - 1), h); x.lineTo(px(0), h); x.closePath();
+    x.globalAlpha = .08; x.fillStyle = color; x.fill(); x.globalAlpha = 1;
+    var lx = px(data.length - 1), ly = py(data[data.length - 1]);
+    x.beginPath(); x.arc(lx, ly, 2.2, 0, Math.PI * 2); x.fillStyle = color; x.fill();
+  }
+  function pushHist() {
+    var s = world.stats;
+    [['d', s.density], ['a', s.activity], ['f', s.F], ['h', s.H]].forEach(function (p) {
+      var a = hist[p[0]]; a.push(p[1]); if (a.length > HLEN) a.shift();
+    });
+  }
+  function showStats() {
+    var s = world.stats;
+    $('#gen').textContent = world.t;
+    $('#s-d').textContent = s.density.toFixed(3);
+    $('#s-a').textContent = s.activity.toFixed(3);
+    $('#s-f').textContent = s.F.toFixed(2);
+    $('#s-h').textContent = s.H.toFixed(2);
+    spark('sp-d', hist.d, col.fg); spark('sp-a', hist.a, col.fg);
+    spark('sp-f', hist.f, col.red); spark('sp-h', hist.h, col.blue);
+  }
+
+  /* ---------- captions ---------- */
+  var CAPTIONS = {
+    cells: ['k', 'Live agents. Drag on the grid to draw or erase.'],
+    surprise: ['r', 'Variational free energy F = −ln p(m | past). Large red dots saw something their world model did not predict.'],
+    uncertainty: ['b', 'Entropy of each belief q(k). Zero when sensing is exact; raise the noise ε to see doubt.'],
+    change: ['g', 'This step’s decisions: green agents chose to be born, red ones chose to die.']
+  };
+  function caption() {
+    var c = CAPTIONS[view];
+    $('#caption').innerHTML = '<span class="dot ' + c[0] + '"></span><span></span>';
+    $('#caption span:last-child').textContent = c[1];
+  }
+
+  /* ---------- controls ---------- */
+  var gEl = $('#gamma'), eEl = $('#eps'), rEl = $('#rho'), hEl = $('#hh');
+  function gammaFrom(v) { return v >= 100 ? Infinity : Math.exp(v / 99 * Math.log(60)); }
+  function gammaTo(g) { return g === Infinity ? 100 : Math.round(99 * Math.log(Math.max(1, g)) / Math.log(60)); }
+  function fmtG(g) { return g === Infinity ? '∞' : g < 10 ? g.toFixed(1) : String(Math.round(g)); }
+  function syncOutputs() {
+    $('#gamma-o').textContent = fmtG(world.gamma);
+    $('#eps-o').textContent = world.eps === 0 ? '0' : world.eps.toFixed(3);
+    $('#rho-o').textContent = world.rho.toFixed(2);
+    $('#h-o').textContent = world.h.toFixed(2);
+  }
+  function setControls() {
+    gEl.value = gammaTo(world.gamma); eEl.value = Math.round(world.eps * 1000);
+    rEl.value = Math.round(world.rho * 100); hEl.value = Math.round(world.h * 100);
+    $$('[data-model]').forEach(function (b) { b.classList.toggle('on', b.dataset.model === world.model); });
+    syncOutputs(); drawPref(); updateRule(); drawPhase();
+  }
+  function clearRegime() { $$('[data-regime]').forEach(function (b) { b.classList.remove('on'); }); }
+  gEl.addEventListener('input', function () { world.gamma = gammaFrom(+gEl.value); clearRegime(); syncOutputs(); drawPhase(); });
+  eEl.addEventListener('input', function () { world.setEps(+eEl.value / 1000); clearRegime(); syncOutputs(); drawPhase(); });
+  rEl.addEventListener('input', function () { world.rho = +rEl.value / 100; world.buildB(); clearRegime(); syncOutputs(); drawPhase(); });
+  hEl.addEventListener('input', function () { world.h = +hEl.value / 100; clearRegime(); syncOutputs(); drawPref(); updateRule(); drawPhase(); });
+  $$('[data-model]').forEach(function (b) {
+    b.addEventListener('click', function () { world.model = b.dataset.model; world.buildB(); clearRegime(); setControls(); });
+  });
+  $('#speed').addEventListener('input', function () { sps = +$('#speed').value; });
+
+  var REGIMES = {
+    conway: { gamma: Infinity, eps: 0, rho: .5, model: 'learned' },
+    hot: { gamma: 2, eps: 0, rho: .5, model: 'learned' },
+    edge: { gamma: 9, eps: 0, rho: .5, model: 'learned' },
+    boil: { gamma: Infinity, eps: .025, rho: .5, model: 'learned' },
+    dead: { gamma: Infinity, eps: .05, rho: .5, model: 'learned' },
+    sticky: { gamma: 4, eps: .06, rho: .9, model: 'sticky' }
+  };
+  $$('[data-regime]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var r = REGIMES[b.dataset.regime];
+      world.gamma = r.gamma; world.setEps(r.eps); world.rho = r.rho; world.model = r.model; world.buildB();
+      world.C = new Float64Array(AIF.prefsFor('B3/S23')); world.h = .5;
+      clearRegime(); b.classList.add('on');
+      world.seed(.35); resetHist(); setControls(); draw(); showStats();
+    });
+  });
+
+  /* ---------- rule ---------- */
+  var NAMES = { 'B3/S23': 'Conway’s Life', 'B3678/S34678': 'Day & Night', 'B34/S34': '34 Life', 'B3/S12345': 'Maze', 'B3/S45678': 'Coral',
+    'B3/S1234': 'Mazectric', 'B3/S012345678': 'Life without Death', 'B1/S1': 'Gnarl', 'B/S': 'everything dies', 'B3/S238': 'Pseudo Life', 'B35/S2345': '' };
+  function updateRule() {
+    var r = AIF.rule(world.C, world.h);
+    $('#rule').textContent = r; $('#rule-top').textContent = r;
+    $('#rule-name').textContent = NAMES[r] || 'limit as γ → ∞, ε → 0';
+    $$('[data-rule]').forEach(function (b) { b.classList.toggle('on', b.dataset.rule === r); });
+  }
+  $$('[data-rule]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      world.C = new Float64Array(AIF.prefsFor(b.dataset.rule)); world.h = .5;
+      clearRegime(); setControls(); world.seed(.35); resetHist(); draw(); showStats();
+    });
+  });
+
+  /* ---------- preference editor ---------- */
+  var pref = $('#pref'), NS = 'http://www.w3.org/2000/svg';
+  var PX = function (k) { return 20 + k * 28; }, PY = function (c) { return 78 - c * 40; };
+  function drawPref() {
+    var C = world.C, h = world.h, o = [];
+    o.push('<rect x="0" y="0" width="300" height="172" fill="transparent"/>');
+    o.push('<rect x="8" y="' + PY(1.5) + '" width="290" height="' + (PY(h) - PY(1.5)) + '" fill="var(--green)" fill-opacity=".06"/>');
+    o.push('<line x1="8" x2="298" y1="' + PY(0) + '" y2="' + PY(0) + '" stroke="var(--fg)" stroke-opacity=".16"/>');
+    o.push('<line x1="8" x2="298" y1="' + PY(h) + '" y2="' + PY(h) + '" stroke="var(--green)" stroke-dasharray="3 3"/>');
+    o.push('<line x1="8" x2="298" y1="' + PY(-h) + '" y2="' + PY(-h) + '" stroke="var(--fg)" stroke-opacity=".5" stroke-dasharray="3 3"/>');
+    o.push('<text x="298" y="' + (PY(h) - 4) + '" text-anchor="end" fill="var(--green)">birth</text>');
+    o.push('<text x="298" y="' + (PY(-h) - 4) + '" text-anchor="end" fill="var(--fg)" fill-opacity=".56">survive</text>');
+    for (var k = 0; k < 9; k++) {
+      var c = C[k], x = PX(k), y = PY(c);
+      var fill = c > h ? 'var(--green)' : c > -h ? 'var(--fg)' : 'var(--red)';
+      o.push('<line x1="' + x + '" x2="' + x + '" y1="' + PY(0) + '" y2="' + y + '" stroke="var(--fg)" stroke-opacity=".2" stroke-width="1.5"/>');
+      o.push('<circle cx="' + x + '" cy="' + y + '" r="7" fill="' + fill + '"/>');
+      o.push('<text x="' + x + '" y="166" text-anchor="middle" fill="var(--fg)" fill-opacity=".56">' + k + '</text>');
+    }
+    o.push('<text x="8" y="12" fill="var(--fg)" fill-opacity=".36">C(k)</text>');
+    pref.innerHTML = o.join('');
+  }
+  var dragK = -1;
+  function prefPoint(e) {
+    var r = pref.getBoundingClientRect(), sx = 300 / r.width, sy = 172 / r.height;
+    return [(e.clientX - r.left) * sx, (e.clientY - r.top) * sy];
+  }
+  function prefSet(e) {
+    var p = prefPoint(e);
+    var c = Math.round((78 - p[1]) / 40 * 20) / 20;
+    world.C[dragK] = Math.max(-1.5, Math.min(1.5, c));
+    clearRegime(); drawPref(); updateRule(); drawPhase();
+  }
+  pref.addEventListener('pointerdown', function (e) {
+    var p = prefPoint(e); dragK = Math.max(0, Math.min(8, Math.round((p[0] - 20) / 28)));
+    pref.setPointerCapture(e.pointerId); prefSet(e);
+  });
+  pref.addEventListener('pointermove', function (e) { if (dragK >= 0) prefSet(e); });
+  ['pointerup', 'pointercancel'].forEach(function (t) { pref.addEventListener(t, function () { dragK = -1; }); });
+
+  /* ---------- phase map ---------- */
+  var ph = $('#phase'), PG = PHASE.gammas.map(function (g) { return g === null ? Infinity : g; }), PE = PHASE.eps;
+  var MX0 = 40, MX1 = 290, MY0 = 12, MY1 = 196;
+  var colX = function (j) { return MX0 + j * (MX1 - MX0) / (PE.length - 1); };
+  var rowY = function (i) { return MY1 - i * (MY1 - MY0) / (PG.length - 1); };
+  function epsPos(e) {
+    if (e >= PE[PE.length - 1]) return colX(PE.length - 1);
+    for (var j = 0; j < PE.length - 1; j++) if (e <= PE[j + 1]) return colX(j) + (e - PE[j]) / (PE[j + 1] - PE[j]) * (colX(j + 1) - colX(j));
+    return colX(0);
+  }
+  function gammaPos(g) {
+    if (g === Infinity) return rowY(PG.length - 1);
+    if (g <= PG[0]) return rowY(0);
+    for (var i = 0; i < PG.length - 2; i++) if (g <= PG[i + 1]) return rowY(i) + (Math.log(g) - Math.log(PG[i])) / (Math.log(PG[i + 1]) - Math.log(PG[i])) * (rowY(i + 1) - rowY(i));
+    return rowY(PG.length - 2) + Math.min(1, (g - PG[PG.length - 2]) / 40) * (rowY(PG.length - 1) - rowY(PG.length - 2));
+  }
+  function isDefault() {
+    var conway = AIF.rule(world.C, world.h) === 'B3/S23';
+    return conway && world.model === 'learned' && Math.abs(world.rho - .5) < .051;
+  }
+  function drawPhase() {
+    var o = [], step = (MX1 - MX0) / (PE.length - 1), rmax = Math.min(step, (MY1 - MY0) / (PG.length - 1)) * .48;
+    for (var i = 0; i < PG.length; i++) for (var j = 0; j < PE.length; j++) {
+      var d = PHASE.density[i][j], x = colX(j), y = rowY(i);
+      o.push('<g class="cell" data-i="' + i + '" data-j="' + j + '"><rect x="' + (x - step / 2) + '" y="' + (y - rmax - 1) + '" width="' + step + '" height="' + (2 * rmax + 2) + '" fill="transparent"/>');
+      if (d < .004) o.push('<circle cx="' + x + '" cy="' + y + '" r="1.6" fill="var(--fg)" fill-opacity=".16"/>');
+      else o.push('<circle cx="' + x + '" cy="' + y + '" r="' + Math.max(1.8, rmax * Math.sqrt(d / .4)).toFixed(2) + '" fill="var(--fg)" fill-opacity=".86"/>');
+      o.push('</g>');
+    }
+    PG.forEach(function (g, i) { if ([0, 2, 5, 8, 10].indexOf(i) >= 0) o.push('<text x="' + (MX0 - 12) + '" y="' + (rowY(i) + 3) + '" text-anchor="end">' + (g === Infinity ? '∞' : g) + '</text>'); });
+    PE.forEach(function (e, j) { if ([0, 2, 4, 6, 8].indexOf(j) >= 0) o.push('<text x="' + colX(j) + '" y="' + (MY1 + 16) + '" text-anchor="middle">' + (e === 0 ? '0' : String(e).replace('0.', '.')) + '</text>'); });
+    o.push('<text x="' + ((MX0 + MX1) / 2) + '" y="' + (MY1 + 32) + '" text-anchor="middle">sensory noise ε →</text>');
+    o.push('<text transform="translate(8 ' + ((MY0 + MY1) / 2) + ') rotate(-90)" text-anchor="middle">policy precision γ →</text>');
+    var mx = epsPos(world.eps), my = gammaPos(world.gamma), def = isDefault();
+    o.push('<circle cx="' + mx.toFixed(1) + '" cy="' + my.toFixed(1) + '" r="' + (rmax + 3).toFixed(1) + '" fill="none" stroke="var(--blue)" stroke-width="2"' + (def ? '' : ' stroke-dasharray="3 3"') + '/>');
+    ph.innerHTML = o.join('');
+    $('#phase-note').textContent = def
+      ? 'Dot size: steady-state density, measured offline for Conway preferences, learned model, ρ = 0.5. The ring is where you are.'
+      : 'Your preferences or world model differ from the ones this map was measured with (Conway, learned, ρ = 0.5), so the dashed ring is only a position.';
+  }
+  ph.addEventListener('click', function (e) {
+    var g = e.target.closest('.cell'); if (!g) return;
+    world.gamma = PG[+g.dataset.i]; world.setEps(PE[+g.dataset.j]);
+    clearRegime(); setControls(); world.seed(.35); resetHist(); draw(); showStats();
+  });
+
+  /* ---------- transport ---------- */
+  function setRunning(r) { running = r; $('#play').textContent = r ? 'pause' : 'play'; }
+  $('#play').addEventListener('click', function () { setRunning(!running); });
+  $('#step').addEventListener('click', function () { setRunning(false); tick(); });
+  $('#soup').addEventListener('click', function () { world.seed(.35); resetHist(); draw(); showStats(); });
+  $('#clear').addEventListener('click', function () { world.clear(); resetHist(); draw(); showStats(); });
+  $('#glider').addEventListener('click', function () {
+    world.clear(); var G = [[1, 0], [2, 1], [0, 2], [1, 2], [2, 2]], gap = SIZE < 100 ? 14 : 16;
+    for (var oy = 4; oy + 3 < SIZE; oy += gap) for (var ox = 4; ox + 3 < SIZE; ox += gap)
+      G.forEach(function (p) { world.g[(oy + p[1]) * SIZE + ox + p[0]] = 1; });
+    world.prev.set(world.g); world.measure(0, 0, 0); resetHist(); draw(); showStats();
+  });
+  $$('[data-view]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      view = b.dataset.view;
+      $$('[data-view]').forEach(function (x) { x.classList.toggle('on', x === b); });
+      caption(); draw();
+    });
+  });
+  function resetHist() { hist = { d: [], a: [], f: [], h: [] }; pushHist(); }
+  function tick() { world.step(); pushHist(); draw(); showStats(); }
+
+  var acc = 0, last = performance.now();
+  function frame(now) {
+    var dt = Math.min(100, now - last); last = now;
+    if (running && !painting) {
+      acc += dt * sps / 1000;
+      var n = Math.min(Math.floor(acc), 3);
+      if (n > 0) { for (var k = 0; k < n; k++) { world.step(); pushHist(); } acc -= n; if (acc > 3) acc = 0; draw(); showStats(); }
+    }
+    requestAnimationFrame(frame);
+  }
+
+  function onTheme() { syncThemeClass(); readColors(); layout(); showStats(); }
+  var rt; window.addEventListener('resize', function () { clearTimeout(rt); rt = setTimeout(function () { layout(); showStats(); }, 120); });
+
+  syncThemeClass(); readColors(); caption(); setControls(); layout(); resetHist(); showStats();
+  if (reduce) setRunning(false);
+  requestAnimationFrame(frame);
+})();
+</script>
+
+</body></html>

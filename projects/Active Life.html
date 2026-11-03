@@ -77,7 +77,17 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .gen b { color: var(--fg); font-weight: 500; }
 .board-wrap { position: relative; border: 1px solid var(--fg-08); border-radius: 20px; padding: 14px; transition: border-color .3s var(--ease); }
 .board-wrap:hover { border-color: var(--fg-16); }
-#board { display: block; width: 100%; aspect-ratio: 1; max-width: 100%; touch-action: none; cursor: crosshair; border-radius: 8px; }
+.board { display: block; width: 100%; aspect-ratio: 1; max-width: 100%; touch-action: none; cursor: crosshair; border-radius: 8px; }
+.boards { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 14px; }
+.boards.single { grid-template-columns: minmax(0, 1fr); }
+.boards:not(.single) .board-wrap { padding: 10px; border-radius: 16px; }
+.bfig { margin: 0; min-width: 0; display: grid; gap: 8px; }
+.blabel { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; color: var(--fg-56); min-width: 0; }
+.blabel > span:first-child { display: inline-flex; align-items: center; gap: 8px; color: var(--fg); font-weight: 500; white-space: nowrap; }
+.blabel > span:last-child { color: var(--fg-36); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.diff b { color: var(--fg); font-weight: 500; }
+.diff.zero b { color: var(--green); }
+.stat.wide { grid-column: 1 / -1; }
 .caption { margin-top: 12px; color: var(--fg-56); line-height: 1.5; min-height: 2.6em; display: flex; gap: 8px; align-items: baseline; }
 .caption .dot { transform: translateY(-1px); }
 .transport { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 14px; }
@@ -163,6 +173,7 @@ input[type=range] { width: 100%; accent-color: var(--blue); height: 26px; cursor
   .intro { grid-template-columns: 1fr; }
   .panel { grid-template-columns: 1fr; }
   .board-wrap { padding: 8px; border-radius: 14px; }
+  .boards { grid-template-columns: minmax(0, 1fr); }
   .transport .speed { margin-left: 0; width: 100%; }
   .transport .speed input { flex: 1; width: auto; }
   .prose { font-size: 1.06rem; }
@@ -191,21 +202,31 @@ input[type=range] { width: 100%; accent-color: var(--blue); height: 26px; cursor
       <h1>Active Life</h1>
       <p class="lead">Conway’s Game of Life, rebuilt as a population of agents that perceive their neighbourhood, hold beliefs about it, and choose whether to live by minimising expected free energy.</p>
     </div>
-    <p class="affil mono">Each dot is an agent · its neighbours are its senses</p>
+    <p class="affil mono">Left: the fixed rule · right: agents that infer and choose</p>
   </section>
 
   <section class="wrap sim" id="sim">
     <div class="stage">
       <div class="stage-top">
-        <div class="gen mono num-t"><span>t <b id="gen">0</b></span><span>rule <b id="rule-top">B3/S23</b></span></div>
+        <div class="gen mono num-t"><span>t <b id="gen">0</b></span><span class="diff" id="diff-wrap">boards differ on <b id="diff">0</b> cells</span></div>
         <div class="chips" role="group" aria-label="View">
           <button class="chip on" data-view="cells" type="button">cells</button>
           <button class="chip" data-view="surprise" type="button">surprise</button>
           <button class="chip" data-view="uncertainty" type="button">uncertainty</button>
           <button class="chip" data-view="change" type="button">births · deaths</button>
+          <button class="chip" data-view="versus" type="button">vs ordinary</button>
         </div>
       </div>
-      <div class="board-wrap"><canvas id="board" aria-label="Simulation grid. Drag to draw or erase cells."></canvas></div>
+      <div class="boards" id="boards">
+        <figure class="bfig" id="fig-ref">
+          <figcaption class="blabel mono"><span><span class="dot k"></span>Ordinary Life</span><span id="ref-sub">fixed rule B3/S23</span></figcaption>
+          <div class="board-wrap"><canvas class="board" id="board-ref" aria-label="Ordinary Game of Life grid. Drag to draw or erase cells on both boards."></canvas></div>
+        </figure>
+        <figure class="bfig">
+          <figcaption class="blabel mono"><span><span class="dot b"></span>Active-inference agents</span><span id="aif-sub">γ = ∞ · ε = 0</span></figcaption>
+          <div class="board-wrap"><canvas class="board" id="board" aria-label="Active-inference agents grid. Drag to draw or erase cells on both boards."></canvas></div>
+        </figure>
+      </div>
       <p class="caption mono" id="caption"></p>
       <div class="transport">
         <button class="chip chip-solid" id="play" type="button">pause</button>
@@ -213,6 +234,8 @@ input[type=range] { width: 100%; accent-color: var(--blue); height: 26px; cursor
         <button class="chip" id="soup" type="button">new soup</button>
         <button class="chip" id="glider" type="button">gliders</button>
         <button class="chip" id="clear" type="button">clear</button>
+        <button class="chip" id="sync" type="button" title="Copy the agents’ grid onto the ordinary board">sync boards</button>
+        <button class="chip on" id="compare" type="button" aria-pressed="true">side by side</button>
         <label class="speed mono" for="speed">speed <input type="range" id="speed" min="1" max="60" value="20"></label>
       </div>
     </div>
@@ -265,6 +288,7 @@ input[type=range] { width: 100%; accent-color: var(--blue); height: 26px; cursor
           <div class="stat"><span class="k">activity</span><span class="v" id="s-a">0</span><canvas id="sp-a"></canvas></div>
           <div class="stat"><span class="k"><span class="dot r"></span>surprise ⟨F⟩</span><span class="v" id="s-f">0</span><canvas id="sp-f"></canvas></div>
           <div class="stat"><span class="k"><span class="dot b"></span>uncertainty ⟨H⟩</span><span class="v" id="s-h">0</span><canvas id="sp-h"></canvas></div>
+          <div class="stat wide"><span class="k"><span class="dot k"></span>share of cells where agents and ordinary Life differ</span><span class="v" id="s-x">0</span><canvas id="sp-x"></canvas></div>
         </div>
       </div>
 
@@ -316,7 +340,7 @@ input[type=range] { width: 100%; accent-color: var(--blue); height: 26px; cursor
           <div class="tex d"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>s</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mn mathvariant="double-struck">1</mn><mo fence="false" stretchy="true" minsize="1.2em" maxsize="1.2em">[</mo><mi>C</mi><mo stretchy="false">(</mo><msub><mi>k</mi><mi>t</mi></msub><mo stretchy="false">)</mo><mo>+</mo><mi>h</mi><mtext> </mtext><mo stretchy="false">(</mo><mn>2</mn><msub><mi>s</mi><mi>t</mi></msub><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>&gt;</mo><mn>0</mn><mo fence="false" stretchy="true" minsize="1.2em" maxsize="1.2em">]</mo><mtext>  </mtext><mo>⟺</mo><mtext>  </mtext><mi mathvariant="script">B</mi><mo>=</mo><mo stretchy="false">{</mo><mi>k</mi><mo>:</mo><mi>C</mi><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo><mo>&gt;</mo><mi>h</mi><mo stretchy="false">}</mo><mo separator="true">,</mo><mtext>  </mtext><mtext>  </mtext><mi mathvariant="script">S</mi><mo>=</mo><mo stretchy="false">{</mo><mi>k</mi><mo>:</mo><mi>C</mi><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo><mo>&gt;</mo><mo>−</mo><mi>h</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">s_{t+1} = \mathbb{1}\big[C(k_t) + h\,(2s_t-1) &gt; 0\big] \;\Longleftrightarrow\; \mathcal{B} = \{k : C(k) &gt; h\},\;\; \mathcal{S} = \{k : C(k) &gt; -h\}</annotation></semantics></math></span></div>
         </div>
         <p>With <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn>1</mn><mo separator="true">,</mo><mo>−</mo><mn>1</mn><mo separator="true">,</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo separator="true">,</mo><mo>−</mo><mn>1</mn><mo separator="true">,</mo><mo>−</mo><mn>1</mn><mo separator="true">,</mo><mo>−</mo><mn>1</mn><mo separator="true">,</mo><mo>−</mo><mn>1</mn><mo separator="true">,</mo><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">C = (-1,-1,0,1,-1,-1,-1,-1,-1)</annotation></semantics></math></span></span> and <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">h = \tfrac12</annotation></semantics></math></span></span> this is B3/S23. The cell prefers exactly three neighbours, tolerates two and dislikes the rest. The switching cost turns “tolerates two” into survival without birth. Conway’s three rules become one homeostatic preference plus hysteresis.</p>
-        <p>In simulation the agents reproduce Conway bit for bit: 2,000 steps from random soups on a 96 × 96 torus, for every <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi></mrow><annotation encoding="application/x-tex">\rho</annotation></semantics></math></span></span> and both world models.</p>
+        <p>In simulation the agents reproduce Conway bit for bit: 2,000 steps from random soups on a 96 × 96 torus, for every <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi></mrow><annotation encoding="application/x-tex">\rho</annotation></semantics></math></span></span> and both world models. The two boards at the top show this live. The left one runs an ordinary implementation of the rule; the right one runs the agents. Both start from the same grid, and in the Conway regime they never differ by a single cell. Lower <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>γ</mi></mrow><annotation encoding="application/x-tex">\gamma</annotation></semantics></math></span></span> or add a little noise and they separate within a few steps, because Life is chaotic and every misjudged cell spreads.</p>
         <p>This decomposition generates exactly the outer-totalistic rules with <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">B</mi><mo>⊆</mo><mi mathvariant="script">S</mi></mrow><annotation encoding="application/x-tex">\mathcal{B}\subseteq\mathcal{S}</annotation></semantics></math></span></span>, which includes Day &amp; Night, 34 Life, Maze, Coral and Life without Death. Rules such as HighLife (B36/S23) need preferences that depend on the current state, <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo stretchy="false">(</mo><mi>s</mi><mo separator="true">,</mo><mi>k</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">C(s,k)</annotation></semantics></math></span></span>.</p>
         <p>A Gaussian preference <span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo><mo>=</mo><mi>θ</mi><mo>−</mo><mo stretchy="false">(</mo><mi>k</mi><mo>−</mo><mi>μ</mi><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mi mathvariant="normal">/</mi><mn>2</mn><msup><mi>σ</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">C(k) = \theta - (k-\mu)^2/2\sigma^2</annotation></semantics></math></span></span> also yields B3/S23 (<span class="tex"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi><mo>=</mo><mn>2.75</mn><mo separator="true">,</mo><mtext> </mtext><mi>σ</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo separator="true">,</mo><mtext> </mtext><mi>θ</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\mu = 2.75,\ \sigma = \tfrac12,\ \theta = 1</annotation></semantics></math></span></span>), but then</p>
         <div class="tex d"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi mathvariant="double-struck">E</mi><mi>q</mi></msub><mo stretchy="false">[</mo><mi>C</mi><mo stretchy="false">]</mo><mo>=</mo><mi>C</mi><mo stretchy="false">(</mo><msub><mi mathvariant="double-struck">E</mi><mi>q</mi></msub><mi>k</mi><mo stretchy="false">)</mo><mo>−</mo><msub><mrow><mi mathvariant="normal">V</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">r</mi></mrow><mi>q</mi></msub><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo><mi mathvariant="normal">/</mi><mn>2</mn><msup><mi>σ</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\mathbb{E}_q[C] = C(\mathbb{E}_q k) - \mathrm{Var}_q(k)/2\sigma^2</annotation></semantics></math></span></div>
@@ -483,6 +507,36 @@ var AIF = (function () {
     this.measure(changed, sF, sH);
   };
 
+  /* Ordinary Life: a plain outer-totalistic cellular automaton, independent of the agents */
+  function Life(W, H) {
+    this.W = W; this.H = H; this.N = W * H;
+    this.g = new Uint8Array(this.N); this.prev = new Uint8Array(this.N); this.next = new Uint8Array(this.N);
+    this.born = [0, 0, 0, 1, 0, 0, 0, 0, 0]; this.surv = [0, 0, 1, 1, 0, 0, 0, 0, 0];
+    this.t = 0; this.stats = { density: 0, activity: 0 };
+  }
+  Life.prototype.setRule = function (C, h) {
+    for (var k = 0; k < 9; k++) { this.born[k] = C[k] > h ? 1 : 0; this.surv[k] = C[k] > -h ? 1 : 0; }
+  };
+  Life.prototype.copyFrom = function (w) { this.g.set(w.g); this.prev.set(w.prev); this.t = w.t; this.measure(0); };
+  Life.prototype.measure = function (changed) {
+    var live = 0; for (var i = 0; i < this.N; i++) live += this.g[i];
+    this.stats.density = live / this.N; this.stats.activity = changed / this.N;
+  };
+  Life.prototype.step = function () {
+    var W = this.W, H = this.H, g = this.g, nx = this.next, changed = 0;
+    for (var y = 0; y < H; y++) {
+      var ym = (y + H - 1) % H * W, y0 = y * W, yp = (y + 1) % H * W;
+      for (var x = 0; x < W; x++) {
+        var xm = (x + W - 1) % W, xp = (x + 1) % W, i = y0 + x;
+        var n = g[ym + xm] + g[ym + x] + g[ym + xp] + g[y0 + xm] + g[y0 + xp] + g[yp + xm] + g[yp + x] + g[yp + xp];
+        var a = g[i] ? this.surv[n] : this.born[n];
+        nx[i] = a; if (a !== g[i]) changed++;
+      }
+    }
+    this.prev.set(g); g.set(nx); this.t++; this.measure(changed);
+  };
+  function disagreement(a, b) { var d = 0; for (var i = 0; i < a.length; i++) if (a[i] !== b[i]) d++; return d; }
+
   /* induced deterministic rule in the limit eps -> 0, gamma -> inf */
   function rule(C, h) {
     var b = '', s = '';
@@ -494,7 +548,7 @@ var AIF = (function () {
     for (var k = 0; k < 9; k++) C.push(m[1].indexOf(k) >= 0 ? 1 : m[2].indexOf(k) >= 0 ? 0 : -1);
     return C;
   }
-  return { World: World, rule: rule, prefsFor: prefsFor, likelihood: likelihood, LEARNED_B: LEARNED_B };
+  return { World: World, Life: Life, disagreement: disagreement, rule: rule, prefsFor: prefsFor, likelihood: likelihood, LEARNED_B: LEARNED_B };
 })();
 if (typeof module !== 'undefined') module.exports = AIF;
 
@@ -522,15 +576,32 @@ if (typeof module !== 'undefined') module.exports = AIF;
 
 
   /* ---------- world ---------- */
-  var SIZE = window.innerWidth < 600 ? 84 : 128;
-  var world = new AIF.World(SIZE, SIZE, 20261103);
-  world.seed(0.35);
-  var view = 'cells', running = !reduce, sps = 20;
-  var hist = { d: [], a: [], f: [], h: [] }, HLEN = 160;
+  var compare = true, phone = window.innerWidth < 600;
+  function sizeFor() { return compare ? (phone ? 72 : 96) : (phone ? 84 : 128); }
+  var SIZE = sizeFor();
+  var world = new AIF.World(SIZE, SIZE, 20261103), ref = new AIF.Life(SIZE, SIZE);
+  world.seed(0.35); ref.copyFrom(world);
+  var view = 'cells', running = !reduce, sps = 20, diffCount = 0;
+  var hist = { d: [], a: [], f: [], h: [], x: [] }, HLEN = 160;
+  function syncRef() { ref.setRule(world.C, world.h); ref.copyFrom(world); diffCount = 0; }
+  function reseed() { world.seed(.35); syncRef(); }
+  function clearAll() { world.clear(); syncRef(); }
+  function stepAll() { ref.setRule(world.C, world.h); world.step(); ref.step(); diffCount = AIF.disagreement(world.g, ref.g); }
+  function rebuild() {
+    var o = world; SIZE = sizeFor();
+    world = new AIF.World(SIZE, SIZE, 20261103 + Math.floor(Math.random() * 1e6));
+    world.gamma = o.gamma; world.setEps(o.eps); world.rho = o.rho; world.model = o.model; world.buildB();
+    world.C = new Float64Array(o.C); world.h = o.h;
+    ref = new AIF.Life(SIZE, SIZE); reseed();
+  }
 
   /* ---------- board rendering ---------- */
-  var cv = $('#board'), ctx = cv.getContext('2d');
-  var col = {}, pitch = 1, bgLayer = null, sprites = {};
+  var col = {}, sprites = {};
+  var boards = [
+    { cv: $('#board-ref'), kind: 'ref' },
+    { cv: $('#board'), kind: 'aif' }
+  ];
+  boards.forEach(function (b) { b.ctx = b.cv.getContext('2d'); b.pitch = 1; b.bg = null; });
   function readColors() {
     var cs = getComputedStyle(root);
     ['red', 'green', 'blue'].forEach(function (k) { col[k] = cs.getPropertyValue('--' + k).trim(); });
@@ -545,71 +616,87 @@ if (typeof module !== 'undefined') module.exports = AIF;
     x.beginPath(); x.arc(s / 2, s / 2, r, 0, Math.PI * 2); x.fill();
     sprites[key] = c; return c;
   }
-  function layout() {
-    var css = cv.clientWidth || 600, dpr = Math.min(window.devicePixelRatio || 1, 2);
-    cv.width = cv.height = Math.round(css * dpr);
-    pitch = cv.width / SIZE; sprites = {};
-    bgLayer = document.createElement('canvas'); bgLayer.width = bgLayer.height = cv.width;
-    var b = bgLayer.getContext('2d'), spr = sprite(col.fg, Math.max(.55, pitch * .14), isDark() ? .16 : .11);
-    var off = spr.width / 2;
-    for (var y = 0; y < SIZE; y++) for (var x = 0; x < SIZE; x++) b.drawImage(spr, (x + .5) * pitch - off, (y + .5) * pitch - off);
-    draw();
+  function layoutBoard(b) {
+    var css = b.cv.clientWidth, dpr = Math.min(window.devicePixelRatio || 1, 2);
+    if (!css) { b.bg = null; return; }
+    b.cv.width = b.cv.height = Math.round(css * dpr);
+    b.pitch = b.cv.width / SIZE;
+    b.bg = document.createElement('canvas'); b.bg.width = b.bg.height = b.cv.width;
+    var x = b.bg.getContext('2d'), spr = sprite(col.fg, Math.max(.55, b.pitch * .14), isDark() ? .16 : .11), off = spr.width / 2;
+    for (var y = 0; y < SIZE; y++) for (var i = 0; i < SIZE; i++) x.drawImage(spr, (i + .5) * b.pitch - off, (y + .5) * b.pitch - off);
   }
-  function put(spr, i) {
-    var x = i % SIZE, y = (i / SIZE) | 0, off = spr.width / 2;
-    ctx.drawImage(spr, (x + .5) * pitch - off, (y + .5) * pitch - off);
+  function layout() {
+    sprites = {};
+    $('#boards').classList.toggle('single', !compare);
+    $('#fig-ref').hidden = !compare;
+    boards.forEach(layoutBoard); draw();
   }
   function lvl(v) { return Math.max(1, Math.min(8, Math.ceil(v * 8))) / 8; }
-  function draw() {
-    var N = world.N, g = world.g, R = pitch * .4, i;
-    ctx.fillStyle = col.bg; ctx.fillRect(0, 0, cv.width, cv.height);
-    if (bgLayer) ctx.drawImage(bgLayer, 0, 0);
-    if (view === 'cells') {
+  function drawBoard(b) {
+    if (!b.bg) return;
+    var ctx = b.ctx, P = b.pitch, R = P * .4, src = b.kind === 'ref' ? ref : world, N = src.N, g = src.g, i;
+    function put(spr, i) { var off = spr.width / 2; ctx.drawImage(spr, (i % SIZE + .5) * P - off, ((i / SIZE | 0) + .5) * P - off); }
+    ctx.fillStyle = col.bg; ctx.fillRect(0, 0, b.cv.width, b.cv.height);
+    ctx.drawImage(b.bg, 0, 0);
+    var v = view;
+    if (b.kind === 'ref' && (v === 'surprise' || v === 'uncertainty' || v === 'versus')) v = 'cells';
+    if (v === 'cells') {
       var s = sprite(col.fg, R);
       for (i = 0; i < N; i++) if (g[i]) put(s, i);
-    } else if (view === 'surprise' || view === 'uncertainty') {
-      var faint = sprite(col.fg, R, .22), arr = view === 'surprise' ? world.F : world.Hq;
-      var c = view === 'surprise' ? col.red : col.blue, lo = Infinity, hi = -Infinity;
-      if (view === 'surprise') {
+    } else if (v === 'surprise' || v === 'uncertainty') {
+      var faint = sprite(col.fg, R, .22), arr = v === 'surprise' ? world.F : world.Hq;
+      var c = v === 'surprise' ? col.red : col.blue, lo, hi;
+      if (v === 'surprise') {
         var smp = []; for (i = 0; i < N; i += 7) smp.push(arr[i]);
-        smp.sort(function (a, b) { return a - b; });
+        smp.sort(function (a, z) { return a - z; });
         lo = smp[Math.floor(smp.length * .6)]; hi = Math.max(lo + .5, smp[Math.floor(smp.length * .995)]);
       } else { lo = 0; hi = Math.log(9) * .75; }
       var span = hi - lo;
       for (i = 0; i < N; i++) if (g[i]) put(faint, i);
       if (span > 1e-6) for (i = 0; i < N; i++) {
-        var v = (arr[i] - lo) / span;
-        if (v > .08) put(sprite(c, R * Math.sqrt(lvl(Math.min(1, v))) * 1.05, .9), i);
+        var q = (arr[i] - lo) / span;
+        if (q > .08) put(sprite(c, R * Math.sqrt(lvl(Math.min(1, q))) * 1.05, .9), i);
+      }
+    } else if (v === 'versus') {
+      var both = sprite(col.fg, R, .28), mine = sprite(col.blue, R), theirs = sprite(col.red, R * .8), rg = ref.g;
+      for (i = 0; i < N; i++) {
+        if (g[i] && rg[i]) put(both, i); else if (g[i]) put(mine, i); else if (rg[i]) put(theirs, i);
       }
     } else {
-      var p = world.prev, born = sprite(col.green, R), kept = sprite(col.fg, R, .8), died = sprite(col.red, R * .55, .9);
+      var p = src.prev, born = sprite(col.green, R), kept = sprite(col.fg, R, .8), died = sprite(col.red, R * .55, .9);
       for (i = 0; i < N; i++) {
         if (g[i] && !p[i]) put(born, i); else if (g[i]) put(kept, i); else if (p[i]) put(died, i);
       }
     }
   }
+  function draw() { boards.forEach(drawBoard); }
 
-  /* ---------- drawing on the board ---------- */
-  var painting = false, paintVal = 1, lastCell = null;
+  /* ---------- drawing on the boards (both stay in step) ---------- */
+  var painting = false, paintVal = 1, lastCell = null, paintCv = null;
   function cellAt(e) {
-    var r = cv.getBoundingClientRect();
+    var r = paintCv.getBoundingClientRect();
     var x = Math.floor((e.clientX - r.left) / r.width * SIZE), y = Math.floor((e.clientY - r.top) / r.height * SIZE);
     return [Math.max(0, Math.min(SIZE - 1, x)), Math.max(0, Math.min(SIZE - 1, y))];
   }
+  function setCell(x, y) { var i = y * SIZE + x; world.g[i] = paintVal; ref.g[i] = paintVal; }
   function paint(c) {
     if (lastCell) {
       var dx = c[0] - lastCell[0], dy = c[1] - lastCell[1], n = Math.max(Math.abs(dx), Math.abs(dy));
-      for (var s = 1; s <= n; s++) world.g[Math.round(lastCell[1] + dy * s / n) * SIZE + Math.round(lastCell[0] + dx * s / n)] = paintVal;
+      for (var s = 1; s <= n; s++) setCell(Math.round(lastCell[0] + dx * s / n), Math.round(lastCell[1] + dy * s / n));
     }
-    world.g[c[1] * SIZE + c[0]] = paintVal; lastCell = c; draw();
+    setCell(c[0], c[1]); lastCell = c;
+    diffCount = AIF.disagreement(world.g, ref.g); draw(); showDiff();
   }
-  cv.addEventListener('pointerdown', function (e) {
-    var c = cellAt(e); painting = true; lastCell = null;
-    paintVal = world.g[c[1] * SIZE + c[0]] ? 0 : 1;
-    cv.setPointerCapture(e.pointerId); paint(c);
+  boards.forEach(function (b) {
+    b.cv.addEventListener('pointerdown', function (e) {
+      paintCv = b.cv; var c = cellAt(e), src = b.kind === 'ref' ? ref : world;
+      painting = true; lastCell = null;
+      paintVal = src.g[c[1] * SIZE + c[0]] ? 0 : 1;
+      b.cv.setPointerCapture(e.pointerId); paint(c);
+    });
+    b.cv.addEventListener('pointermove', function (e) { if (painting && paintCv === b.cv) paint(cellAt(e)); });
+    ['pointerup', 'pointercancel'].forEach(function (t) { b.cv.addEventListener(t, function () { painting = false; lastCell = null; }); });
   });
-  cv.addEventListener('pointermove', function (e) { if (painting) paint(cellAt(e)); });
-  ['pointerup', 'pointercancel'].forEach(function (t) { cv.addEventListener(t, function () { painting = false; lastCell = null; }); });
 
   /* ---------- sparklines ---------- */
   function spark(id, data, color) {
@@ -633,7 +720,7 @@ if (typeof module !== 'undefined') module.exports = AIF;
   }
   function pushHist() {
     var s = world.stats;
-    [['d', s.density], ['a', s.activity], ['f', s.F], ['h', s.H]].forEach(function (p) {
+    [['d', s.density], ['a', s.activity], ['f', s.F], ['h', s.H], ['x', diffCount / world.N]].forEach(function (p) {
       var a = hist[p[0]]; a.push(p[1]); if (a.length > HLEN) a.shift();
     });
   }
@@ -644,13 +731,20 @@ if (typeof module !== 'undefined') module.exports = AIF;
     $('#s-a').textContent = s.activity.toFixed(3);
     $('#s-f').textContent = s.F.toFixed(2);
     $('#s-h').textContent = s.H.toFixed(2);
+    $('#s-x').textContent = (100 * diffCount / world.N).toFixed(1) + '%';
+    showDiff();
     spark('sp-d', hist.d, col.fg); spark('sp-a', hist.a, col.fg);
-    spark('sp-f', hist.f, col.red); spark('sp-h', hist.h, col.blue);
+    spark('sp-f', hist.f, col.red); spark('sp-h', hist.h, col.blue); spark('sp-x', hist.x, col.fg);
+  }
+  function showDiff() {
+    $('#diff').textContent = diffCount;
+    $('#diff-wrap').classList.toggle('zero', diffCount === 0);
   }
 
   /* ---------- captions ---------- */
   var CAPTIONS = {
-    cells: ['k', 'Live agents. Drag on the grid to draw or erase.'],
+    cells: ['k', 'Both boards start from the same grid. Drag on either one to draw or erase on both.'],
+    versus: ['b', 'Agents compared with ordinary Life. Blue: alive among the agents only. Red: alive in ordinary Life only. Faint: both agree.'],
     surprise: ['r', 'Variational free energy F = −ln p(m | past). Large red dots saw something their world model did not predict.'],
     uncertainty: ['b', 'Entropy of each belief q(k). Zero when sensing is exact; raise the noise ε to see doubt.'],
     change: ['g', 'This step’s decisions: green agents chose to be born, red ones chose to die.']
@@ -666,7 +760,12 @@ if (typeof module !== 'undefined') module.exports = AIF;
   function gammaFrom(v) { return v >= 100 ? Infinity : Math.exp(v / 99 * Math.log(60)); }
   function gammaTo(g) { return g === Infinity ? 100 : Math.round(99 * Math.log(Math.max(1, g)) / Math.log(60)); }
   function fmtG(g) { return g === Infinity ? '∞' : g < 10 ? g.toFixed(1) : String(Math.round(g)); }
+  function subLabels() {
+    $('#ref-sub').textContent = 'fixed rule ' + AIF.rule(world.C, world.h);
+    $('#aif-sub').textContent = 'γ = ' + fmtG(world.gamma) + ' · ε = ' + (world.eps === 0 ? '0' : world.eps.toFixed(3));
+  }
   function syncOutputs() {
+    subLabels();
     $('#gamma-o').textContent = fmtG(world.gamma);
     $('#eps-o').textContent = world.eps === 0 ? '0' : world.eps.toFixed(3);
     $('#rho-o').textContent = world.rho.toFixed(2);
@@ -702,7 +801,7 @@ if (typeof module !== 'undefined') module.exports = AIF;
       world.gamma = r.gamma; world.setEps(r.eps); world.rho = r.rho; world.model = r.model; world.buildB();
       world.C = new Float64Array(AIF.prefsFor('B3/S23')); world.h = .5;
       clearRegime(); b.classList.add('on');
-      world.seed(.35); resetHist(); setControls(); draw(); showStats();
+      reseed(); resetHist(); setControls(); draw(); showStats();
     });
   });
 
@@ -711,14 +810,14 @@ if (typeof module !== 'undefined') module.exports = AIF;
     'B3/S1234': 'Mazectric', 'B3/S012345678': 'Life without Death', 'B1/S1': 'Gnarl', 'B/S': 'everything dies', 'B3/S238': 'Pseudo Life', 'B35/S2345': '' };
   function updateRule() {
     var r = AIF.rule(world.C, world.h);
-    $('#rule').textContent = r; $('#rule-top').textContent = r;
+    $('#rule').textContent = r; subLabels();
     $('#rule-name').textContent = NAMES[r] || 'limit as γ → ∞, ε → 0';
     $$('[data-rule]').forEach(function (b) { b.classList.toggle('on', b.dataset.rule === r); });
   }
   $$('[data-rule]').forEach(function (b) {
     b.addEventListener('click', function () {
       world.C = new Float64Array(AIF.prefsFor(b.dataset.rule)); world.h = .5;
-      clearRegime(); setControls(); world.seed(.35); resetHist(); draw(); showStats();
+      clearRegime(); setControls(); reseed(); resetHist(); draw(); showStats();
     });
   });
 
@@ -805,20 +904,25 @@ if (typeof module !== 'undefined') module.exports = AIF;
   ph.addEventListener('click', function (e) {
     var g = e.target.closest('.cell'); if (!g) return;
     world.gamma = PG[+g.dataset.i]; world.setEps(PE[+g.dataset.j]);
-    clearRegime(); setControls(); world.seed(.35); resetHist(); draw(); showStats();
+    clearRegime(); setControls(); reseed(); resetHist(); draw(); showStats();
   });
 
   /* ---------- transport ---------- */
   function setRunning(r) { running = r; $('#play').textContent = r ? 'pause' : 'play'; }
   $('#play').addEventListener('click', function () { setRunning(!running); });
   $('#step').addEventListener('click', function () { setRunning(false); tick(); });
-  $('#soup').addEventListener('click', function () { world.seed(.35); resetHist(); draw(); showStats(); });
-  $('#clear').addEventListener('click', function () { world.clear(); resetHist(); draw(); showStats(); });
+  $('#soup').addEventListener('click', function () { reseed(); resetHist(); draw(); showStats(); });
+  $('#clear').addEventListener('click', function () { clearAll(); resetHist(); draw(); showStats(); });
+  $('#sync').addEventListener('click', function () { syncRef(); pushHist(); draw(); showStats(); });
+  $('#compare').addEventListener('click', function () {
+    compare = !compare; this.classList.toggle('on', compare); this.setAttribute('aria-pressed', compare);
+    rebuild(); resetHist(); layout(); showStats();
+  });
   $('#glider').addEventListener('click', function () {
     world.clear(); var G = [[1, 0], [2, 1], [0, 2], [1, 2], [2, 2]], gap = SIZE < 100 ? 14 : 16;
     for (var oy = 4; oy + 3 < SIZE; oy += gap) for (var ox = 4; ox + 3 < SIZE; ox += gap)
       G.forEach(function (p) { world.g[(oy + p[1]) * SIZE + ox + p[0]] = 1; });
-    world.prev.set(world.g); world.measure(0, 0, 0); resetHist(); draw(); showStats();
+    world.prev.set(world.g); world.measure(0, 0, 0); syncRef(); resetHist(); draw(); showStats();
   });
   $$('[data-view]').forEach(function (b) {
     b.addEventListener('click', function () {
@@ -827,8 +931,8 @@ if (typeof module !== 'undefined') module.exports = AIF;
       caption(); draw();
     });
   });
-  function resetHist() { hist = { d: [], a: [], f: [], h: [] }; pushHist(); }
-  function tick() { world.step(); pushHist(); draw(); showStats(); }
+  function resetHist() { hist = { d: [], a: [], f: [], h: [], x: [] }; pushHist(); }
+  function tick() { stepAll(); pushHist(); draw(); showStats(); }
 
   var acc = 0, last = performance.now();
   function frame(now) {
@@ -836,7 +940,7 @@ if (typeof module !== 'undefined') module.exports = AIF;
     if (running && !painting) {
       acc += dt * sps / 1000;
       var n = Math.min(Math.floor(acc), 3);
-      if (n > 0) { for (var k = 0; k < n; k++) { world.step(); pushHist(); } acc -= n; if (acc > 3) acc = 0; draw(); showStats(); }
+      if (n > 0) { for (var k = 0; k < n; k++) { stepAll(); pushHist(); } acc -= n; if (acc > 3) acc = 0; draw(); showStats(); }
     }
     requestAnimationFrame(frame);
   }

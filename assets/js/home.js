@@ -83,6 +83,30 @@
     label(); document.addEventListener('langchange', label);
   }
 
+  /* ---------------- spur: a pace chart drawn in dots ---------------- */
+  function spurArt() {
+    var svg = document.getElementById('spur-art');
+    if (!svg) return;
+    var out = [], seed = 7;
+    function rnd() { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; }
+    function dot(x, y, r, fill, op) { out.push('<circle cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) + '" r="' + r + '" fill="' + fill + '" opacity="' + op + '"/>'); }
+    for (var gx = 40; gx <= 270; gx += 10) for (var gy = 40; gy <= 150; gy += 22) dot(gx, gy, 1, 'currentColor', .18);   // faint grid
+    var trend = function (x) { return 140 - (x - 40) / 230 * 70 + 6 * Math.sin(x / 26); };                              // getting faster: up is faster
+    for (var x = 44; x <= 266; x += 9) dot(x, trend(x) + (rnd() - .5) * 46, 2.4, 'currentColor', .55);                // each run
+    for (x = 40; x <= 270; x += 5) dot(x, trend(x), 2.2, 'var(--red)', .95);                                            // smoothed trend
+    for (var w = 0; w < 12; w++) {                                                                                        // weekly volume
+      var h = 2 + Math.round(3 + 2 * Math.sin(w * .9) + w * .25);
+      for (var k = 0; k < h; k++) dot(46 + w * 19.5, 206 - k * 7, 2.2, 'var(--green)', w === 11 ? .95 : .6);
+    }
+    var end = trend(270);
+    out.push('<circle cx="270" cy="' + end.toFixed(1) + '" r="7" fill="none" stroke="var(--red)" stroke-width="1.6"><animate attributeName="r" values="5;9;5" dur="3s" repeatCount="indefinite"/></circle>');
+    out.push('<g transform="translate(150 236)"><rect x="-74" y="-12" width="148" height="24" rx="12" fill="var(--bg)" stroke="currentColor" stroke-opacity=".2"/>' +
+      '<circle cx="-58" cy="0" r="4" fill="var(--red)"/><text id="spur-label" class="label-chip" x="-48" y="4" fill="currentColor"></text></g>');
+    svg.innerHTML = out.join('');
+    function label() { var t = document.getElementById('spur-label'); if (t) t.textContent = Site.lang() === 'fr' ? 'tendance 5:23 /km ▲' : 'trend 5:23 /km ▲'; }
+    label(); document.addEventListener('langchange', label);
+  }
+
   /* ---------------- scroll-spy for the nav ---------------- */
   function spy() {
     var links = {};
@@ -133,5 +157,5 @@
     draw(); document.addEventListener('langchange', draw);
   }
 
-  document.addEventListener('DOMContentLoaded', function () { matrix(); temple(); spy(); pubs(); lists(); });
+  document.addEventListener('DOMContentLoaded', function () { matrix(); spurArt(); temple(); spy(); pubs(); lists(); });
 })();

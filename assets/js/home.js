@@ -1,4 +1,4 @@
-/* Home page: dot-matrix, Fyndee illustration, scroll-spy, publication panels, latest posts. */
+/* Home page: dot-matrix, project illustrations (chut, spur, Fyndee), scroll-spy, publication panels, latest posts. */
 (function () {
   'use strict';
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -107,6 +107,36 @@
     label(); document.addEventListener('langchange', label);
   }
 
+  /* ---------------- chut: the number space in dots, a learned spam block ---------------- */
+  function chutArt() {
+    var svg = document.getElementById('chut-art');
+    if (!svg) return;
+    var out = [], seed = 11;
+    function rnd() { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; }
+    function dot(x, y, r, fill, op) { out.push('<circle cx="' + x + '" cy="' + y + '" r="' + r + '" fill="' + fill + '" opacity="' + op + '"/>'); }
+    var cols = 24, rows = 13, inBlock = function (c, r) { return c >= 14 && c <= 19 && r >= 3 && r <= 7; };
+    for (var c = 0; c < cols; c++) for (var r = 0; r < rows; r++) {                                       // every number
+      var x = 40 + c * 10, y = 34 + r * 10, v = rnd();
+      if (inBlock(c, r) && v < .5) dot(x, y, 2.6, 'var(--red)', .9);                                   // blocked, clustered
+      else if (!inBlock(c, r) && v < .018) dot(x, y, 2.4, 'var(--red)', .5);                           // blocked, alone
+      else if (!inBlock(c, r) && v > .955) dot(x, y, 2.4, 'var(--green)', .65);                           // rang
+      else dot(x, y, 1.2, 'currentColor', .2);
+    }
+    out.push('<rect x="171" y="57" width="68" height="58" rx="10" fill="var(--blue)" fill-opacity=".06" stroke="var(--blue)" stroke-width="1.4" stroke-dasharray="3 4"/>'); // what the model learned
+    out.push('<circle cx="200" cy="84" r="7" fill="none" stroke="var(--blue)" stroke-width="1.6"><animate attributeName="r" values="5;9;5" dur="3s" repeatCount="indefinite"/></circle>');
+    dot(200, 84, 2.8, 'var(--blue)', 1);                                                                  // a new number, never seen
+    var calls = 'gbrrgrgbrrgggrbrrgrrgbrr';                                                               // the last calls
+    for (var i = 0; i < calls.length; i++) {
+      var col = calls[i] === 'r' ? 'var(--red)' : calls[i] === 'b' ? 'var(--blue)' : 'var(--green)';
+      dot(44 + i * 9.4, 202, 3, col, i === calls.length - 1 ? 1 : .7);
+    }
+    out.push('<g transform="translate(150 236)"><rect x="-74" y="-12" width="148" height="24" rx="12" fill="var(--bg)" stroke="currentColor" stroke-opacity=".2"/>' +
+      '<circle cx="-58" cy="0" r="4" fill="var(--blue)"/><text id="chut-label" class="label-chip" x="-48" y="4" fill="currentColor"></text></g>');
+    svg.innerHTML = out.join('');
+    function label() { var t = document.getElementById('chut-label'); if (t) t.textContent = Site.lang() === 'fr' ? 'spam 58/100 · silencieux' : 'spam 58/100 · silenced'; }
+    label(); document.addEventListener('langchange', label);
+  }
+
   /* ---------------- scroll-spy for the nav ---------------- */
   function spy() {
     var links = {};
@@ -157,5 +187,5 @@
     draw(); document.addEventListener('langchange', draw);
   }
 
-  document.addEventListener('DOMContentLoaded', function () { matrix(); spurArt(); temple(); spy(); pubs(); lists(); });
+  document.addEventListener('DOMContentLoaded', function () { matrix(); chutArt(); spurArt(); temple(); spy(); pubs(); lists(); });
 })();

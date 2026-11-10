@@ -52,6 +52,22 @@
     frame();
   }
 
+  /* Label chips under the illustrations: the pill is sized to its text, in either language. */
+  function fitChip(id) {
+    var t = document.getElementById(id);
+    if (!t || !t.getComputedTextLength) return;
+    var g = t.parentNode, rect = g.querySelector('rect'), dot = g.querySelector('circle');
+    var w = Math.ceil(t.getComputedTextLength()) + 44;   // 16 left of the dot, 10 to the text, 18 after it
+    rect.setAttribute('x', -w / 2); rect.setAttribute('width', w);
+    dot.setAttribute('cx', -w / 2 + 16);
+    t.setAttribute('x', -w / 2 + 26);
+  }
+  function chip(id, en, fr) {
+    function label() { var t = document.getElementById(id); if (!t) return; t.textContent = Site.lang() === 'fr' ? fr : en; fitChip(id); }
+    label(); document.addEventListener('langchange', label);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { fitChip(id); });
+  }
+
   /* ---------------- Fyndee: a temple drawn in dots, being "recognised" ---------------- */
   function temple() {
     var svg = document.getElementById('temple');
@@ -79,8 +95,7 @@
     out.push('<g transform="translate(150 238)"><rect x="-74" y="-12" width="148" height="24" rx="12" fill="var(--bg)" stroke="currentColor" stroke-opacity=".2"/>' +
       '<circle cx="-58" cy="0" r="4" fill="var(--green)"/><text id="temple-label" class="label-chip" x="-48" y="4" fill="currentColor"></text></g>');
     svg.innerHTML = out.join('');
-    function label() { var t = document.getElementById('temple-label'); if (t) t.textContent = Site.lang() === 'fr' ? 'monument reconnu' : 'monument identified'; }
-    label(); document.addEventListener('langchange', label);
+    chip('temple-label', 'monument identified', 'monument reconnu');
   }
 
   /* ---------------- spur: a pace chart drawn in dots ---------------- */
@@ -103,8 +118,7 @@
     out.push('<g transform="translate(150 236)"><rect x="-74" y="-12" width="148" height="24" rx="12" fill="var(--bg)" stroke="currentColor" stroke-opacity=".2"/>' +
       '<circle cx="-58" cy="0" r="4" fill="var(--red)"/><text id="spur-label" class="label-chip" x="-48" y="4" fill="currentColor"></text></g>');
     svg.innerHTML = out.join('');
-    function label() { var t = document.getElementById('spur-label'); if (t) t.textContent = Site.lang() === 'fr' ? 'tendance 5:23 /km ▲' : 'trend 5:23 /km ▲'; }
-    label(); document.addEventListener('langchange', label);
+    chip('spur-label', 'trend 5:23 /km ▲', 'tendance 5:23 /km ▲');
   }
 
   /* ---------------- chut: the number space in dots, a learned spam block ---------------- */
@@ -133,8 +147,7 @@
     out.push('<g transform="translate(150 236)"><rect x="-74" y="-12" width="148" height="24" rx="12" fill="var(--bg)" stroke="currentColor" stroke-opacity=".2"/>' +
       '<circle cx="-58" cy="0" r="4" fill="var(--blue)"/><text id="chut-label" class="label-chip" x="-48" y="4" fill="currentColor"></text></g>');
     svg.innerHTML = out.join('');
-    function label() { var t = document.getElementById('chut-label'); if (t) t.textContent = Site.lang() === 'fr' ? 'spam 58/100 · silencieux' : 'spam 58/100 · silenced'; }
-    label(); document.addEventListener('langchange', label);
+    chip('chut-label', 'spam 58/100 · silenced', 'spam 58/100 · silencieux');
   }
 
   /* ---------------- scroll-spy for the nav ---------------- */

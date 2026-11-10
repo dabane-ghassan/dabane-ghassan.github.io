@@ -57,7 +57,10 @@
     var t = document.getElementById(id);
     if (!t || !t.getComputedTextLength) return;
     var g = t.parentNode, rect = g.querySelector('rect'), dot = g.querySelector('circle');
-    var w = Math.ceil(t.getComputedTextLength()) + 44;   // 16 left of the dot, 10 to the text, 18 after it
+    // Measured when the browser can; otherwise from the length (the chip font is monospaced, 11px).
+    var len = t.getComputedTextLength() || 0;
+    if (len < 20) len = t.textContent.length * 6.7;
+    var w = Math.ceil(len) + 44;   // 16 left of the dot, 10 to the text, 18 after it
     rect.setAttribute('x', -w / 2); rect.setAttribute('width', w);
     dot.setAttribute('cx', -w / 2 + 16);
     t.setAttribute('x', -w / 2 + 26);
@@ -66,6 +69,7 @@
     function label() { var t = document.getElementById(id); if (!t) return; t.textContent = Site.lang() === 'fr' ? fr : en; fitChip(id); }
     label(); document.addEventListener('langchange', label);
     if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { fitChip(id); });
+    window.addEventListener('load', function () { fitChip(id); });
   }
 
   /* ---------------- Fyndee: a temple drawn in dots, being "recognised" ---------------- */

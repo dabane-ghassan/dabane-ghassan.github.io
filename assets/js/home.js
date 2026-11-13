@@ -1,4 +1,4 @@
-/* Home page: dot-matrix, project illustrations (chut, spur, Fyndee), scroll-spy, publication panels, latest posts. */
+/* Home page: dot-matrix, project illustrations (Manicule, chut, spur, Fyndee), scroll-spy, publication panels, latest posts. */
 (function () {
   'use strict';
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -125,6 +125,38 @@
     chip('spur-label', 'trend 5:23 /km ▲', 'tendance 5:23 /km ▲');
   }
 
+  /* ---------------- Manicule: a slide, a fading ink loop, the hand that drew it ---------------- */
+  function maniculeArt() {
+    var svg = document.getElementById('manicule-art');
+    if (!svg) return;
+    var out = [];
+    function dot(x, y, r, fill, op) { out.push('<circle cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) + '" r="' + r + '" fill="' + fill + '" opacity="' + op + '"/>'); }
+    out.push('<rect x="34" y="28" width="232" height="156" rx="10" fill="none" stroke="currentColor" stroke-opacity=".2"/>');   // the slide
+    for (var x = 52; x <= 150; x += 7) dot(x, 52, 2, 'currentColor', .55);                               // its title
+    [[86, 236], [106, 200], [126, 178], [146, 220], [166, 150]].forEach(function (row) {                  // its text
+      for (var x = 52; x <= row[1]; x += 6) dot(x, row[0], 1.2, 'currentColor', .25);
+    });
+    var n = 46, a0 = Math.PI * 1.15, a1 = a0 + Math.PI * 2.1, tip;                                        // ink: oldest is faintest
+    for (var i = 0; i <= n; i++) {
+      var t = i / n, a = a0 + (a1 - a0) * t, px = 112 + 72 * Math.cos(a), py = 126 + 15 * Math.sin(a) - t * 4;
+      dot(px, py, 2.4, 'var(--red)', (.12 + .83 * t * t).toFixed(2));
+      tip = [px, py];
+    }
+    out.push('<circle cx="' + tip[0].toFixed(1) + '" cy="' + tip[1].toFixed(1) + '" r="7" fill="none" stroke="var(--red)" stroke-width="1.6"><animate attributeName="r" values="5;9;5" dur="3s" repeatCount="indefinite"/></circle>');
+    var hand = '<rect x="113" y="92" width="27" height="60" rx="13.5"/><rect x="137" y="98" width="25" height="56" rx="12.5"/><rect x="158" y="107" width="21" height="48" rx="10.5"/>' +
+      '<rect x="80" y="24" width="32" height="130" rx="16"/><path d="M72 142 Q72 114 98 114 L152 114 Q180 114 180 142 L177 170 Q174 197 148 197 L104 197 Q78 197 75 170 Z"/>' +
+      '<rect x="53" y="114" width="28" height="66" rx="14" transform="rotate(-13 67 147)"/>';
+    out.push('<g transform="translate(' + (tip[0] + 3).toFixed(1) + ' ' + (tip[1] + 5).toFixed(1) + ') rotate(-24) scale(.36) translate(-96 -26)">' +
+      '<rect x="113.5" y="208" width="13" height="150" rx="6.5" fill="currentColor"/>' +                 // the rod
+      '<g fill="currentColor" stroke="currentColor" stroke-width="14" stroke-linejoin="round">' + hand + '</g>' +
+      '<g fill="var(--red)">' + hand + '</g>' +
+      '<rect x="85" y="186" width="70" height="30" rx="11" fill="var(--bg)" stroke="currentColor" stroke-width="7"/></g>');
+    out.push('<g transform="translate(150 236)"><rect x="-74" y="-12" width="148" height="24" rx="12" fill="var(--bg)" stroke="currentColor" stroke-opacity=".2"/>' +
+      '<circle cx="-58" cy="0" r="4" fill="var(--red)"/><text id="manicule-label" class="label-chip" x="-48" y="4" fill="currentColor"></text></g>');
+    svg.innerHTML = out.join('');
+    chip('manicule-label', 'ink fades in 3 s', 'encre effacée en 3 s');
+  }
+
   /* ---------------- chut: the number space in dots, a learned spam block ---------------- */
   function chutArt() {
     var svg = document.getElementById('chut-art');
@@ -204,5 +236,5 @@
     draw(); document.addEventListener('langchange', draw);
   }
 
-  document.addEventListener('DOMContentLoaded', function () { matrix(); chutArt(); spurArt(); temple(); spy(); pubs(); lists(); });
+  document.addEventListener('DOMContentLoaded', function () { matrix(); maniculeArt(); chutArt(); spurArt(); temple(); spy(); pubs(); lists(); });
 })();

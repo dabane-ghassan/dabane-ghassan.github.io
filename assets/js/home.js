@@ -1,4 +1,4 @@
-/* Home page: dot-matrix, project illustrations (Manicule, chut, spur, Fyndee), scroll-spy, publication panels, latest posts. */
+/* Home page: dot-matrix, project illustrations (Festoon, Manicule, chut, spur, Fyndee), scroll-spy, publication panels, latest posts. */
 (function () {
   'use strict';
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -125,6 +125,53 @@
     chip('spur-label', 'trend 5:23 /km ▲', 'tendance 5:23 /km ▲');
   }
 
+  /* ---------------- Festoon: a cord under the top bar, things hanging from clothespins ---------------- */
+  function festoonArt() {
+    var svg = document.getElementById('festoon-art');
+    if (!svg) return;
+    var out = [];
+    function dot(x, y, r, fill, op) { out.push('<circle cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) + '" r="' + r + '" fill="' + fill + '" opacity="' + op + '"/>'); }
+    for (var x = 34; x <= 266; x += 7) dot(x, 26, 1.4, 'currentColor', .22);                              // the top bar
+    var cord = function (x) { var u = (x - 20) / 260; return 46 + 26 * 4 * u * (1 - u); };              // the sagging cord
+    for (x = 20; x <= 280; x += 5) dot(x, cord(x), 1.6, 'currentColor', .7);
+    function hang(cx, w, h, swing, delay, body) {                                                        // a card on a clothespin
+      var top = cord(cx);
+      out.push('<g transform="translate(' + cx.toFixed(1) + ' ' + top.toFixed(1) + ')"><g>' + (reduce ? '' :
+        '<animateTransform attributeName="transform" type="rotate" values="' + (-swing) + ';' + swing + ';' + (-swing) + '" dur="3.6s" begin="' + delay + 's" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1"/>') +
+        '<rect x="' + (-w / 2) + '" y="6" width="' + w + '" height="' + h + '" rx="7" fill="var(--bg)" stroke="currentColor" stroke-opacity=".35"/>' +
+        body(-w / 2, 6, w, h) +
+        '<rect x="-3.5" y="-9" width="7" height="22" rx="2.5" fill="currentColor"/></g></g>');
+    }
+    function dots(list) { return list.join(''); }
+    function d(x, y, r, fill, op) { return '<circle cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) + '" r="' + r + '" fill="' + fill + '" opacity="' + op + '"/>'; }
+    hang(70, 78, 58, 3, 0, function (x, y, w, h) {                                                       // a screenshot: a chart
+      var o = []; [[3, 'var(--red)'], [5, 'var(--green)'], [2, 'var(--blue)'], [4, 'var(--red)']].forEach(function (b, i) {
+        for (var k = 0; k < b[0]; k++) o.push(d(x + 16 + i * 15, y + h - 10 - k * 7, 2.6, b[1], .9));
+      });
+      for (var t = x + 10; t <= x + 46; t += 6) o.push(d(t, y + 11, 1.3, 'currentColor', .5));
+      return dots(o);
+    });
+    hang(150, 62, 70, 4, .7, function (x, y, w, h) {                                                     // a note
+      var o = [];
+      for (var t = x + 9; t <= x + 44; t += 5) o.push(d(t, y + 12, 1.7, 'currentColor', .75));
+      [[26, 50], [38, 42], [50, 52], [62, 34]].forEach(function (r) {
+        for (var t = x + 9; t <= x + r[1]; t += 5) o.push(d(t, y + r[0], 1.1, 'currentColor', .35));
+      });
+      return dots(o);
+    });
+    hang(230, 74, 34, 2.5, 1.4, function (x, y, w, h) {                                                  // a link
+      var o = [d(x + 15, y + h / 2, 8, 'var(--blue)', .9)];
+      for (var t = x + 29; t <= x + 62; t += 5) o.push(d(t, y + 13, 1.6, 'currentColor', .75));
+      for (t = x + 29; t <= x + 54; t += 5) o.push(d(t, y + 22, 1.1, 'currentColor', .35));
+      return dots(o);
+    });
+    out = ['<g transform="translate(150 118) scale(1.18) translate(-150 -84)">'].concat(out, ['</g>']);    // centred in the frame
+    out.push('<g transform="translate(150 236)"><rect x="-74" y="-12" width="148" height="24" rx="12" fill="var(--bg)" stroke="currentColor" stroke-opacity=".2"/>' +
+      '<circle cx="-58" cy="0" r="4" fill="var(--green)"/><text id="festoon-label" class="label-chip" x="-48" y="4" fill="currentColor"></text></g>');
+    svg.innerHTML = out.join('');
+    chip('festoon-label', 'click to copy again', 'un clic pour recopier');
+  }
+
   /* ---------------- Manicule: a slide, a fading ink loop, the hand that drew it ---------------- */
   function maniculeArt() {
     var svg = document.getElementById('manicule-art');
@@ -236,5 +283,5 @@
     draw(); document.addEventListener('langchange', draw);
   }
 
-  document.addEventListener('DOMContentLoaded', function () { matrix(); maniculeArt(); chutArt(); spurArt(); temple(); spy(); pubs(); lists(); });
+  document.addEventListener('DOMContentLoaded', function () { matrix(); festoonArt(); maniculeArt(); chutArt(); spurArt(); temple(); spy(); pubs(); lists(); });
 })();
